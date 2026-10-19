@@ -472,7 +472,9 @@
   function shareText(s) {
     return `【クリックトリップ】${s.name}（${s.pref}）に到着！\nQ. ${s.quiz}\n答え、知っていたらリプで教えて！ #クリックトリップ`;
   }
-  const pageUrl = () => location.href.split('#')[0].split('?')[0];
+  // 共有するのはゲームの紹介記事（遊び方とゲームへの入口がある）
+  const SHARE_URL = 'https://techgym.jp/column/claude-code-game-click-trip/';
+  const pageUrl = () => SHARE_URL;
 
   // ------------------------------------------------------------------
   // その他 UI
