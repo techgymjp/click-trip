@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#04150f">
+  <meta name="description" content="歩いた距離だけ日本を旅する位置情報ゲーム。レーダーを見てスワイプ、全国2000の観光地をめざせ。">
+  <title>クリックトリップ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <h1 class="logo">CLICK<span>TRIP</span></h1>
+      <div class="where" id="where">—</div>
+    </header>
+
+    <!-- レーダー画面 -->
+    <main id="view-radar" class="view active">
+      <section class="tank">
+        <div>
+          <div class="label">移動できる距離</div>
+          <div class="tank-value" id="tank">0m</div>
+        </div>
+        <div class="tank-sub" id="tank-sub">「移動距離を測る」を押してから歩こう</div>
+      </section>
+
+      <section class="scope-wrap">
+        <canvas id="scope" aria-label="レーダースコープ。スワイプした方向に移動します"></canvas>
+        <div class="scope-hud">
+          <span id="range-label">半径 10km</span>
+          <span class="zoom">
+            <button id="zoom-in" aria-label="レーダーを拡大">＋</button>
+            <button id="zoom-out" aria-label="レーダーを縮小">－</button>
+            <button id="zoom-auto" class="auto on" aria-label="自動レンジ">AUTO</button>
+          </span>
+        </div>
+        <div class="aim" id="aim" hidden></div>
+      </section>
+
+      <button id="measure" class="measure">移動距離を測る</button>
+      <p class="hint" id="hint">スコープ上をスワイプした方角へ、移動できる距離ぶん進みます。</p>
+
+      <section class="nearby">
+        <h2>近くの観光地</h2>
+        <ol id="nearby"></ol>
+      </section>
+    </main>
+
+    <!-- 旅の記録 -->
+    <main id="view-log" class="view">
+      <section class="stats" id="stats"></section>
+      <section>
+        <h2>訪れた観光地</h2>
+        <ul id="visited" class="visited"></ul>
+      </section>
+      <section>
+        <h2>都道府県</h2>
+        <div id="prefs" class="prefs"></div>
+      </section>
+    </main>
+
+    <!-- 日本地図 -->
+    <main id="view-map" class="view">
+      <svg id="japan" viewBox="0 0 1000 1140" aria-label="日本全図。訪問済みの観光地と現在地"></svg>
+      <p class="hint">緑: 未訪問の観光地 / 金: 訪問済み / 赤: あなた</p>
+    </main>
+
+    <!-- 設定 -->
+    <main id="view-settings" class="view">
+      <section class="card">
+        <h2>あそびかた</h2>
+        <ol class="howto">
+          <li>「移動距離を測る」を押すと、前回押した場所からの距離が<b>移動できる距離</b>にたまります。</li>
+          <li>レーダーを見て、行きたい方角へスコープ上を<b>スワイプ</b>。たまった距離をすべて使ってその方角へ進みます。</li>
+          <li>観光地は<b>2km四方のマス</b>。ちょうどそのマスに着地できたら到着！ 解説とクイズが届きます。</li>
+          <li>はずれたら、レーダーで近くの観光地の方角と距離を確かめて、また歩こう。</li>
+        </ol>
+      </section>
+      <section class="card">
+        <h2>モード</h2>
+        <label class="row"><input type="checkbox" id="demo"> デモモード（GPSを使わず、ボタンを押すたびにランダムな距離がたまる）</label>
+      </section>
+      <section class="card">
+        <h2>セーブデータ</h2>
+        <p class="small">進行状況はこの端末のブラウザに自動保存されます。機種変更のときは書き出して持っていけます。</p>
+        <div class="buttons">
+          <button id="export">書き出す</button>
+          <button id="import">読み込む</button>
+          <button id="reset" class="danger">はじめからやり直す</button>
+        </div>
+      </section>
+      <section class="card small credit">
+        <p>観光地データ: 「国土数値情報（観光資源データ）」（国土交通省）を加工して作成。解説文・クイズ・イラストはゲーム用に作成したもので、最新の現地情報とは異なる場合があります。</p>
+        <p>本作は、世界初の位置情報取得型ゲームとして生まれた「クリックトリップ」のリバイバル作品です。</p>
+      </section>
+    </main>
+
+    <nav class="tabs">
+      <button data-view="radar" class="on">レーダー</button>
+      <button data-view="log">旅の記録</button>
+      <button data-view="map">日本地図</button>
+      <button data-view="settings">設定</button>
+    </nav>
+  </div>
+
+  <!-- はじめに -->
+  <div class="modal" id="intro" hidden>
+    <div class="sheet intro">
+      <h1 class="logo big">CLICK<span>TRIP</span></h1>
+      <p class="lead">歩いた距離だけ、日本を旅する。</p>
+      <ol class="howto">
+        <li>「移動距離を測る」ボタンで、前回からの<b>実際の移動距離</b>を測ります。</li>
+        <li>レーダーを見て<b>スワイプ</b>した方角へ、その距離だけゲームの中を進みます。</li>
+        <li>全国2000の観光地（2km四方のマス）にぴたりと着地できたら到着！</li>
+      </ol>
+      <p class="small">旅の出発地は、いまあなたがいる場所です。位置情報の利用を許可してください。</p>
+      <div class="buttons col">
+        <button id="start-gps" class="primary">現在地から旅をはじめる</button>
+        <button id="start-demo">GPSなしで遊ぶ（デモ・東京駅から出発）</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 観光地到着 -->
+  <div class="modal" id="arrival" hidden>
+    <div class="sheet arrival">
+      <div class="arrived-banner" id="arr-banner">観光地に到着！</div>
+      <div class="art" id="arr-art"></div>
+      <div class="arr-body">
+        <div class="arr-meta"><span class="kind" id="arr-kind"></span><span id="arr-place"></span></div>
+        <h2 id="arr-name"></h2>
+        <p id="arr-desc" class="desc"></p>
+        <div class="quiz">
+          <div class="quiz-label">Q. クリックトリップ・クイズ</div>
+          <p id="arr-quiz"></p>
+          <div class="share">
+            <button id="share-x">Xで答えを募る</button>
+            <button id="share-line">LINEで聞く</button>
+            <button id="share-more">ほかで共有</button>
+          </div>
+        </div>
+        <div class="others" id="arr-others"></div>
+        <button id="arr-close" class="primary wide">旅を続ける</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="js/geo.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
