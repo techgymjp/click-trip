@@ -58,39 +58,68 @@
     const btn = $('measure');
     btn.disabled = true;
     btn.textContent = '測定中…';
+    Sound.se('click');
+    const scanning = setInterval(() => Sound.se('scan'), 380);
+    const before = S.tank;
     try {
       if (S.mode === 'demo') {
         await new Promise((r) => setTimeout(r, 500));
         // 散歩〜電車移動くらいの幅で距離がたまる
         const d = Math.round(Math.exp(Math.log(0.3) + Math.random() * (Math.log(40) - Math.log(0.3))) * 1000) / 1000;
         S.tank += d; S.stats.real += d; S.stats.measures++;
+        clearInterval(scanning);
+        Sound.se('coin');
         toast(`デモ: ${Geo.fmtKm(d)} 移動したことにしました`);
       } else {
         const now = await getPosition();
         S.stats.measures++;
         if (!S.gps) {
           S.gps = now;
+          clearInterval(scanning);
+          Sound.se('mark');
           toast('ここを測定の起点にしました。移動してからもう一度押してください');
         } else {
           const d = Geo.distance(S.gps, now);
           // GPS の誤差（両地点の精度）より小さい移動は数えない。起点も据え置く
           const noise = Math.max(0.02, (S.gps.acc + now.acc) / 2000);
+          clearInterval(scanning);
           if (d < noise) {
+            Sound.se('buzz');
             toast(`まだ ${Geo.fmtKm(d)}。GPSの誤差範囲（約${Geo.fmtKm(noise)}）なので、もう少し移動してから押してください`);
           } else {
             S.tank += d; S.stats.real += d; S.gps = now;
+            Sound.se('coin');
             toast(`前回から ${Geo.fmtKm(d)} 移動しました！`);
           }
         }
       }
       save();
       refresh();
+      if (S.tank > before) countUp(before, S.tank);
     } catch (e) {
+      Sound.se('buzz');
       toast(e.message + '。設定からデモモードでも遊べます');
     } finally {
+      clearInterval(scanning);
       btn.disabled = false;
       btn.textContent = '移動距離を測る';
     }
+  }
+
+  /** 桃鉄の所持金のように、たまった距離をチッチッと数え上げる */
+  function countUp(from, to) {
+    const t0 = performance.now(), dur = 900;
+    let lastTick = 0;
+    const el = $('tank');
+    el.classList.add('counting');
+    const f = (t) => {
+      const k = Math.min(1, (t - t0) / dur);
+      el.textContent = Geo.fmtKm(from + (to - from) * (1 - Math.pow(1 - k, 3)));
+      if (t - lastTick > 55 && k < 1) { lastTick = t; Sound.se('tick', k); }
+      if (k < 1 && !animating) requestAnimationFrame(f);
+      else { el.classList.remove('counting'); updateTank(); }
+    };
+    requestAnimationFrame(f);
   }
 
   // ------------------------------------------------------------------
@@ -99,15 +128,18 @@
   let animating = false;
   function travel(brg) {
     if (animating) return;
-    if (S.tank <= 0) { toast('まず「移動距離を測る」で距離をためよう'); return; }
+    if (S.tank <= 0) { Sound.se('buzz'); toast('まず「移動距離を測る」で距離をためよう'); return; }
     const from = { ...S.pos };
     const dist = S.tank;
     const to = Geo.destination(from, brg, dist);
     animating = true;
     const t0 = performance.now();
     const dur = Math.min(1600, 500 + Math.sqrt(dist) * 60);
+    Sound.se('depart');
+    let steps = 0, lastStep = t0 + 250;
     const step = (t) => {
       const k = Math.min(1, (t - t0) / dur);
+      if (t - lastStep > 85 && k < 1) { lastStep = t; Sound.se('step', steps++); }
       const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
       S.pos = Geo.destination(from, brg, dist * e);
       S.tank = dist * (1 - e);
@@ -119,6 +151,7 @@
       S.path.push([+to.lat.toFixed(5), +to.lon.toFixed(5)]);
       if (S.path.length > 1000) S.path.splice(1, S.path.length - 1000);
       animating = false;
+      Sound.se('land');
       land();
     };
     requestAnimationFrame(step);
@@ -134,8 +167,10 @@
       here.forEach((s) => { if (!S.visited[s.id]) S.visited[s.id] = Date.now(); });
       save();
       refresh();
+      Sound.jingle(revisit ? 'revisit' : 'arrive', 'diary');
       openArrival(here[0], here, revisit ? 'ふたたび到着！' : '観光地に到着！');
     } else {
+      Sound.jingle('miss', 'field');
       const n = nearest(S.pos, 1)[0];
       toast(n ? `観光地のマスではありませんでした。いちばん近いのは ${n.dirName} ${Geo.fmtKm(n.d)} の「${n.s.name}」` : '観光地のマスではありませんでした');
     }
@@ -198,8 +233,10 @@
   }
 
   let sweep = 0;
+  let lastPing = 0;
   function draw(t) {
     if (!size) resize();
+    if (size < 40) { requestAnimationFrame(draw); return; } // レーダーが非表示のタブでは描かない
     const range = currentRange();
     computeBlips(range);
     $('range-label').textContent = '半径 ' + Geo.fmtKm(range).replace('.00', '');
@@ -235,6 +272,7 @@
     for (let i = 1; i <= 3; i++) c.fillText(Geo.fmtKm((range * i) / 4), 4 + (R * i) / 4 * 0.7071 + 10, -(R * i) / 4 * 0.7071 - 4);
 
     // スイープ
+    const prevSweep = sweep;
     sweep = ((t || 0) / 2600) % 1 * Math.PI * 2;
     const grad = c.createConicGradient ? c.createConicGradient(sweep - Math.PI / 2 - 0.9, 0, 0) : null;
     if (grad) {
@@ -252,6 +290,13 @@
     const cellPx = (Geo.CELL_KM / range) * R;
     const labelMax = range <= 20 ? 14 : range <= 50 ? 8 : range <= 100 ? 4 : 0;
     const sorted = blips.slice().sort((a, b) => a.d - b.d);
+    // スイープが近くの観光地を通過したらソナー音
+    if (!animating && aimBrg === null) {
+      for (const bl of sorted.slice(0, 4)) {
+        const crossed = prevSweep <= sweep ? bl.a > prevSweep && bl.a <= sweep : bl.a > prevSweep || bl.a <= sweep;
+        if (crossed && (t || 0) - lastPing > 150) { lastPing = t || 0; Sound.se('ping', Math.min(1, bl.d / range)); }
+      }
+    }
     const placed = [];
     c.font = '11px sans-serif'; c.textAlign = 'left';
     sorted.forEach((bl, i) => {
@@ -326,7 +371,10 @@
     if (!drag || e.pointerId !== drag.id) return;
     const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
     if (Math.hypot(dx, dy) < 18) { aimBrg = null; $('aim').hidden = true; return; }
+    const prev = aimBrg;
     aimBrg = ((Math.atan2(dx, -dy) * 180) / Math.PI + 360) % 360;
+    if (prev === null) Sound.se('aimStart');
+    else if (Math.floor(prev / 5) !== Math.floor(aimBrg / 5)) Sound.se('aimTick', aimBrg % 90 < 5 ? 1 : 0);
     const aim = $('aim');
     aim.hidden = false;
     aim.textContent = S.tank > 0 ? `${Geo.dirName(aimBrg)} ${aimBrg.toFixed(0)}° へ ${Geo.fmtKm(S.tank)}` : '移動できる距離がありません';
@@ -443,10 +491,12 @@
     if (name === 'log') renderLog();
     if (name === 'map') renderMap();
     if (name === 'radar') { resize(); }
+    Sound.bgm(name === 'radar' ? 'field' : 'diary');
     window.scrollTo(0, 0);
   }
 
   async function startGps() {
+    Sound.se('ok');
     $('start-gps').disabled = true;
     $('start-gps').textContent = '現在地を取得中…';
     try {
@@ -456,8 +506,10 @@
       save();
       $('intro').hidden = true;
       refresh();
+      Sound.jingle('start', 'field');
       toast('旅のはじまり！ 移動したら「移動距離を測る」を押そう');
     } catch (e) {
+      Sound.se('buzz');
       toast(e.message + '。デモモードでも遊べます');
     } finally {
       $('start-gps').disabled = false;
@@ -469,6 +521,8 @@
     save();
     $('intro').hidden = true;
     refresh();
+    Sound.se('ok');
+    Sound.jingle('start', 'field');
     toast('東京駅から出発！ ボタンを押すと距離がたまります');
   }
 
@@ -481,36 +535,46 @@
     window.addEventListener('resize', resize);
 
     const setRange = (r) => { S.range = r; $('zoom-auto').classList.toggle('on', r === 'auto'); save(); invalidate(); };
-    $('zoom-in').addEventListener('click', () => { const r = currentRange(); setRange(RANGES[Math.max(0, RANGES.indexOf(r) - 1)]); });
-    $('zoom-out').addEventListener('click', () => { const r = currentRange(); setRange(RANGES[Math.min(RANGES.length - 1, RANGES.indexOf(r) + 1)]); });
-    $('zoom-auto').addEventListener('click', () => setRange('auto'));
+    $('zoom-in').addEventListener('click', () => { Sound.se('zoomIn'); const r = currentRange(); setRange(RANGES[Math.max(0, RANGES.indexOf(r) - 1)]); });
+    $('zoom-out').addEventListener('click', () => { Sound.se('zoomOut'); const r = currentRange(); setRange(RANGES[Math.min(RANGES.length - 1, RANGES.indexOf(r) + 1)]); });
+    $('zoom-auto').addEventListener('click', () => { Sound.se('click'); setRange('auto'); });
 
-    document.querySelectorAll('.tabs button').forEach((b) => b.addEventListener('click', () => showView(b.dataset.view)));
+    document.querySelectorAll('.tabs button').forEach((b) => b.addEventListener('click', () => { Sound.se('cursor'); showView(b.dataset.view); }));
 
     $('nearby').addEventListener('click', (e) => {
       const li = e.target.closest('li'); if (!li) return;
       const s = BY_ID[li.dataset.id];
+      Sound.se(S.visited[s.id] ? 'ok' : 'cursor');
       if (S.visited[s.id]) openArrival(s, [s], '訪問済みの観光地');
       else toast(`「${s.name}」はまだ未訪問。たどり着くと解説とクイズが見られます`);
     });
     $('visited').addEventListener('click', (e) => {
       const li = e.target.closest('li[data-id]'); if (!li) return;
+      Sound.se('ok');
       openArrival(BY_ID[li.dataset.id], [], '訪問済みの観光地');
     });
     $('arr-others').addEventListener('click', (e) => {
       const b = e.target.closest('button[data-id]'); if (!b) return;
       const s = BY_ID[b.dataset.id];
+      Sound.se('cursor');
       openArrival(s, BY_CELL[Geo.cellOf(s).key], $('arr-banner').textContent);
     });
-    $('arr-close').addEventListener('click', () => { $('arrival').hidden = true; });
+    $('arr-close').addEventListener('click', () => {
+      Sound.se('back');
+      $('arrival').hidden = true;
+      Sound.bgm($('view-radar').classList.contains('active') ? 'field' : 'diary');
+    });
 
     $('share-x').addEventListener('click', () => {
+      Sound.se('share');
       window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText(current)) + '&url=' + encodeURIComponent(pageUrl()), '_blank', 'noopener');
     });
     $('share-line').addEventListener('click', () => {
+      Sound.se('share');
       window.open('https://line.me/R/share?text=' + encodeURIComponent(shareText(current) + '\n' + pageUrl()), '_blank', 'noopener');
     });
     $('share-more').addEventListener('click', async () => {
+      Sound.se('share');
       const text = shareText(current);
       if (navigator.share) {
         try { await navigator.share({ title: 'クリックトリップ', text, url: pageUrl() }); } catch (e) { /* キャンセル */ }
@@ -520,15 +584,25 @@
     });
 
     $('start-gps').addEventListener('click', startGps);
+    $('sound').addEventListener('click', () => {
+      const on = !(Sound.pref().bgm || Sound.pref().se);
+      Sound.setPref('bgm', on); Sound.setPref('se', on);
+      syncSettings();
+      Sound.se('ok');
+    });
+    $('opt-bgm').addEventListener('change', (e) => { Sound.setPref('bgm', e.target.checked); syncSettings(); Sound.se('click'); });
+    $('opt-se').addEventListener('change', (e) => { Sound.setPref('se', e.target.checked); syncSettings(); Sound.se('click'); });
     $('start-demo').addEventListener('click', startDemo);
 
     $('demo').addEventListener('change', (e) => {
+      Sound.se('click');
       S.mode = e.target.checked ? 'demo' : 'gps';
       if (S.mode === 'gps') S.gps = null; // 次のボタンで起点を取り直す
       save(); refresh();
       toast(S.mode === 'demo' ? 'デモモードにしました' : 'GPSモードにしました。次に押した場所が起点になります');
     });
     $('export').addEventListener('click', () => {
+      Sound.se('save');
       const blob = new Blob([JSON.stringify(S)], { type: 'application/json' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
@@ -544,12 +618,14 @@
           const s = JSON.parse(await inp.files[0].text());
           if (!s || s.v !== 1 || !s.pos) throw new Error();
           S = s; save(); refresh(); syncSettings();
+          Sound.se('save');
           toast('セーブデータを読み込みました');
-        } catch (e) { toast('読み込めないファイルです'); }
+        } catch (e) { Sound.se('buzz'); toast('読み込めないファイルです'); }
       };
       inp.click();
     });
     $('reset').addEventListener('click', () => {
+      Sound.se('buzz');
       if (!confirm('これまでの旅の記録をすべて消して、はじめからやり直しますか？')) return;
       localStorage.removeItem(SAVE_KEY);
       location.reload();
@@ -558,6 +634,10 @@
 
   function syncSettings() {
     $('demo').checked = S.mode === 'demo';
+    const sp = Sound.pref();
+    $('opt-bgm').checked = sp.bgm; $('opt-se').checked = sp.se;
+    $('sound').textContent = sp.bgm || sp.se ? '♪ ON' : '♪ OFF';
+    $('sound').classList.toggle('off', !(sp.bgm || sp.se));
     $('zoom-auto').classList.toggle('on', S.range === 'auto');
   }
 
@@ -578,6 +658,9 @@
     if (!S) {
       S = newSave('demo', { ...TOKYO_STATION }); // 背景表示用の仮データ（保存しない）
       $('intro').hidden = false;
+      Sound.bgm('title');
+    } else {
+      Sound.bgm('field');
     }
     syncSettings();
     refresh();

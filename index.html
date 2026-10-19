@@ -13,6 +13,7 @@
     <header class="top">
       <h1 class="logo">CLICK<span>TRIP</span></h1>
       <div class="where" id="where">—</div>
+      <button class="sound" id="sound" aria-label="音のオン・オフ">♪ ON</button>
     </header>
 
     <!-- レーダー画面 -->
@@ -80,6 +81,12 @@
       <section class="card">
         <h2>モード</h2>
         <label class="row"><input type="checkbox" id="demo"> デモモード（GPSを使わず、ボタンを押すたびにランダムな距離がたまる）</label>
+      </section>
+      <section class="card">
+        <h2>サウンド</h2>
+        <label class="row"><input type="checkbox" id="opt-bgm"> BGM</label>
+        <label class="row"><input type="checkbox" id="opt-se"> 効果音（ボタン・レーダー・移動）</label>
+        <p class="small">最初に画面に触れたときから音が鳴ります。マナーモード中は端末の設定に従います。</p>
       </section>
       <section class="card">
         <h2>セーブデータ</h2>
@@ -150,6 +157,7 @@
 
   <script src="js/geo.js"></script>
   <script src="js/art.js"></script>
+  <script src="js/sound.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

@@ -25,7 +25,10 @@ h2 { font-size: 15px; letter-spacing: .08em; color: var(--muted); margin: 18px 0
 .logo { margin: 0; font-size: 20px; letter-spacing: .14em; font-weight: 800; color: var(--phosphor); text-shadow: 0 0 10px rgba(67, 245, 154, .45); font-family: "Courier New", ui-monospace, monospace; }
 .logo span { color: var(--gold); text-shadow: 0 0 10px rgba(255, 210, 90, .4); }
 .logo.big { font-size: 34px; text-align: center; }
-.where { font-size: 12px; color: var(--muted); text-align: right; line-height: 1.35; }
+.sound { flex: none; background: var(--panel); border: 1px solid var(--line); color: var(--phosphor); border-radius: 8px; padding: 6px 8px; font-size: 12px; font-family: "Courier New", ui-monospace, monospace; }
+.sound.off { color: var(--muted); }
+.tank-value.counting { color: #fff6c8; text-shadow: 0 0 12px rgba(255, 210, 90, .7); }
+.where { flex: 1; font-size: 12px; color: var(--muted); text-align: right; line-height: 1.35; }
 
 .view { display: none; padding: 0 16px; flex: 1; }
 .view.active { display: block; }
@@ -90,7 +93,7 @@ h2 { font-size: 15px; letter-spacing: .08em; color: var(--muted); margin: 18px 0
 .howto { padding-left: 20px; font-size: 14px; line-height: 1.7; }
 .howto li { margin: 4px 0; }
 .small { font-size: 12px; color: var(--muted); line-height: 1.6; }
-.row { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; line-height: 1.5; }
+.row { display: flex; gap: 8px; align-items: flex-start; font-size: 14px; line-height: 1.5; margin: 6px 0; }
 .buttons { display: flex; gap: 8px; flex-wrap: wrap; }
 .buttons.col { flex-direction: column; }
 .buttons button, .share button { background: #0f3324; border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; font-size: 14px; }
