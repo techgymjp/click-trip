@@ -182,7 +182,7 @@
       Sound.jingle('miss', 'field');
       const n = nearest(S.pos, 1)[0];
       toast(n ? t('m.miss', { dir: n.dirName, km: Geo.fmtKm(n.d), name: I18N.spot.name(n.s) }) : t('m.missNone'));
-      if (Ads.available && lastMove) $('retry').hidden = false;
+      if (Ads.rewardAvailable && lastMove) $('retry').hidden = false;
     }
   }
 
@@ -516,7 +516,7 @@
     Sound.se('back');
     $('arrival').hidden = true;
     // 新しい観光地に着いたあと、2 回に 1 回だけ全画面広告を出す
-    if (freshArrival && Ads.available && ++arrivals % 2 === 0) await Ads.showInterstitial();
+    if (freshArrival && Ads.interstitialAvailable && ++arrivals % 2 === 0) await Ads.showInterstitial();
     freshArrival = false;
     Sound.bgm($('view-radar').classList.contains('active') ? 'field' : 'diary');
   }
@@ -585,6 +585,11 @@
     if (window.APP_VERSION && window.APP_VERSION !== 'dev') $('build-info').textContent = window.APP_VERSION;
     Ads.initDone.then(() => { if (Ads.privacyOptionsRequired) $('ad-privacy').hidden = false; });
     $('ad-privacy').addEventListener('click', (e) => { e.preventDefault(); Ads.showPrivacyOptions(); });
+    // 到着画面・はじめの画面を開いている間はバナーを隠す（画面下のボタンに重ならないように）
+    const modals = [$('intro'), $('arrival')];
+    const syncBanner = () => Ads.setBannerVisible(modals.every((m) => m.hidden));
+    modals.forEach((m) => new MutationObserver(syncBanner).observe(m, { attributes: true, attributeFilter: ['hidden'] }));
+    syncBanner();
     if (!NATIVE) return;
     // X・LINE への直接リンクの代わりに、Android の共有メニューを 1 つのボタンで出す
     $('share-x').hidden = true;
