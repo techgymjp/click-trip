@@ -131,7 +131,6 @@
   let animating = false;
   let lastMove = null;     // はずれたときに広告を見てやり直すための、直前の移動
   let freshArrival = false; // 新しい観光地に着いて到着画面を開いているか
-  let arrivals = 0;        // インタースティシャル広告の間隔を数える
   function travel(brg) {
     if (animating) return;
     if (S.tank <= 0) { Sound.se('buzz'); toast(t('m.needTank')); return; }
@@ -515,8 +514,8 @@
   async function closeArrival() {
     Sound.se('back');
     $('arrival').hidden = true;
-    // 新しい観光地に着いたあと、2 回に 1 回だけ全画面広告を出す
-    if (freshArrival && Ads.interstitialAvailable && ++arrivals % 2 === 0) await Ads.showInterstitial();
+    // 新しい観光地に着いたあとは毎回全画面広告を出す
+    if (freshArrival && Ads.interstitialAvailable) await Ads.showInterstitial();
     freshArrival = false;
     Sound.bgm($('view-radar').classList.contains('active') ? 'field' : 'diary');
   }
