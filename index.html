@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#04150f">
   <meta name="description" content="歩いた距離だけ日本を旅する位置情報ゲーム。レーダーを見てスワイプ、全国2000の観光地をめざせ。">
   <title>クリックトリップ</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -41,6 +42,10 @@
 
       <button id="measure" class="measure">移動距離を測る</button>
       <p class="hint" id="hint">スコープ上をスワイプした方角へ、移動できる距離ぶん進みます。</p>
+      <div class="retry" id="retry" hidden>
+        <span>おしい！ はずれでした</span>
+        <button id="retry-btn">広告を見てやり直す</button>
+      </div>
 
       <section class="nearby">
         <h2>近くの観光地</h2>
@@ -100,6 +105,13 @@
       <section class="card small credit">
         <p>観光地データ: 「国土数値情報（観光資源データ）」（国土交通省）を加工して作成。解説文・クイズ・イラストはゲーム用に作成したもので、最新の現地情報とは異なる場合があります。</p>
         <p>本作は、世界初の位置情報取得型ゲームとして生まれた「クリックトリップ」のリバイバル作品です。</p>
+        <p>位置情報は移動距離の計算にだけ使い、端末の外には送りません。</p>
+        <p class="legal">
+          <a href="https://techgym.jp/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a>
+          <a href="#" id="ad-privacy" hidden>広告の設定</a>
+          <span id="build-info"></span>
+        </p>
+        <p>© TECH GYM K.K.</p>
       </section>
     </main>
 
@@ -155,9 +167,12 @@
 
   <div class="toast" id="toast" hidden></div>
 
+  <script src="js/ads-config.js"></script>
+  <script src="js/build-info.js"></script>
   <script src="js/geo.js"></script>
   <script src="js/art.js"></script>
   <script src="js/sound.js"></script>
+  <script src="js/ads.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

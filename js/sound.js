@@ -334,7 +334,7 @@
   ['pointerdown', 'keydown', 'touchstart'].forEach((ev) => global.addEventListener(ev, unlock, { capture: true, passive: true }));
   document.addEventListener('visibilitychange', () => {
     if (!ctx) return;
-    if (document.hidden) ctx.suspend(); else ctx.resume();
+    if (document.hidden) ctx.suspend(); else if (!held) ctx.resume();
   });
 
   function setPref(k, v) {
@@ -345,5 +345,10 @@
     if (k === 'se') seBus.gain.setTargetAtTime(v ? 0.8 : 0, ctx.currentTime, 0.02);
   }
 
-  global.Sound = { bgm, jingle, se, setPref, pref: () => ({ ...pref }) };
+  // 全画面広告を表示している間は音を止める
+  let held = false;
+  function suspend() { held = true; if (ctx) ctx.suspend(); }
+  function resume() { held = false; if (ctx && !document.hidden) ctx.resume(); }
+
+  global.Sound = { bgm, jingle, se, setPref, suspend, resume, pref: () => ({ ...pref }) };
 })(window);

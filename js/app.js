@@ -13,6 +13,9 @@
   const PREFS = ['北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県', '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県', '静岡県', '愛知県', '三重県', '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県', '徳島県', '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県'];
 
   const $ = (id) => document.getElementById(id);
+  // Android アプリ（Capacitor）で動いているか。Web 版では Capacitor がないので何もしない
+  const NATIVE = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+  const plugin = (name) => (NATIVE && window.Capacitor.Plugins ? window.Capacitor.Plugins[name] : null);
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
   let SPOTS = [];
@@ -59,6 +62,7 @@
     btn.disabled = true;
     btn.textContent = '測定中…';
     Sound.se('click');
+    hideRetry();
     const scanning = setInterval(() => Sound.se('scan'), 380);
     const before = S.tank;
     try {
@@ -126,12 +130,17 @@
   // 移動
   // ------------------------------------------------------------------
   let animating = false;
+  let lastMove = null;     // はずれたときに広告を見てやり直すための、直前の移動
+  let freshArrival = false; // 新しい観光地に着いて到着画面を開いているか
+  let arrivals = 0;        // インタースティシャル広告の間隔を数える
   function travel(brg) {
     if (animating) return;
     if (S.tank <= 0) { Sound.se('buzz'); toast('まず「移動距離を測る」で距離をためよう'); return; }
     const from = { ...S.pos };
     const dist = S.tank;
     const to = Geo.destination(from, brg, dist);
+    hideRetry();
+    lastMove = { from, dist, pathLen: S.path.length };
     animating = true;
     const t0 = performance.now();
     const dur = Math.min(1600, 500 + Math.sqrt(dist) * 60);
@@ -168,11 +177,41 @@
       save();
       refresh();
       Sound.jingle(revisit ? 'revisit' : 'arrive', 'diary');
+      freshArrival = !revisit;
       openArrival(here[0], here, revisit ? 'ふたたび到着！' : '観光地に到着！');
     } else {
       Sound.jingle('miss', 'field');
       const n = nearest(S.pos, 1)[0];
       toast(n ? `観光地のマスではありませんでした。いちばん近いのは ${n.dirName} ${Geo.fmtKm(n.d)} の「${n.s.name}」` : '観光地のマスではありませんでした');
+      if (Ads.available && lastMove) $('retry').hidden = false;
+    }
+  }
+
+  function hideRetry() { $('retry').hidden = true; }
+
+  /** リワード広告を最後まで見たら、はずれた移動を取り消して、移動前の場所と距離に戻す */
+  async function retryWithAd() {
+    if (!lastMove || animating) return;
+    Sound.se('ok');
+    const btn = $('retry-btn');
+    btn.disabled = true;
+    const result = await Ads.showRewarded();
+    btn.disabled = false;
+    if (result === 'rewarded') {
+      S.pos = lastMove.from;
+      S.tank += lastMove.dist;
+      S.stats.game -= lastMove.dist; S.stats.moves--;
+      S.path.length = lastMove.pathLen;
+      lastMove = null;
+      hideRetry();
+      save(); refresh();
+      Sound.jingle('start', 'field');
+      toast('移動する前に戻りました。もう一度ねらってみよう！');
+    } else if (result === 'unavailable') {
+      Sound.se('buzz');
+      toast('広告を読み込めませんでした。少し待ってからもう一度押してください');
+    } else {
+      toast('広告を最後まで見ると、やり直せます');
     }
   }
 
@@ -469,6 +508,15 @@
     $('arrival').querySelector('.sheet').scrollTop = 0;
   }
 
+  async function closeArrival() {
+    Sound.se('back');
+    $('arrival').hidden = true;
+    // 新しい観光地に着いたあと、2 回に 1 回だけ全画面広告を出す
+    if (freshArrival && Ads.available && ++arrivals % 2 === 0) await Ads.showInterstitial();
+    freshArrival = false;
+    Sound.bgm($('view-radar').classList.contains('active') ? 'field' : 'diary');
+  }
+
   function shareText(s) {
     return `【クリックトリップ】${s.name}（${s.pref}）に到着！\nQ. ${s.quiz}\n答え、知っていたらリプで教えて！ #クリックトリップ`;
   }
@@ -528,6 +576,27 @@
     toast('東京駅から出発！ ボタンを押すと距離がたまります');
   }
 
+  /** Android アプリだけの設定: 戻るボタン、共有ボタン、バージョン表示、広告の設定 */
+  function setupNative() {
+    if (window.APP_VERSION && window.APP_VERSION !== 'dev') $('build-info').textContent = window.APP_VERSION;
+    Ads.initDone.then(() => { if (Ads.privacyOptionsRequired) $('ad-privacy').hidden = false; });
+    $('ad-privacy').addEventListener('click', (e) => { e.preventDefault(); Ads.showPrivacyOptions(); });
+    if (!NATIVE) return;
+    // X・LINE への直接リンクの代わりに、Android の共有メニューを 1 つのボタンで出す
+    $('share-x').hidden = true;
+    $('share-line').hidden = true;
+    $('share-more').textContent = '共有して答えを募る';
+    const App = plugin('App');
+    if (App) {
+      // 戻るボタン: 到着画面を閉じる → レーダーに戻る → アプリを終了
+      App.addListener('backButton', () => {
+        if (!$('arrival').hidden) return closeArrival();
+        if (!$('view-radar').classList.contains('active')) { Sound.se('back'); return showView('radar'); }
+        App.exitApp();
+      });
+    }
+  }
+
   function bind() {
     $('measure').addEventListener('click', measure);
     cv.addEventListener('pointerdown', onDown);
@@ -561,11 +630,7 @@
       Sound.se('cursor');
       openArrival(s, BY_CELL[Geo.cellOf(s).key], $('arr-banner').textContent);
     });
-    $('arr-close').addEventListener('click', () => {
-      Sound.se('back');
-      $('arrival').hidden = true;
-      Sound.bgm($('view-radar').classList.contains('active') ? 'field' : 'diary');
-    });
+    $('arr-close').addEventListener('click', closeArrival);
 
     $('share-x').addEventListener('click', () => {
       Sound.se('share');
@@ -578,7 +643,11 @@
     $('share-more').addEventListener('click', async () => {
       Sound.se('share');
       const text = shareText(current);
-      if (navigator.share) {
+      const nativeShare = plugin('Share');
+      if (nativeShare) {
+        // アプリでは Android の共有メニューから X や LINE などを選んでもらう
+        try { await nativeShare.share({ title: 'クリックトリップ', text, url: pageUrl(), dialogTitle: 'クイズの答えをみんなに聞く' }); } catch (e) { /* キャンセル */ }
+      } else if (navigator.share) {
         try { await navigator.share({ title: 'クリックトリップ', text, url: pageUrl() }); } catch (e) { /* キャンセル */ }
       } else {
         try { await navigator.clipboard.writeText(text + '\n' + pageUrl()); toast('共有用の文章をコピーしました'); } catch (e) { toast('コピーできませんでした'); }
@@ -586,6 +655,8 @@
     });
 
     $('start-gps').addEventListener('click', startGps);
+    $('retry-btn').addEventListener('click', retryWithAd);
+    setupNative();
     $('sound').addEventListener('click', () => {
       const on = !(Sound.pref().bgm || Sound.pref().se);
       Sound.setPref('bgm', on); Sound.setPref('se', on);
@@ -603,8 +674,14 @@
       save(); refresh();
       toast(S.mode === 'demo' ? 'デモモードにしました' : 'GPSモードにしました。次に押した場所が起点になります');
     });
-    $('export').addEventListener('click', () => {
+    $('export').addEventListener('click', async () => {
       Sound.se('save');
+      const nativeShare = plugin('Share');
+      if (nativeShare) {
+        // アプリではファイルを直接保存できないので、セーブデータの文字列を共有メニューで渡す（メモや Drive などに保存）
+        try { await nativeShare.share({ title: 'クリックトリップのセーブデータ', text: JSON.stringify(S), dialogTitle: 'セーブデータの保存先' }); } catch (e) { /* キャンセル */ }
+        return;
+      }
       const blob = new Blob([JSON.stringify(S)], { type: 'application/json' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);

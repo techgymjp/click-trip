@@ -1,0 +1,8 @@
+{
+  "appId": "jp.techgym.clicktrip",
+  "appName": "クリックトリップ",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#04150f"
+  }
+}

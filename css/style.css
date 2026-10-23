@@ -130,3 +130,10 @@ button.wide { width: 100%; margin-top: 16px; }
 
 .toast { position: fixed; left: 50%; bottom: calc(80px + env(safe-area-inset-bottom)); transform: translateX(-50%); background: rgba(0, 0, 0, .88); border: 1px solid var(--phosphor); color: var(--text); padding: 10px 16px; border-radius: 10px; font-size: 14px; z-index: 30; max-width: calc(100% - 32px); text-align: center; line-height: 1.5; }
 .toast[hidden] { display: none; }
+.retry { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: #2a1c06; border: 1px solid #6b5014; border-radius: 12px; padding: 8px 10px 8px 14px; margin: 8px 0; font-size: 13px; color: var(--gold); }
+.retry[hidden] { display: none; }
+.retry button { background: var(--gold); color: #2a1c06; border: none; border-radius: 8px; padding: 8px 12px; font-weight: 800; font-size: 13px; white-space: nowrap; }
+.legal { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.legal a { color: var(--phosphor); }
+.legal a[hidden] { display: none; }
+#build-info { color: var(--muted); font-family: "Courier New", ui-monospace, monospace; }

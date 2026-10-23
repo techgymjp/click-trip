@@ -24,6 +24,29 @@ python3 -m http.server 8000
 # → http://localhost:8000/
 ```
 
+## Android アプリ
+
+Capacitor でゲームのファイルをアプリに同梱し、Android アプリにしています（パッケージ名 `jp.techgym.clicktrip`）。構成は JET STRIKE と同じです。
+
+- `npm run build` で `www/` にゲームのファイルをコピー（広告の本番／テスト切り替えとバージョン表示を生成）
+- `npm run android:sync` で Android プロジェクト（`android/`）に反映
+- ビルドは GitHub Actions（`.github/workflows/android.yml`）が行い、動作確認用の APK（テスト広告）を Release `android-latest` に載せます。Secrets にアップロード鍵があれば、Google Play 用の署名付き AAB（本番広告）も作ります
+- 動作確認用 APK の QR コード: `docs/apk-qr.png`
+- ストア掲載情報の下書きと画像: `docs/store/`
+
+アプリだけの動き:
+
+- 位置情報は Android の権限（アプリ使用中のみ）で取得し、端末の外には送りません
+- 戻るボタン: 到着画面を閉じる → レーダーに戻る → アプリを終了
+- シェアは Android の共有メニュー、セーブデータの書き出しは共有メニューで文字列として渡します
+- 広告: 新しい観光地の到着画面を閉じたとき 2 回に 1 回インタースティシャル。はずれたときに「広告を見てやり直す」（リワード）で移動前の場所と距離に戻れます
+- 歩きながら遊ぶゲームなので、画面の点けっぱなし（`FLAG_KEEP_SCREEN_ON`）はしていません
+
+## ライセンス
+
+All rights reserved. 著作権はテックジム株式会社に帰属します。無断での複製・改変・再配布、Web サイトやアプリとしての公開を禁止します。ただし、テックジムの受講生が学習目的で複製・改変することは許可します（商用利用は不可。詳しくは `LICENSE`）。
+観光地データは「国土数値情報（観光資源データ）」（国土交通省）を加工したもので、その利用条件に従います。
+
 ## ファイル構成
 
 | パス | 内容 |
@@ -31,6 +54,7 @@ python3 -m http.server 8000
 | `index.html`, `css/style.css` | 画面 |
 | `js/app.js` | ゲーム本体（距離の計測、スワイプ移動、到着判定、保存、記録・地図） |
 | `js/geo.js` | 距離・方位・移動先の計算と 2km マスの定義 |
+| `js/ads.js` | AdMob 広告（Android アプリのときだけ動く） |
 | `js/sound.js` | BGM と効果音（Web Audio API で合成。音声ファイルなし、曲はオリジナル） |
 | `js/art.js` | 観光地イラストの描画（モチーフ指定から SVG の風景画を合成） |
 | `data/spots.json` | ゲームで使う観光地 2000 件（座標・解説・クイズ・イラスト指定） |
@@ -39,6 +63,9 @@ python3 -m http.server 8000
 | `tools/build_spots.py` | 国土数値情報 P12 の GeoJSON から 2000 件を選ぶスクリプト |
 | `tools/merge_content.py` | `spots_base.json` と `content/` を合わせて `spots.json` を作るスクリプト |
 | `tools/art-preview.html` | イラストの一覧確認ページ（開発用） |
+| `tools/render-assets.js` | `assets/*.svg` からアイコン・起動画面・ストア画像を書き出す（開発用） |
+| `scripts/build-web.js` | アプリに同梱するファイルを `www/` にコピー |
+| `android/` | Android プロジェクト（Capacitor） |
 
 ## 観光地データについて
 
