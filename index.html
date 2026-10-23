@@ -14,41 +14,41 @@
     <header class="top">
       <h1 class="logo">CLICK<span>TRIP</span></h1>
       <div class="where" id="where">—</div>
-      <button class="sound" id="sound" aria-label="音のオン・オフ">♪ ON</button>
+      <button class="sound" id="sound" aria-label="音のオン・オフ" data-i18n-aria="aria.sound">♪ ON</button>
     </header>
 
     <!-- レーダー画面 -->
     <main id="view-radar" class="view active">
       <section class="tank">
         <div>
-          <div class="label">移動できる距離</div>
+          <div class="label" data-i18n="tank.label">移動できる距離</div>
           <div class="tank-value" id="tank">0m</div>
         </div>
         <div class="tank-sub" id="tank-sub">「移動距離を測る」を押してから歩こう</div>
       </section>
 
       <section class="scope-wrap">
-        <canvas id="scope" aria-label="レーダースコープ。スワイプした方向に移動します"></canvas>
+        <canvas id="scope" aria-label="レーダースコープ。スワイプした方向に移動します" data-i18n-aria="aria.scope"></canvas>
         <div class="scope-hud">
           <span id="range-label">半径 10km</span>
           <span class="zoom">
-            <button id="zoom-in" aria-label="レーダーを拡大">＋</button>
-            <button id="zoom-out" aria-label="レーダーを縮小">－</button>
-            <button id="zoom-auto" class="auto on" aria-label="自動レンジ">AUTO</button>
+            <button id="zoom-in" aria-label="レーダーを拡大" data-i18n-aria="aria.zoomIn">＋</button>
+            <button id="zoom-out" aria-label="レーダーを縮小" data-i18n-aria="aria.zoomOut">－</button>
+            <button id="zoom-auto" class="auto on" aria-label="自動レンジ" data-i18n-aria="aria.zoomAuto">AUTO</button>
           </span>
         </div>
         <div class="aim" id="aim" hidden></div>
       </section>
 
-      <button id="measure" class="measure">移動距離を測る</button>
+      <button id="measure" class="measure" data-i18n="measure">移動距離を測る</button>
       <p class="hint" id="hint">スコープ上をスワイプした方角へ、移動できる距離ぶん進みます。</p>
       <div class="retry" id="retry" hidden>
-        <span>おしい！ はずれでした</span>
-        <button id="retry-btn">広告を見てやり直す</button>
+        <span data-i18n="retry.label">おしい！ はずれでした</span>
+        <button id="retry-btn" data-i18n="retry.btn">広告を見てやり直す</button>
       </div>
 
       <section class="nearby">
-        <h2>近くの観光地</h2>
+        <h2 data-i18n="nearby.title">近くの観光地</h2>
         <ol id="nearby"></ol>
       </section>
     </main>
@@ -57,58 +57,62 @@
     <main id="view-log" class="view">
       <section class="stats" id="stats"></section>
       <section>
-        <h2>訪れた観光地</h2>
+        <h2 data-i18n="log.visitedTitle">訪れた観光地</h2>
         <ul id="visited" class="visited"></ul>
       </section>
       <section>
-        <h2>都道府県</h2>
+        <h2 data-i18n="log.prefsTitle">都道府県</h2>
         <div id="prefs" class="prefs"></div>
       </section>
     </main>
 
     <!-- 日本地図 -->
     <main id="view-map" class="view">
-      <svg id="japan" viewBox="0 0 1000 1140" aria-label="日本全図。訪問済みの観光地と現在地"></svg>
-      <p class="hint">緑: 未訪問の観光地 / 金: 訪問済み / 赤: あなた</p>
+      <svg id="japan" viewBox="0 0 1000 1140" aria-label="日本全図。訪問済みの観光地と現在地" data-i18n-aria="aria.map"></svg>
+      <p class="hint" data-i18n="map.legend">緑: 未訪問の観光地 / 金: 訪問済み / 赤: あなた</p>
     </main>
 
     <!-- 設定 -->
     <main id="view-settings" class="view">
       <section class="card">
-        <h2>あそびかた</h2>
+        <h2 data-i18n="set.howto">あそびかた</h2>
         <ol class="howto">
-          <li>「移動距離を測る」を押すと、前回押した場所からの距離が<b>移動できる距離</b>にたまります。</li>
-          <li>レーダーを見て、行きたい方角へスコープ上を<b>スワイプ</b>。たまった距離をすべて使ってその方角へ進みます。</li>
-          <li>観光地は<b>2km四方のマス</b>。ちょうどそのマスに着地できたら到着！ 解説とクイズが届きます。</li>
-          <li>はずれたら、レーダーで近くの観光地の方角と距離を確かめて、また歩こう。</li>
+          <li data-i18n-html="set.howto1">「移動距離を測る」を押すと、前回押した場所からの距離が<b>移動できる距離</b>にたまります。</li>
+          <li data-i18n-html="set.howto2">レーダーを見て、行きたい方角へスコープ上を<b>スワイプ</b>。たまった距離をすべて使ってその方角へ進みます。</li>
+          <li data-i18n-html="set.howto3">観光地は<b>2km四方のマス</b>。ちょうどそのマスに着地できたら到着！ 解説とクイズが届きます。</li>
+          <li data-i18n-html="set.howto4">はずれたら、レーダーで近くの観光地の方角と距離を確かめて、また歩こう。</li>
         </ol>
       </section>
       <section class="card">
-        <h2>モード</h2>
-        <label class="row"><input type="checkbox" id="demo"> デモモード（GPSを使わず、ボタンを押すたびにランダムな距離がたまる）</label>
+        <h2 data-i18n="set.lang">言語 / Language</h2>
+        <p class="lang-sel"><button data-lang="ja">日本語</button><button data-lang="en">English</button></p>
       </section>
       <section class="card">
-        <h2>サウンド</h2>
+        <h2 data-i18n="set.mode">モード</h2>
+        <label class="row"><input type="checkbox" id="demo"> <span data-i18n="set.demo">デモモード（GPSを使わず、ボタンを押すたびにランダムな距離がたまる）</span></label>
+      </section>
+      <section class="card">
+        <h2 data-i18n="set.sound">サウンド</h2>
         <label class="row"><input type="checkbox" id="opt-bgm"> BGM</label>
-        <label class="row"><input type="checkbox" id="opt-se"> 効果音（ボタン・レーダー・移動）</label>
-        <p class="small">最初に画面に触れたときから音が鳴ります。マナーモード中は端末の設定に従います。</p>
+        <label class="row"><input type="checkbox" id="opt-se"> <span data-i18n="set.se">効果音（ボタン・レーダー・移動）</span></label>
+        <p class="small" data-i18n="set.soundNote">最初に画面に触れたときから音が鳴ります。マナーモード中は端末の設定に従います。</p>
       </section>
       <section class="card">
-        <h2>セーブデータ</h2>
-        <p class="small">進行状況はこの端末のブラウザに自動保存されます。機種変更のときは書き出して持っていけます。</p>
+        <h2 data-i18n="set.save">セーブデータ</h2>
+        <p class="small" data-i18n="set.saveNote">進行状況はこの端末のブラウザに自動保存されます。機種変更のときは書き出して持っていけます。</p>
         <div class="buttons">
-          <button id="export">書き出す</button>
-          <button id="import">読み込む</button>
-          <button id="reset" class="danger">はじめからやり直す</button>
+          <button id="export" data-i18n="set.export">書き出す</button>
+          <button id="import" data-i18n="set.import">読み込む</button>
+          <button id="reset" class="danger" data-i18n="set.reset">はじめからやり直す</button>
         </div>
       </section>
       <section class="card small credit">
-        <p>観光地データ: 「国土数値情報（観光資源データ）」（国土交通省）を加工して作成。解説文・クイズ・イラストはゲーム用に作成したもので、最新の現地情報とは異なる場合があります。</p>
-        <p>本作は、世界初の位置情報取得型ゲームとして生まれた「クリックトリップ」のリバイバル作品です。</p>
-        <p>位置情報は移動距離の計算にだけ使い、端末の外には送りません。</p>
+        <p data-i18n="credit.data">観光地データ: 「国土数値情報（観光資源データ）」（国土交通省）を加工して作成。解説文・クイズ・イラストはゲーム用に作成したもので、最新の現地情報とは異なる場合があります。</p>
+        <p data-i18n="credit.revival">本作は、世界初の位置情報取得型ゲームとして生まれた「クリックトリップ」のリバイバル作品です。</p>
+        <p data-i18n="credit.location">位置情報は移動距離の計算にだけ使い、端末の外には送りません。</p>
         <p class="legal">
-          <a href="https://techgym.jp/privacy-policy/" target="_blank" rel="noopener">プライバシーポリシー</a>
-          <a href="#" id="ad-privacy" hidden>広告の設定</a>
+          <a href="https://techgym.jp/privacy-policy/" data-i18n-href="url.privacy" data-i18n="legal.privacy" target="_blank" rel="noopener">プライバシーポリシー</a>
+          <a href="#" id="ad-privacy" data-i18n="legal.adSettings" hidden>広告の設定</a>
           <span id="build-info"></span>
         </p>
         <p>© TECH GYM K.K.</p>
@@ -116,10 +120,10 @@
     </main>
 
     <nav class="tabs">
-      <button data-view="radar" class="on">レーダー</button>
-      <button data-view="log">旅の記録</button>
-      <button data-view="map">日本地図</button>
-      <button data-view="settings">設定</button>
+      <button data-view="radar" class="on" data-i18n="tab.radar">レーダー</button>
+      <button data-view="log" data-i18n="tab.log">旅の記録</button>
+      <button data-view="map" data-i18n="tab.map">日本地図</button>
+      <button data-view="settings" data-i18n="tab.settings">設定</button>
     </nav>
   </div>
 
@@ -127,16 +131,17 @@
   <div class="modal" id="intro" hidden>
     <div class="sheet intro">
       <h1 class="logo big">CLICK<span>TRIP</span></h1>
-      <p class="lead">歩いた距離だけ、日本を旅する。</p>
+      <p class="lead" data-i18n="intro.lead">歩いた距離だけ、日本を旅する。</p>
       <ol class="howto">
-        <li>「移動距離を測る」ボタンで、前回からの<b>実際の移動距離</b>を測ります。</li>
-        <li>レーダーを見て<b>スワイプ</b>した方角へ、その距離だけゲームの中を進みます。</li>
-        <li>全国2000の観光地（2km四方のマス）にぴたりと着地できたら到着！</li>
+        <li data-i18n-html="intro.1">「移動距離を測る」ボタンで、前回からの<b>実際の移動距離</b>を測ります。</li>
+        <li data-i18n-html="intro.2">レーダーを見て<b>スワイプ</b>した方角へ、その距離だけゲームの中を進みます。</li>
+        <li data-i18n-html="intro.3">全国2000の観光地（2km四方のマス）にぴたりと着地できたら到着！</li>
       </ol>
-      <p class="small">旅の出発地は、いまあなたがいる場所です。位置情報の利用を許可してください。</p>
+      <p class="small" data-i18n="intro.note">旅の出発地は、いまあなたがいる場所です。位置情報の利用を許可してください。</p>
+      <p class="lang-sel"><button data-lang="ja">日本語</button><button data-lang="en">English</button></p>
       <div class="buttons col">
-        <button id="start-gps" class="primary">現在地から旅をはじめる</button>
-        <button id="start-demo">GPSなしで遊ぶ（デモ・東京駅から出発）</button>
+        <button id="start-gps" class="primary" data-i18n="intro.gps">現在地から旅をはじめる</button>
+        <button id="start-demo" data-i18n="intro.demo">GPSなしで遊ぶ（デモ・東京駅から出発）</button>
       </div>
     </div>
   </div>
@@ -151,16 +156,16 @@
         <h2 id="arr-name"></h2>
         <p id="arr-desc" class="desc"></p>
         <div class="quiz">
-          <div class="quiz-label">Q. クリックトリップ・クイズ</div>
+          <div class="quiz-label" data-i18n="arr.quiz">Q. クリックトリップ・クイズ</div>
           <p id="arr-quiz"></p>
           <div class="share">
-            <button id="share-x">Xで答えを募る</button>
-            <button id="share-line">LINEで聞く</button>
-            <button id="share-more">ほかで共有</button>
+            <button id="share-x" data-i18n="arr.shareX">Xで答えを募る</button>
+            <button id="share-line" data-i18n="arr.shareLine">LINEで聞く</button>
+            <button id="share-more" data-i18n="arr.shareMore">ほかで共有</button>
           </div>
         </div>
         <div class="others" id="arr-others"></div>
-        <button id="arr-close" class="primary wide">旅を続ける</button>
+        <button id="arr-close" class="primary wide" data-i18n="arr.continue">旅を続ける</button>
       </div>
     </div>
   </div>
@@ -169,6 +174,7 @@
 
   <script src="js/ads-config.js"></script>
   <script src="js/build-info.js"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/geo.js"></script>
   <script src="js/art.js"></script>
   <script src="js/sound.js"></script>

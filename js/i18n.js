@@ -1,0 +1,285 @@
+// 表示言語（日本語 / 英語）。端末の言語が日本語なら日本語、それ以外は英語。設定画面とはじめの画面で切り替えも可能
+const I18N = (() => {
+  const dict = {
+    ja: {
+      'doc.title': 'クリックトリップ',
+      'doc.desc': '歩いた距離だけ日本を旅する位置情報ゲーム。レーダーを見てスワイプ、全国2000の観光地をめざせ。',
+      'aria.sound': '音のオン・オフ',
+      'aria.scope': 'レーダースコープ。スワイプした方向に移動します',
+      'aria.zoomIn': 'レーダーを拡大', 'aria.zoomOut': 'レーダーを縮小', 'aria.zoomAuto': '自動レンジ',
+      'aria.map': '日本全図。訪問済みの観光地と現在地',
+      'tank.label': '移動できる距離',
+      'tank.first': '「移動距離を測る」を押してから歩こう',
+      'tank.demo': 'デモモード',
+      'tank.since': '起点: {time} に測定',
+      'tank.noOrigin': 'まずボタンで起点を記録',
+      'radar.range': '半径 {km}',
+      'measure': '移動距離を測る',
+      'measuring': '測定中…',
+      'hint.swipe': 'スコープ上をスワイプした方角へ、移動できる距離ぶん進みます。',
+      'hint.inCell': 'いま「{name}」のマスにいます。',
+      'retry.label': 'おしい！ はずれでした',
+      'retry.btn': '広告を見てやり直す',
+      'nearby.title': '近くの観光地',
+      'where.near': '{pref} 付近',
+      'aim.go': '{dir} {deg}° へ {km}',
+      'aim.empty': '移動できる距離がありません',
+      'log.visitedTitle': '訪れた観光地',
+      'log.prefsTitle': '都道府県',
+      'log.empty': 'まだどこにも到着していません。',
+      'stat.visited': '訪れた観光地',
+      'stat.real': '実際に移動した距離',
+      'stat.game': 'ゲーム内の旅の距離',
+      'stat.moves': 'スワイプ回数 / 旅の日数',
+      'stat.movesV': '{moves} / {days}日',
+      'map.legend': '緑: 未訪問の観光地 / 金: 訪問済み / 赤: あなた',
+      'set.howto': 'あそびかた',
+      'set.howto1': '「移動距離を測る」を押すと、前回押した場所からの距離が<b>移動できる距離</b>にたまります。',
+      'set.howto2': 'レーダーを見て、行きたい方角へスコープ上を<b>スワイプ</b>。たまった距離をすべて使ってその方角へ進みます。',
+      'set.howto3': '観光地は<b>2km四方のマス</b>。ちょうどそのマスに着地できたら到着！ 解説とクイズが届きます。',
+      'set.howto4': 'はずれたら、レーダーで近くの観光地の方角と距離を確かめて、また歩こう。',
+      'set.lang': '言語 / Language',
+      'set.mode': 'モード',
+      'set.demo': 'デモモード（GPSを使わず、ボタンを押すたびにランダムな距離がたまる）',
+      'set.sound': 'サウンド',
+      'set.se': '効果音（ボタン・レーダー・移動）',
+      'set.soundNote': '最初に画面に触れたときから音が鳴ります。マナーモード中は端末の設定に従います。',
+      'set.save': 'セーブデータ',
+      'set.saveNote': '進行状況はこの端末のブラウザに自動保存されます。機種変更のときは書き出して持っていけます。',
+      'set.export': '書き出す', 'set.import': '読み込む', 'set.reset': 'はじめからやり直す',
+      'credit.data': '観光地データ: 「国土数値情報（観光資源データ）」（国土交通省）を加工して作成。解説文・クイズ・イラストはゲーム用に作成したもので、最新の現地情報とは異なる場合があります。',
+      'credit.revival': '本作は、世界初の位置情報取得型ゲームとして生まれた「クリックトリップ」のリバイバル作品です。',
+      'credit.location': '位置情報は移動距離の計算にだけ使い、端末の外には送りません。',
+      'legal.privacy': 'プライバシーポリシー',
+      'legal.adSettings': '広告の設定',
+      'url.privacy': 'https://techgym.jp/privacy-policy/',
+      'tab.radar': 'レーダー', 'tab.log': '旅の記録', 'tab.map': '日本地図', 'tab.settings': '設定',
+      'intro.lead': '歩いた距離だけ、日本を旅する。',
+      'intro.1': '「移動距離を測る」ボタンで、前回からの<b>実際の移動距離</b>を測ります。',
+      'intro.2': 'レーダーを見て<b>スワイプ</b>した方角へ、その距離だけゲームの中を進みます。',
+      'intro.3': '全国2000の観光地（2km四方のマス）にぴたりと着地できたら到着！',
+      'intro.note': '旅の出発地は、いまあなたがいる場所です。位置情報の利用を許可してください。',
+      'intro.gps': '現在地から旅をはじめる',
+      'intro.gpsWait': '現在地を取得中…',
+      'intro.demo': 'GPSなしで遊ぶ（デモ・東京駅から出発）',
+      'arr.new': '観光地に到着！', 'arr.again': 'ふたたび到着！', 'arr.visited': '訪問済みの観光地',
+      'arr.quiz': 'Q. クリックトリップ・クイズ',
+      'arr.shareX': 'Xで答えを募る', 'arr.shareLine': 'LINEで聞く', 'arr.shareMore': 'ほかで共有', 'arr.shareNative': '共有して答えを募る',
+      'arr.others': 'このマスには、ほかにも観光地があります: ',
+      'arr.continue': '旅を続ける',
+      'arr.kindDefault': '観光地',
+      'arr.descDefault': '{place}にある観光資源です。',
+      'arr.quizDefault': '{name}の見どころといえば？ あなたのおすすめを教えてください！',
+      'share.title': 'クリックトリップ',
+      'share.text': '【クリックトリップ】{name}（{pref}）に到着！\nQ. {quiz}\n答え、知っていたらリプで教えて！ #クリックトリップ',
+      'share.dialog': 'クイズの答えをみんなに聞く',
+      'share.copied': '共有用の文章をコピーしました',
+      'share.copyFail': 'コピーできませんでした',
+      'save.title': 'クリックトリップのセーブデータ', 'save.dialog': 'セーブデータの保存先',
+      'save.loaded': 'セーブデータを読み込みました', 'save.bad': '読み込めないファイルです',
+      'save.fail': '保存できませんでした（ブラウザの設定を確認してください）',
+      'save.resetConfirm': 'これまでの旅の記録をすべて消して、はじめからやり直しますか？',
+      'gps.none': 'この端末では位置情報が使えません',
+      'gps.denied': '位置情報の利用が許可されていません',
+      'gps.fail': '現在地を取得できませんでした',
+      'gps.tryDemo': '{msg}。設定からデモモードでも遊べます',
+      'gps.tryDemo2': '{msg}。デモモードでも遊べます',
+      'm.demo': 'デモ: {km} 移動したことにしました',
+      'm.origin': 'ここを測定の起点にしました。移動してからもう一度押してください',
+      'm.noise': 'まだ {km}。GPSの誤差範囲（約{noise}）なので、もう少し移動してから押してください',
+      'm.moved': '前回から {km} 移動しました！',
+      'm.needTank': 'まず「移動距離を測る」で距離をためよう',
+      'm.miss': '観光地のマスではありませんでした。いちばん近いのは {dir} {km} の「{name}」',
+      'm.missNone': '観光地のマスではありませんでした',
+      'm.retried': '移動する前に戻りました。もう一度ねらってみよう！',
+      'm.adFail': '広告を読み込めませんでした。少し待ってからもう一度押してください',
+      'm.adSkip': '広告を最後まで見ると、やり直せます',
+      'm.notVisited': '「{name}」はまだ未訪問。たどり着くと解説とクイズが見られます',
+      'm.start': '旅のはじまり！ 移動したら「移動距離を測る」を押そう',
+      'm.startDemo': '東京駅から出発！ ボタンを押すと距離がたまります',
+      'm.demoOn': 'デモモードにしました',
+      'm.demoOff': 'GPSモードにしました。次に押した場所が起点になります',
+      'm.dataFail': '観光地データを読み込めませんでした',
+      'art.label': '{name}のイラスト',
+      'unit.days': '日',
+      'kind.temple': '寺院', 'kind.shrine': '神社', 'kind.castle': '城', 'kind.onsen': '温泉', 'kind.mountain': '山岳',
+      'kind.highland': '高原', 'kind.waterfall': '滝', 'kind.gorge': '渓谷', 'kind.lake': '湖沼', 'kind.coast': '海岸',
+      'kind.island': '島', 'kind.cave': '奇岩・洞窟', 'kind.garden': '庭園・公園', 'kind.museum': '博物館・美術館',
+      'kind.town': '街並み', 'kind.ruins': '史跡', 'kind.festival': '祭り・行事', 'kind.food': '郷土の味',
+      'kind.nature': '自然', 'kind.park': 'レジャー',
+    },
+    en: {
+      'doc.title': 'Click Trip',
+      'doc.desc': 'A location-based game: travel across Japan as far as you actually walk. Swipe the radar and aim for 2,000 sightseeing spots.',
+      'aria.sound': 'Sound on/off',
+      'aria.scope': 'Radar scope. Swipe to travel in that direction',
+      'aria.zoomIn': 'Zoom in', 'aria.zoomOut': 'Zoom out', 'aria.zoomAuto': 'Auto range',
+      'aria.map': 'Map of Japan with visited spots and your position',
+      'tank.label': 'Distance you can travel',
+      'tank.first': 'Tap "Measure distance", then go for a walk',
+      'tank.demo': 'Demo mode',
+      'tank.since': 'Measured from: {time}',
+      'tank.noOrigin': 'Tap the button to set a starting point',
+      'radar.range': 'Range {km}',
+      'measure': 'Measure distance',
+      'measuring': 'Measuring…',
+      'hint.swipe': 'Swipe on the scope to travel that way, using all of your distance.',
+      'hint.inCell': 'You are on the square of "{name}".',
+      'retry.label': 'So close! You missed',
+      'retry.btn': 'Watch an ad to retry',
+      'nearby.title': 'Nearby spots',
+      'where.near': 'Near {pref}',
+      'aim.go': '{dir} {deg}° · {km}',
+      'aim.empty': 'No distance to travel',
+      'log.visitedTitle': 'Spots visited',
+      'log.prefsTitle': 'Prefectures',
+      'log.empty': "You haven't arrived anywhere yet.",
+      'stat.visited': 'Spots visited',
+      'stat.real': 'Distance you moved',
+      'stat.game': 'Distance traveled in game',
+      'stat.moves': 'Swipes / days on the road',
+      'stat.movesV': '{moves} / {days}d',
+      'map.legend': 'Green: not visited / Gold: visited / Red: you',
+      'set.howto': 'How to play',
+      'set.howto1': 'Tap "Measure distance" and the distance from where you last tapped is added to your <b>distance you can travel</b>.',
+      'set.howto2': 'Look at the radar and <b>swipe</b> on the scope toward where you want to go. You travel that way using all of your distance.',
+      'set.howto3': 'Each spot is a <b>2 km square</b>. Land right on it to arrive and get a guide and a quiz!',
+      'set.howto4': 'Missed? Check the direction and distance of nearby spots on the radar, and walk again.',
+      'set.lang': '言語 / Language',
+      'set.mode': 'Mode',
+      'set.demo': 'Demo mode (no GPS; each tap adds a random distance)',
+      'set.sound': 'Sound',
+      'set.se': 'Sound effects (buttons, radar, travel)',
+      'set.soundNote': 'Sound starts the first time you touch the screen. Silent mode follows your device settings.',
+      'set.save': 'Save data',
+      'set.saveNote': 'Your progress is saved automatically on this device. Export it to move to a new phone.',
+      'set.export': 'Export', 'set.import': 'Import', 'set.reset': 'Start over',
+      'credit.data': 'Spot data: processed from "National Land Numerical Information (Tourism Resources)" by the Ministry of Land, Infrastructure, Transport and Tourism of Japan. Guides, quizzes and illustrations were made for this game and may differ from current local information.',
+      'credit.revival': 'A revival of "Click Trip", born as the world\'s first location-based game.',
+      'credit.location': 'Your location is only used to calculate distance and never leaves your device.',
+      'legal.privacy': 'Privacy Policy',
+      'legal.adSettings': 'Ad settings',
+      'url.privacy': 'https://techgym.jp/privacy-policy-en/',
+      'tab.radar': 'Radar', 'tab.log': 'Log', 'tab.map': 'Map', 'tab.settings': 'Settings',
+      'intro.lead': 'Travel across Japan as far as you walk.',
+      'intro.1': 'The "Measure distance" button measures how far you have <b>actually moved</b> since last time.',
+      'intro.2': '<b>Swipe</b> on the radar, and you travel that far in that direction in the game.',
+      'intro.3': 'Land right on one of 2,000 spots (2 km squares) across Japan to arrive!',
+      'intro.note': 'Your trip starts where you are now. Please allow access to your location.',
+      'intro.gps': 'Start from my location',
+      'intro.gpsWait': 'Getting your location…',
+      'intro.demo': 'Play without GPS (demo, from Tokyo Station)',
+      'arr.new': 'You have arrived!', 'arr.again': 'Back again!', 'arr.visited': 'Visited spot',
+      'arr.quiz': 'Q. Click Trip Quiz',
+      'arr.shareX': 'Ask on X', 'arr.shareLine': 'Ask on LINE', 'arr.shareMore': 'Share', 'arr.shareNative': 'Share and ask friends',
+      'arr.others': 'Other spots on this square: ',
+      'arr.continue': 'Continue the trip',
+      'arr.kindDefault': 'Spot',
+      'arr.descDefault': 'A tourism resource in {place}.',
+      'arr.quizDefault': 'What is the highlight of {name}? Tell us your favorite!',
+      'share.title': 'Click Trip',
+      'share.text': '[Click Trip] I arrived at {name} ({pref})!\nQ. {quiz}\nKnow the answer? Reply and tell me! #ClickTrip',
+      'share.dialog': 'Ask friends for the answer',
+      'share.copied': 'Copied the text to share',
+      'share.copyFail': 'Could not copy',
+      'save.title': 'Click Trip save data', 'save.dialog': 'Save your data to',
+      'save.loaded': 'Save data loaded', 'save.bad': 'This file cannot be loaded',
+      'save.fail': 'Could not save (check your browser settings)',
+      'save.resetConfirm': 'Erase your whole travel log and start over?',
+      'gps.none': 'Location is not available on this device',
+      'gps.denied': 'Location access is not allowed',
+      'gps.fail': 'Could not get your location',
+      'gps.tryDemo': '{msg}. You can also play in demo mode from Settings',
+      'gps.tryDemo2': '{msg}. You can also play in demo mode',
+      'm.demo': 'Demo: pretended you moved {km}',
+      'm.origin': 'Starting point set. Move somewhere, then tap again',
+      'm.noise': 'Only {km} so far — within GPS error (about {noise}). Move a bit more, then tap again',
+      'm.moved': 'You moved {km} since last time!',
+      'm.needTank': 'First, tap "Measure distance" to gain some distance',
+      'm.miss': 'Not a spot square. The nearest is "{name}", {km} to the {dir}',
+      'm.missNone': 'Not a spot square',
+      'm.retried': 'Back to where you were. Take aim again!',
+      'm.adFail': 'Could not load the ad. Wait a moment and try again',
+      'm.adSkip': 'Watch the ad to the end to retry',
+      'm.notVisited': '"{name}" is not visited yet. Reach it to read its guide and quiz',
+      'm.start': 'Your trip begins! After moving, tap "Measure distance"',
+      'm.startDemo': 'Starting from Tokyo Station! Tap the button to gain distance',
+      'm.demoOn': 'Demo mode on',
+      'm.demoOff': 'GPS mode on. Your next tap sets the starting point',
+      'm.dataFail': 'Could not load the spot data',
+      'art.label': 'Illustration of {name}',
+      'unit.days': 'd',
+      'kind.temple': 'Temple', 'kind.shrine': 'Shrine', 'kind.castle': 'Castle', 'kind.onsen': 'Hot spring', 'kind.mountain': 'Mountain',
+      'kind.highland': 'Highland', 'kind.waterfall': 'Waterfall', 'kind.gorge': 'Gorge', 'kind.lake': 'Lake', 'kind.coast': 'Coast',
+      'kind.island': 'Island', 'kind.cave': 'Rocks & caves', 'kind.garden': 'Garden & park', 'kind.museum': 'Museum',
+      'kind.town': 'Townscape', 'kind.ruins': 'Historic site', 'kind.festival': 'Festival', 'kind.food': 'Local food',
+      'kind.nature': 'Nature', 'kind.park': 'Leisure',
+    },
+  };
+
+  // 都道府県名の英語表記（観光地データの pref は日本語）
+  const PREF_EN = {
+    北海道: 'Hokkaido', 青森県: 'Aomori', 岩手県: 'Iwate', 宮城県: 'Miyagi', 秋田県: 'Akita', 山形県: 'Yamagata', 福島県: 'Fukushima',
+    茨城県: 'Ibaraki', 栃木県: 'Tochigi', 群馬県: 'Gunma', 埼玉県: 'Saitama', 千葉県: 'Chiba', 東京都: 'Tokyo', 神奈川県: 'Kanagawa',
+    新潟県: 'Niigata', 富山県: 'Toyama', 石川県: 'Ishikawa', 福井県: 'Fukui', 山梨県: 'Yamanashi', 長野県: 'Nagano', 岐阜県: 'Gifu',
+    静岡県: 'Shizuoka', 愛知県: 'Aichi', 三重県: 'Mie', 滋賀県: 'Shiga', 京都府: 'Kyoto', 大阪府: 'Osaka', 兵庫県: 'Hyogo', 奈良県: 'Nara',
+    和歌山県: 'Wakayama', 鳥取県: 'Tottori', 島根県: 'Shimane', 岡山県: 'Okayama', 広島県: 'Hiroshima', 山口県: 'Yamaguchi',
+    徳島県: 'Tokushima', 香川県: 'Kagawa', 愛媛県: 'Ehime', 高知県: 'Kochi', 福岡県: 'Fukuoka', 佐賀県: 'Saga', 長崎県: 'Nagasaki',
+    熊本県: 'Kumamoto', 大分県: 'Oita', 宮崎県: 'Miyazaki', 鹿児島県: 'Kagoshima', 沖縄県: 'Okinawa',
+  };
+
+  const STORE_KEY = 'clicktrip.lang';
+  let saved = null;
+  try { saved = localStorage.getItem(STORE_KEY); } catch (e) { /* 保存不可 */ }
+  const deviceLang = (navigator.languages && navigator.languages[0]) || navigator.language || 'ja';
+  let lang = dict[saved] ? saved : (/^ja\b/i.test(deviceLang) ? 'ja' : 'en');
+  const listeners = [];
+
+  // t('m.moved', { km: '1.2km' }) → '前回から 1.2km 移動しました！'
+  function t(key, vars) {
+    let s = dict[lang][key];
+    if (s === undefined) s = dict.ja[key];
+    if (s === undefined) return key;
+    return vars ? s.replace(/\{(\w+)\}/g, (m, k) => (vars[k] !== undefined ? vars[k] : m)) : s;
+  }
+
+  // data-i18n（文字）/ data-i18n-html（タグを含む）/ data-i18n-href（リンク先）/ data-i18n-aria（読み上げ）の付いた要素を書き換える
+  function apply() {
+    document.documentElement.lang = lang;
+    document.title = t('doc.title');
+    const desc = document.querySelector('meta[name="description"]');
+    if (desc) desc.content = t('doc.desc');
+    document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
+    document.querySelectorAll('[data-i18n-href]').forEach((el) => { el.href = t(el.dataset.i18nHref); });
+    document.querySelectorAll('[data-i18n-aria]').forEach((el) => { el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
+    document.querySelectorAll('[data-lang]').forEach((el) => el.classList.toggle('on', el.dataset.lang === lang));
+  }
+
+  function setLang(l) {
+    if (!dict[l] || l === lang) return;
+    lang = l;
+    try { localStorage.setItem(STORE_KEY, l); } catch (e) { /* 保存不可 */ }
+    apply();
+    listeners.forEach((f) => f(l));
+  }
+
+  const en = () => lang === 'en';
+
+  // 観光地の表示用テキスト。英語のときは英訳（name_en など）を使い、なければ日本語のまま
+  const spot = {
+    name: (s) => (en() && s.name_en) || s.name,
+    pref: (s) => (en() && PREF_EN[s.pref]) || s.pref,
+    place: (s) => (en() ? [s.area_en, PREF_EN[s.pref] || s.pref].filter(Boolean).join(', ') : `${s.pref} ${s.addr && s.addr !== s.name ? s.addr : ''}`.trim()),
+    desc: (s) => (en() ? s.desc_en : s.desc),
+    quiz: (s) => (en() ? s.quiz_en : s.quiz),
+  };
+
+  return {
+    t, apply, setLang, spot,
+    prefName: (p) => (en() && PREF_EN[p]) || p,
+    get lang() { return lang; },
+    get locale() { return en() ? 'en-US' : 'ja-JP'; },
+    onChange(f) { listeners.push(f); },
+  };
+})();

@@ -691,7 +691,7 @@
 
   let uidSeq = 0;
 
-  function render(spot) {
+  function render(spot, label) {
     const art = spot.art || {};
     const r = rng(hash(spot.id || spot.name || 'x'));
     const time = SKY[art.time] ? art.time : 'day';
@@ -794,7 +794,7 @@
     if (time === 'morning') o += rect(0, 0, W, H, '#ffe0b0', 'opacity="0.08"');
     o += `<rect width="${W}" height="${H}" fill="url(#vig-${uid})"/>`;
 
-    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${(spot.name || '').replace(/"/g, '')}のイラスト">${o}</svg>`;
+    return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${(label || spot.name || '').replace(/"/g, '')}">${o}</svg>`;
   }
 
   global.Art = { render, KIND_DEFAULT };

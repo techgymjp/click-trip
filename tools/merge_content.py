@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""spots_base.json に解説文・クイズ・イラスト指定（content/*.json）を合わせて data/spots.json を作る。
+"""spots_base.json に解説文・クイズ・イラスト指定（content/spots_*.json）と英訳（content/en_*.json）を合わせて data/spots.json を作る。
 
 使い方: python3 tools/merge_content.py
 """
@@ -24,7 +24,7 @@ def main():
     content = {}
     for f in sorted(glob.glob(os.path.join(ROOT, "content", "*.json"))):
         for c in json.load(open(f, encoding="utf-8")):
-            content[c["id"]] = c
+            content.setdefault(c["id"], {}).update(c)
     out, missing = [], 0
     for s in base:
         c = content.get(s["id"])
@@ -37,13 +37,17 @@ def main():
             s["quiz"] = c.get("quiz", "").strip()
             art = c.get("art") or {}
             s["art"] = {k: art[k] for k in ("time", "season", "motifs", "accent") if k in art}
+            for k in ("name_en", "area_en", "desc_en", "quiz_en"):
+                if c.get(k):
+                    s[k] = c[k].strip()
         else:
             missing += 1
             s["kind"] = CAT2KIND.get(s["cat"], "nature")
         out.append(s)
     with open(os.path.join(ROOT, "data", "spots.json"), "w", encoding="utf-8") as fp:
         json.dump(out, fp, ensure_ascii=False, separators=(",", ":"))
-    print(f"{len(out)} spots, {len(out) - missing} with content, {missing} missing", file=sys.stderr)
+    en = sum(1 for s in out if s.get("desc_en"))
+    print(f"{len(out)} spots, {len(out) - missing} with content, {missing} missing, {en} translated", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -137,3 +137,6 @@ button.wide { width: 100%; margin-top: 16px; }
 .legal a { color: var(--phosphor); }
 .legal a[hidden] { display: none; }
 #build-info { color: var(--muted); font-family: "Courier New", ui-monospace, monospace; }
+.lang-sel { display: flex; gap: 8px; justify-content: center; margin: 10px 0; }
+.lang-sel button { background: #0f3324; border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; font-size: 13px; color: var(--muted); }
+.lang-sel button.on { background: var(--phosphor-dim); color: #001a0e; border-color: var(--phosphor-dim); font-weight: 700; }

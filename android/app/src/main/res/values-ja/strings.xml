@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <!-- 端末の言語が日本語のときのアプリ名（それ以外の言語では values/strings.xml の英語名） -->
+    <string name="app_name">クリックトリップ</string>
+    <string name="title_activity_main">クリックトリップ</string>
+</resources>

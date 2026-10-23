@@ -55,7 +55,8 @@
   }
 
   const DIRS16 = ['北', '北北東', '北東', '東北東', '東', '東南東', '南東', '南南東', '南', '南南西', '南西', '西南西', '西', '西北西', '北西', '北北西'];
-  const dirName = (b) => DIRS16[Math.round(b / 22.5) % 16];
+  const DIRS16_EN = ['N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE', 'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'];
+  const dirName = (b) => (typeof I18N !== 'undefined' && I18N.lang === 'en' ? DIRS16_EN : DIRS16)[Math.round(b / 22.5) % 16];
 
   function fmtKm(km) {
     if (km < 1) return Math.round(km * 1000) + 'm';

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">クリックトリップ</string>
-    <string name="title_activity_main">クリックトリップ</string>
+    <string name="app_name">Click Trip</string>
+    <string name="title_activity_main">Click Trip</string>
     <string name="package_name">jp.techgym.clicktrip</string>
     <string name="custom_url_scheme">jp.techgym.clicktrip</string>
     <!-- AdMob のアプリ ID。いまは Google 公式のテスト用 ID。AdMob でアプリを追加したら本番の ID（ca-app-pub-6411535997477460~…）に差し替える -->

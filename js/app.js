@@ -5,11 +5,10 @@
   const SAVE_KEY = 'clicktrip.save.v1';
   const TOKYO_STATION = { lat: 35.6812, lon: 139.7671 };
   const RANGES = [2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000];
-  const KIND_LABEL = {
-    temple: '寺院', shrine: '神社', castle: '城', onsen: '温泉', mountain: '山岳', highland: '高原', waterfall: '滝',
-    gorge: '渓谷', lake: '湖沼', coast: '海岸', island: '島', cave: '奇岩・洞窟', garden: '庭園・公園', museum: '博物館・美術館',
-    town: '街並み', ruins: '史跡', festival: '祭り・行事', food: '郷土の味', nature: '自然', park: 'レジャー',
-  };
+  const t = I18N.t;
+  const KIND_KEYS = ['temple', 'shrine', 'castle', 'onsen', 'mountain', 'highland', 'waterfall', 'gorge', 'lake', 'coast',
+    'island', 'cave', 'garden', 'museum', 'town', 'ruins', 'festival', 'food', 'nature', 'park'];
+  const kindLabel = (s) => (KIND_KEYS.includes(s.kind) ? t('kind.' + s.kind) : s.cat || t('arr.kindDefault'));
   const PREFS = ['北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県', '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県', '静岡県', '愛知県', '三重県', '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県', '徳島県', '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県'];
 
   const $ = (id) => document.getElementById(id);
@@ -41,7 +40,7 @@
     return null;
   }
   function save() {
-    try { localStorage.setItem(SAVE_KEY, JSON.stringify(S)); } catch (e) { toast('保存できませんでした（ブラウザの設定を確認してください）'); }
+    try { localStorage.setItem(SAVE_KEY, JSON.stringify(S)); } catch (e) { toast(t('save.fail')); }
   }
 
   // ------------------------------------------------------------------
@@ -49,10 +48,10 @@
   // ------------------------------------------------------------------
   function getPosition() {
     return new Promise((resolve, reject) => {
-      if (!navigator.geolocation) return reject(new Error('この端末では位置情報が使えません'));
+      if (!navigator.geolocation) return reject(new Error(t('gps.none')));
       navigator.geolocation.getCurrentPosition(
         (p) => resolve({ lat: p.coords.latitude, lon: p.coords.longitude, acc: p.coords.accuracy || 50, t: Date.now() }),
-        (e) => reject(new Error(e.code === 1 ? '位置情報の利用が許可されていません' : '現在地を取得できませんでした')),
+        (e) => reject(new Error(t(e.code === 1 ? 'gps.denied' : 'gps.fail'))),
         { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 });
     });
   }
@@ -60,7 +59,7 @@
   async function measure() {
     const btn = $('measure');
     btn.disabled = true;
-    btn.textContent = '測定中…';
+    btn.textContent = t('measuring');
     Sound.se('click');
     hideRetry();
     const scanning = setInterval(() => Sound.se('scan'), 380);
@@ -73,7 +72,7 @@
         S.tank += d; S.stats.real += d; S.stats.measures++;
         clearInterval(scanning);
         Sound.se('coin');
-        toast(`デモ: ${Geo.fmtKm(d)} 移動したことにしました`);
+        toast(t('m.demo', { km: Geo.fmtKm(d) }));
       } else {
         const now = await getPosition();
         S.stats.measures++;
@@ -81,7 +80,7 @@
           S.gps = now;
           clearInterval(scanning);
           Sound.se('mark');
-          toast('ここを測定の起点にしました。移動してからもう一度押してください');
+          toast(t('m.origin'));
         } else {
           const d = Geo.distance(S.gps, now);
           // GPS の誤差（両地点の精度）より小さい移動は数えない。起点も据え置く
@@ -89,11 +88,11 @@
           clearInterval(scanning);
           if (d < noise) {
             Sound.se('buzz');
-            toast(`まだ ${Geo.fmtKm(d)}。GPSの誤差範囲（約${Geo.fmtKm(noise)}）なので、もう少し移動してから押してください`);
+            toast(t('m.noise', { km: Geo.fmtKm(d), noise: Geo.fmtKm(noise) }));
           } else {
             S.tank += d; S.stats.real += d; S.gps = now;
             Sound.se('coin');
-            toast(`前回から ${Geo.fmtKm(d)} 移動しました！`);
+            toast(t('m.moved', { km: Geo.fmtKm(d) }));
           }
         }
       }
@@ -102,11 +101,11 @@
       if (S.tank > before) countUp(before, S.tank);
     } catch (e) {
       Sound.se('buzz');
-      toast(e.message + '。設定からデモモードでも遊べます');
+      toast(t('gps.tryDemo', { msg: e.message }));
     } finally {
       clearInterval(scanning);
       btn.disabled = false;
-      btn.textContent = '移動距離を測る';
+      btn.textContent = t('measure');
     }
   }
 
@@ -135,7 +134,7 @@
   let arrivals = 0;        // インタースティシャル広告の間隔を数える
   function travel(brg) {
     if (animating) return;
-    if (S.tank <= 0) { Sound.se('buzz'); toast('まず「移動距離を測る」で距離をためよう'); return; }
+    if (S.tank <= 0) { Sound.se('buzz'); toast(t('m.needTank')); return; }
     const from = { ...S.pos };
     const dist = S.tank;
     const to = Geo.destination(from, brg, dist);
@@ -178,11 +177,11 @@
       refresh();
       Sound.jingle(revisit ? 'revisit' : 'arrive', 'diary');
       freshArrival = !revisit;
-      openArrival(here[0], here, revisit ? 'ふたたび到着！' : '観光地に到着！');
+      openArrival(here[0], here, revisit ? 'arr.again' : 'arr.new');
     } else {
       Sound.jingle('miss', 'field');
       const n = nearest(S.pos, 1)[0];
-      toast(n ? `観光地のマスではありませんでした。いちばん近いのは ${n.dirName} ${Geo.fmtKm(n.d)} の「${n.s.name}」` : '観光地のマスではありませんでした');
+      toast(n ? t('m.miss', { dir: n.dirName, km: Geo.fmtKm(n.d), name: I18N.spot.name(n.s) }) : t('m.missNone'));
       if (Ads.available && lastMove) $('retry').hidden = false;
     }
   }
@@ -206,12 +205,12 @@
       hideRetry();
       save(); refresh();
       Sound.jingle('start', 'field');
-      toast('移動する前に戻りました。もう一度ねらってみよう！');
+      toast(t('m.retried'));
     } else if (result === 'unavailable') {
       Sound.se('buzz');
-      toast('広告を読み込めませんでした。少し待ってからもう一度押してください');
+      toast(t('m.adFail'));
     } else {
-      toast('広告を最後まで見ると、やり直せます');
+      toast(t('m.adSkip'));
     }
   }
 
@@ -273,12 +272,12 @@
 
   let sweep = 0;
   let lastPing = 0;
-  function draw(t) {
+  function draw(ts) {
     if (!size) resize();
     if (size < 40) { requestAnimationFrame(draw); return; } // レーダーが非表示のタブでは描かない
     const range = currentRange();
     computeBlips(range);
-    $('range-label').textContent = '半径 ' + Geo.fmtKm(range).replace('.00', '');
+    $('range-label').textContent = t('radar.range', { km: Geo.fmtKm(range).replace('.00', '') });
     const c = ctx;
     const R = size / 2 - 6;
     c.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -312,7 +311,7 @@
 
     // スイープ
     const prevSweep = sweep;
-    sweep = ((t || 0) / 2600) % 1 * Math.PI * 2;
+    sweep = ((ts || 0) / 2600) % 1 * Math.PI * 2;
     const grad = c.createConicGradient ? c.createConicGradient(sweep - Math.PI / 2 - 0.9, 0, 0) : null;
     if (grad) {
       grad.addColorStop(0, 'rgba(67,245,154,0)');
@@ -333,7 +332,7 @@
     if (!animating && aimBrg === null) {
       for (const bl of sorted.slice(0, 4)) {
         const crossed = prevSweep <= sweep ? bl.a > prevSweep && bl.a <= sweep : bl.a > prevSweep || bl.a <= sweep;
-        if (crossed && (t || 0) - lastPing > 150) { lastPing = t || 0; Sound.se('ping', Math.min(1, bl.d / range)); }
+        if (crossed && (ts || 0) - lastPing > 150) { lastPing = ts || 0; Sound.se('ping', Math.min(1, bl.d / range)); }
       }
     }
     const placed = [];
@@ -357,7 +356,8 @@
         c.shadowBlur = 0;
       }
       if (placed.length < labelMax) {
-        const text = bl.s.name.length > 12 ? bl.s.name.slice(0, 11) + '…' : bl.s.name;
+        const nm = I18N.spot.name(bl.s), max = I18N.lang === 'en' ? 22 : 12;
+        const text = nm.length > max ? nm.slice(0, max - 1) + '…' : nm;
         const tw = c.measureText(text).width;
         const lx = bl.cx + Math.max(cellPx, 4) / 2 + 3, ly = bl.cy;
         const box = [lx, ly - 7, lx + tw, ly + 7];
@@ -416,7 +416,7 @@
     else if (Math.floor(prev / 5) !== Math.floor(aimBrg / 5)) Sound.se('aimTick', aimBrg % 90 < 5 ? 1 : 0);
     const aim = $('aim');
     aim.hidden = false;
-    aim.textContent = S.tank > 0 ? `${Geo.dirName(aimBrg)} ${aimBrg.toFixed(0)}° へ ${Geo.fmtKm(S.tank)}` : '移動できる距離がありません';
+    aim.textContent = S.tank > 0 ? t('aim.go', { dir: Geo.dirName(aimBrg), deg: aimBrg.toFixed(0), km: Geo.fmtKm(S.tank) }) : t('aim.empty');
   }
   function onUp(e) {
     if (!drag || e.pointerId !== drag.id) return;
@@ -430,7 +430,7 @@
   // ------------------------------------------------------------------
   function updateTank() {
     $('tank').textContent = Geo.fmtKm(S.tank);
-    $('tank-sub').textContent = S.mode === 'demo' ? 'デモモード' : S.gps ? `起点: ${new Date(S.gps.t).toLocaleString('ja-JP', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })} に測定` : 'まずボタンで起点を記録';
+    $('tank-sub').textContent = S.mode === 'demo' ? t('tank.demo') : S.gps ? t('tank.since', { time: new Date(S.gps.t).toLocaleString(I18N.locale, { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' }) }) : t('tank.noOrigin');
   }
 
   function refresh() {
@@ -438,15 +438,15 @@
     updateTank();
     const near = nearest(S.pos, 8);
     const n0 = near[0];
-    $('where').innerHTML = `${n0 ? esc(n0.s.pref) + ' 付近' : ''}<br>${S.pos.lat.toFixed(4)}, ${S.pos.lon.toFixed(4)}`;
+    $('where').innerHTML = `${n0 ? esc(t('where.near', { pref: I18N.spot.pref(n0.s) })) : ''}<br>${S.pos.lat.toFixed(4)}, ${S.pos.lon.toFixed(4)}`;
     $('nearby').innerHTML = near.map((n) => `
       <li class="${S.visited[n.s.id] ? 'visited' : ''}" data-id="${esc(n.s.id)}">
         <span class="arrow" style="transform:rotate(${n.b.toFixed(0)}deg)">↑</span>
-        <span class="nm">${esc(n.s.name)}<small>${esc(n.s.pref)} ${esc(KIND_LABEL[n.s.kind] || '')}</small></span>
+        <span class="nm">${esc(I18N.spot.name(n.s))}<small>${esc(I18N.spot.pref(n.s))} ${esc(kindLabel(n.s))}</small></span>
         <span class="d">${Geo.fmtKm(n.d)}<small>${n.dirName} ${n.b.toFixed(0)}°</small></span>
       </li>`).join('');
     const hit = BY_CELL[Geo.cellOf(S.pos).key];
-    $('hint').textContent = hit ? `いま「${hit[0].name}」のマスにいます。` : 'スコープ上をスワイプした方角へ、移動できる距離ぶん進みます。';
+    $('hint').textContent = hit ? t('hint.inCell', { name: I18N.spot.name(hit[0]) }) : t('hint.swipe');
     if ($('view-log').classList.contains('active')) renderLog();
     if ($('view-map').classList.contains('active')) renderMap();
   }
@@ -455,19 +455,19 @@
     const ids = Object.keys(S.visited).sort((a, b) => S.visited[b] - S.visited[a]);
     const days = Math.max(1, Math.ceil((Date.now() - S.startedAt) / 86400000));
     $('stats').innerHTML = [
-      ['訪れた観光地', `${ids.length}<small style="font-size:13px"> / ${SPOTS.length}</small>`],
-      ['実際に移動した距離', Geo.fmtKm(S.stats.real)],
-      ['ゲーム内の旅の距離', Geo.fmtKm(S.stats.game)],
-      ['スワイプ回数 / 旅の日数', `${S.stats.moves} / ${days}日`],
+      [t('stat.visited'), `${ids.length}<small style="font-size:13px"> / ${SPOTS.length}</small>`],
+      [t('stat.real'), Geo.fmtKm(S.stats.real)],
+      [t('stat.game'), Geo.fmtKm(S.stats.game)],
+      [t('stat.moves'), t('stat.movesV', { moves: S.stats.moves, days })],
     ].map(([k, v]) => `<div class="stat"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
     $('visited').innerHTML = ids.length ? ids.slice(0, 300).map((id) => {
       const s = BY_ID[id];
       if (!s) return '';
-      return `<li data-id="${esc(id)}"><div class="thumb">${Art.render(s)}</div><div class="t">${esc(s.name)}<small>${esc(s.pref)} ・ ${new Date(S.visited[id]).toLocaleDateString('ja-JP')}</small></div></li>`;
-    }).join('') : '<li class="empty">まだどこにも到着していません。</li>';
+      return `<li data-id="${esc(id)}"><div class="thumb">${Art.render(s)}</div><div class="t">${esc(I18N.spot.name(s))}<small>${esc(I18N.spot.pref(s))} ・ ${new Date(S.visited[id]).toLocaleDateString(I18N.locale)}</small></div></li>`;
+    }).join('') : `<li class="empty">${t('log.empty')}</li>`;
     const tot = {}, vis = {};
     SPOTS.forEach((s) => { tot[s.pref] = (tot[s.pref] || 0) + 1; if (S.visited[s.id]) vis[s.pref] = (vis[s.pref] || 0) + 1; });
-    $('prefs').innerHTML = PREFS.map((p) => `<div class="pref"><b>${p}</b>${vis[p] || 0} / ${tot[p] || 0}<div class="bar"><i style="width:${((vis[p] || 0) / (tot[p] || 1)) * 100}%"></i></div></div>`).join('');
+    $('prefs').innerHTML = PREFS.map((p) => `<div class="pref"><b>${esc(I18N.prefName(p))}</b>${vis[p] || 0} / ${tot[p] || 0}<div class="bar"><i style="width:${((vis[p] || 0) / (tot[p] || 1)) * 100}%"></i></div></div>`).join('');
   }
 
   function proj(lat, lon) { return [((lon - 122.5) * 0.809 * 51.5).toFixed(1), ((46 - lat) * 51.5).toFixed(1)]; }
@@ -493,17 +493,21 @@
   // 到着画面
   // ------------------------------------------------------------------
   let current = null;
+  let arrivalBannerKey = 'arr.new';
+  let arrivalGroup = [];
   function openArrival(s, group, banner) {
     current = s;
-    $('arr-banner').textContent = banner || '観光地';
-    $('arr-art').innerHTML = Art.render(s);
-    $('arr-kind').textContent = KIND_LABEL[s.kind] || s.cat || '観光地';
-    $('arr-place').textContent = `${s.pref} ${s.addr && s.addr !== s.name ? s.addr : ''}`;
-    $('arr-name').textContent = s.name;
-    $('arr-desc').textContent = s.desc || `${s.pref}${s.addr ? '・' + s.addr : ''}にある観光資源です。`;
-    $('arr-quiz').textContent = s.quiz || `${s.name}の見どころといえば？ あなたのおすすめを教えてください！`;
+    arrivalGroup = group || [];
+    if (banner) arrivalBannerKey = banner;
+    $('arr-banner').textContent = t(arrivalBannerKey);
+    $('arr-art').innerHTML = Art.render(s, t('art.label', { name: I18N.spot.name(s) }));
+    $('arr-kind').textContent = kindLabel(s);
+    $('arr-place').textContent = I18N.spot.place(s);
+    $('arr-name').textContent = I18N.spot.name(s);
+    $('arr-desc').textContent = I18N.spot.desc(s) || t('arr.descDefault', { place: I18N.spot.place(s) });
+    $('arr-quiz').textContent = I18N.spot.quiz(s) || t('arr.quizDefault', { name: I18N.spot.name(s) });
     const others = (group || []).filter((x) => x.id !== s.id);
-    $('arr-others').innerHTML = others.length ? 'このマスには、ほかにも観光地があります: ' + others.map((x) => `<button data-id="${esc(x.id)}">${esc(x.name)}</button>`).join('') : '';
+    $('arr-others').innerHTML = others.length ? esc(t('arr.others')) + others.map((x) => `<button data-id="${esc(x.id)}">${esc(I18N.spot.name(x))}</button>`).join('') : '';
     $('arrival').hidden = false;
     $('arrival').querySelector('.sheet').scrollTop = 0;
   }
@@ -518,7 +522,7 @@
   }
 
   function shareText(s) {
-    return `【クリックトリップ】${s.name}（${s.pref}）に到着！\nQ. ${s.quiz}\n答え、知っていたらリプで教えて！ #クリックトリップ`;
+    return t('share.text', { name: I18N.spot.name(s), pref: I18N.spot.pref(s), quiz: I18N.spot.quiz(s) || t('arr.quizDefault', { name: I18N.spot.name(s) }) });
   }
   // 共有するのはゲームの紹介記事（遊び方とゲームへの入口がある）
   const SHARE_URL = 'https://techgym.jp/column/claude-code-game-click-trip/';
@@ -548,7 +552,7 @@
   async function startGps() {
     Sound.se('ok');
     $('start-gps').disabled = true;
-    $('start-gps').textContent = '現在地を取得中…';
+    $('start-gps').textContent = t('intro.gpsWait');
     try {
       const p = await getPosition();
       S = newSave('gps', { lat: p.lat, lon: p.lon });
@@ -557,13 +561,13 @@
       $('intro').hidden = true;
       refresh();
       Sound.jingle('start', 'field');
-      toast('旅のはじまり！ 移動したら「移動距離を測る」を押そう');
+      toast(t('m.start'));
     } catch (e) {
       Sound.se('buzz');
-      toast(e.message + '。デモモードでも遊べます');
+      toast(t('gps.tryDemo2', { msg: e.message }));
     } finally {
       $('start-gps').disabled = false;
-      $('start-gps').textContent = '現在地から旅をはじめる';
+      $('start-gps').textContent = t('intro.gps');
     }
   }
   function startDemo() {
@@ -573,7 +577,7 @@
     refresh();
     Sound.se('ok');
     Sound.jingle('start', 'field');
-    toast('東京駅から出発！ ボタンを押すと距離がたまります');
+    toast(t('m.startDemo'));
   }
 
   /** Android アプリだけの設定: 戻るボタン、共有ボタン、バージョン表示、広告の設定 */
@@ -585,7 +589,8 @@
     // X・LINE への直接リンクの代わりに、Android の共有メニューを 1 つのボタンで出す
     $('share-x').hidden = true;
     $('share-line').hidden = true;
-    $('share-more').textContent = '共有して答えを募る';
+    $('share-more').dataset.i18n = 'arr.shareNative';
+    $('share-more').textContent = t('arr.shareNative');
     const App = plugin('App');
     if (App) {
       // 戻るボタン: 到着画面を閉じる → レーダーに戻る → アプリを終了
@@ -616,19 +621,19 @@
       const li = e.target.closest('li'); if (!li) return;
       const s = BY_ID[li.dataset.id];
       Sound.se(S.visited[s.id] ? 'ok' : 'cursor');
-      if (S.visited[s.id]) openArrival(s, [s], '訪問済みの観光地');
-      else toast(`「${s.name}」はまだ未訪問。たどり着くと解説とクイズが見られます`);
+      if (S.visited[s.id]) openArrival(s, [s], 'arr.visited');
+      else toast(t('m.notVisited', { name: I18N.spot.name(s) }));
     });
     $('visited').addEventListener('click', (e) => {
       const li = e.target.closest('li[data-id]'); if (!li) return;
       Sound.se('ok');
-      openArrival(BY_ID[li.dataset.id], [], '訪問済みの観光地');
+      openArrival(BY_ID[li.dataset.id], [], 'arr.visited');
     });
     $('arr-others').addEventListener('click', (e) => {
       const b = e.target.closest('button[data-id]'); if (!b) return;
       const s = BY_ID[b.dataset.id];
       Sound.se('cursor');
-      openArrival(s, BY_CELL[Geo.cellOf(s).key], $('arr-banner').textContent);
+      openArrival(s, BY_CELL[Geo.cellOf(s).key], null);
     });
     $('arr-close').addEventListener('click', closeArrival);
 
@@ -646,15 +651,20 @@
       const nativeShare = plugin('Share');
       if (nativeShare) {
         // アプリでは Android の共有メニューから X や LINE などを選んでもらう
-        try { await nativeShare.share({ title: 'クリックトリップ', text, url: pageUrl(), dialogTitle: 'クイズの答えをみんなに聞く' }); } catch (e) { /* キャンセル */ }
+        try { await nativeShare.share({ title: t('share.title'), text, url: pageUrl(), dialogTitle: t('share.dialog') }); } catch (e) { /* キャンセル */ }
       } else if (navigator.share) {
-        try { await navigator.share({ title: 'クリックトリップ', text, url: pageUrl() }); } catch (e) { /* キャンセル */ }
+        try { await navigator.share({ title: t('share.title'), text, url: pageUrl() }); } catch (e) { /* キャンセル */ }
       } else {
-        try { await navigator.clipboard.writeText(text + '\n' + pageUrl()); toast('共有用の文章をコピーしました'); } catch (e) { toast('コピーできませんでした'); }
+        try { await navigator.clipboard.writeText(text + '\n' + pageUrl()); toast(t('share.copied')); } catch (e) { toast(t('share.copyFail')); }
       }
     });
 
     $('start-gps').addEventListener('click', startGps);
+    document.querySelectorAll('[data-lang]').forEach((el) => el.addEventListener('click', () => { Sound.se('cursor'); I18N.setLang(el.dataset.lang); }));
+    I18N.onChange(() => {
+      refresh();
+      if (!$('arrival').hidden && current) openArrival(current, [current, ...arrivalGroup.filter((x) => x.id !== current.id)], null);
+    });
     $('retry-btn').addEventListener('click', retryWithAd);
     setupNative();
     $('sound').addEventListener('click', () => {
@@ -672,14 +682,14 @@
       S.mode = e.target.checked ? 'demo' : 'gps';
       if (S.mode === 'gps') S.gps = null; // 次のボタンで起点を取り直す
       save(); refresh();
-      toast(S.mode === 'demo' ? 'デモモードにしました' : 'GPSモードにしました。次に押した場所が起点になります');
+      toast(t(S.mode === 'demo' ? 'm.demoOn' : 'm.demoOff'));
     });
     $('export').addEventListener('click', async () => {
       Sound.se('save');
       const nativeShare = plugin('Share');
       if (nativeShare) {
         // アプリではファイルを直接保存できないので、セーブデータの文字列を共有メニューで渡す（メモや Drive などに保存）
-        try { await nativeShare.share({ title: 'クリックトリップのセーブデータ', text: JSON.stringify(S), dialogTitle: 'セーブデータの保存先' }); } catch (e) { /* キャンセル */ }
+        try { await nativeShare.share({ title: t('save.title'), text: JSON.stringify(S), dialogTitle: t('save.dialog') }); } catch (e) { /* キャンセル */ }
         return;
       }
       const blob = new Blob([JSON.stringify(S)], { type: 'application/json' });
@@ -698,14 +708,14 @@
           if (!s || s.v !== 1 || !s.pos) throw new Error();
           S = s; save(); refresh(); syncSettings();
           Sound.se('save');
-          toast('セーブデータを読み込みました');
-        } catch (e) { Sound.se('buzz'); toast('読み込めないファイルです'); }
+          toast(t('save.loaded'));
+        } catch (e) { Sound.se('buzz'); toast(t('save.bad')); }
       };
       inp.click();
     });
     $('reset').addEventListener('click', () => {
       Sound.se('buzz');
-      if (!confirm('これまでの旅の記録をすべて消して、はじめからやり直しますか？')) return;
+      if (!confirm(t('save.resetConfirm'))) return;
       localStorage.removeItem(SAVE_KEY);
       location.reload();
     });
@@ -721,12 +731,13 @@
   }
 
   async function init() {
+    I18N.apply();
     bind();
     try {
       const res = await fetch('data/spots.json');
       SPOTS = await res.json();
     } catch (e) {
-      toast('観光地データを読み込めませんでした');
+      toast(t('m.dataFail'));
       SPOTS = [];
     }
     SPOTS.forEach((s) => {
