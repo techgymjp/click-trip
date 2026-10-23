@@ -8,7 +8,8 @@ Play Console の「ストアの掲載情報」に貼り付けて使います。�
 | --- | --- | --- |
 | アプリのアイコン | `icon-512.png` | 512 × 512 |
 | フィーチャー グラフィック | `feature-graphic.png` | 1024 × 500 |
-| スマートフォンのスクリーンショット | `ja-1-start.png` 〜 `ja-6-log.png` | 1080 × 1920 |
+| スマートフォンのスクリーンショット（日本語） | `ja-1-start.png` 〜 `ja-6-log.png` | 1080 × 1920 |
+| スマートフォンのスクリーンショット（英語） | `en-1-start.png` 〜 `en-6-log.png` | 1080 × 1920 |
 
 画像は `node tools/render-assets.js`（アイコン・フィーチャー グラフィック）で作り直せます。
 
@@ -112,7 +113,7 @@ Can you land exactly on one of 2,000 sightseeing spots?
 ■ 2,000 spots across Japan
 - From Hokkaido to Okinawa, based on tourism resource data from Japan's Ministry of Land, Infrastructure, Transport and Tourism
 - Temples, shrines, castles, hot springs, waterfalls, festivals and local food
-- Each arrival brings an illustration of the place and a guide (in Japanese)
+- Each arrival brings an illustration of the place and a guide
 
 ■ Click Trip Quiz
 - Each spot comes with a quiz question only

@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "26-10422",
+  "name_en": "Komaji Temple Ruins",
+  "area_en": "Kizugawa City",
+  "desc_en": "These are the remains of an ancient temple set among the farmland of Kamikoma, beside the Kizu River. Said to have been founded in the Asuka period, it is considered one of the oldest temples in Kyoto Prefecture, and it has long been linked in local lore to people who came to Japan from overseas. Today only the foundation platforms of the pagoda and main hall quietly remain, but imagining ancient Yamashiro amid the peaceful scenery is a special experience.",
+  "quiz_en": "The word \"Koma\" in the name Komaji Temple Ruins originally comes from the name of which region?"
+ },
+ {
+  "id": "26-10495",
+  "name_en": "Rikyu Hachimangu Shrine",
+  "area_en": "Oyamazaki Town",
+  "desc_en": "This Hachiman shrine stands at the foot of Mount Tenno in Oyamazaki. In medieval times it flourished as the base of an oil guild that controlled the production and sale of perilla oil, and it is still revered by oil manufacturers as the \"birthplace of oil.\" The name \"Rikyu\" (detached palace) comes from a palace of Emperor Saga that once stood here. A monument recounting the history of oil also stands in the grounds.",
+  "quiz_en": "Rikyu Hachimangu is called the \"birthplace of oil\" because it flourished in medieval times producing what kind of oil?"
+ },
+ {
+  "id": "26-10526",
+  "name_en": "Wazuka Tea Fields",
+  "area_en": "Wazuka Town",
+  "desc_en": "Wazuka, known as a major producer of Uji tea, has tea fields stretching across entire mountain slopes. The rolling rows of green that cover the hillsides form a local landscape the town is proud of. From spring into early summer, when new buds appear, everything turns a soft shade of fresh green, and during the tea-picking season a refreshing aroma drifts through the town.",
+  "quiz_en": "While gazing out over the tea fields of Wazuka, what kind of tea or tea-flavored sweet would you like to try?"
+ },
+ {
+  "id": "26-10561",
+  "name_en": "Shitsushi Limestone Cave Park",
+  "area_en": "Kyotamba Town",
+  "desc_en": "Set in the mountains of Kyotamba, this park centers on what is said to be the only limestone cave in Kyoto Prefecture. The cave drops deep and vertically, so climbing down by ladder gives you a real sense of exploration. The air stays cool even in summer, and you can observe up close the rock surfaces shaped over long ages. The surrounding park is rich in nature and even has a campground.",
+  "quiz_en": "When climbing down inside Shitsushi Limestone Cave, what piece of equipment do you think you would rely on for your footing?"
+ },
+ {
+  "id": "26-10566",
+  "name_en": "Ine Funaya Boathouses",
+  "area_en": "Ine Town",
+  "desc_en": "This village has about 230 funaya boathouses lined up along the water, encircling Ine Bay. Each funaya has a distinctive design, with a boat garage on the ground floor and living quarters or a workspace upstairs, and the area has been designated a national Important Preservation District for Groups of Traditional Buildings. The sight of the houses reflected in the calm bay feels even more charming when viewed from a sightseeing boat.",
+  "quiz_en": "What have the people of Ine traditionally kept mainly on the ground floor of their funaya boathouses?"
+ },
+ {
+  "id": "26-10574",
+  "name_en": "Kofun Park",
+  "area_en": "Yosano Town",
+  "desc_en": "Located on the hills of Akashi in Yosano, this park preserves some of the most representative kofun (ancient burial mounds) of the Tango region. Visitors can see Ebisuyama Kofun, a large keyhole-shaped mound, and the Tsukuriyama Kofun group, where mounds of different shapes are clustered, giving a sense of the powerful clans of ancient Tango. Climb a mound to look over the farmland of the Noda River basin toward the Aso Sea, and enjoy a leisurely stroll.",
+  "quiz_en": "What is the name for the keyhole-shaped type of ancient burial mound that you can see at Kofun Park?"
+ },
+ {
+  "id": "27-10001",
+  "name_en": "Universal Studios Japan",
+  "area_en": "Konohana Ward, Osaka City",
+  "desc_en": "Located in Sakurajima in Konohana Ward, facing Osaka Bay, this large theme park is built around the world of Hollywood movies. Since opening in 2001, it has continually added attractions and shows that let you step into the worlds of films and anime, and in 2021 an area recreating the world of Nintendo was added. With many seasonal events, there is something new to discover no matter how many times you visit.",
+  "quiz_en": "Which attraction or area at Universal Studios Japan is your favorite, and what makes it stand out for you?"
+ },
+ {
+  "id": "27-10002",
+  "name_en": "Shitenno-ji Temple",
+  "area_en": "Tennoji Ward, Osaka City",
+  "desc_en": "Said to have been founded by Prince Shotoku, this is one of the oldest state-sponsored temples in Japan. Its layout, with the middle gate, five-story pagoda, main hall, and lecture hall aligned in a straight line from south to north, is considered an essential style in the history of ancient Japanese temples. On the 21st and 22nd of every month, a fair fills the grounds with stalls selling antiques and sundries, creating a lively, old-town Osaka atmosphere.",
+  "quiz_en": "What is the name of the temple layout, seen at Shitenno-ji, in which the gate, pagoda, main hall, and lecture hall stand in a straight line?"
+ },
+ {
+  "id": "27-10003",
+  "name_en": "Sumiyoshi Taisha Shrine",
+  "area_en": "Sumiyoshi Ward, Osaka City",
+  "desc_en": "This is the head shrine of about 2,300 Sumiyoshi shrines across Japan, long revered by those praying for safe voyages as the home of the gods of the sea. Its main sanctuary is built in the Sumiyoshi-zukuri style, one of the oldest forms of shrine architecture in Japan, and is designated a National Treasure. The vermilion Sorihashi arched bridge at the entrance curves steeply, and crossing it is said to purify the heart.",
+  "quiz_en": "What is the name of the distinctive architectural style of Sumiyoshi Taisha's main sanctuary, which is designated a National Treasure?"
+ },
+ {
+  "id": "27-10004",
+  "name_en": "Tenjin Matsuri",
+  "area_en": "Kita Ward, Osaka City",
+  "desc_en": "This summer festival of Osaka Tenmangu Shrine is counted among Japan's three great festivals. Held every year on July 24 and 25, its main night features the Funatogyo, a river procession in which many boats, including one carrying the deity, travel along the Okawa River. Bonfires and lanterns flicker on the water while offering fireworks light up the night sky, creating a scene unique to Osaka, the \"city of water.\"",
+  "quiz_en": "On the main night of the Tenjin Matsuri, what is the name of the sacred ritual in which many boats travel along the Okawa River?"
+ },
+ {
+  "id": "27-10005",
+  "name_en": "Osaka City Central Public Hall",
+  "area_en": "Kita Ward, Osaka City",
+  "desc_en": "This magnificent red-brick public hall stands on Nakanoshima, an island between the Dojima and Tosabori rivers. Funded by a donation from stockbroker Einosuke Iwamoto, it was completed in 1918 and is designated a national Important Cultural Property. The contrast between its bronze dome roof and red brick is beautiful, and when illuminated at night it becomes one of Osaka's most iconic sights.",
+  "quiz_en": "Who was the stockbroker known for donating the funds used to build the Osaka City Central Public Hall?"
+ },
+ {
+  "id": "27-10006",
+  "name_en": "Comedy at Namba Grand Kagetsu (NGK)",
+  "area_en": "Chuo Ward, Osaka City",
+  "desc_en": "Namba Grand Kagetsu, in Namba Sennichimae, is a temple of comedy that could be called the home base of Yoshimoto Kogyo. Performances packed with laughs are held almost every day, from manzai double acts and rakugo storytelling by popular comedians to the Yoshimoto Shinkigeki comedy play that closes the show. Shopping streets and restaurants surround the theater, so you can also enjoy snacking your way around Minami before or after the show.",
+  "quiz_en": "Which of your favorite comedians or comedy routines would you most like to see live at Namba Grand Kagetsu?"
+ },
+ {
+  "id": "27-10007",
+  "name_en": "Bunraku at the National Bunraku Theatre",
+  "area_en": "Chuo Ward, Osaka City",
+  "desc_en": "At the National Bunraku Theatre in Nipponbashi, you can watch bunraku, the puppet theater that developed in Osaka. It is a total art form in which the narration of the tayu chanter, the sound of the shamisen, and the skill of the puppeteers combine to tell a story, and it is inscribed on UNESCO's list of Intangible Cultural Heritage. The moments when the puppets' delicate gestures make them seem alive are a thrill unique to the stage.",
+  "quiz_en": "In bunraku, what is the name of the technique in which three people work together to operate a single puppet?"
+ },
+ {
+  "id": "27-10008",
+  "name_en": "Osaka Takoyaki",
+  "area_en": "Chuo Ward, Osaka City",
+  "desc_en": "Osaka's soul food is made by adding octopus to a wheat-flour batter and quickly cooking it on an iron plate with round hollows. The ideal texture is crisp outside and gooey inside, and the classic toppings are sauce, mayonnaise, green laver, and bonito flakes. Some shops serve it with dashi broth or seasoned with salt instead, and on the street corners of Minami you can see people strolling while munching on piping-hot takoyaki.",
+  "quiz_en": "Do you prefer your takoyaki with sauce, or would you rather enjoy it with salt or dashi broth instead?"
+ },
+ {
+  "id": "27-10009",
+  "name_en": "Dotonbori",
+  "area_en": "Chuo Ward, Osaka City",
+  "desc_en": "Spreading along the Dotonbori Canal, dug in the early Edo period, this is the signature entertainment district of Osaka's Minami area. Once a theater district lined with playhouses, it is now known as a district of kuidaore (eating until you drop), with giant signs and neon lights coloring the water. The running-man sign seen from Ebisu Bridge is a famous Osaka sight, and the area grows even livelier at night.",
+  "quiz_en": "Who is the person said to have spent his own fortune digging the Dotonbori Canal and given the canal its name?"
+ },
+ {
+  "id": "27-10010",
+  "name_en": "Osaka Castle (Osaka Castle Park)",
+  "area_en": "Chuo Ward, Osaka City",
+  "desc_en": "This renowned castle was built by Toyotomi Hideyoshi, and the present castle stands on stone walls and moats rebuilt during the Tokugawa era. The main keep was restored in 1931 with donations from citizens, and its golden decorations shine against the blue sky. The vast Osaka Castle Park is also famous for its plum grove and cherry blossoms, and you can enjoy a stroll while admiring the stone walls built from enormous rocks.",
+  "quiz_en": "How was most of the money raised to pay for rebuilding the main keep of Osaka Castle in 1931?"
+ },
+ {
+  "id": "27-10011",
+  "name_en": "Mozu-Furuichi Kofun Group (Nintoku and Ojin Tombs)",
+  "area_en": "Sakai City and Habikino City",
+  "desc_en": "This group of kofun (ancient burial mounds) is spread across the Mozu area of Sakai and the Furuichi area of Habikino and Fujiidera, and was inscribed as a World Cultural Heritage Site in 2019. The Emperor Nintoku Mausoleum Kofun is known as Japan's largest keyhole-shaped mound by length, and its massive forested form is so big that it cannot be taken in as a whole from the ground. Nearby viewing facilities let you sense the scale of ancient engineering.",
+  "quiz_en": "The Emperor Nintoku Mausoleum Kofun is the largest in Japan among burial mounds of which particular shape?"
+ },
+ {
+  "id": "27-10012",
+  "name_en": "Kishiwada Danjiri Festival",
+  "area_en": "Kishiwada City",
+  "desc_en": "Every September, powerful danjiri floats race through the streets of Kishiwada. Large teams pull with all their might on floats weighing several tons, while carpenters dance on the roofs with fans in hand. The highlight is the yarimawashi, when a float turns a right angle at an intersection without losing speed. Chants and music echo through the old castle town, and the whole town is filled with excitement.",
+  "quiz_en": "What is the name of the highlight in which Kishiwada's danjiri floats turn sharply at a right angle through an intersection?"
+ },
+ {
+  "id": "27-10013",
+  "name_en": "National Museum of Ethnology",
+  "area_en": "Suita City",
+  "desc_en": "Located in a corner of Expo '70 Commemorative Park, on the former site of the Osaka World Expo, this museum is devoted to cultural anthropology and ethnology. Clothing, everyday tools, masks, musical instruments, and more from around the world are displayed by region, and its exhibitions are said to be among the largest in the world. Simply walking through while viewing items that were actually used makes you feel as if you have traveled around the globe.",
+  "quiz_en": "Which country's or region's exhibit at the National Museum of Ethnology caught your interest the most, and why?"
+ },
+ {
+  "id": "27-10014",
+  "name_en": "Tower of the Sun",
+  "area_en": "Suita City",
+  "desc_en": "This giant tower was created by the artist Taro Okamoto as part of the theme pavilion for the 1970 Japan World Exposition. It stands tall in Expo '70 Commemorative Park, and its figure with outstretched arms is still loved as a symbol of Osaka. In addition to the face on the front, there are faces on the top and back, and visitors can also see the \"Tree of Life\" inside.",
+  "quiz_en": "What is the name of the shining golden face at the very top of the Tower of the Sun?"
+ },
+ {
+  "id": "28-10012",
+  "name_en": "Akashi Kaikyo Bridge",
+  "area_en": "Tarumi Ward, Kobe City",
+  "desc_en": "This suspension bridge, one of the longest in the world, links Tarumi Ward in Kobe with Awaji Island. Opened in 1998, it has a span of about 2 kilometers between its main towers. Its nighttime illumination, glittering like a pearl necklace, is beautiful, and the bridge is affectionately nicknamed the \"Pearl Bridge.\" From the Maiko Marine Promenade at its base, you can view the Akashi Strait from high above the sea.",
+  "quiz_en": "Inspired by how it looks when illuminated at night, what nickname has been given to the Akashi Kaikyo Bridge?"
+ },
+ {
+  "id": "28-10015",
+  "name_en": "Arima Onsen: Historic Springs and Irizome Ceremony",
+  "area_en": "Kita Ward, Kobe City",
+  "desc_en": "Rising north of Mount Rokko, this famous onsen (hot spring) is counted among Japan's three oldest. Two types of water flow here: the reddish-brown, iron-rich \"Kinsen\" (gold spring) and the clear \"Ginsen\" (silver spring), and Toyotomi Hideyoshi is known to have loved it. The hilly town is dotted with spring sources, Onsen-ji Temple, and Tosen Shrine, and every January 2 the Irizome ceremony is held to give thanks for the blessings of the hot water.",
+  "quiz_en": "Arima Onsen has a reddish-brown hot spring and a clear, colorless one. What is each of these two types called?"
+ },
+ {
+  "id": "28-10022",
+  "name_en": "Kobe Kitano Ijinkan (Foreigners' Residences)",
+  "area_en": "Chuo Ward, Kobe City",
+  "desc_en": "In Kitano, Kobe, Western-style houses where foreigners lived after the port opened in the Meiji era still line the streets. Along the sloping roads are ijinkan (foreigners' residences) with their own distinct character, such as the Weathercock House and the Moegi House, and many are open to visitors. Walking the exotic cobblestone streets lets you enjoy both the history and the stylish atmosphere of the port city of Kobe.",
+  "quiz_en": "What is the name of the Western-style house, a symbol of Kitano, that has a bird ornament on top of its spire?"
+ },
+ {
+  "id": "28-10035",
+  "name_en": "Himeji Castle",
+  "area_en": "Himeji City",
+  "desc_en": "One of the castles whose main keep survives from the early Edo period, Himeji Castle became one of Japan's first World Cultural Heritage Sites in 1993, together with Horyu-ji. Its beautiful white plaster walls are said to resemble a white heron spreading its wings, earning it the nickname \"White Heron Castle.\" Its maze-like paths and gates are full of defensive ingenuity, and in spring the keep shines even brighter surrounded by cherry blossoms.",
+  "quiz_en": "Because of its elegant white appearance, Himeji Castle is also known by a nickname that uses the name of which bird?"
+ },
+ {
+  "id": "28-10076",
+  "name_en": "National High School Baseball Championship (Summer Koshien)",
+  "area_en": "Nishinomiya City",
+  "desc_en": "This national high school baseball tournament is held every summer at Hanshin Koshien Stadium in Nishinomiya. Teams representing each prefecture battle fiercely to become the best in Japan, while brass bands play cheers from the Alps Stands. The atmosphere, with cheers and sighs mixing on every pitch, is something special, and the sight of defeated players taking home soil from the field is a familiar part of summer.",
+  "quiz_en": "Which game or memorable moment from the Summer Koshien tournament has stayed with you the most over the years?"
+ },
+ {
+  "id": "28-10105",
+  "name_en": "Sumoto Castle Ruins",
+  "area_en": "Sumoto City",
+  "desc_en": "These castle ruins sit atop Mount Mikuma, overlooking the town of Sumoto on Awaji Island. Impressive stone walls built between the Sengoku and Edo periods remain over a wide area of the summit, and a replica keep built in the early Showa era serves as a landmark. From the main enclosure you can take in the townscape of Sumoto and Osaka Bay, and on clear days you can see the mountains on the far side of the Kitan Strait.",
+  "quiz_en": "At what time of day would you most like to enjoy the view of Osaka Bay from the main enclosure of Sumoto Castle Ruins?"
+ },
+ {
+  "id": "28-10166",
+  "name_en": "Oriental Storks of Toyooka",
+  "area_en": "Toyooka City",
+  "desc_en": "The Oriental stork, a national Special Natural Monument that once disappeared from Japan's skies, has returned to the skies over Toyooka. Community-wide efforts, including captive breeding and rice farming with reduced pesticides, have paid off, and the storks can now be seen pecking for food in the fields. At the Hyogo Park of the Oriental White Stork, you can watch the storks gracefully spread their wings up close.",
+  "quiz_en": "What is the name of the rice-farming method promoted by Toyooka City to create an environment where storks can also live?"
+ },
+ {
+  "id": "28-10174",
+  "name_en": "Sukyo-ji Temple (Takuan-dera)",
+  "area_en": "Toyooka City",
+  "desc_en": "This Zen temple in the castle town of Izushi is also called \"Takuan-dera\" because it was revived by the monk Takuan, a native of Izushi. The grounds have a garden said to have been designed by Takuan, and in autumn the leaves turn vivid colors. If you stroll through the streets of Izushi, enjoy the local specialty sara soba, and then extend your walk here, you can spend a calm time befitting a castle town.",
+  "quiz_en": "Which familiar Japanese pickle is said to be named after the monk Takuan, who revived Sukyo-ji Temple?"
+ },
+ {
+  "id": "28-10208",
+  "name_en": "Takeno Beach",
+  "area_en": "Toyooka City",
+  "desc_en": "This sandy beach curves like a bow along the coast of Takeno, facing the Sea of Japan. With its clear water and white sand, it has been selected as one of Japan's 100 best beaches. The area is part of the San'in Kaigan Geopark, and around the beach you can see a varied coastline of rocky shores and sea caves carved by rough waves. In summer it bustles with swimmers, and at dusk the sunset over the Sea of Japan colors the beach.",
+  "quiz_en": "What kind of summer activity would you most like to try in the clear waters of Takeno Beach?"
+ },
+ {
+  "id": "28-10224",
+  "name_en": "Kakurin-ji Temple",
+  "area_en": "Kakogawa City",
+  "desc_en": "This historic temple is said to be associated with Prince Shotoku and is also called the \"Horyu-ji of Harima.\" Its Taishido hall, built in the Heian period, and its main hall from the Muromachi period are both designated National Treasures, and the Taishido is considered the oldest wooden building in Hyogo Prefecture. The spacious grounds are dotted with cultural properties such as a three-story pagoda and a bell tower, and despite being in central Kakogawa, the temple is wrapped in tranquility.",
+  "quiz_en": "Because of its connection to Prince Shotoku, what affectionate name is Kakurin-ji Temple known by?"
+ },
+ {
+  "id": "28-10227",
+  "name_en": "Kyoshin-ji Temple",
+  "area_en": "Kakogawa City",
+  "desc_en": "This temple in Noguchi, Kakogawa, is associated with Kyoshin, a nembutsu monk of the Heian period. Kyoshin is known for having no temple of his own, living among ordinary people while continually chanting the nembutsu, and he was later revered by Shinran and Ippen. The grounds include a spot said to be his grave, and during the temple's Noguchi Dainembutsu event, local people gather to keep the old nembutsu tradition alive today.",
+  "quiz_en": "What is the name of the faith, practiced at temples like Kyoshin-ji, of chanting the nembutsu to seek salvation from Amida Buddha?"
+ },
+ {
+  "id": "28-10234",
+  "name_en": "Kakogawa Onsen",
+  "area_en": "Kakogawa City",
+  "desc_en": "This onsen (hot spring) lies amid the farmland of Kamisocho in northern Kakogawa. It is easy to reach by car from the city center, and its appeal is that you can relax in the baths on a day trip. The surrounding area features the flowing Kakogawa River and peaceful fields, and you can enjoy the scenery of the Harima countryside as it changes with the seasons. It is perfect for stopping by during a walk or drive to soothe your travel fatigue.",
+  "quiz_en": "After taking a relaxing break at Kakogawa Onsen, which local Kakogawa specialty dish would you like to eat?"
+ },
+ {
+  "id": "28-10247",
+  "name_en": "Kagaku-ji Temple",
+  "area_en": "Ako City",
+  "desc_en": "This temple, the family temple of the Asano clan, lords of the Ako domain, stands in the center of the castle town of Ako. Along with the Asano family graves, its grounds hold the graves of the Ako Gishi, the loyal retainers who avenged their lord, as well as a treasure hall with items associated with Oishi Kuranosuke. Around the Ako Gishi Festival on December 14 each year, many visitors come, reflecting on the story of the Chushingura.",
+  "quiz_en": "Who was the chief retainer of the Ako domain known as the leader of the Ako Gishi, whose graves are at Kagaku-ji?"
+ },
+ {
+  "id": "28-10256",
+  "name_en": "Ako Onsen",
+  "area_en": "Ako City",
+  "desc_en": "This onsen (hot spring) resort has inns and hotels lining the heights of Ako Misaki, facing the Seto Inland Sea. From guest rooms and open-air baths you can look out over the calm Harima Sea and islands such as the Ieshima Islands, and the sun setting into the sea tints the steam a deep red. Ako has long prospered from salt making, and dishes made with local salt and fresh Seto Inland Sea seafood are another pleasure of an onsen trip here.",
+  "quiz_en": "If you were looking out over the Seto Inland Sea from Ako Onsen, would you rather see the sunrise or the sunset?"
+ },
+ {
+  "id": "28-10260",
+  "name_en": "Ako Castle Ruins",
+  "area_en": "Ako City",
+  "desc_en": "These are the remains of a seaside flatland castle built in the Edo period by Asano Naganao, lord of the Ako domain. The castle took advantage of its location facing the Seto Inland Sea, and the restored Honmaru Gate, Ote Sumi Yagura turret, stone walls, and moats convey how it once looked. The nagaya gate of Oishi Kuranosuke's residence also remains within the grounds, drawing many visitors to this site linked to the Chushingura. In spring, cherry blossoms make strolling the castle town even more enjoyable.",
+  "quiz_en": "In the time of Asano Naganao, who built Ako Castle, the town of Ako prospered from producing what?"
+ },
+ {
+  "id": "28-10272",
+  "name_en": "Sairin-ji Temple",
+  "area_en": "Nishiwaki City",
+  "desc_en": "This temple stands in Sakamoto, Nishiwaki. Nishiwaki is known for the Nihon Heso Koen (Navel of Japan Park), located at the center of the Japanese archipelago, and it has also prospered as a producer of Banshu-ori textiles. In the grounds, nestled in a peaceful mountain village, you can pray quietly surrounded by seasonal flowers and trees and feel the calm atmosphere of a temple cherished by the local community.",
+  "quiz_en": "Nishiwaki City is called the \"Navel of Japan\" because it has a spot where which two lines intersect?"
+ },
+ {
+  "id": "28-10273",
+  "name_en": "Naritasan Temple",
+  "area_en": "Nishiwaki City",
+  "desc_en": "Standing halfway up a mountain in Nishiwaki, this temple is affectionately known as Naritasan. As a temple carrying on the worship of Fudo Myoo, it draws worshippers praying for protection from misfortune and the safety of their households. From the elevated grounds you can look out over the town of Nishiwaki and the flowing Kakogawa River, so you can enjoy the view along with your visit. During the New Year's first shrine visit season, it bustles with local people.",
+  "quiz_en": "Which Buddhist deity, depicted with flames behind him, is often enshrined at temples known by the name Naritasan?"
+ },
+ {
+  "id": "28-10294",
+  "name_en": "Takarazuka Onsen",
+  "area_en": "Takarazuka City",
+  "desc_en": "This onsen (hot spring) resort developed along the valley of the Muko River. It grew into a hot spring town in the Meiji era, and in the Taisho era a girls' opera, started as entertainment at a hot spring facility, later grew into the Takarazuka Revue. Inns and day-use facilities line the riverbank, and after your bath it is also nice to walk along the Hananomichi path and soak up the glamorous atmosphere of this theater town.",
+  "quiz_en": "Which performing art began as entertainment at a Takarazuka Onsen facility and has since become famous throughout Japan?"
+ },
+ {
+  "id": "28-10316",
+  "name_en": "Omiya Hachimangu Shrine",
+  "area_en": "Miki City",
+  "desc_en": "This Hachiman shrine sits in Honmachi, the former castle town in the heart of Miki. Miki has long been known as a town of hardware, and the craftsmanship behind carpentry tools and other goods is still passed down today. At the autumn festival, yatai floats from each district enter the shrine and are paraded against one another with spirited chants. Stop by while strolling through the town to feel the faith rooted in the community.",
+  "quiz_en": "Miki City, home to Omiya Hachimangu Shrine, is known as a town of what, including saws and planes?"
+ },
+ {
+  "id": "28-10369",
+  "name_en": "Sone Tenmangu Autumn Festival",
+  "area_en": "Takasago City",
+  "desc_en": "Held every autumn at Sone Tenmangu, a shrine associated with Sugawara no Michizane, this is one of the leading festivals of the Banshu region. Yatai floats decorated with lavish embroidery set out from each district and are paraded powerfully against one another in the shrine grounds, accompanied by the bearers' chants. Many old rituals have also been passed down, and on festival days the whole community is united in excitement.",
+  "quiz_en": "At Banshu's autumn festivals, what is the name for the move in which bearers lift up and sway the yatai floats?"
+ },
+ {
+  "id": "28-10370",
+  "name_en": "Arai Shrine Daikoku Festival",
+  "area_en": "Takasago City",
+  "desc_en": "This festival, held at Arai Shrine in Arai-cho, Takasago, is dedicated to Daikoku. Daikoku is beloved as a god who brings good fortune and business prosperity, and on the festival day local people gather in the grounds to pray for luck. Takasago is an industrial town but also a place where old shrines and festivals have been carefully preserved, and here you can experience the warm atmosphere of the community.",
+  "quiz_en": "What is the tool that Daikoku holds in his hand, which is said to bring forth good fortune when shaken?"
+ },
+ {
+  "id": "28-10375",
+  "name_en": "Takasago Shrine Jo and Uba Festival",
+  "area_en": "Takasago City",
+  "desc_en": "This festival is held at Takasago Shrine, known as the setting of the Noh chant \"Takasago.\" The grounds have the Aioi no Matsu, a pine whose male and female trunks grow from a single root, and Jo and Uba, the spirits of this pine, have long been symbols of marital harmony. Also familiar from the line \"Takasago ya\" sung at weddings, the festival honoring Jo and Uba is beloved by those praying for long life and good relationships.",
+  "quiz_en": "What is the name of the pine at Takasago Shrine whose two trunks grow from one root, symbolizing marital harmony?"
+ },
+ {
+  "id": "28-10379",
+  "name_en": "Kashima Shrine Wanuke Festival",
+  "area_en": "Takasago City",
+  "desc_en": "This festival, held at Kashima Shrine in Amida-cho, Takasago, involves passing through a chinowa (a large ring of reeds) to purify body and mind. Passing through the large ring is said to cleanse the impurities of the past half year and bring good health. Kashima Shrine is widely worshipped as a deity who grants one wish, and on the festival day many worshippers visit while the approach to the shrine is lively with stalls.",
+  "quiz_en": "Kashima Shrine is worshipped as a deity who grants one wish. By what name is this deity known?"
+ },
+ {
+  "id": "28-10382",
+  "name_en": "Mangan-ji Temple",
+  "area_en": "Kawanishi City",
+  "desc_en": "This historic temple sits on the green hills of northern Kawanishi. It is known for its ties to the Seiwa Genji clan, and its grounds contain a stone monument said to be the grave of Sakata no Kintoki, regarded as the model for Kintaro of the folk tale. Plenty of nature remains in the area, so you can enjoy quiet walks during the fresh greenery of spring and the autumn leaves. It is a place to feel the history of Kawanishi, also called the home of the Genji.",
+  "quiz_en": "Sakata no Kintoki, said to be buried at Mangan-ji Temple, is known by what name in Japanese folk tales?"
+ },
+ {
+  "id": "28-10405",
+  "name_en": "Jodo-ji Temple",
+  "area_en": "Ono City",
+  "desc_en": "This temple was founded by Chogen, the monk who rebuilt Todai-ji in the Kamakura period. Its National Treasure Jodo-do hall was built in the architectural style known as Daibutsuyo, and inside stands an Amida Triad by the sculptor Kaikei. In the evening, when the western sun shines through the shutters behind the statues, the hall is dyed vermilion and a solemn scene unfolds in which the Buddhas seem to float against the light.",
+  "quiz_en": "Who was the Buddhist sculptor who made the Amida Triad statues enshrined in the Jodo-do hall of Jodo-ji Temple?"
+ },
+ {
+  "id": "28-10429",
+  "name_en": "Kowato Haiji Temple Ruins Historical Park",
+  "area_en": "Ono City",
+  "desc_en": "This historical park preserves the site of an ancient temple in Kowato-cho, Ono. Based on excavations, the foundation platforms of the main hall and pagoda have been restored, so you can trace the layout of the former temple complex on the ground. Farmland spreads all around, and you can relax on the lawn while imagining that such a great temple once stood in ancient Harima.",
+  "quiz_en": "What is the term for a temple, like Kowato Haiji, whose buildings have been lost and only traces remain?"
+ },
+ {
+  "id": "28-10437",
+  "name_en": "Tamaoka Historic Park",
+  "area_en": "Kasai City",
+  "desc_en": "This historic park in Kasai is centered on the Tamaoka Kofun. Tamaoka Kofun is a keyhole-shaped burial mound surrounded by a moat and is considered one of the most representative kofun in the Harima region. Small burial mounds are also scattered around the park, so you can sense the extent of the mound group while walking the paths. Cherry blossoms bloom in spring, letting you enjoy both the romance of ancient times and the colors of the season.",
+  "quiz_en": "What is the name of the water-filled ditch that surrounds keyhole-shaped burial mounds such as the Tamaoka Kofun?"
+ },
+ {
+  "id": "28-10457",
+  "name_en": "Daikoku-ji Temple and Tea Festival",
+  "area_en": "Tamba-Sasayama City",
+  "desc_en": "The Aima district of Tamba-Sasayama is a tea-growing area known for producing Tamba tea. Daikoku-ji is a historic temple whose main hall, built in the Muromachi period, is designated a national Important Cultural Property, and together with the surrounding tea fields it forms a tranquil satoyama landscape. At the tea festival held in the season of new tea, you can enjoy the charms of this tea village while savoring fragrant Tamba tea.",
+  "quiz_en": "At the Tamba-Sasayama tea festival, which Tamba specialty would you like to enjoy along with the new tea?"
+ },
+ {
+  "id": "28-10491",
+  "name_en": "Sekigan-ji Temple",
+  "area_en": "Tamba City",
+  "desc_en": "This historic temple sits halfway up Mount Iwaya in Sannan-cho, Tamba. It is known for its ties to Ashikaga Takauji, and its secluded mountain grounds include a Nio gate and an approach leading to the inner sanctuary. In autumn, the trees in the grounds turn bright red, and many people visit this spot, one of Tamba's best places for autumn leaves. With each step up the mossy stone stairs, the quiet of the mountain temple deepens.",
+  "quiz_en": "Which tree, turning bright red, is the one that colors the grounds of Sekigan-ji Temple in autumn?"
+ },
+ {
+  "id": "28-10492",
+  "name_en": "Entsu-ji Temple",
+  "area_en": "Tamba City",
+  "desc_en": "This Zen temple stands in the mountains of Hikami-cho, Tamba. Its spacious grounds are surrounded by trees, and in autumn the maples change color all at once, dyeing the approach and temple buildings red and yellow. The Tamba region has many historic temples famous for autumn leaves, and Entsu-ji is a beloved one among them. Outside the foliage season, too, you can spend a calming moment in the quiet air of this mountain temple.",
+  "quiz_en": "What is the name of the training practice carried out at Zen temples like Entsu-ji to calm and settle the mind?"
+ },
+ {
+  "id": "28-10493",
+  "name_en": "Kogen-ji Temple",
+  "area_en": "Tamba City",
+  "desc_en": "This historic Rinzai Zen temple in the mountains of Aogaki-cho, Tamba, is one of the region's finest spots for autumn leaves. Its grounds are planted with \"Tenmoku maples,\" said to have been brought back from Mount Tianmu in China, whose small, delicate leaves turn beautiful colors. The autumn scene of the long stone-stepped approach, the mountain gate, and the Tahoto pagoda wrapped in red leaves is exceptional, letting you fully savor the charm of a mountain temple.",
+  "quiz_en": "What is the name of the maple planted in the grounds of Kogen-ji Temple that is named after a mountain in China?"
+ },
+ {
+  "id": "28-10507",
+  "name_en": "Naruto Whirlpools",
+  "area_en": "Minamiawaji City",
+  "desc_en": "These large whirlpools form with the ebb and flow of the tides in the Naruto Strait, which lies between Awaji Island and Shikoku. The difference in sea level between the Seto Inland Sea and the Kii Channel creates fierce currents, and during spring tides the whirlpools are said to reach up to 20 meters across. Approach them closely on a sightseeing boat, and you can witness the powerful sight of the sea surface being sucked in with a roar.",
+  "quiz_en": "The Naruto Whirlpools grow especially large during which tidal period, when the phases of the moon make the tidal range greatest?"
+ },
+ {
+  "id": "28-10508",
+  "name_en": "Nushima Island",
+  "area_en": "Minamiawaji City",
+  "desc_en": "This small island floats south of Awaji Island and can be reached by a regular ferry from Habu Port. It is sometimes said to be Onokoro Island, which appears in the myth of the creation of Japan, and the roughly 30-meter-tall rock formation Kamitategami-iwa, rising from the shore, is the island's symbol. Fishing thrives here, and from spring to summer you can enjoy fresh seafood such as pike conger and turban shells.",
+  "quiz_en": "What is the name of the giant, strangely shaped rock on Nushima's coast that is closely linked to Japan's creation myth?"
+ },
+ {
+  "id": "28-10523",
+  "name_en": "Nandan Onsen",
+  "area_en": "Minamiawaji City",
+  "desc_en": "This onsen (hot spring) resort spreads along the coast of Minamiawaji at the southern tip of Awaji Island. It is close to the Naruto Strait, and at some inns you can see the Kii Channel and Nushima Island from your room or bath. Minamiawaji is known for its Awaji Island onions, and dishes made with local ingredients and fresh seafood are another pleasure of the trip. Nearby, you can also catch a performance of Awaji ningyo joruri puppet theater.",
+  "quiz_en": "If you stayed at Nandan Onsen, which sweet vegetable that represents Awaji Island would you want to taste?"
+ },
+ {
+  "id": "28-10540",
+  "name_en": "Sea of Clouds at Takeda Castle",
+  "area_en": "Asago City",
+  "desc_en": "The Takeda Castle Ruins, atop Mount Kojo in Asago, are sometimes wrapped in mist rising from the Maruyama River on early mornings from autumn to winter. Because the stone walls appear to float above a sea of clouds, the site is called the \"Castle in the Sky,\" and it has captivated many photographers. Viewed from places across the valley such as Ritsuunkyo Gorge, the dreamlike scene stands out even more.",
+  "quiz_en": "Besides being called the \"Castle in the Sky,\" the Takeda Castle Ruins floating above the clouds are compared to which overseas ruins?"
+ },
+ {
+  "id": "28-10552",
+  "name_en": "Kurokawa Onsen",
+  "area_en": "Asago City",
+  "desc_en": "This quiet onsen (hot spring) lies in the mountains of Ikuno-cho, Asago. Ikuno prospered as a silver-mining town from the Sengoku period through the Showa era, and nearby there are facilities where you can tour the old mine. Surrounded by rich forest, you can relax body and mind while soaking in the bath and listening to the murmur of the river. In autumn, the colorful leaves on the mountains are also spectacular.",
+  "quiz_en": "Ikuno-cho, where Kurokawa Onsen is located, once prospered as a mining town digging up what?"
+ },
+ {
+  "id": "28-10554",
+  "name_en": "Yofudo Onsen",
+  "area_en": "Asago City",
+  "desc_en": "This day-use onsen (hot spring) in Santo-cho, Asago, is popular with locals too. Santo-cho, the southern gateway to the Tajima region, is a rural town surrounded by mountains, where the scenery of fields and hills shifts with the seasons. Stop by during a drive or sightseeing trip and soak at leisure to ease your fatigue, and your journey through Tajima will become even more pleasant.",
+  "quiz_en": "After warming up at Yofudo Onsen, which local specialty dish of the Tajima region would you like to try?"
+ },
+ {
+  "id": "28-10566",
+  "name_en": "Sano Highlands",
+  "area_en": "Asago City",
+  "desc_en": "This highland spreads across the mountains of Sano in Asago. Its appeal lies in the cool air found only at high elevations and the open views over the surrounding mountains, and people come to enjoy camping and hiking. In summer it is a comfortable place to escape the heat, and at night, with few city lights around, you can gaze up at a sky full of stars.",
+  "quiz_en": "If you went camping at Sano Highlands, how would you like to spend and enjoy the night there?"
+ },
+ {
+  "id": "28-10572",
+  "name_en": "Izanagi Jingu Shrine",
+  "area_en": "Awaji City",
+  "desc_en": "Located in Taga on Awaji Island, this is the ichinomiya (highest-ranking shrine) of the old Awaji Province, dedicated to Izanagi, the god who created the land. The Nihon Shoki records that after creating the land, Izanagi spent the rest of his days on Awaji, and this is regarded as the site of his final resting palace. The grounds feature the \"Meoto Okusu,\" a sacred camphor tree formed from two trees grown into one, visited by those praying for marital harmony and good relationships.",
+  "quiz_en": "What is the name of the sacred tree in the grounds of Izanagi Jingu, formed from two trees joined into one?"
+ },
+ {
+  "id": "28-10581",
+  "name_en": "Akashi Kaikyo National Government Park",
+  "area_en": "Awaji City",
+  "desc_en": "This national government park spreads across northern Awaji Island, overlooking the Akashi Kaikyo Bridge. Its vast grounds are colored by seasonal flower fields, with tulips and nemophila in spring and cosmos in autumn blooming in carpets, with Osaka Bay stretching out beyond them. There are also plenty of play areas for children, so the whole family can spend a relaxing day here.",
+  "quiz_en": "Among the flower fields at Akashi Kaikyo National Government Park, which seasonal flower would you most like to see in bloom?"
+ },
+ {
+  "id": "28-10604",
+  "name_en": "Hara Fudo Falls",
+  "area_en": "Shiso City",
+  "desc_en": "This famous waterfall in the mountains of Haga-cho, Shiso, has been selected as one of Japan's 100 best waterfalls. The water plunges powerfully over several tiers, and when you walk the trail up close to the falls, you are enveloped in spray and cool air. The surrounding area has been developed as a forest park, and the scenery becomes even more beautiful in the seasons of fresh greenery and autumn leaves.",
+  "quiz_en": "Which Buddhist deity is often enshrined beside waterfalls such as Hara Fudo Falls, and even lends the falls its name?"
+ },
+ {
+  "id": "28-10607",
+  "name_en": "Yoi Onsen",
+  "area_en": "Shiso City",
+  "desc_en": "This onsen (hot spring) is located in Yoi, Yamasaki-cho, Shiso. Shiso is a region rich in nature, with forests covering most of its area, and the clear Ibo River and mountain scenery welcome travelers. The baths are also popular with local people, and if you stop by after hiking or playing in the mountain streams, your body will warm right up and you can spend a leisurely evening in the mountain village.",
+  "quiz_en": "Around Shiso City, where the Ibo River flows, what is the famous brand of somen noodles named after this river?"
+ },
+ {
+  "id": "28-10625",
+  "name_en": "Mount Goho",
+  "area_en": "Kato City",
+  "desc_en": "On top of this mountain in Kato stand the buildings of Komyo-ji, a historic temple of the Harima region. It is called \"Goho-zan\" (Five Peak Mountain) because of its five connected peaks, and climbing the stone steps of the approach brings you to quiet temple grounds surrounded by trees. From the summit you can look out over the farmland of Kato and distant mountain ranges, enjoying a hike and a temple visit at the same time.",
+  "quiz_en": "What is the name of the temple at the top of Mount Goho that has long been worshipped by the people of Harima?"
+ },
+ {
+  "id": "28-10626",
+  "name_en": "Lake Tojo",
+  "area_en": "Kato City",
+  "desc_en": "This artificial lake, created by a dam, lies in the mountains of Kato. Its calm surface is surrounded by greenery, and leisure facilities such as an amusement park and campgrounds gather along the shore, bustling with families. You can enjoy boating and walks along the lakeside, and in autumn the surrounding trees change color, with the autumn leaves reflected on the water being another highlight.",
+  "quiz_en": "If you spent a whole day on the shores of Lake Tojo, what activities or ways of relaxing would you like to try?"
+ },
+ {
+  "id": "28-10633",
+  "name_en": "Saho Shrine Autumn Festival",
+  "area_en": "Kato City",
+  "desc_en": "This autumn festival is held at Saho Shrine in Yashiro, Kato. The place name \"Yashiro\" (shrine) is said to come from this shrine. On festival days, decorated yatai floats set out from each district, and the sound of drums and the chants of the bearers echo through the town. The scene in which the floats are paraded against one another in the grounds is thrilling, letting you feel the excitement of Banshu's autumn festivals firsthand.",
+  "quiz_en": "When the yatai floats are carried at the Saho Shrine Autumn Festival, what kinds of chants and musical sounds echo through the town?"
+ },
+ {
+  "id": "28-10704",
+  "name_en": "Tatsuno Castle",
+  "area_en": "Tatsuno City",
+  "desc_en": "This castle stands beside the Ibo River in the castle town of Tatsuno, known as the \"Little Kyoto of Harima.\" It was the seat of the Tatsuno domain, ruled by the Wakisaka clan in the Edo period, and its main palace and corner turret have been rebuilt at the foot of Mount Keiro. The town below retains white-walled storehouses and soy sauce breweries, and it is also known as the hometown of Rofu Miki, who wrote the lyrics of the children's song \"Akatombo.\"",
+  "quiz_en": "What is the famous children's song about a sunset scene whose lyrics were written by Rofu Miki, a native of Tatsuno?"
+ },
+ {
+  "id": "28-10750",
+  "name_en": "Onaka Ruins Festival",
+  "area_en": "Harima Town",
+  "desc_en": "This festival is held at the Onaka Ruins, a nationally designated historic site in Harima Town. The Onaka Ruins are the remains of a settlement from the Yayoi to the Kofun periods, and pit dwellings have been reconstructed in the park. The festival offers activities inspired by ancient life that both children and adults can enjoy. Together with the neighboring archaeological museum, it is a chance to encounter what ancient Harima was like.",
+  "quiz_en": "What is the name of the type of ancient dwelling, built by digging into the ground and adding a roof, reconstructed at the Onaka Ruins?"
+ },
+ {
+  "id": "28-10761",
+  "name_en": "Nanakusa Falls",
+  "area_en": "Fukusaki Town",
+  "desc_en": "This waterfall lies at the foot of Mount Nanakusa in Fukusaki, and it is magnificent as it cascades down the rock face in many tiers. Mount Nanakusa has long been known as a mountain of Shugendo ascetic practice, and traces of worship remain around the falls. Other small waterfalls are scattered along the surrounding gorge, and walking the forest trails while listening to the water, you can feel the pure air of the deep mountains.",
+  "quiz_en": "How would you like to spend a summer day at Nanakusa Falls, and how would you keep cool there?"
+ },
+ {
+  "id": "28-10762",
+  "name_en": "Nikko-ji Temple",
+  "area_en": "Fukusaki Town",
+  "desc_en": "This temple is located in Onuki, Fukusaki. Fukusaki is known as the birthplace of Kunio Yanagita, the father of Japanese folklore studies, and his childhood home is preserved in the town. It is a calm area surrounded by farmland and wooded hills, and the grounds are filled with trees that change through the seasons, allowing a quiet moment of prayer. Combine your visit with a town walk to enjoy the simple scenery of the Harima countryside.",
+  "quiz_en": "Who is the folklorist, author of \"The Legends of Tono,\" whose birthplace Fukusaki Town is known for?"
+ },
+ {
+  "id": "28-10778",
+  "name_en": "Tonomine Highlands",
+  "area_en": "Kamikawa Town",
+  "desc_en": "This highland atop the mountains of Kamikawa is covered entirely in Japanese pampas grass. In autumn the golden plumes sway in the wind, and the sight of them glowing in the setting sun is exceptional. The grassland has long been maintained by controlled burning, and its grand scenery has also been used as a film location. Walking the trails, you feel as if you are surrounded by an endless sea of pampas grass.",
+  "quiz_en": "What plant, swaying in the wind, turns the Tonomine Highlands a shining gold in the autumn season?"
+ },
+ {
+  "id": "28-10814",
+  "name_en": "Matsuba Crab Cuisine of San'in",
+  "area_en": "San'in region (northern area)",
+  "desc_en": "The signature taste of winter in the San'in region is \"Matsuba crab,\" the name for male snow crab. At fishing ports in northern Hyogo such as Kasumi and Shibayama, crowds seeking this winter delicacy arrive once the fishing season opens. It can be enjoyed in many ways, including boiled crab, grilled crab, crab sashimi, and kani-suki, a hot pot that brings out the rich flavor of the meat and broth.",
+  "quiz_en": "If you were eating Matsuba crab, which would you choose: boiled, grilled, sashimi, or kani-suki hot pot?"
+ },
+ {
+  "id": "28-10817",
+  "name_en": "Saruo Falls",
+  "area_en": "Muraoka District, Kami Town",
+  "desc_en": "This waterfall in the mountains of Muraoka, Kami, has been selected as one of Japan's 100 best waterfalls. It is characterized by water falling in two separate tiers, and its name is said to come from its shape resembling a monkey's tail. You can walk right up to the falls and feel the spray and roar up close. In winter the surroundings are blanketed in snow, giving the falls a different charm.",
+  "quiz_en": "Saruo Falls is said to have gotten its name because its shape looks like what, according to local tradition?"
+ },
+ {
+  "id": "28-10827",
+  "name_en": "Muraoka Onsen",
+  "area_en": "Muraoka District, Kami Town",
+  "desc_en": "This onsen (hot spring) is located in Muraoka, Kami. Muraoka is known as a producer of Tajima cattle, the roots of Japan's leading wagyu, and pastoral mountain scenery spreads across the area. Winters here bring deep snow, and warming your chilled body in the bath after playing at nearby ski resorts is a special pleasure. After bathing, it is also recommended to try dishes made with the locally prized Tajima beef.",
+  "quiz_en": "Kami Town, home to Muraoka Onsen, is known for raising which cattle, the roots of many brand-name wagyu?"
+ },
+ {
+  "id": "28-10829",
+  "name_en": "Tajima Kogen Botanical Garden",
+  "area_en": "Muraoka District, Kami Town",
+  "desc_en": "This botanical garden lies within a rich forest on the highlands of Muraoka, Kami. Spring water flows through the grounds, and wild mountain flowers and highland plants bloom season by season. The biggest highlight is the giant tree known as the \"Great Katsura of Wachi,\" from whose roots clear water springs, and its majestic form is overwhelming. You can stroll at your leisure while enjoying forest bathing.",
+  "quiz_en": "What is the name of the giant tree, a symbol of Tajima Kogen Botanical Garden, from whose roots water springs forth?"
+ },
+ {
+  "id": "28-10852",
+  "name_en": "Yumura Onsen",
+  "area_en": "Shin'onsen Town",
+  "desc_en": "This renowned San'in onsen (hot spring) developed along the Harukigawa River in Shin'onsen. From \"Arayu,\" the source spring in the center of the hot spring town, water at about 98°C gushes out, and you can see people boiling eggs and vegetables in the spring basin. It is also known as the setting of the TV drama \"Yumechiyo Nikki,\" and the riverside footbath and cobblestone paths evoke a somewhat nostalgic hot spring atmosphere.",
+  "quiz_en": "What food would you like to try boiling yourself in Arayu, the scalding source spring of Yumura Onsen?"
+ },
+ {
+  "id": "29-10004",
+  "name_en": "Yakushi-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This temple was commissioned by Emperor Tenmu to pray for the recovery of his ailing empress, and it was later moved to the capital Heijo-kyo. The East Pagoda, which survives from the temple's early days, is a National Treasure whose unique form, with a mokoshi skirt roof on each level, has been described as \"frozen music.\" The main hall and West Pagoda were rebuilt in the Showa era, reviving the vivid vermilion temple complex. It is part of the World Heritage Site \"Historic Monuments of Ancient Nara.\"",
+  "quiz_en": "Because of its rhythmical beauty, how has the East Pagoda of Yakushi-ji Temple been described over the years?"
+ },
+ {
+  "id": "29-10006",
+  "name_en": "Deer of Nara",
+  "area_en": "Nara City",
+  "desc_en": "The deer living around Nara Park have long been cherished as messengers of the gods of Kasuga Taisha Shrine and are a national Natural Monument. Walking through the park you will meet deer everywhere, and when you offer them shika senbei (deer crackers), they sometimes lower their heads as if bowing. In autumn, the antlers of the stags are cut in a traditional event, and in early summer you can see newborn fawns.",
+  "quiz_en": "The deer of Nara have long been cherished as messengers of the gods of which shrine in the city?"
+ },
+ {
+  "id": "29-10007",
+  "name_en": "Heijo Palace Site",
+  "area_en": "Nara City",
+  "desc_en": "This is the site of Heijo Palace, which housed the emperor's residence and the seat of government after the capital moved to Nara in 710. On the vast grounds, the restored Former Imperial Audience Hall and Suzaku Gate rise up, letting you experience the grandeur of the ancient capital. It is part of the World Heritage Site \"Historic Monuments of Ancient Nara,\" and walking across the wide grassland, you may feel the breeze of the Tenpyo era.",
+  "quiz_en": "If you could walk through Heijo Palace in its heyday after 710, which building or scene would you most like to see?"
+ },
+ {
+  "id": "29-10008",
+  "name_en": "Kasuga Taisha Shrine",
+  "area_en": "Nara City",
+  "desc_en": "This shrine was founded in the Nara period to protect the capital Heijo-kyo and pray for the nation's prosperity, and it is part of the World Heritage Site \"Historic Monuments of Ancient Nara.\" Its vermilion buildings stand out against the deep forest, and about 3,000 stone and hanging lanterns line the approach and corridors. During the Mantoro lantern festivals held at Setsubun and in summer, all of them are lit, wrapping the shrine in a magical glow.",
+  "quiz_en": "What is the name of the event at Kasuga Taisha Shrine in which every lantern in the grounds is lit?"
+ },
+ {
+  "id": "29-10009",
+  "name_en": "Kofuku-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This historic temple, which flourished as the clan temple of the Fujiwara family, is one of Nara's most iconic. Its five-story pagoda, reflected in Sarusawa Pond, is a symbol of the ancient capital, and the National Treasure Museum houses many Buddhist statues, including the Ashura statue with three faces and six arms. The rebuilt Central Golden Hall is also impressive, and visiting along with a stroll through Nara Park lets you experience the depth of Tenpyo culture.",
+  "quiz_en": "Which Buddhist statue, housed in Kofuku-ji's National Treasure Museum, is famous for having three faces and six arms?"
+ },
+ {
+  "id": "29-10030",
+  "name_en": "Byakugo-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This temple stands at the western foot of Mount Takamado, east of central Nara. In autumn its stone-stepped approach is adorned with bush clover spilling over from both sides, and it is affectionately known as the \"Temple of Bush Clover.\" From the grounds you can look out over the townscape of Nara, and in spring rare five-colored camellias bloom. It is a quiet, atmospheric old temple a little removed from the bustle of tourist crowds.",
+  "quiz_en": "Which flower, often celebrated in the Man'yoshu poetry anthology, colors the stone-stepped approach of Byakugo-ji in autumn?"
+ },
+ {
+  "id": "29-10035",
+  "name_en": "Akishino-dera Temple",
+  "area_en": "Nara City",
+  "desc_en": "This historic temple, founded at the end of the Nara period, is known for its beautiful moss garden. The main hall enshrines a standing statue of Gigeiten, believed to bring improvement in the arts, whose graceful figure has even been called the \"Muse of the East.\" Walking through the soft moss garden that covers the grounds, you can feel the tranquility and dignity unique to Nara's ancient temples.",
+  "quiz_en": "Which Buddhist deity, enshrined at Akishino-dera, draws many visitors who pray for improvement in the arts?"
+ },
+ {
+  "id": "29-10036",
+  "name_en": "Hannya-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This historic temple on Narazaka is beloved as a \"temple of flowers,\" with seasonal blooms filling its grounds. In autumn especially, cosmos bloom across the entire grounds, earning it the nickname \"Cosmos Temple.\" Among the flowers stands a dignified thirteen-story stone pagoda from the Kamakura period, and the two-story gate is designated a National Treasure. You can also enjoy yellow kerria in spring and hydrangeas in early summer.",
+  "quiz_en": "Because of the flowers that fill its grounds in autumn, what affectionate nickname is Hannya-ji Temple known by?"
+ },
+ {
+  "id": "29-10037",
+  "name_en": "Futai-ji Temple (Narihira-dera)",
+  "area_en": "Nara City",
+  "desc_en": "This temple is associated with the Heian-period poet Ariwara no Narihira and is also called \"Narihira-dera.\" The main hall enshrines a statue of Sho Kannon said to have been carved by Narihira himself, and its gentle expression greets visitors. The grounds are colored by seasonal flowers such as forsythia and kerria in spring and irises in early summer, and an elegant Heian atmosphere drifts through its modest setting.",
+  "quiz_en": "Which poet, closely associated with Futai-ji, is also said to be the model for the hero of \"The Tales of Ise\"?"
+ },
+ {
+  "id": "29-10042",
+  "name_en": "Obitoke-dera Temple",
+  "area_en": "Nara City",
+  "desc_en": "This historic temple in southern Nara City has long been revered as a temple for praying for safe childbirth. Its name \"Obitoke\" is linked to the custom of pregnant women wearing a maternity sash to pray for a safe delivery, and people come from all over Japan to pray for children and easy births. Many visitors receive a sash amulet and visit on the Day of the Dog, and a warm atmosphere of wishing for family happiness fills the temple.",
+  "quiz_en": "At Obitoke-dera, known for prayers for safe childbirth, which zodiac day is considered especially lucky for a visit?"
+ },
+ {
+  "id": "29-10043",
+  "name_en": "Shoryaku-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This historic temple lies in a valley of Mount Bodai in southeastern Nara City. Sake brewing using \"bodaimoto,\" developed at this temple in the Muromachi period, is regarded as one of the origins of Japanese sake, and a monument proclaims it the \"birthplace of Japanese sake.\" In autumn, the grounds along the mountain stream turn bright red with maple leaves, creating a beautiful landscape also called the \"Village of Brocade.\"",
+  "quiz_en": "What is the name of the sake starter made at Shoryaku-ji Temple, regarded as one of the origins of Japanese sake?"
+ },
+ {
+  "id": "29-10044",
+  "name_en": "Konin-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This temple dedicated to Kokuzo Bosatsu stands among farmland in eastern Nara City. It is beloved as a temple for \"Jusan Mairi,\" in which children who turn 13 by the traditional Japanese age count visit to receive wisdom and good fortune. From the grounds you can look out over the peaceful countryside, and the temple has the calm atmosphere of an old temple carefully protected by the local community.",
+  "quiz_en": "What is the name of the event in which children aged 13 by traditional reckoning visit Kokuzo Bosatsu to receive wisdom?"
+ },
+ {
+  "id": "29-10046",
+  "name_en": "Daian-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This temple traces its origins to a temple of the Asuka period, and in the Nara period it boasted a vast complex as one of the Seven Great Temples of Nara. Today's grounds are modest compared with the past, but Buddhist statues from the Tenpyo era have been handed down, conveying the history of the ancient capital. It is also revered as a temple for warding off cancer, and at seasonal events sasazake, sake served in bamboo tubes, is offered to visitors.",
+  "quiz_en": "What is the collective name for the seven great temples of the Nara-period capital, among which Daian-ji is counted?"
+ },
+ {
+  "id": "29-10047",
+  "name_en": "Sugawara Tenmangu Shrine",
+  "area_en": "Nara City",
+  "desc_en": "This shrine stands on what is said to be the birthplace of the Sugawara clan, the ancestors of Sugawara no Michizane. It is also said to be one of Michizane's possible birthplaces, and students preparing for exams and others visit to pray to him as the god of learning. Plum trees are planted in the grounds, and in early spring red and white blossoms burst into bloom. Kiko-ji Temple, also linked to the Sugawara clan, is nearby, so a combined walk is recommended.",
+  "quiz_en": "At Tenmangu shrines dedicated to Sugawara no Michizane, which flower that he loved is often planted in the grounds?"
+ },
+ {
+  "id": "29-10049",
+  "name_en": "Ryosen-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This Shingon Buddhist temple spreads across the hills of Tomio in western Nara City. Its main hall, built in the Kamakura period, is designated a National Treasure, and cultural properties such as a three-story pagoda are scattered across the spacious grounds. It is also famous for its rose garden created in the Showa era, where colorful roses bloom in spring and autumn, offering the unusual sight of an ancient temple complex alongside roses.",
+  "quiz_en": "Which flower blooms in spring and autumn at Ryosen-ji, known for its surprising pairing with an ancient temple?"
+ },
+ {
+  "id": "29-10053",
+  "name_en": "Enjo-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This historic temple stands along the Yagyu Kaido road in eastern Nara City. Its Tahoto pagoda enshrines a seated statue of Dainichi Nyorai said to be the work of the young Unkei, designated a National Treasure. In front of the gate lies a Pure Land-style garden in the Heian manner, and the view of the two-story gate and trees reflected in the pond is superb. The temple is especially colorful during the autumn foliage season.",
+  "quiz_en": "The seated Dainichi Nyorai statue at Enjo-ji is said to be an early work of which leading Kamakura-period sculptor?"
+ },
+ {
+  "id": "29-10054",
+  "name_en": "Hotoku-ji Temple",
+  "area_en": "Nara City",
+  "desc_en": "This temple in Yagyu, Nara City, known as the home of legendary swordsmen, was built by Yagyu Munenori, sword instructor to the Tokugawa shoguns, to pray for the soul of his father Sekishusai. At the back of the grounds is the Yagyu clan cemetery, where moss-covered gravestones stand quietly. The Yagyu area is dotted with legendary sites such as the Itto-seki stone, so you can walk while imagining tales of the great swordsmen.",
+  "quiz_en": "Yagyu Munenori, who built Hotoku-ji Temple, served the Tokugawa shoguns as an instructor in what discipline?"
+ },
+ {
+  "id": "29-10106",
+  "name_en": "Koriyama Castle Ruins",
+  "area_en": "Yamatokoriyama City",
+  "desc_en": "These are the ruins of the castle where Hidenaga, younger brother of Toyotomi Hideyoshi, took up residence and governed the provinces of Yamato, Kii, and Izumi. Stones from temples and even stone Buddhas were used in the walls, and the \"Upside-down Jizo,\" set in the wall upside down, is famous. The restored Oute Gate and turrets convey the castle's former appearance, and in spring the entire site is filled with cherry blossoms. The castle town of Yamatokoriyama is also known for producing goldfish.",
+  "quiz_en": "The castle town of Yamatokoriyama, below Koriyama Castle, is famous for producing what kind of ornamental fish?"
+ },
+ {
+  "id": "29-10108",
+  "name_en": "Matsuo-dera Temple",
+  "area_en": "Yamatokoriyama City",
+  "desc_en": "This historic temple in the mountains of the Yata Hills in Yamatokoriyama has long been revered as a temple for warding off misfortune. Climbing the mountain approach, you come upon the main hall and three-story pagoda in grounds surrounded by forest. People reaching their yakudoshi visit to pray, and in autumn the maples change color, letting you calm your mind amid the quiet scenery of a mountain temple.",
+  "quiz_en": "Many people visit Matsuo-dera to pray for protection during certain ages believed to bring misfortune. What are these ages called?"
+ },
+ {
+  "id": "29-10109",
+  "name_en": "Yata-dera Temple",
+  "area_en": "Yamatokoriyama City",
+  "desc_en": "This historic temple, halfway up the Yata Hills, is widely known as the \"Hydrangea Temple.\" In early summer, the hydrangea garden in the grounds blooms with what is said to be about 10,000 plants of some 60 varieties, with blue, purple, and pink flowers covering the slopes. The principal image is Jizo Bosatsu, affectionately known as \"Yata's Ojizo-san,\" and you can enjoy the temple's gentle beauty even under rainy-season skies.",
+  "quiz_en": "Because of the flowers that fill its grounds in early summer, what nickname is Yata-dera Temple known by?"
+ },
+ {
+  "id": "29-10117",
+  "name_en": "Isonokami Jingu Shrine (including Hatsumode)",
+  "area_en": "Tenri City",
+  "desc_en": "Considered one of the oldest shrines in Japan, it is said to have been worshipped by the Mononobe, a powerful ancient clan. The National Treasure Seven-Branched Sword has been handed down as a sacred treasure, and the grounds, surrounded by a deep cedar grove, are filled with a sacred atmosphere. Chickens, regarded as messengers of the gods, roam freely in the grounds, and their carefree strolling charms visitors. Many people also come for hatsumode, the first shrine visit of the New Year.",
+  "quiz_en": "What is the name of the National Treasure sword at Isonokami Jingu with its unique shape of branch-like blades on both sides?"
+ },
+ {
+  "id": "29-10119",
+  "name_en": "Chogaku-ji Temple",
+  "area_en": "Tenri City",
+  "desc_en": "This historic temple stands along the Yamanobe-no-michi, said to be the oldest road in Japan. Its bell-tower gate, built in the Heian period, is considered the oldest of its kind in Japan. The grounds are colored by flowers throughout the year, with azaleas in spring, irises in early summer, and autumn leaves that are spectacular. Stop by while walking the Yamanobe-no-michi and enjoy it along with the peaceful countryside of Yamato.",
+  "quiz_en": "What is the name of the ancient road running from Tenri to Sakurai, said to be Japan's oldest, along which Chogaku-ji stands?"
+ },
+ {
+  "id": "29-10140",
+  "name_en": "Imaicho Townscape",
+  "area_en": "Kashihara City",
+  "desc_en": "This townscape developed in the Sengoku period as a temple town centered on Shonen-ji, and it prospered as a merchant town in the Edo period. Many Edo-period townhouses remain within an area of about 600 meters east to west and 310 meters north to south, and it has been selected as a national Important Preservation District for Groups of Traditional Buildings. Walking streets lined with latticed houses and mushiko-mado windows feels like slipping back in time to the Edo period.",
+  "quiz_en": "What is the name for a town like Imaicho that developed around a temple and was enclosed by moats and earthen walls?"
+ },
+ {
+  "id": "29-10141",
+  "name_en": "Kashihara Jingu Shrine",
+  "area_en": "Kashihara City",
+  "desc_en": "Founded in 1890 at the southeastern foot of Mount Unebi, this shrine stands on the site where the palace of Emperor Jimmu, regarded as Japan's first emperor, is said to have been when he ascended the throne. Gravel paths stretch across the vast sacred grounds, and the cypress-bark-roofed main sanctuary and outer worship hall create a solemn atmosphere. It is crowded with worshippers for the New Year's first shrine visit, and its deep forest and wide sky leave a lasting impression.",
+  "quiz_en": "Who is enshrined at Kashihara Jingu Shrine and regarded in tradition as the very first emperor of Japan?"
+ },
+ {
+  "id": "29-10157",
+  "name_en": "Shorin-ji Temple",
+  "area_en": "Sakurai City",
+  "desc_en": "This temple stands halfway up a mountain in Sakurai and enshrines a National Treasure standing statue of the Eleven-Headed Kannon, one of the finest Buddhist sculptures of the Tenpyo era. It is said to have been moved here from the shrine-temple of Omiwa Shrine during the separation of Shinto and Buddhism in the Meiji era, and its well-proportioned, graceful form has captivated many. From the grounds you can look out over Mount Miwa and the farmland of the Nara Basin.",
+  "quiz_en": "What is the name of the type of Kannon, enshrined at Shorin-ji as a National Treasure, that has many faces on its head?"
+ },
+ {
+  "id": "29-10163",
+  "name_en": "Ishii-dera Temple",
+  "area_en": "Sakurai City",
+  "desc_en": "This small hall in the mountains of Sakurai preserves a stone Buddha from ancient times. Carved in relief on a single stone, the Buddhist triad is striking for its gentle expressions and is considered one of the oldest stone Buddhas in Japan. Usually it stands quietly within a peaceful village, a little-known place of prayer that sees only a handful of visitors.",
+  "quiz_en": "What is the name for a group of Buddhist images, like Ishii-dera's stone Buddha, made up of a central figure and two attendants?"
+ },
+ {
+  "id": "29-10167",
+  "name_en": "Tomi Shrine",
+  "area_en": "Sakurai City",
+  "desc_en": "This ancient shrine sits at the northern foot of Mount Tomi in Sakurai. Mount Tomi is a mountain of distinguished history, said to be the site where Emperor Jimmu worshipped his imperial ancestral deities, and a trail leads from behind the shrine up to the summit. The quiet, tree-lined grounds are filled with the solemn air of the Yamato region, where faith has been handed down since ancient times.",
+  "quiz_en": "From the summit of Mount Tomi, which rises behind Tomi Shrine, which view of the Yamato region would you like to see?"
+ },
+ {
+  "id": "29-10178",
+  "name_en": "Kongo-ji Temple",
+  "area_en": "Gojo City",
+  "desc_en": "This historic temple in Gojo is affectionately known as the \"Peony Temple.\" From spring into early summer, many peonies bloom in the garden, enveloping visitors in the vivid colors and fragrance of their large blossoms. The surrounding area is a peaceful village along the Yoshino River, and amid the simple scenery of Gojo, also known for growing persimmons, you can take your time enjoying the beauty of this flower temple.",
+  "quiz_en": "Because of the large flowers that color its garden in spring, what kind of temple is Kongo-ji affectionately called?"
+ },
+ {
+  "id": "29-10179",
+  "name_en": "Eisan-ji Temple",
+  "area_en": "Gojo City",
+  "desc_en": "This historic temple stands on the banks of the Yoshino River and is said to have been founded by Fujiwara no Muchimaro in the Nara period. The Octagonal Hall in the grounds is designated a National Treasure as a work of Nara-period architecture, and it is a precious octagonal hall ranked alongside the Yumedono of Horyu-ji. Surrounded by the flowing river and trees, the quiet grounds are filled with a calm atmosphere that conveys the weight of history.",
+  "quiz_en": "When viewed from directly above, what shape does the National Treasure building at Eisan-ji Temple have?"
+ },
+ {
+  "id": "29-10213",
+  "name_en": "Hozan-ji Temple",
+  "area_en": "Ikoma City",
+  "desc_en": "This temple of the Shingon Ritsu school, halfway up Mount Ikoma, is affectionately known as \"Ikoma no Shoten-san,\" and many people visit to pray for business prosperity. It was founded in the Edo period by the priest Tankai, and the view of the Hannya Cave set against the rocky mountain is striking. Stone steps and stone lanterns line the approach, and you can walk from Hozanji Station on the Ikoma Cable Line while enjoying the atmosphere of the temple town.",
+  "quiz_en": "Because it is known for blessings of business prosperity, Hozan-ji Temple is affectionately called \"Ikoma no what-san\"?"
+ },
+ {
+  "id": "29-10219",
+  "name_en": "Anichi-ji Temple",
+  "area_en": "Kashiba City",
+  "desc_en": "This temple in Kashiba is said to be the birthplace of Eshin Sozu Genshin, a monk of the Heian period. Genshin is known for writing the \"Ojoyoshu\" and spreading Pure Land faith. The temple is also revered as a temple of \"pokkuri ojo,\" where people pray for a peaceful end without long illness, and many elderly worshippers visit. It is a gentle place of prayer set in a quiet residential area.",
+  "quiz_en": "What is the title of the book on Pure Land faith written by Eshin Sozu Genshin, said to have been born at Anichi-ji?"
+ },
+ {
+  "id": "29-10223",
+  "name_en": "Sekko-ji Temple",
+  "area_en": "Katsuragi City",
+  "desc_en": "This temple at the foot of Mount Nijo is also called \"Some-dera\" (Dyeing Temple) because a well remains where Princess Chujo is said to have dyed lotus threads in five colors. It is known as a temple of flowers, and its winter peonies, which bloom from winter to early spring, are especially popular, looking charming as they open inside straw snow shelters. You can also enjoy spring peonies, herbaceous peonies, and autumn bush clover, so the temple is filled with floral fragrance year-round.",
+  "quiz_en": "Sekko-ji is called the \"Dyeing Temple\" because it has a well where a legendary princess dyed what?"
+ },
+ {
+  "id": "29-10229",
+  "name_en": "Yashikiyama Park",
+  "area_en": "Katsuragi City",
+  "desc_en": "This park in central Katsuragi has been developed on the site of a jinya, an administrative residence established in the Edo period. Ponds, lawns, and trees are arranged throughout, and it is beloved by local people as a place to relax. In spring the cherry trees bloom, and you can stroll while enjoying views set against Mount Nijo and Mount Katsuragi. It is a park where you can spend a leisurely time while sensing traces of history.",
+  "quiz_en": "If you spent a day at Yashikiyama Park, how would you like to enjoy it, with cherry-blossom viewing or a picnic?"
+ },
+ {
+  "id": "29-10235",
+  "name_en": "Muro-ji Temple",
+  "area_en": "Uda City",
+  "desc_en": "This historic Shingon temple lies in the mountains along the Muro River in Uda. Because it has long welcomed women worshippers, it is called \"Nyonin Koya\" (Women's Koya), and its National Treasure Golden Hall and Main Hall stand on the mountainside. Its five-story pagoda is considered the smallest outdoor five-story pagoda in Japan, and in spring it shows its dainty form surrounded by rhododendrons. The autumn foliage is also magnificent.",
+  "quiz_en": "Muro-ji Temple, which has long welcomed women worshippers, has traditionally been called by what nickname?"
+ },
+ {
+  "id": "29-10251",
+  "name_en": "Ono-dera Temple",
+  "area_en": "Uda City",
+  "desc_en": "This temple stands on the banks of the Uda River, at the entrance to Muro-ji. On the cliff on the opposite bank, a giant image of Miroku Bosatsu has been engraved in line carving, and its grand scale is astonishing. In spring, magnificent weeping cherry trees color the grounds, and many people come to see the cliff carving and the cherry blossoms side by side.",
+  "quiz_en": "What is the term for a Buddhist image carved directly into rock, like the one on the cliff across from Ono-dera?"
+ },
+ {
+  "id": "29-10252",
+  "name_en": "Ryuchin Gorge",
+  "area_en": "Uda City",
+  "desc_en": "This gorge in the mountains of Uda features a clear stream that weaves its way between the rocks. Deep in the gorge there is also a waterfall, and true to its name, meaning \"place where the dragon rests,\" a somewhat mystical atmosphere hangs in the air. In summer people come seeking the cool shade and waterside for camping and water play, and in autumn the surrounding trees change color and adorn the stream.",
+  "quiz_en": "Beside the clear waters of Ryuchin Gorge, what kind of summer outdoor activity would you like to enjoy?"
+ },
+ {
+  "id": "29-10256",
+  "name_en": "Temples and Shrines of Uda",
+  "area_en": "Uda City",
+  "desc_en": "Uda is dotted with many historic temples, including Muro-ji and Ono-dera, as well as shrines of distinguished history. Since ancient times, a highway leading to Ise passed through this basin town surrounded by mountains, and travelers came and went. If you tour the temples and shrines along with the Uda Matsuyama townscape, which retains traces of a castle town, you can feel the faith and history living on in the mountain villages of Yamato.",
+  "quiz_en": "On a tour of the temples and shrines of Uda City, which temple or shrine would you most like to visit?"
+ },
+ {
+  "id": "29-10292",
+  "name_en": "Tatsuta Taisha Shrine",
+  "area_en": "Sango Town",
+  "desc_en": "This shrine in Sango has long been dedicated to the gods of wind. As deities who calm wind and flood damage and bring abundant harvests, they were deeply revered even by the imperial court. In summer, a festival to calm the winds is held, drawing many worshippers. The banks of the Yamato River flowing near the shrine and the Tatsuta mountains are a famous spot for autumn leaves celebrated in waka poetry.",
+  "quiz_en": "The deities enshrined at Tatsuta Taisha are known as gods who govern which element of the natural world?"
+ },
+ {
+  "id": "29-10293",
+  "name_en": "Horyu-ji Temple",
+  "area_en": "Ikaruga Town",
+  "desc_en": "This temple is associated with Prince Shotoku, and its Western Precinct, centered on the Golden Hall and five-story pagoda, is known as the world's oldest surviving group of wooden buildings. In 1993, together with Himeji Castle, it became one of Japan's first World Cultural Heritage Sites. The Eastern Precinct with the Yumedono hall and the Great Treasure Hall housing numerous National Treasures are also highlights, conveying the Buddhist culture of the Asuka period today.",
+  "quiz_en": "What is the name of the octagonal Buddhist hall found in the Eastern Precinct of Horyu-ji Temple?"
+ },
+ {
+  "id": "29-10298",
+  "name_en": "Chugu-ji Temple",
+  "area_en": "Ikaruga Town",
+  "desc_en": "This nunnery adjoins the Eastern Precinct of Horyu-ji and is said to have been built by Prince Shotoku for his mother. The principal image, a half-seated bodhisattva with a finger resting on its cheek and a quiet smile, is beautiful, and its smile has been called one of the three great smiling statues of the world. Together with the tranquil main hall, which seems to float on a pond, it offers a peaceful time.",
+  "quiz_en": "In the language of ancient art, what kind of smile is the gentle smile of Chugu-ji's half-seated bodhisattva called?"
+ },
+ {
+  "id": "29-10300",
+  "name_en": "Hokki-ji Temple",
+  "area_en": "Ikaruga Town",
+  "desc_en": "This temple stands among the farmland of the Ikaruga countryside and is one of the temples associated with Prince Shotoku. Its pagoda was built in the Asuka period and is considered the oldest surviving three-story pagoda in Japan, designated a National Treasure. It is registered as a World Heritage Site together with Horyu-ji, and in autumn a peaceful scene unfolds, with the pagoda visible beyond fields of cosmos.",
+  "quiz_en": "The National Treasure pagoda at Hokki-ji is considered the oldest in Japan among pagodas with how many stories?"
+ },
+ {
+  "id": "29-10318",
+  "name_en": "Soni Highlands",
+  "area_en": "Soni Village",
+  "desc_en": "This highland spreads across the western foot of Mount Kuroso in Soni Village. Its gentle slopes are covered with Japanese pampas grass, and in autumn the silver plumes sway in the wind, shimmering like waves. In the evening they glow gold in the setting sun, and many people come to see the sight. In the middle of the highland is a wetland called Okame Pond, and the scenery of fresh grass after the spring burning is also beautiful.",
+  "quiz_en": "What plant covers the slopes of the Soni Highlands and turns them silver and gold in the autumn?"
+ },
+ {
+  "id": "29-10332",
+  "name_en": "Takatori Castle Ruins",
+  "area_en": "Takatori Town",
+  "desc_en": "These are the ruins of a mountain castle built atop Mount Takatori in Takatori, counted as one of Japan's three great mountain castles. In the Edo period the Uemura clan served as lords, and a vast castle complex was built on the steep summit. No buildings remain today, but tall, moss-covered stone walls stretch through the forest, overwhelming visitors with their grandeur. Walking it together with the Tosa Kaido townscape below is recommended.",
+  "quiz_en": "Along with Iwamura Castle and Bitchu Matsuyama Castle, Takatori Castle is counted among what group of castles?"
+ },
+ {
+  "id": "29-10334",
+  "name_en": "Kojima-dera Temple",
+  "area_en": "Takatori Town",
+  "desc_en": "This historic temple in Takatori is known for preserving a National Treasure Mandala of the Two Realms, believed to date from the Heian period. Painted in gold and silver on dark blue silk, this mandala is called the \"Kojima Mandala\" and is a masterpiece representing Japan's esoteric Buddhist art. The grounds are wrapped in a calm atmosphere that lets you feel the depth of history in the peaceful town of Takatori.",
+  "quiz_en": "Named after the temple itself, what is the National Treasure mandala preserved at Kojima-dera Temple called?"
+ },
+ {
+  "id": "29-10335",
+  "name_en": "Koun-ji Temple",
+  "area_en": "Takatori Town",
+  "desc_en": "This temple is located in Takatori. Takatori developed as the castle town of Takatori Castle, and traces of townhouses and samurai residences remain along the Tosa Kaido. It has also long been known as a \"town of medicine,\" where the culture of okigusuri, household medicine kits, took root. If you visit the quiet grounds during a town walk, you can feel the calm atmosphere of a castle town.",
+  "quiz_en": "Takatori Town has long been known as a town of what, where the culture of household medicine kits took root?"
+ },
+ {
+  "id": "29-10345",
+  "name_en": "Tachibana-dera Temple",
+  "area_en": "Asuka Village",
+  "desc_en": "This temple in Asuka is said to be the birthplace of Prince Shotoku. Its grounds contain mysterious stone objects typical of Asuka, including the \"Nimen-seki,\" a stone carved with two faces representing good and evil. In autumn, red spider lilies bloom in the surrounding fields, and the combination of Asuka's peaceful scenery and the old temple is beautiful, making it a stopping point for travelers touring the village by bicycle.",
+  "quiz_en": "What is the name of the stone in the grounds of Tachibana-dera that has faces of good and evil carved on either side?"
+ },
+ {
+  "id": "29-10365",
+  "name_en": "Cherry Blossoms of Mount Yoshino",
+  "area_en": "Yoshino Town",
+  "desc_en": "Mount Yoshino has long been famous for cherry blossoms, with what is said to be about 30,000 trees blooming from its ridges to its valleys. The blossoms open in order from the foot of the mountain upward, through the Shimo Senbon, Naka Senbon, Kami Senbon, and Oku Senbon areas, so you can enjoy hanami over a long period. Most of the trees are Shiroyamazakura, with a history of being planted as sacred trees offered to the principal deity of Shugendo.",
+  "quiz_en": "What Japanese phrase describes the view at Mount Yoshino, meaning that a thousand cherry trees can be seen at a single glance?"
+ },
+ {
+  "id": "29-10371",
+  "name_en": "Nakanosho Onsen",
+  "area_en": "Yoshino Town",
+  "desc_en": "This onsen (hot spring) is located in Yoshino Town at the foot of Mount Yoshino, famous for its cherry blossoms. Set in the mountains near the Yoshino River, it lets you soak at leisure in a quiet environment. Stop by when visiting Yoshino for spring cherry blossoms or autumn leaves, and the fatigue of mountain walking will melt away. After bathing, you can enjoy Yoshino specialties such as kakinoha-zushi (sushi wrapped in persimmon leaves) and sweets made with kudzu.",
+  "quiz_en": "After warming up at Nakanosho Onsen, which of Yoshino's local specialties would you like to taste?"
+ },
+ {
+  "id": "29-10411",
+  "name_en": "Seson-ji Temple",
+  "area_en": "Oyodo Town",
+  "desc_en": "This temple in Oyodo is said to carry on the lineage of an ancient temple from the Asuka period. Foundation stones of the ancient temple's pagoda and other remains survive in the grounds, and the site has been designated a national historic site. It lies in a peaceful area along the route to Yoshino, and walking the quiet grounds, you can feel the long history of prayer passed down here since ancient times.",
+  "quiz_en": "What is the name for the large stones that remain at Seson-ji and once supported the pillars of pagodas and buildings?"
+ },
+ {
+  "id": "29-10464",
+  "name_en": "Dorokyo Gorge",
+  "area_en": "Totsukawa Village",
+  "desc_en": "This gorge on the Kitayama River spans the three prefectures of Nara, Wakayama, and Mie, and its scenery can also be enjoyed from the Totsukawa side. Sheer cliffs and strange rock formations line both banks, and the still, deep-green water spreads calmly, true to the name \"Doro,\" meaning tranquil waters. It is designated a national Special Place of Scenic Beauty and Natural Monument, and riding a jet boat through the gorge brings the dramatic scenery right up close.",
+  "quiz_en": "Riding a jet boat through Dorokyo Gorge, which scenery or rock formation would you most like to see up close?"
+ },
+ {
+  "id": "29-10465",
+  "name_en": "Totsukawa Onsen",
+  "area_en": "Totsukawa Village",
+  "desc_en": "This onsen (hot spring) wells up in the mountains of Totsukawa, one of Japan's largest villages by area. The village's hot springs are known for declaring themselves gensen kakenagashi, free-flowing straight from the source without added water or recirculation, so you can fully enjoy the abundant hot water. Nearby are the Tanize Suspension Bridge, one of the longest in Japan, and the Kohechi route of the World Heritage Kumano pilgrimage trails, making for a journey into a remote mountain hideaway.",
+  "quiz_en": "What is the name of the famous long suspension bridge in Totsukawa Village that sways as you cross high above the river?"
+ },
+ {
+  "id": "29-10471",
+  "name_en": "Kii Peninsula Forest Botanical Park",
+  "area_en": "Totsukawa Village",
+  "desc_en": "This forest botanical park lies in Totsukawa, deep in the Kii Mountains. The forests of the Kii Peninsula, nurtured by abundant rain, are home to a wide variety of trees, and on the park's trails you can enjoy forest bathing while observing wild mountain flowers and flowering trees. In the season of fresh greenery the mountains are wrapped in vivid green, and with every deep breath the clear air seems to soak into your body.",
+  "quiz_en": "If you walked through the forest of Kii Peninsula Forest Botanical Park, what plants or creatures would you like to find?"
+ },
+ {
+  "id": "29-10495",
+  "name_en": "Mount Odaigahara",
+  "area_en": "Kamikitayama Village",
+  "desc_en": "This plateau-like mountain straddles the border of Nara and Mie prefectures and is known as one of the rainiest areas in Japan. A trail leads to Mount Hidegatake, its highest peak, through unique landscapes such as moss-covered forests shrouded in mist and Masakigahara, lined with dead standing spruce trees. From the sheer cliff of Daijagura, you can enjoy a breathtaking view down over deep valleys and mountain ranges.",
+  "quiz_en": "What is the name of the rocky outcrop at Odaigahara from which you can look down into the valley from a sheer cliff?"
+ },
+ {
+  "id": "29-10498",
+  "name_en": "Kodokoro Onsen",
+  "area_en": "Kamikitayama Village",
+  "desc_en": "This onsen (hot spring) wells up quietly in a valley wrapped in deep forest, far into the mountains of Kamikitayama. Located far from any settlement, its appeal is a tranquility that truly deserves the name hito (secret hot spring). Surrounded by clear streams and primeval forest, you can forget everyday life as you soak while listening to the murmur of the river and birdsong. Try visiting it as part of a trip toward Odaigahara.",
+  "quiz_en": "At a secluded mountain hot spring like Kodokoro Onsen, what moment are you looking forward to the most?"
+ },
+ {
+  "id": "29-10523",
+  "name_en": "Mount Takami",
+  "area_en": "Higashiyoshino Village",
+  "desc_en": "This mountain, rising on the border of Nara and Mie prefectures, is striking for its pointed shape. Because of its form it is also called the \"Matterhorn of Kansai\" and is popular with climbers. In winter, the branches of the trees are coated white with rime ice, and the whole mountain can be seen wrapped in frost flowers. From the summit, you can enjoy grand views over the Daiko Mountains and the ranges of Yamato.",
+  "quiz_en": "What is the name of Mount Takami's winter phenomenon in which fog freezes onto tree branches so they look like white flowers?"
+ },
+ {
+  "id": "30-10002",
+  "name_en": "Kimii-dera Temple",
+  "area_en": "Wakayama City",
+  "desc_en": "This historic temple sits halfway up Mount Nagusa in Wakayama City and is a stop on the Saigoku Thirty-Three Kannon Pilgrimage. It is known for cherry trees that bloom earlier than almost anywhere else in Wakayama Prefecture and is called the \"temple that brings spring to Kinki.\" Once you climb its steep stone steps, a wonderful view opens up over the sea of Wakanoura and the town, and in spring you can see the sea through the cherry blossoms.",
+  "quiz_en": "Which numbered stop is Kimii-dera Temple on the Saigoku Thirty-Three Kannon Pilgrimage, which visits sacred sites of Kannon?"
+ },
+ {
+  "id": "30-10004",
+  "name_en": "Yosuien Garden",
+  "area_en": "Wakayama City",
+  "desc_en": "This daimyo garden was created by order of Tokugawa Harutomi, the tenth lord of the Kishu domain. It is a strolling garden centered on a pond that draws in seawater, with three bridges across the pond and the nature of Wakanoura felt beyond the pine grove. It is designated a national Place of Scenic Beauty, and buildings constructed as the lord's villa also remain. The gentle scenery woven from green pines and the water's surface spreads before you.",
+  "quiz_en": "What is the name for a pond like the one at Yosuien that draws in seawater and rises and falls with the tide?"
+ },
+ {
+  "id": "30-10015",
+  "name_en": "Awashima Shrine",
+  "area_en": "Wakayama City",
+  "desc_en": "This shrine stands by the sea in Kada, Wakayama City, and is known throughout Japan as a shrine for memorial services for dolls. Countless dolls and figurines offered from all over the country line the grounds, creating an overwhelming sight. Every year on March 3, the \"Hina Nagashi\" ceremony is held, in which hina dolls are placed on small boats and sent out to sea, a springtime tradition praying for the healthy growth of girls.",
+  "quiz_en": "What is the name of the ritual held every March 3 at Awashima Shrine in which hina dolls are sent out to sea on small boats?"
+ },
+ {
+  "id": "30-10016",
+  "name_en": "Shiki no Sato Park",
+  "area_en": "Wakayama City",
+  "desc_en": "This agricultural experience park spreads across the hills on the outskirts of Wakayama City. You can enjoy activities that connect you with farming and nature, such as harvesting seasonal vegetables and fruits and interacting with animals. There are also wide lawns and play equipment, so families can spend a relaxing day here. Seasonal flowers bloom throughout the park, and true to its name, meaning \"village of the four seasons,\" it is a place to feel the seasons change.",
+  "quiz_en": "If you tried a harvesting experience at Shiki no Sato Park, which vegetables or fruits would you like to pick?"
+ },
+ {
+  "id": "30-10021",
+  "name_en": "Wakayama Kitako Fishing Park",
+  "area_en": "Wakayama City",
+  "desc_en": "This fishing park has been built so that it juts out into the sea at Wakayama North Port. From fishing spots with good footing, you can cast your line into the rich waters near the Kitan Strait, and anyone from beginners to experts can easily enjoy fishing. Depending on the season you can aim for various fish such as horse mackerel and mackerel, and simply gazing at the horizon in the sea breeze will relax your mind.",
+  "quiz_en": "Which fish would you most like to reel in at the Wakayama Kitako Fishing Park, and in which season?"
+ },
+ {
+  "id": "30-10023",
+  "name_en": "Tomogashima Islands",
+  "area_en": "Wakayama City",
+  "desc_en": "Tomogashima is the collective name for islands such as Okinoshima and Jinoshima floating in the Kitan Strait, reachable by boat from Kada Port. Gun battery ruins and ammunition depots built in the Meiji era remain in the forest, and the scenery of brick remains merging with nature has become popular for looking like something out of a movie. The lighthouse and coastal views are also beautiful, and you can enjoy hiking around the island.",
+  "quiz_en": "What are the remains in the forests of Tomogashima that were built in the Meiji era to defend the strait?"
+ },
+ {
+  "id": "30-10024",
+  "name_en": "Wakaura Tenmangu Shrine",
+  "area_en": "Wakayama City",
+  "desc_en": "This shrine stands on a hill overlooking Wakanoura, a scenic spot celebrated in poetry since the Man'yo era. It is said to be linked to Sugawara no Michizane stopping here on his way to Dazaifu, and it is beloved by students taking exams as a shrine to the god of learning. After climbing the steep stone steps, you can take in the sea and townscape of Wakanoura, and the shrine buildings, which convey the Momoyama-period style, are also magnificent.",
+  "quiz_en": "Who is the figure enshrined at Wakaura Tenmangu, known as the god of learning and popular with students taking exams?"
+ },
+ {
+  "id": "30-10025",
+  "name_en": "Kamayama Shrine",
+  "area_en": "Wakayama City",
+  "desc_en": "This shrine in Wada, Wakayama City, is dedicated to Hikoitsuse no Mikoto, elder brother of Emperor Jimmu. Behind the shrine buildings is the Kamayama Tomb, said to be the grave of Hikoitsuse no Mikoto, who was wounded and died during Jimmu's eastern expedition, a place that conveys ancient stories to the present day. Wrapped in forest, the quiet grounds are carefully protected by the local community and filled with a calm atmosphere.",
+  "quiz_en": "Hikoitsuse no Mikoto, the deity enshrined at Kamayama Shrine, is said to be the elder brother of which emperor?"
+ },
+ {
+  "id": "30-10026",
+  "name_en": "Itakiso Shrine",
+  "area_en": "Wakayama City",
+  "desc_en": "This is the ichinomiya (highest-ranking shrine) of Kii Province, once called the \"Land of Trees,\" and it is dedicated to Isotakeru no Mikoto, said to have sown tree seeds across Japan to make the land green. As a god of trees he is revered by people in forestry and others, and the grounds are surrounded by lush trees. The shrine is also known for warding off misfortune, and \"Ki no Mata Kuguri,\" crawling through a split in the sacred tree to shed bad luck, is popular.",
+  "quiz_en": "Who is the deity enshrined at Itakiso Shrine who is said to have sown tree seeds all across Japan?"
+ },
+ {
+  "id": "30-10039",
+  "name_en": "Wakayama Food Festival",
+  "area_en": "Wakayama City",
+  "desc_en": "This is a food-themed event held in Wakayama City. Wakayama is a land with many nationally known specialties, such as mandarin oranges, ume plums, shirasu (whitebait), and soy sauce, and at the venue you can enjoy local flavors all at once. Gourmet food stalls and local product sales draw large crowds, and in the lively atmosphere you can experience the rich food culture of Kishu.",
+  "quiz_en": "At a food event in Wakayama, which Kishu specialty would you most like to taste, and how would you enjoy it?"
+ },
+ {
+  "id": "30-10051",
+  "name_en": "Lion Dance Offered at Kimoto Hachimangu Shrine",
+  "area_en": "Wakayama City",
+  "desc_en": "This lion dance is offered at Kimoto Hachimangu Shrine in Wakayama City during its festival. A traditional performing art handed down by local people, it features the lion dancing boldly to the music of drums and flutes, driving away misfortune and praying for good harvests and community safety. Having your head bitten by the lion is said to bring good health, and children can be seen approaching the lion and shrieking with delight.",
+  "quiz_en": "In the lion dance, what blessing is it said you receive when the lion bites your head?"
+ },
+ {
+  "id": "30-10058",
+  "name_en": "Fujishiro Shrine",
+  "area_en": "Kainan City",
+  "desc_en": "This shrine stands along the Kiiji route of the Kumano Kodo and is said to be the site of Fujishiro Oji, one of the five highest-ranking of the many Kumano Oji subsidiary shrines. It is regarded as the birthplace of the Suzuki family name nationwide, and the Suzuki residence remains in the grounds. It is also known as a place connected to Prince Arima, a tragic prince of the Asuka period, conveying the history and stories of the Kumano pilgrimage.",
+  "quiz_en": "Fujishiro Shrine is said to be the birthplace of one of Japan's most common family names. Which name is it?"
+ },
+ {
+  "id": "30-10059",
+  "name_en": "Choho-ji Temple",
+  "area_en": "Kainan City",
+  "desc_en": "This historic temple in the mountains of Shimotsu-cho, Kainan, is known as the family temple of the Kishu Tokugawa clan. Its main hall, Tahoto pagoda, and great gate, built between the Kamakura and Nanboku-cho periods, are all designated National Treasures, and it is rare for so many National Treasure buildings to survive at one temple. The hill behind holds the graves of successive domain lords, wrapped in a solemn atmosphere.",
+  "quiz_en": "In the Edo period, Choho-ji became the family temple of which branch of the three main Tokugawa houses?"
+ },
+ {
+  "id": "30-10061",
+  "name_en": "Wanpaku Park",
+  "area_en": "Kainan City",
+  "desc_en": "This park on the hills of Kainan is a place where children can run around and play to their hearts' content. With large play equipment and a wide lawn, it bustles with families on weekends and holidays. From the heights you can see the townscape of Kainan and the sea, making it perfect for picnics and walks. You can spend a carefree day here while admiring the seasonal flowers.",
+  "quiz_en": "If you could become a child again at Wanpaku Park, which piece of play equipment would you most want to try?"
+ },
+ {
+  "id": "30-10062",
+  "name_en": "Onzanso Garden",
+  "area_en": "Kainan City",
+  "desc_en": "This garden by the sea in Kainan was created from the Taisho era to the early Showa era. Centered on a pond that draws in seawater, it features sukiya-style buildings and tea rooms, and the garden is designated a national Place of Scenic Beauty. You can take your time savoring the beautiful harmony of the pond, which changes with the tides, the green of the pines, and the buildings.",
+  "quiz_en": "The water level of the pond at Onzanso Garden changes with the tides because the pond takes in what?"
+ },
+ {
+  "id": "30-10070",
+  "name_en": "Kibun Festival",
+  "area_en": "Arida City",
+  "desc_en": "This festival is held in Arida, a city known for growing mandarin oranges. Its name comes from Kinokuniya Bunzaemon, a wealthy merchant said to have made his fortune in the Edo period by shipping Kishu mandarins to Edo. During the festival, dances and parades brighten the town, and local people come together to celebrate. You can enjoy the cheerful, lively atmosphere of this home of Arida mandarins.",
+  "quiz_en": "Who was the merchant, said to have made his fortune from Kishu mandarins, after whom the Kibun Festival is named?"
+ },
+ {
+  "id": "30-10077",
+  "name_en": "Gobo Festival",
+  "area_en": "Gobo City",
+  "desc_en": "This is the annual autumn festival of Obata Hachiman Shrine in Gobo, a major event involving the whole town. Yotsu-daiko drum floats, lion dances, and banners set out from each district, and the town bustles all day long. Above all, the \"Suzume Odori,\" in which children dress as sparrows and dance, is the traditional performing art that symbolizes the festival. It is a festival the locals are proud of, filling the town of Gobo with excitement and smiles.",
+  "quiz_en": "What is the name of the dance performed at the Gobo Festival that imitates the lightly hopping movements of a bird?"
+ },
+ {
+  "id": "30-10081",
+  "name_en": "Kumano Hongu Taisha Shrine",
+  "area_en": "Tanabe City",
+  "desc_en": "This is the head shrine of the thousands of Kumano shrines across Japan and one of the three grand shrines of Kumano. It is part of the World Heritage Site \"Sacred Sites and Pilgrimage Routes in the Kii Mountain Range\" and welcomes pilgrims who arrive on foot along the Kumano Kodo. At Oyunohara, a sandbar in the Kumano River where the shrine once stood, rises one of Japan's largest torii gates, and talismans and a mailbox feature Yatagarasu, regarded as a messenger of the gods.",
+  "quiz_en": "What is the name of the three-legged crow regarded as a messenger of the gods at Kumano Hongu Taisha?"
+ },
+ {
+  "id": "30-10082",
+  "name_en": "Tsuboyu and Yuzutsu of Yunomine Onsen",
+  "area_en": "Tanabe City",
+  "desc_en": "Yunomine Onsen, in a valley near Kumano Hongu Taisha, is said to be one of the oldest hot springs in Japan. Tsuboyu, inside a small hut on the riverbank, is said to change color several times a day and is known as a hot spring registered as part of a World Heritage Site. At the Yuzutsu by the river, you can enjoy \"yuzutsu cooking,\" boiling eggs and vegetables in the scalding spring water that gushes out.",
+  "quiz_en": "What is the name of the small rock bath at Yunomine Onsen that is registered as part of a World Heritage Site?"
+ },
+ {
+  "id": "30-10084",
+  "name_en": "Kishu Binchotan Charcoal Memorial Park",
+  "area_en": "Tanabe City",
+  "desc_en": "This park is located in Akitsugawa, Tanabe, the home of high-quality Kishu binchotan charcoal. It has an exhibition facility introducing the history and production methods of binchotan, and you can tour a charcoal kiln and try charcoal making yourself. Kishu binchotan, made by firing ubame oak at high temperatures, is prized by chefs because it is hard and burns for a long time. In the quiet air of the mountain village, you can encounter charcoal culture.",
+  "quiz_en": "What hard, sturdy type of tree is mainly used as the raw material for making Kishu binchotan charcoal?"
+ },
+ {
+  "id": "30-10090",
+  "name_en": "Kozan-ji Temple",
+  "area_en": "Tanabe City",
+  "desc_en": "This temple stands on a hill overlooking central Tanabe. Its grounds hold the grave of the naturalist Kumagusu Minakata, who spent the latter half of his life in Tanabe, and many people come to visit it. Morihei Ueshiba, the founder of aikido, was also from Tanabe, and his grave is at this temple too. Looking out over the Aizu River and the townscape of Tanabe, it is a place to reflect on the great figures of the region.",
+  "quiz_en": "Who is the naturalist with ties to Tanabe, known for research on slime molds, who rests at Kozan-ji Temple?"
+ },
+ {
+  "id": "30-10093",
+  "name_en": "Kizetsukyo Gorge",
+  "area_en": "Tanabe City",
+  "desc_en": "This gorge stretches along the upper reaches of the Migi-Aizu River in Kamiakizu, Tanabe. A clear stream rushes through a valley of piled-up giant rocks, creating a rugged landscape that truly deserves to be called spectacular, as its name suggests. There are also Buddhist images carved into the rock face and small waterfalls, so you can encounter both nature and traces of faith while walking along the gorge. In autumn, colorful leaves adorn the rocks and water, making it even more beautiful.",
+  "quiz_en": "To see the giant rocks and clear stream of Kizetsukyo Gorge, would you rather visit in fresh green or autumn leaves?"
+ },
+ {
+  "id": "30-10095",
+  "name_en": "Shinjo General Park",
+  "area_en": "Tanabe City",
+  "desc_en": "This general park spreads across the hills of Tanabe. Equipped with sports facilities, a spacious lawn, and play equipment, it is a place where citizens relax while enjoying sports and picnics. From the heights you can look out over Tanabe Bay and the city, getting a clear sense of Tanabe's landscape surrounded by sea and mountains. It is a pleasant place to get some exercise while admiring the seasonal flowers.",
+  "quiz_en": "While looking out over Tanabe Bay from the heights of Shinjo General Park, how would you like to spend your time?"
+ },
+ {
+  "id": "30-10102",
+  "name_en": "Ryujin Onsen",
+  "area_en": "Ryujin Village, Tanabe City",
+  "desc_en": "This onsen (hot spring) wells up deep in the Kii Mountains along the upper Hidaka River. Together with Yunokawa Onsen in Shimane and Kawanaka Onsen in Gunma, it is counted among Japan's three \"hot springs of beauty,\" and its water is known for its silky feel on the skin. A legend also says it was founded by Kobo Daishi. It is a quiet hot spring town with inns lining the river, where you can soak while viewing the green or autumn colors of the gorge.",
+  "quiz_en": "Together with Yunokawa Onsen and Kawanaka Onsen, Ryujin Onsen is counted as one of what group of hot springs?"
+ },
+ {
+  "id": "30-10104",
+  "name_en": "Shoryu Festival",
+  "area_en": "Ryujin Village, Tanabe City",
+  "desc_en": "This festival, held in Ryujin Village, Tanabe, takes its theme from the village's name, which means \"dragon god.\" Ryujin Village lies in the mountains of the Kii range and is known for the clear Hidaka River, rich forests, and the famous Ryujin Onsen hot spring. On festival day, local people and visitors gather, and amid the warm hospitality unique to a mountain village, you can enjoy a lively time together.",
+  "quiz_en": "If you took part in the festival in Ryujin Village, which flavors of the mountain village would you like to try?"
+ },
+ {
+  "id": "30-10113",
+  "name_en": "Kumano Hayatama Taisha Shrine",
+  "area_en": "Shingu City",
+  "desc_en": "Located in Shingu near the mouth of the Kumano River, this is one of the Kumano Sanzan, the three grand shrines of Kumano. Its vivid vermilion buildings are striking, and the grounds hold a large nagi tree said to have been planted by Taira no Shigemori in the Heian period, designated a national Natural Monument. The deities are said to have been welcomed from Gotobiki-iwa, a giant rock on nearby Mount Kamikura, and every February the spirited Oto Matsuri fire festival is held at Kamikura Shrine.",
+  "quiz_en": "What kind of tree is the sacred tree in the grounds of Kumano Hayatama Taisha that is designated a national Natural Monument?"
+ },
+ {
+  "id": "30-10114",
+  "name_en": "Dorokyo Gorge",
+  "area_en": "Shingu City",
+  "desc_en": "This gorge runs along the middle reaches of the Kitayama River, a tributary of the Kumano River, continuing upstream from Kumanogawa-cho in Shingu. From upstream, its sections are called Okudoro, Kamidoro, and Shimodoro, and Shimodoro in particular is a scenic spot where tall cliffs close in on both banks and the calm, emerald-colored water flows on. Travel upriver by jet boat, and giant and curious rocks appear one after another as you are wrapped in the mystery of the deep valley.",
+  "quiz_en": "In Dorokyo Gorge, what is the name of the Shimodoro section, considered especially beautiful, where cliffs close in on both banks?"
+ },
+ {
+  "id": "30-10118",
+  "name_en": "Jofuku Park",
+  "area_en": "Shingu City",
+  "desc_en": "This park in front of Shingu Station is dedicated to Xu Fu, known in Japan as Jofuku. Jofuku is said to have crossed the sea on the orders of Qin Shi Huang, the First Emperor of China, in search of an elixir of immortality, and to have arrived here. A vivid Chinese-style gate catches the eye, and the park contains a monument said to be Jofuku's grave as well as tendai-uyaku trees, regarded as a miraculous medicine.",
+  "quiz_en": "On the orders of the First Emperor, what kind of elixir granting eternal life is Jofuku said to have searched for?"
+ },
+ {
+  "id": "30-10119",
+  "name_en": "Jinzu Onsen",
+  "area_en": "Kinokawa City",
+  "desc_en": "This onsen (hot spring) is located in the mountains of Kinokawa. Kinokawa is known for producing fruits such as peaches and persimmons, and peaceful orchard scenery spreads across the area. In a quiet setting surrounded by green mountains, you can soak at leisure and soothe your daily fatigue. After bathing, you can enjoy a relaxing time in the Kinokawa countryside while tasting seasonal fruit and local flavors.",
+  "quiz_en": "After a soak at a hot spring in Kinokawa City, which seasonal fruit would you most like to taste?"
+ },
+ {
+  "id": "30-10120",
+  "name_en": "Ryumonzan Onsen",
+  "area_en": "Kinokawa City",
+  "desc_en": "This onsen (hot spring) lies at the foot of Mount Ryumon in Kinokawa. Mount Ryumon, called \"Kishu Fuji\" for its beautiful shape, is popular with hikers. The hot spring is a favorite place to wash off the sweat after a mountain walk, and surrounded by the plains of the Kinokawa River and mountain scenery, you can relax body and mind. Orchards spread around the area, bearing various fruits each season.",
+  "quiz_en": "Because of its beautiful shape, what nickname is given to Mount Ryumon, which rises near Ryumonzan Onsen?"
+ },
+ {
+  "id": "30-10121",
+  "name_en": "Kokawa-dera Temple",
+  "area_en": "Kinokawa City",
+  "desc_en": "This historic temple in Kokawa, Kinokawa, is the third stop on the Saigoku Thirty-Three Kannon Pilgrimage. It is also known for preserving a National Treasure picture scroll depicting the story of the temple's founding. Its huge main hall is one of the largest among the Saigoku pilgrimage temples, and in front of it lies a garden with magnificent stonework designated a national Place of Scenic Beauty. You can also enjoy the atmosphere of the temple town.",
+  "quiz_en": "What is the name of the National Treasure picture scroll at Kokawa-dera that depicts the story of the temple's founding?"
+ },
+ {
+  "id": "30-10123",
+  "name_en": "Nagata Kannon",
+  "area_en": "Kinokawa City",
+  "desc_en": "This temple in Kinokawa has long been revered for its Kannon, who protects against misfortune. Many worshippers, including those reaching their yakudoshi (unlucky years), visit to pray for protection, especially at New Year. The temple is surrounded by the gentle farmland and mountains of the Kinokawa River basin, and you can feel the warm atmosphere of Kannon worship carefully preserved by the local community.",
+  "quiz_en": "At what time of year do especially large numbers of people visit Nagata Kannon to pray for protection from misfortune?"
+ },
+ {
+  "id": "30-10124",
+  "name_en": "Kokawa Festival",
+  "area_en": "Kinokawa City",
+  "desc_en": "This festival brightens summer in Kokawa, Kinokawa, and is the annual rite of Kokawa Ubusuna Shrine, regarded as the guardian shrine of Kokawa-dera. Gorgeous floats set out from each district and parade through the temple town to the music of flutes and drums. It is one of Kishu's leading summer festivals, and the sight of lantern-lit floats moving through the town at night lifts the hearts of all who see it.",
+  "quiz_en": "What do locals call the decorated floats that parade through the temple town during the Kokawa Festival?"
+ },
+ {
+  "id": "30-10136",
+  "name_en": "Kishu Negoro-ji Kakuban Festival",
+  "area_en": "Iwade City",
+  "desc_en": "This festival, held at Negoro-ji, head temple of the Shingi Shingon school, honors its founder Kogyo Daishi Kakuban. In the Sengoku period Negoro-ji was a major power with its own warrior monks, and its National Treasure Great Pagoda towers over the grounds. During the festival, Buddhist services and events are held, drawing many people to the grounds. The temple is also known for autumn leaves, and you can enjoy strolling around its historic buildings.",
+  "quiz_en": "The National Treasure Great Pagoda at Negoro-ji is known as a Buddhist pagoda of which architectural type?"
+ },
+ {
+  "id": "30-10138",
+  "name_en": "Oishi Kogen Prefectural Natural Park",
+  "area_en": "Kimino Town",
+  "desc_en": "This prefectural natural park covers the area around Mount Oishigamine, spanning Kimino and Aridagawa towns. Near the summit spreads a grassland of Japanese pampas grass, and in autumn it is covered in silver plumes, making it one of the finest pampas grass spots in Kansai. On clear days you can see as far as the Kii Channel and the mountains of Shikoku, and you can enjoy a refreshing walk amid the grand grassland maintained by controlled burning.",
+  "quiz_en": "What is the name of the event held in early spring to burn off dead grass in order to preserve the Oishi Kogen grassland?"
+ },
+ {
+  "id": "30-10146",
+  "name_en": "Katsuragi Park",
+  "area_en": "Katsuragi Town",
+  "desc_en": "This park on a hill in Katsuragi Town is a famous cherry-blossom viewing spot, with the grounds wrapped in blossoms in spring. Below, the Kinokawa River flows gently, and you can take in the mountains on the far bank and the townscape dotted with persimmon orchards. Katsuragi is known for growing fruits such as persimmons and peaches, and the view from the park reveals the landscape of a bountiful countryside.",
+  "quiz_en": "While looking down on the Kinokawa River from Katsuragi Park, what food or drink would you bring for cherry-blossom viewing?"
+ },
+ {
+  "id": "30-10147",
+  "name_en": "Niutsuhime Shrine",
+  "area_en": "Katsuragi Town",
+  "desc_en": "This is the ichinomiya (highest-ranking shrine) of Kii Province, located in a mountaintop basin in Kamiamano, Katsuragi, and a component of the World Heritage Site \"Sacred Sites and Pilgrimage Routes in the Kii Mountain Range.\" When Kukai founded Mount Koya, the shrine's deity is said to have granted him the land, giving it deep ties to Koyasan. Cross the vermilion arched bridge called Rinkyo to reach the richly colored gate and main sanctuary, wrapped in a divine atmosphere amid mountain village quiet.",
+  "quiz_en": "What is the name of the vermilion arched bridge with a great curve that spans the entrance to Niutsuhime Shrine?"
+ },
+ {
+  "id": "30-10154",
+  "name_en": "Sanada Festival",
+  "area_en": "Kudoyama Town",
+  "desc_en": "This festival is held in Kudoyama, where Sanada Masayuki and his son Nobushige (Yukimura) lived in confinement after the Battle of Sekigahara. A samurai procession honoring the Sanada family parades through the town, and the participants, clad in red armor, bring the valiant Sanada warriors back to life. The town has many related sites, such as Sanada-an and the Sanada Museum, making it an irresistible day for fans of the Sengoku period.",
+  "quiz_en": "Familiar from the Sanada Festival's samurai procession, what is the Sanada family crest made up of six coins called?"
+ },
+ {
+  "id": "30-10158",
+  "name_en": "Kudoyama Harvest Festival",
+  "area_en": "Kudoyama Town",
+  "desc_en": "This event in Kudoyama celebrates the season of harvest. Kudoyama is known for growing Fuyu persimmons, and in autumn the orchards on the mountain slopes are colored with orange fruit. Local farm produce and processed goods line the venue, and you can pick up seasonal flavors while chatting with the producers. You can feel the bountiful autumn of this town, which is also a gateway to Mount Koya.",
+  "quiz_en": "Which fruit, for which Kudoyama Town is known, colors the mountain slopes orange in the autumn?"
+ },
+ {
+  "id": "30-10160",
+  "name_en": "Tamagawa Gorge",
+  "area_en": "Kudoyama Town",
+  "desc_en": "This gorge was carved into the mountains of Kudoyama by the Nyu River, which originates on Mount Koya. The highly transparent stream flows between rocks large and small, with deep pools and rapids appearing one after another. In summer it bustles with people enjoying river play and camping, and in autumn the trees on both banks change color and adorn the gorge. On the way to Mount Koya, it is a place to experience a clear, unspoiled stream.",
+  "quiz_en": "In the crystal-clear stream of Tamagawa Gorge, what kind of river play or pastime would you like to try in summer?"
+ },
+ {
+  "id": "30-10162",
+  "name_en": "Koyasan Temple Lodging Shojin Cuisine",
+  "area_en": "Koya Town",
+  "desc_en": "On Mount Koya, the sacred center of Shingon esoteric Buddhism, you can stay at shukubo (temple lodgings) and eat the same shojin ryori (Buddhist vegetarian cuisine) as the training monks. Made without meat or fish, using vegetables, beans, and grains, the dishes draw out the natural flavors of the ingredients and have a deep, nourishing taste. Koyasan specialties such as goma-dofu and koya-dofu line the tray, and eating in a quiet temple room feels like an experience that purifies even the heart.",
+  "quiz_en": "What is the Koyasan specialty, essential to its shojin cuisine, made by kneading together sesame and kudzu starch?"
+ },
+ {
+  "id": "30-10163",
+  "name_en": "Ninomaru Onsen",
+  "area_en": "Yuasa Town",
+  "desc_en": "This onsen (hot spring) lies in the mountains of Yuasa, known as the birthplace of a key Japanese seasoning. The town of Yuasa retains an old townscape lined with brewery storehouses and has been selected as a national Important Preservation District for Groups of Traditional Buildings. After learning about the history of brewing on a town walk, rest your body at leisure in the hot spring, and your trip to Kishu will be even more fulfilling.",
+  "quiz_en": "Which seasoning, essential to Japanese dining tables, is Yuasa Town, home of Ninomaru Onsen, known as the birthplace of?"
+ },
+ {
+  "id": "30-10169",
+  "name_en": "Oishi Kogen Highlands",
+  "area_en": "Aridagawa Town",
+  "desc_en": "Oishi Kogen, which can also be climbed from the Aridagawa side, is a grassland spreading near the summit of Mount Oishigamine. It is famous for the sight of pampas grass plumes swaying in the autumn wind, and at dusk the whole grassland glows gold. From the summit you can see the mountains of the Arida River basin and, on clear days, as far as the distant sea. At night the air is clear, and it is also popular as a place for stargazing.",
+  "quiz_en": "After watching the pampas grass fields of Oishi Kogen at dusk, how would you like to spend the night there?"
+ },
+ {
+  "id": "30-10170",
+  "name_en": "Kanaya Myoekyo Onsen",
+  "area_en": "Aridagawa Town",
+  "desc_en": "This onsen (hot spring) sits on the banks of the Arida River in Aridagawa. The \"Myoe\" in its name comes from a renowned Kamakura-period monk who was born in this area. In a quiet riverside setting, you can soak at leisure while viewing the clear stream. The Arida River basin is known for growing mandarin oranges, and orchards spreading across the mountain slopes add color to the journey to the hot spring.",
+  "quiz_en": "Who was the renowned Kamakura-period monk born in this area, from whom Kanaya Myoekyo Onsen takes its name?"
+ },
+ {
+  "id": "30-10174",
+  "name_en": "Futakawa Onsen",
+  "area_en": "Aridagawa Town",
+  "desc_en": "This onsen (hot spring) is located in the mountains of the Shimizu area, along the upper Arida River. In a quiet spot beside the clear river, you can soak while viewing mountain scenery that changes through the seasons. Rich nature remains in the surrounding area, making it a perfect base for river play in summer and leaf viewing in autumn. Spending relaxed time in a mountain village far from the bustle of the city soothes both mind and body.",
+  "quiz_en": "If you stayed at a mountain village hot spring like Futakawa Onsen, what dishes would you hope for at dinner?"
+ },
+ {
+  "id": "30-10176",
+  "name_en": "Shirasaki Ocean Park",
+  "area_en": "Yura Town",
+  "desc_en": "This ocean park spreads along the Shirasaki coast in Yura. The contrast between the gleaming white limestone rocks and the clear blue sea is beautiful, earning the area comparisons to a famous European sea. From the observation deck you can take in the unique coastline of white rocks and the Kii Channel, and there is also a campground and diving spots. The white rocks dyed by the setting sun are also spectacular.",
+  "quiz_en": "The Shirasaki coast, with its white limestone and blue sea, has been compared to which sea in Europe?"
+ },
+ {
+  "id": "30-10177",
+  "name_en": "Yura Sea Fishing Park",
+  "area_en": "Yura Town",
+  "desc_en": "This sea fishing park faces the calm Yura Bay in Yura. From well-built fishing platforms, even beginners and families can enjoy fishing with peace of mind. The bay is surrounded by green mountains, and the view of the gentle, quiet sea is soothing in itself. Various fish can be caught each season, and you can make the most of your time by the sea while leisurely dangling your line.",
+  "quiz_en": "In the calm waters of the Yura Sea Fishing Park, which fish would you most like to try to catch?"
+ },
+ {
+  "id": "30-10183",
+  "name_en": "Tsurunoyu Onsen",
+  "area_en": "Minabe Town",
+  "desc_en": "This onsen (hot spring) is located in the mountains of Minabe, known as the home of ume plums. Minabe is known as Japan's largest producer of ume and is also the birthplace of a premium variety that has become synonymous with high-quality umeboshi (pickled plums). In early spring the surrounding mountains are covered with white plum blossoms and wrapped in a sweet fragrance. After relaxing in the hot spring, try dishes made with local ume and umeboshi.",
+  "quiz_en": "What is the leading ume plum variety that originated in Minabe Town, where Tsurunoyu Onsen is located?"
+ },
+ {
+  "id": "30-10184",
+  "name_en": "Dojo-ji Temple",
+  "area_en": "Hidakagawa Town",
+  "desc_en": "This historic temple in Hidakagawa is considered the oldest temple in Wakayama Prefecture. It is known as the setting of the legend of Anchin and Kiyohime, in which Kiyohime, spurned in love, transforms into a monstrous creature and burns Anchin to death as he hides inside the temple bell. In the grounds, monks tell the legend using picture scrolls in a practice called \"etoki seppo,\" and in cherry-blossom season the approach and grounds are brightly colored.",
+  "quiz_en": "In the legend of Dojo-ji, what creature did Kiyohime turn into out of the rage of her spurned love?"
+ },
+ {
+  "id": "30-10185",
+  "name_en": "Sakinoyu and Seaside Baths of Nanki-Shirahama Onsen",
+  "area_en": "Shirahama Town",
+  "desc_en": "Shirahama Onsen, counted among Japan's three oldest hot springs, has Sakinoyu, an open-air bath set on rocks where the rough waves of the Pacific crash. It is a historic bath said to have been visited by emperors and nobles since the Man'yo era, and you can bathe while gazing at the vast ocean before you. Public bathhouses are dotted along the shore, so you can stroll to Shirarahama Beach while enjoying bathhouse hopping.",
+  "quiz_en": "Shirahama Onsen, home of Sakinoyu, is counted along with Arima and Dogo as one of what group of hot springs?"
+ },
+ {
+  "id": "30-10198",
+  "name_en": "Kumano Nachi Taisha Shrine",
+  "area_en": "Nachikatsuura Town",
+  "desc_en": "Located halfway up Mount Nachi, this is one of the Kumano Sanzan, the three grand shrines of Kumano, and is said to have begun with the worship of Nachi Falls as a deity. From the grounds lined with vermilion buildings you can see the Nachi mountains and the falls, and the view of the falls beside the three-story pagoda of neighboring Seiganto-ji is the quintessential Kumano scene. At the annual fire festival on July 14, giant torches purify the stone steps in a spectacular rite.",
+  "quiz_en": "What is the name of the fire festival held every July at Kumano Nachi Taisha in which giant torches purify the stone steps?"
+ },
+ {
+  "id": "30-10199",
+  "name_en": "Nachi Falls",
+  "area_en": "Nachikatsuura Town",
+  "desc_en": "Plunging 133 meters from the primeval forest of Mount Nachi, this is one of Japan's most celebrated waterfalls. Its drop is said to be the highest of any single-tier waterfall in Japan, and it is counted among Japan's three great waterfalls. Since ancient times the falls themselves have been worshipped as a deity and serve as the sacred object of a shrine. Standing before the falls, amid the roar and the falling spray, you cannot help but feel awe toward nature.",
+  "quiz_en": "What is the name of the shrine right in front of Nachi Falls that worships the waterfall itself as its sacred object?"
+ },
+ {
+  "id": "30-10200",
+  "name_en": "Kumano Sanzan, Seiganto-ji and Fudarakusan-ji",
+  "area_en": "Nachikatsuura Town",
+  "desc_en": "The sacred sites of Kumano, made up of the Kumano Sanzan (Kumano Hongu Taisha, Kumano Hayatama Taisha, and Kumano Nachi Taisha), together with Seiganto-ji on Mount Nachi, Fudarakusan-ji, and others, form the core of the World Heritage Site \"Sacred Sites and Pilgrimage Routes in the Kii Mountain Range.\" Long a center of faith blending Shinto and Buddhism, Kumano drew everyone from retired emperors to commoners, who walked the Kumano Kodo to worship here in such numbers that the crowds were likened to a line of small creatures.",
+  "quiz_en": "The endless lines of pilgrims heading to Kumano were compared to which small creature, giving rise to a famous phrase?"
+ },
+ {
+  "id": "30-10207",
+  "name_en": "Katsuura Tuna Festival",
+  "area_en": "Nachikatsuura Town",
+  "desc_en": "This tuna-themed event is held at Katsuura Fishing Port in Nachikatsuura. Katsuura is known as one of Japan's leading ports for landing fresh tuna, and it prides itself on serving fresh, never-frozen tuna. On festival day, tuna-cutting shows and on-the-spot sales are held, drawing large crowds. Along with the energy of the port town, you can savor freshly caught flavors to your heart's content.",
+  "quiz_en": "At the Katsuura Tuna Festival, which tuna dish would you most like to try, and how would you like it prepared?"
+ },
+ {
+  "id": "31-10011",
+  "name_en": "Oshiroyama Observatory Kawahara Castle",
+  "area_en": "Tottori City",
+  "desc_en": "This castle-shaped observatory stands on a hill overlooking the Sendai River in Kawahara-cho, Tottori. Its keep-like exterior catches the eye, and from the top floor you can take in the flowing Sendai River, the townscape of Kawahara, and the mountains of Inaba. The surrounding area is a village of clear streams known for ayu (sweetfish) fishing, and with cherry blossoms in spring and autumn leaves in fall decorating the hill, you can enjoy views through all four seasons.",
+  "quiz_en": "Which river fish, looked for in the Sendai River below the Kawahara Castle observatory, is popular with anglers in summer?"
+ },
+ {
+  "id": "31-10012",
+  "name_en": "Tottori Onsen",
+  "area_en": "Tottori City",
+  "desc_en": "Located in the heart of the city, within walking distance of Tottori Station, this is a rare urban onsen (hot spring) even by national standards. Since the spring was confirmed in the Meiji era, its waters have been enjoyed at inns, hotels, and public bathhouses around town. Its appeal is that you can casually take a dip after work or between sightseeing, and it is also a convenient base for visiting the Tottori Sand Dunes.",
+  "quiz_en": "Using Tottori Onsen as a base, which famous Tottori attraction, known as one of Japan's largest sand dunes, would you visit?"
+ },
+ {
+  "id": "31-10013",
+  "name_en": "Yoshioka Onsen",
+  "area_en": "Tottori City",
+  "desc_en": "This is a quiet onsen (hot spring) resort in the mountains on the outskirts of Tottori City. It has a long history as a toji-ba, a place for therapeutic bathing, and its compact hot spring town is lined with inns and communal baths. A simple, old-fashioned atmosphere remains, and bathing alongside local people lets you feel the warmth of the Inaba countryside. It is close to the city, so you can easily make a trip here.",
+  "quiz_en": "At a simple, traditional bathing retreat like Yoshioka Onsen, how would you like to spend an entire day from morning to night?"
+ },
+ {
+  "id": "31-10014",
+  "name_en": "Shikano Onsen",
+  "area_en": "Tottori City",
+  "desc_en": "This onsen (hot spring) wells up in the former castle town of Shikano Castle, which was ruled by the Sengoku warlord Kamei Korenori. Old-fashioned streets remain in the castle town, and you can stroll leisurely along its calm lanes. The moat of the castle ruins is known for its cherry blossoms, and in spring it bustles with blossom viewers. Warm up in the hot spring after a town walk to fully savor the charms of this small castle town in Inaba.",
+  "quiz_en": "Who was the Sengoku warlord who ruled the castle town of Shikano Onsen and showed strong interest in overseas trade?"
+ },
+ {
+  "id": "31-10015",
+  "name_en": "Hamamura Onsen",
+  "area_en": "Tottori City",
+  "desc_en": "This onsen (hot spring) wells up near Hamamura Beach in Ketaka-cho, facing the Sea of Japan. It is known as the birthplace of a Tottori folk song, and monuments related to the song can be seen around town. A short walk from the hot spring town brings you to a wide sandy beach where you can watch the sunset over the Sea of Japan. Seafood, such as Matsuba crab in winter and fresh fish and shellfish in summer, is another pleasure here.",
+  "quiz_en": "What is the Tottori folk song, connected with scallop fishing, for which Hamamura Onsen is known as the birthplace?"
+ },
+ {
+  "id": "31-10018",
+  "name_en": "Anzo Forest Park",
+  "area_en": "Tottori City",
+  "desc_en": "This forest park spreads across the mountains of eastern Tottori City. Walking trails and a campground have been laid out in the rich forest, letting you fully enjoy nature surrounded by trees. The forest changes its expression with the seasons, from the fresh greenery of spring and cool shade of summer to the autumn leaves. Forest bathing while listening to birdsong will refresh both mind and body.",
+  "quiz_en": "If you went camping in the forest of Anzo Forest Park, what kind of camp meal would you like to cook?"
+ },
+ {
+  "id": "31-10034",
+  "name_en": "Kaigarabushi Festival",
+  "area_en": "Tottori City",
+  "desc_en": "This summer festival is held in Hamamura, Ketaka-cho, the birthplace of the Tottori folk song \"Kaigarabushi.\" During the festival, dancers dressed in matching yukata or happi coats dance through the town to the melancholy melody of Kaigarabushi. Savoring the lyrics that recall the hardships of scallop fishing in the past, you can enjoy a summer night in this seaside town together with the local people.",
+  "quiz_en": "If you danced at the Kaigarabushi Festival, would you prefer to wear a yukata or a happi coat, and why?"
+ },
+ {
+  "id": "31-10037",
+  "name_en": "Aoya Yokoso Festival",
+  "area_en": "Tottori City",
+  "desc_en": "This summer festival is held in Aoya-cho, Tottori City, facing the Sea of Japan. Aoya is known for the Aoya Kamijichi site, the remains of a Yayoi-period settlement, and it also carries on a tradition of washi papermaking. On festival day, local people gather, and in the open atmosphere typical of a seaside town, you can spend a summer moment enjoying events and food stalls.",
+  "quiz_en": "At the Aoya Yokoso Festival, what would you most like to see on a summer night in this seaside town?"
+ },
+ {
+  "id": "31-10041",
+  "name_en": "Ube Shrine",
+  "area_en": "Tottori City",
+  "desc_en": "This shrine in Kokufu-cho, Tottori City, is the ichinomiya (highest-ranking shrine) of the old Inaba Province, and its official name is written with different characters. It is dedicated to Takenouchi no Sukune, known as a long-lived loyal retainer, and attracts worshippers seeking longevity and business prosperity. Because the shrine and Takenouchi no Sukune appeared on banknotes in the Meiji era, many visitors also come seeking blessings related to money.",
+  "quiz_en": "Who is the ancient figure enshrined at Ube Shrine, known as a loyal retainer who lived a very long life?"
+ },
+ {
+  "id": "31-10042",
+  "name_en": "Kurata Hachimangu Shrine",
+  "area_en": "Tottori City",
+  "desc_en": "This Hachiman shrine stands in Baba, in the eastern part of central Tottori City. Wrapped in a sacred grove, its grounds are filled with a tranquility you would not expect in town, and it has been cherished as a center of faith for local people. Festivals are held throughout the year, and families can be seen visiting at milestones such as the New Year's first shrine visit and Shichi-Go-San, a celebration for children.",
+  "quiz_en": "At a local shrine like Kurata Hachimangu, what special occasion do you remember visiting with your family?"
+ },
+ {
+  "id": "31-10043",
+  "name_en": "Kurii Shrine",
+  "area_en": "Tottori City",
+  "desc_en": "This shrine stands in Kuriya-cho, Tottori City. It is located in a quiet spot nestled against the mountains northeast of central Tottori, and a calm atmosphere flows through its tree-lined grounds. Although close to the town of Tottori, which developed as a castle town, it is a place where you can feel rich nature, and it is a fitting shrine to stop by for a quiet prayer during a walk.",
+  "quiz_en": "If you visited the quiet grounds of Kurii Shrine, would you choose the season of fresh greenery or of autumn leaves?"
+ },
+ {
+  "id": "31-10045",
+  "name_en": "Hakuto Shrine",
+  "area_en": "Tottori City",
+  "desc_en": "This shrine is associated with the myth of the \"White Hare of Inaba\" from the Kojiki and enshrines the white hare as a deity. In honor of the story of the white hare helped by a god, many worshippers come to pray for good relationships. The grounds contain Mitarashi Pond, where the white hare is said to have washed its wounds, and stone statues of white hares line the approach. The Sea of Japan spreads out right in front of the shrine.",
+  "quiz_en": "In the myth of the White Hare of Inaba told at Hakuto Shrine, which god helped the injured white hare?"
+ },
+ {
+  "id": "31-10058",
+  "name_en": "Tottori Deai no Mori Forest Park",
+  "area_en": "Tottori City",
+  "desc_en": "This forest park spreads across the hills of Katsurami in western Tottori City. Walking paths, an athletic course, and lawns have been laid out in the rich forest, so both children and adults can enjoy a full day in nature. It is close to Lake Koyama, and the colors of the flowers and trees change with each season. Just a short distance from the city center, it is a relaxing spot to enjoy forest bathing casually.",
+  "quiz_en": "Deai no Mori means \"forest of encounters.\" What flowers or creatures would you like to encounter there?"
+ },
+ {
+  "id": "31-10059",
+  "name_en": "Hoki Kodai no Oka Park",
+  "area_en": "Yonago City",
+  "desc_en": "This park in Yodoe-cho, Yonago, lets you experience ancient life and buildings. Yodoe is an area with many remaining burial mounds and ancient temple sites, and the park has reconstructions of ancient raised-floor storehouses and pit dwellings. From its spacious grounds you can see the majestic Mount Daisen, and amid scenery that ancient people may also have gazed upon, you can reflect on history.",
+  "quiz_en": "Which highest peak of the Chugoku region, also called \"Hoki Fuji,\" can be seen from Hoki Kodai no Oka Park?"
+ },
+ {
+  "id": "31-10061",
+  "name_en": "Yonago Waterbird Sanctuary",
+  "area_en": "Yonago City",
+  "desc_en": "This park in Hikona, Yonago, facing Lake Nakaumi, is dedicated to observing waterbirds. In winter, tundra swans fly in from the direction of Siberia, and you can watch them swimming gracefully on the pond. Many other wild birds, including ducks and herons, also gather here, and you can observe them up close through telescopes from the large windows of the nature center.",
+  "quiz_en": "Which large white migratory bird flies to Yonago Waterbird Sanctuary in winter and is popular for its graceful appearance?"
+ },
+ {
+  "id": "31-10062",
+  "name_en": "Kaike Onsen",
+  "area_en": "Yonago City",
+  "desc_en": "Facing the coast of Yumigahama, this is one of the leading onsen (hot spring) resorts of the San'in region. It is said to have begun when a hot spring bubbling up from the sea was discovered in the Meiji era, and its salty water has a reputation for warming the body well. It is also known as the Japanese birthplace of a multi-sport race. Inns and hotels line the shore, offering sunsets over the Sea of Japan and views of distant Mount Daisen.",
+  "quiz_en": "Kaike Onsen is the Japanese birthplace of which sport that combines swimming, cycling, and running?"
+ }
+]

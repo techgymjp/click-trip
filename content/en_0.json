@@ -1,0 +1,1402 @@
+[
+ {
+  "id": "01-10001",
+  "name_en": "Sapporo Snow Festival",
+  "area_en": "Chuo Ward, Sapporo City",
+  "desc_en": "Held every year in early February, centered on Odori Park, this is Sapporo's great winter celebration. Countless works line the venues, from towering giant snow sculptures to handmade pieces by local residents, and at night illumination gives them a magical glow. Don't miss the ice sculptures at the Susukino site either. Visitors arrive from across Japan and abroad, making this the liveliest season in snowy Sapporo.",
+  "quiz_en": "The Sapporo Snow Festival began in 1950. What kind of people built the very first snow sculptures in Odori Park?"
+ },
+ {
+  "id": "01-10002",
+  "name_en": "Odori Park",
+  "area_en": "Chuo Ward, Sapporo City",
+  "desc_en": "This long, narrow park runs like a ribbon east to west for about 1.5 km through the heart of Sapporo. The Sapporo TV Tower stands at its eastern end, and flower beds, fountains and lawns stretch along its length. With lilacs in early summer, beer gardens in summer and the Snow Festival in winter, it hosts the city's seasonal events all year round and is a favorite place for locals to relax.",
+  "quiz_en": "What is the name of the symbolic tower that stands at the eastern end of Odori Park, watching over the city of Sapporo?"
+ },
+ {
+  "id": "01-10003",
+  "name_en": "Sapporo Ramen",
+  "area_en": "Chuo Ward, Sapporo City",
+  "desc_en": "This local style of ramen was born in harsh, cold Sapporo. A rich miso broth with medium-thick wavy noodles, finished with stir-fried vegetables and lard to keep it from cooling, makes a bowl that warms you to the core on a snowy night. In Susukino there is a ramen alley packed with tiny shops, where you can see people hopping from one to the next.",
+  "quiz_en": "What soup flavor, known for originating in Sapporo, spread the name of Sapporo ramen throughout Japan?"
+ },
+ {
+  "id": "01-10004",
+  "name_en": "Ishikari River",
+  "area_en": "Kita Ward and Higashi Ward, Sapporo City; Ishikari City; Tobetsu Town",
+  "desc_en": "Rising in the Daisetsuzan mountains, this great river nourishes the Kamikawa Basin and the Ishikari Plain before flowing into Ishikari Bay, and it is one of Hokkaido's most representative rivers. It is the third longest in Japan, after the Shinano and Tone rivers. It flows gently along the north side of Sapporo, with wide riverbanks and farmland around it. In autumn salmon swim upstream, and the river has long been closely tied to life along its banks.",
+  "quiz_en": "Which fish swims up the Ishikari River in autumn and also stars in the local hot pot dish called Ishikari-nabe?"
+ },
+ {
+  "id": "01-10005",
+  "name_en": "Beer and Jingisukan Lamb Barbecue at the Beer Garden",
+  "area_en": "Higashi Ward, Sapporo City",
+  "desc_en": "At the beer garden in Sapporo's Higashi Ward, you can enjoy draft beer and jingisukan (grilled lamb) inside a red-brick building. The Hokkaido way is to grill the lamb on a distinctive dome-shaped pan while the vegetables around the edge cook almost as if simmering. The savory smoke rising up and the clink of beer mugs make for a lively evening on your trip.",
+  "quiz_en": "The jingisukan pan rises like a little mountain in the middle. What clever purpose do you think that shape serves?"
+ },
+ {
+  "id": "01-10006",
+  "name_en": "Moerenuma Park",
+  "area_en": "Higashi Ward, Sapporo City",
+  "desc_en": "This vast park was designed by sculptor Isamu Noguchi as \"one single sculpture as a whole.\" On the site of a former waste disposal facility, the gently sloping Mount Moere, a glass pyramid, fountains and other features are arranged in geometric patterns. The grassy hills, which change their look with each season, are a place where you can feel the wide-open sky.",
+  "quiz_en": "Who is the artist who designed Moerenuma Park so that the entire park would form one single sculpture?"
+ },
+ {
+  "id": "01-10007",
+  "name_en": "Night View of Hakodate from Mount Hakodate",
+  "area_en": "Hakodate City",
+  "desc_en": "From the summit of Mount Hakodate, the city's narrow waist, squeezed between the sea on both sides, appears as a glowing band of light. Around sunset, as the lights come on across town, you can enjoy both the ever-changing colors of the sky and the night view. The summit is easy to reach by ropeway, and the view is a classic part of any visit to Hakodate.",
+  "quiz_en": "What means of transport do most people take up to the summit of Mount Hakodate to see the night view?"
+ },
+ {
+  "id": "01-10008",
+  "name_en": "Motomachi and Suehirocho Historic Streets, Hakodate",
+  "area_en": "Hakodate City",
+  "desc_en": "At the foot of Mount Hakodate, churches, Western-style mansions and houses blending Japanese and Western styles line the slopes leading down to the port. This historic townscape is designated an Important Preservation District for Groups of Traditional Buildings. An exotic atmosphere has lingered since the port opened, and from the top of Hachiman-zaka slope you can take in the harbor and the sea. Stroll the cobbled slopes at leisure and feel the history of this port town.",
+  "quiz_en": "What are the buildings called, common in Motomachi and Suehirocho, that have a Japanese-style ground floor and a Western-style second floor?"
+ },
+ {
+  "id": "01-10009",
+  "name_en": "Goryokaku Fort",
+  "area_en": "Hakodate City",
+  "desc_en": "This star-shaped Western-style fortress was built at the end of the Edo period. It is known as the stage for the final battle of the Boshin War, where former shogunate forces made their base, and the Hakodate Magistrate's Office has been reconstructed on the grounds. In spring, cherry trees along the moat outline the star, and from the neighboring Goryokaku Tower you can clearly look down on its shape.",
+  "quiz_en": "What is the name of the final battle of the Boshin War, fought with the star-shaped Goryokaku as its stage?"
+ },
+ {
+  "id": "01-10010",
+  "name_en": "Asahiyama Zoo",
+  "area_en": "Asahikawa City",
+  "desc_en": "Japan's northernmost zoo became famous almost overnight for its \"behavioral exhibits,\" which let you see animals' natural movements and abilities. You can get close to lively creatures, such as penguins that seem to fly as they swim underwater and seals gliding through a cylindrical tank. In winter, the zoo also holds walks in which penguins march in a line across the snow.",
+  "quiz_en": "Which bird is the star of Asahiyama Zoo's winter walk, waddling in a single line through the snow?"
+ },
+ {
+  "id": "01-10011",
+  "name_en": "Red-Crowned Cranes of Kushiro Marsh",
+  "area_en": "Kushiro City",
+  "desc_en": "Kushiro Marsh and its surroundings are home to the red-crowned crane, a Special Natural Monument. Their numbers once fell to the brink of extinction but recovered thanks to conservation efforts such as feeding by local people. In winter you can watch their courtship dance, wings spread and calling to each other on the snowfields, their white and black plumage and red crowns standing out against the frozen landscape.",
+  "quiz_en": "The top of a red-crowned crane's head looks red, but it is not red feathers. What are you actually seeing there?"
+ },
+ {
+  "id": "01-10012",
+  "name_en": "Lake Akan and Surrounding Lakes",
+  "area_en": "Kushiro City",
+  "desc_en": "This group of lakes centers on Lake Akan, cradled by Mount Oakan and Mount Meakan. Lake Akan is known as a habitat of marimo, algae that grow into balls, and on its shore you will find a hot spring town and the Ainu Kotan, a village that passes on Ainu culture. The scenery of forests, volcanoes and calm waters is also well worth viewing from a sightseeing boat.",
+  "quiz_en": "What is the round green alga that grows in Lake Akan and is designated a Special Natural Monument?"
+ },
+ {
+  "id": "01-10013",
+  "name_en": "Kushiro Marsh",
+  "area_en": "Kushiro City and nearby towns and villages",
+  "desc_en": "Japan's largest marsh is a land of reeds and sedges through which the Kushiro River winds in great curves. In 1980 it became Japan's first wetland registered under the Ramsar Convention, and it has also been designated a national park. You can feel this grand nature with your whole body, whether gazing out from an observatory at marshland stretching to the horizon or paddling down the river by canoe.",
+  "quiz_en": "In 1980, Kushiro Marsh became the first site in Japan registered under which international treaty for protecting wetlands?"
+ },
+ {
+  "id": "01-10014",
+  "name_en": "Drift Ice of the Okhotsk Coast",
+  "area_en": "Monbetsu City",
+  "desc_en": "In winter, drift ice that has traveled from far to the north surges onto the Sea of Okhotsk coast, covering the sea in white. In Monbetsu you can board a sightseeing ship that breaks through the ice as it goes, experiencing the frozen sea up close. When the ice reaches the shore, even the creaking of the ice and the cold, clear air become lasting memories of your trip.",
+  "quiz_en": "What is the name of the sightseeing icebreaker in Monbetsu that crushes drift ice with drill-like devices as it sails?"
+ },
+ {
+  "id": "01-10015",
+  "name_en": "Lake Shikotsu",
+  "area_en": "Chitose City",
+  "desc_en": "This caldera lake, formed by volcanic eruptions, is known as Japan's northernmost lake that does not freeze. Its water is exceptionally clear, and on sunny days it turns a pure blue called \"Shikotsu Blue.\" There are hot springs on the lakeshore, and in winter an ice festival using the lake's water is held. Its closeness to New Chitose Airport adds to the appeal of this quiet lake.",
+  "quiz_en": "Which fish, known locally as \"chippu,\" is a beloved specialty of Lake Shikotsu and familiar to everyone who visits the lake?"
+ },
+ {
+  "id": "01-10016",
+  "name_en": "Noboribetsu Onsen and Jigokudani (Hell Valley)",
+  "area_en": "Noboribetsu City",
+  "desc_en": "In Jigokudani (Hell Valley), the remains of a volcanic explosion crater, steam and fumes rise everywhere and hot spring water gushes out. Noboribetsu Onsen (hot springs) is known for its many types of spring water, and comparing them as you hop between baths is part of the fun. Statues of oni (demons), inspired by Hell Valley, greet travelers all around town.",
+  "quiz_en": "Inspired by Hell Valley, what kind of being appears as statues and characters all around the town of Noboribetsu Onsen?"
+ },
+ {
+  "id": "01-10017",
+  "name_en": "Lake Onuma",
+  "area_en": "Nanae Town",
+  "desc_en": "This lake was formed when an eruption of Hokkaido Komagatake dammed the area, and many islets large and small dot its surface. There are walking paths crossing the bridges between the islands as well as sightseeing boats, and the view of Komagatake across the lake is the signature scene of Onuma Quasi-National Park. Try strolling leisurely along the shore with some of the famous Onuma dango (rice dumplings) in hand.",
+  "quiz_en": "What is the famous Onuma Park sweet in which dango dumplings, not on skewers, are packed into a folded wooden box?"
+ },
+ {
+  "id": "01-10018",
+  "name_en": "Mount Komagatake (Hokkaido Komagatake)",
+  "area_en": "Shikabe Town",
+  "desc_en": "This active volcano rises on the Oshima Peninsula, and its shape changes dramatically depending on the direction you view it from. Seen from the Onuma side, its sharp peak is reflected in the lake, while from Shikabe Town on the sea side it appears grand, with its foothills spreading toward the ocean. Its slopes, marked by a history of eruptions, stand out on drives around Hakodate.",
+  "quiz_en": "Hokkaido Komagatake looks very different depending on where you view it from. From which direction do you like its shape best?"
+ },
+ {
+  "id": "01-10019",
+  "name_en": "Mount Yotei",
+  "area_en": "Kyogoku Town",
+  "desc_en": "Called \"Ezo Fuji\" for its neat conical shape, this mountain is the symbol of the Shiribeshi region. In Kyogoku Town at its foot is a spring where snow and rain that fell on Mount Yotei emerge after many years as famously pure water, and many people come to draw it. Rising beyond the fields, the mountain makes a picture-perfect view in every season.",
+  "quiz_en": "Because its beautiful shape closely resembles Mount Fuji, what nickname has been given to Mount Yotei?"
+ },
+ {
+  "id": "01-10020",
+  "name_en": "Uryunuma Wetland",
+  "area_en": "Uryu Town",
+  "desc_en": "This wetland spreads out high on a mountain in the embrace of Mount Shokanbetsu. After hiking up a trail along a stream from the trailhead, you reach a marsh dotted with ponds large and small, where wetland plants bloom one after another from early summer through summer. Walking the boardwalks, you can savor a quiet landscape surrounded by mountains.",
+  "quiz_en": "What are the small ponds that dot the Uryunuma Wetland, formed within the marsh itself, called?"
+ },
+ {
+  "id": "01-10021",
+  "name_en": "Sounkyo Gorge",
+  "area_en": "Kamikawa Town",
+  "desc_en": "This gorge runs along the upper Ishikari River at the foot of the Daisetsuzan mountains, with cliffs of columnar joints rising like folding screens. The Ryusei (Shooting Star) and Ginga (Milky Way) waterfalls tumble from the cliffs, and in autumn the valley is colored by some of the earliest autumn leaves in Hokkaido. Sounkyo Onsen at the gorge's entrance is a busy base for exploring Daisetsuzan.",
+  "quiz_en": "At Sounkyo, the Ryusei Falls and another waterfall flow side by side and are called the \"married couple falls.\" What is the other one?"
+ },
+ {
+  "id": "01-10022",
+  "name_en": "Daisetsuzan Mountains",
+  "area_en": "Higashikawa Town",
+  "desc_en": "Known as \"the roof of Hokkaido,\" this group of mountains is the heart of Japan's largest mountain national park. A ropeway takes you partway up Asahidake, the highest peak, where alpine flowers bloom in summer and autumn leaves said to be the earliest in Japan spread in fall. The landscape of steaming slopes and lingering snow is something only this northern land can offer.",
+  "quiz_en": "What is the name of the highest peak of the Daisetsuzan mountains, which is also the tallest mountain in Hokkaido?"
+ },
+ {
+  "id": "01-10023",
+  "name_en": "Rural Landscape of the Biei Hills",
+  "area_en": "Biei Town",
+  "desc_en": "Gentle hills roll like waves, covered with colorful fields of wheat, potatoes, beans and other crops. The colors of the hills change with the seasons and crops, and lone trees standing here and there create picture-like scenes. The Tokachidake mountain range rises in the distance. The fields are farmers' important workplaces, so the golden rule is to enjoy the view from the road.",
+  "quiz_en": "The scenery of colorful fields on the Biei Hills is often compared to the pattern of what kind of handicraft?"
+ },
+ {
+  "id": "01-10024",
+  "name_en": "Tokachidake Mountain Range",
+  "area_en": "Kamifurano Town",
+  "desc_en": "This chain of volcanoes, with Mount Tokachidake as its main peak, still shows rugged slopes that send up volcanic smoke. Kamifurano Town at its foot is known for lavender fields that turn the hills purple in summer, and mountain hot springs such as Shirogane Onsen and Fukiage Onsen dot its slopes. The mountains lined up beyond the flower fields are a quintessential Furano view.",
+  "quiz_en": "What flower turns the summer hills of Kamifurano Town, at the foot of the Tokachidake range, purple?"
+ },
+ {
+  "id": "01-10025",
+  "name_en": "Teshio River",
+  "area_en": "Otoineppu Village, Nakagawa Town, Teshio Town and Horonobe Town",
+  "desc_en": "Rising in the Kitami Mountains, this river flows north across the land of northern Hokkaido into the Sea of Japan and is the second longest river in Hokkaido. With few dams, its gentle current is popular for canoe trips. Wilderness and pastures spread along its banks, and from Teshio Town at the river mouth you can see Rishiri Fuji floating across the sea.",
+  "quiz_en": "From near the mouth of the Teshio River, \"Rishiri Fuji\" can be seen floating across the Sea of Japan. On which island is it?"
+ },
+ {
+  "id": "01-10026",
+  "name_en": "Sarobetsu Plain",
+  "area_en": "Toyotomi Town and Horonobe Town",
+  "desc_en": "This vast wetland along the Sea of Japan is part of Rishiri-Rebun-Sarobetsu National Park. In early summer, wetland flowers bloom one after another, and as you walk the boardwalks, Mount Rishiri appears under the wide sky beyond the horizon. The scenery of this almost untouched wilderness has a scale found only in Japan's northernmost region.",
+  "quiz_en": "Which flower, representative of Hokkaido's wetlands, turns the Sarobetsu Plain a vivid orange color in early summer each year?"
+ },
+ {
+  "id": "01-10027",
+  "name_en": "Alpine Plant Communities of Rebun Island",
+  "area_en": "Rebun Town",
+  "desc_en": "On Rebun Island, called \"the floating island of flowers,\" flowers that on Honshu grow only high in the mountains bloom even in low places near the coast. It is a plant world unique to the island, shaped by harsh winds and cold. The flowers are at their best from early summer through summer, and you can enjoy them while hiking trekking courses that overlook the sea.",
+  "quiz_en": "Which member of the orchid family grows wild only on Rebun Island and bears cream-colored, pouch-shaped flowers?"
+ },
+ {
+  "id": "01-10028",
+  "name_en": "Mount Rishiri",
+  "area_en": "Rishiri Town",
+  "desc_en": "Rishiri Island is almost entirely made up of a single mountain, and its peak is Mount Rishiri, also called \"Rishiri Fuji.\" Its form, rising straight up from the sea, can be seen from surrounding islands and the opposite shore. The island's rich waters are known for producing kombu kelp and sea urchin, so seafood is as much a part of the trip as climbing.",
+  "quiz_en": "What seaweed, a specialty of Rishiri Island, is famous throughout Japan as an ingredient for making dashi soup stock?"
+ },
+ {
+  "id": "01-10029",
+  "name_en": "Mount Shari",
+  "area_en": "Shari Town",
+  "desc_en": "This solitary peak rises solidly at the base of the Shiretoko Peninsula. Standing beyond the wide fields of Shari Town, it is the town's symbol. Part of the trail follows a stream lined with a series of waterfalls, and climbers love it as a mountain where you head for the summit to the sound of rushing water. From the top you can see the Sea of Okhotsk and the Shiretoko mountains.",
+  "quiz_en": "Mount Shari rises beyond the fields of Shari Town. In which season would you most like to see it, and why?"
+ },
+ {
+  "id": "01-10030",
+  "name_en": "Shiretoko Five Lakes",
+  "area_en": "Shari Town",
+  "desc_en": "Five lakes are scattered through the primeval forest at the foot of the Shiretoko mountains. Mountains reflected on the water make this one of Shiretoko's signature views. The elevated boardwalk offers easy access, while the ground-level trails are walked with a guide during the season when brown bears are active. These are walking paths worthy of a World Natural Heritage site, where you can sense the presence of wildlife.",
+  "quiz_en": "In what year was Shiretoko, which includes the Shiretoko Five Lakes, registered as a World Natural Heritage site?"
+ },
+ {
+  "id": "01-10031",
+  "name_en": "Coast of the Shiretoko Peninsula",
+  "area_en": "Shari Town, Shibetsu Town and Rausu Town",
+  "desc_en": "Tall cliffs line the coast of the Shiretoko Peninsula, and in some places waterfalls pour straight into the sea. The tip of the peninsula cannot be reached by land, so viewing it from a sightseeing boat is the standard way, and with luck you may spot brown bears walking along the shore. On the Rausu side, boats also head out to watch whales, orcas and dolphins.",
+  "quiz_en": "What large black-and-white marine animal can sometimes be encountered from watching boats in the sea off Rausu?"
+ },
+ {
+  "id": "01-10032",
+  "name_en": "Lake Toya",
+  "area_en": "Sobetsu Town and Toyako Town",
+  "desc_en": "This caldera lake was formed by volcanic activity, with Nakajima Island floating at its center. To the south are Mount Usu and Showa-Shinzan, letting you feel up close how this land lives alongside volcanoes. At Toyako Onsen on the lakeshore, fireworks are launched over the lake almost every night from spring to autumn, a treat to enjoy after a soak.",
+  "quiz_en": "What is the name of the volcano near Lake Toya that was born during wartime when a wheat field swelled up from the ground?"
+ },
+ {
+  "id": "01-10033",
+  "name_en": "Kiritappu Wetland",
+  "area_en": "Hamanaka Town",
+  "desc_en": "This wetland spreads across Hamanaka Town, facing the Pacific Ocean, and is also called \"the wetland of flowers\" because flowers bloom in profusion here in summer. As its name suggests, sea fog often drifts in, and the dreamlike scenery shrouded in mist is part of its charm. From the observatory you can take in the wetland, the sea and scattered ponds all at once, and boardwalks let you explore at a relaxed pace.",
+  "quiz_en": "At Kiritappu Wetland, which scenery did you encounter: a day wrapped in fog, or a clear and sunny one?"
+ },
+ {
+  "id": "01-10034",
+  "name_en": "Lake Mashu",
+  "area_en": "Teshikaga Town",
+  "desc_en": "This caldera lake is surrounded by steep cliffs, with no rivers flowing in or out. Its clarity ranks among the highest in the world, and on clear days the surface turns a deep blue called \"Mashu Blue.\" It is often wrapped in fog and is also known as \"foggy Lake Mashu.\" Visitors cannot go down to the water and instead view it from observatories.",
+  "quiz_en": "What is the name of the small island that floats all alone in the deep blue waters of Lake Mashu?"
+ },
+ {
+  "id": "01-10035",
+  "name_en": "Lake Kussharo",
+  "area_en": "Teshikaga Town",
+  "desc_en": "Japan's largest caldera lake has hot springs bubbling up all around its shores. At Sunayu, digging into the beach sand releases hot water, so you can make your own footbath. In winter swans fly in, and the view of the lake from Bihoro Pass above is magnificent. Circling the lake lets you experience the charms of eastern Hokkaido, blessed with volcanoes and hot springs.",
+  "quiz_en": "At Sunayu on Lake Kussharo, what happens when you dig into the sand by the water's edge with your hands?"
+ },
+ {
+  "id": "02-10002",
+  "name_en": "Sannai-Maruyama Site",
+  "area_en": "Aomori City",
+  "desc_en": "This is the site of a large Jomon-period settlement where people are known to have lived over a long period. A large pillar-supported building made with huge chestnut-wood posts and a large pit dwelling have been reconstructed, letting you experience the scale of a Jomon village. It is registered as a World Heritage site as one of the Jomon Prehistoric Sites in Northern Japan, covering Hokkaido and northern Tohoku.",
+  "quiz_en": "How many thick chestnut-wood pillars in total were used in the reconstruction of the large pillar-supported building at the Sannai-Maruyama Site?"
+ },
+ {
+  "id": "02-10003",
+  "name_en": "Sukayu Onsen Hiba Wood Sennin-buro Bath",
+  "area_en": "Aomori City",
+  "desc_en": "This single-inn hot spring retreat for therapeutic bathing sits at about 900 m on the slopes of the Hakkoda Mountains. Its famous \"Hiba Sennin-buro\" (thousand-person bath) is a spacious, pillar-free great bath built entirely of hiba cypress, brimming with milky, acidic water. In winter it is buried in deep snow, and many people come to soak while gazing at the snow and breathing the mountain air.",
+  "quiz_en": "In 1954, Sukayu Onsen, along with Shima and Nikko Yumoto, became one of Japan's first places designated as what?"
+ },
+ {
+  "id": "02-10004",
+  "name_en": "Hakkoda Mountains",
+  "area_en": "Aomori City",
+  "desc_en": "This group of volcanoes rises south of Aomori City, with more than ten peaks lined up and Mount Odake as the highest. Take the ropeway to the summit park for marshes, alpine plants and views reaching as far as Mutsu Bay. In autumn, beech and rowan trees color the mountains, and in winter they become peaks of heavy snow. The area is also known as the site of a tragic snow march accident in the Meiji era.",
+  "quiz_en": "What is the title of the novel by Jiro Nitta that depicts the tragedy of the snow march on the Hakkoda Mountains?"
+ },
+ {
+  "id": "02-10005",
+  "name_en": "Snow Monsters (Rime-Covered Trees) of the Hakkoda Mountains",
+  "area_en": "Aomori City",
+  "desc_en": "In midwinter on Hakkoda, snow and ice carried by strong seasonal winds cling thickly to the conifers, and rime-covered trees called \"snow monsters\" fill the mountainside. Ride the ropeway up near the summit and you enter another world lined with white monsters. On clear days, the contrast between the blue sky and pure white makes for a dazzling view.",
+  "quiz_en": "What is the name of the conifer that forms the core of the Hakkoda snow monsters, wrapped in snow and ice?"
+ },
+ {
+  "id": "02-10014",
+  "name_en": "Moya Highlands Cosmos Festival",
+  "area_en": "Aomori City",
+  "desc_en": "The Moya Highlands, a short drive from central Aomori, are a ski area loved by residents in winter. In autumn, cosmos flowers bloom across the slopes, and a festival is held to enjoy the flower fields swaying in the highland breeze. Looking down through the flowers from the top of the slope to Aomori City and Mutsu Bay is another pleasure unique to this place.",
+  "quiz_en": "Standing among the cosmos on the Moya Highlands slopes, what view would you most like to look out over toward Aomori City?"
+ },
+ {
+  "id": "02-10050",
+  "name_en": "Mount Iwaki",
+  "area_en": "Hirosaki City",
+  "desc_en": "Rising tall above the Tsugaru Plain, this is the highest peak in Aomori Prefecture, called \"Tsugaru Fuji\" for its beautiful shape. Revered since ancient times as a sacred mountain, it has Iwakiyama Shrine at its foot. Apple orchards spread across its lower slopes, and seeing Mount Iwaki beyond white blossoms in spring or red fruit in autumn is a scene that symbolizes Tsugaru.",
+  "quiz_en": "Mount Iwaki is the highest mountain in Aomori Prefecture. What nickname was it given for the beauty of its shape?"
+ },
+ {
+  "id": "02-10051",
+  "name_en": "Cherry Blossoms of Hirosaki Castle",
+  "area_en": "Hirosaki City",
+  "desc_en": "Hirosaki Park, centered on Hirosaki Castle, is planted with many cherry trees such as Somei-Yoshino and is known as one of Japan's foremost cherry blossom spots. The Edo-period keep with cherries in full bloom and flowers reflected in the moats make a splendid sight. As the blossoms fall, the surface of the outer moat is covered in petals, creating what looks like a pink ribbon.",
+  "quiz_en": "What is the name for the scene in which fallen cherry petals completely cover the outer moat of Hirosaki Park?"
+ },
+ {
+  "id": "02-10059",
+  "name_en": "Iwaki Highlands",
+  "area_en": "Hirosaki City",
+  "desc_en": "This plateau spreads out above the Hyakuzawa area on the southeastern slopes of Mount Iwaki. Its open views down over the Tsugaru Plain and apple orchards below are a major attraction, and you can enjoy something different each season, from drives and walks through the greenery in summer to skiing on snowy slopes in winter. It is also a place where you can feel the sheer size of Mount Iwaki looming close.",
+  "quiz_en": "Looking down on the Tsugaru Plain from the Iwaki Highlands, in which season, with which colors, would you like to visit?"
+ },
+ {
+  "id": "02-10060",
+  "name_en": "Iwakiyama Shrine",
+  "area_en": "Hirosaki City",
+  "desc_en": "Located at the southeastern foot of Mount Iwaki, this shrine has long drawn the faith of the people of Tsugaru. Beyond an approach lined with cedar trees stand a vermilion-lacquered tower gate and richly painted shrine buildings, so splendid they are even called \"Oku-Nikko.\" Mount Iwaki rises behind the shrine, letting you sense a faith that worships the mountain itself.",
+  "quiz_en": "What is the traditional Tsugaru event, held in the eighth month of the old lunar calendar, in which people climb from Iwakiyama Shrine to the summit to worship?"
+ },
+ {
+  "id": "02-10092",
+  "name_en": "Black-Tailed Gulls of Kabushima Island",
+  "area_en": "Hachinohe City",
+  "desc_en": "Kabushima, on the coast of Hachinohe City, is designated a national Natural Monument as a breeding ground for black-tailed gulls. From spring to summer the island is covered with gulls, and you can watch them raising their chicks up close. Kabushima Shrine sits atop the island, making it a unique place where you pray surrounded by the birds' noisy cries.",
+  "quiz_en": "On Kabushima, being hit by gull droppings is said to bring good luck. What kind of Japanese wordplay is that saying based on?"
+ },
+ {
+  "id": "02-10101",
+  "name_en": "Ne Castle Historic Site Festival",
+  "area_en": "Hachinohe City",
+  "desc_en": "Ne Castle in Hachinohe City is the site of a castle built by the Nanbu clan during the Nanboku-cho period and is designated a national Historic Site. The main hall, workshops and other buildings have been reconstructed in the main enclosure, giving a feel for how medieval samurai lived. The festival held at this historic site is a local event that brings the history of Hachinohe's castle closer to home.",
+  "quiz_en": "Who is the Nanboku-cho period warrior regarded as the founder of the Hachinohe Nanbu clan, who built Ne Castle in Hachinohe?"
+ },
+ {
+  "id": "02-10123",
+  "name_en": "Mount Narawazu",
+  "area_en": "Nango Ward, Hachinohe City",
+  "desc_en": "This mountain lies in the hills of Nango Ward in Hachinohe City. Nango is a peaceful countryside area of fields and forests, and from the mountain you can look out over the villages below and toward Hachinohe. It is ideal for those who want to walk quiet mountain paths and enjoy nature in the seasons of fresh greenery or autumn leaves. It is a simple, rustic mountain landscape cherished by local people.",
+  "quiz_en": "After a countryside walk in Nango Ward, Hachinohe, what local food would you like to enjoy once you come down the mountain?"
+ },
+ {
+  "id": "02-10139",
+  "name_en": "Josen-ji Temple",
+  "area_en": "Kuroishi City",
+  "desc_en": "This temple stands in the forest of Mount Kuromori on the outskirts of Kuroishi City. Its grounds, surrounded by trees, are quiet, and you can take your time to pray while breathing in the mountain air. In central Kuroishi, a townscape remains with \"komise,\" wooden arcades that shelter pedestrians from snow and sun, so you can enjoy the calm atmosphere of this old castle town together with the temple.",
+  "quiz_en": "What are the wooden arcades that remain along the streets of Kuroishi, built to shelter people from snow and sunlight, called?"
+ },
+ {
+  "id": "02-10155",
+  "name_en": "Kanagi Cherry Blossom Festival",
+  "area_en": "Goshogawara City",
+  "desc_en": "This cherry blossom festival is held at Ashino Park in Kanagi, Goshogawara City. The park is planted with many cherry trees, and the stretch along the Tsugaru Railway line running through it becomes like a tunnel of blossoms. You can also enjoy strolling by the lake. Kanagi is the hometown of writer Osamu Dazai, and many people visit his birthplace, \"Shayokan,\" as well.",
+  "quiz_en": "Which writer was born in Kanagi, and has his family home open to the public as the \"Shayokan\"?"
+ },
+ {
+  "id": "02-10159",
+  "name_en": "Lake Jusan",
+  "area_en": "Goshogawara City",
+  "desc_en": "This brackish lake on the Sea of Japan side of the Tsugaru Peninsula is where seawater and fresh water mix. The lake is known for its shijimi clams, and on the shore you can taste shijimi ramen and shijimi miso soup. In medieval times, a port town called Tosaminato flourished beside this lake. The hour when the sunset colors the lake and the Sea of Japan is especially memorable.",
+  "quiz_en": "What is the proper species name of the clam that is Lake Jusan's specialty, used in shijimi ramen and shijimi soup?"
+ },
+ {
+  "id": "02-10170",
+  "name_en": "Lake Towada",
+  "area_en": "Towada City",
+  "desc_en": "On the border of Aomori and Akita, this double caldera lake was formed by volcanic activity. Holding deep, clear water, it is, together with the Oirase Stream that flows out of it, the signature scenic spot of Towada-Hachimantai National Park. At Yasumiya on the lakeshore stands the \"Statue of Maidens\" by Kotaro Takamura, and in autumn the mountains surrounding the lake are dyed in fall colors.",
+  "quiz_en": "Who was the sculptor and poet who created the \"Statue of Maidens,\" the two facing figures that stand at Yasumiya on Lake Towada?"
+ },
+ {
+  "id": "02-10171",
+  "name_en": "Tsuta Onsen Spring-Source Bathhouse",
+  "area_en": "Towada City",
+  "desc_en": "This single-inn onsen (hot spring) near the Oirase Stream is surrounded by beech forest. Its water bubbles up straight through the gaps in the floorboards at the bottom of the tub, so you can enjoy fresh water that never touches the air. Nearby, walking paths circle Tsuta Pond and other ponds, and the forest is especially beautiful in the seasons of fresh green and autumn leaves.",
+  "quiz_en": "Which writer of the Meiji and Taisho eras spent his final years at Tsuta Onsen and is known for his love of this place?"
+ },
+ {
+  "id": "02-10212",
+  "name_en": "Mount Osorezan Sacred Site and Bathhouses",
+  "area_en": "Mutsu City",
+  "desc_en": "This sacred site spreads along the shore of Lake Usori in the mountains of the Shimokita Peninsula. Its rocky ground, filled with the smell of sulfur, is likened to hell, while the white sand beach and blue lake are likened to the Pure Land paradise. Counted among Japan's three great sacred sites, it also has simple bathhouses on its grounds that worshippers may use. Its otherworldly stillness lingers in the heart.",
+  "quiz_en": "What are the women called who perform \"kuchiyose,\" relaying the words of the dead, and who are known for appearing at the Osorezan grand festival?"
+ },
+ {
+  "id": "02-10217",
+  "name_en": "Mutsu Cherry Blossom Festival",
+  "area_en": "Mutsu City",
+  "desc_en": "This cherry blossom festival is held in Mutsu City on the Shimokita Peninsula, at the northern edge of Honshu. Cherries in the north bloom later than in most parts of Honshu, reaching their peak when blossoms at other famous spots have already given way to leaves. When the flowers bloom together in this town after the long winter, people gather beneath them to celebrate the long-awaited arrival of spring.",
+  "quiz_en": "If you visited the cherry blossom festival in Mutsu City, what Shimokita Peninsula specialty would you want to enjoy along with the flowers?"
+ },
+ {
+  "id": "02-10218",
+  "name_en": "Mutsu Yatate Onsen",
+  "area_en": "Mutsu City",
+  "desc_en": "This hot spring lies in the forest of Mount Yatate, in the hills beyond Tanabu in central Mutsu City. It is wrapped in the deep woods typical of the Shimokita Peninsula, so you can soak at leisure in quiet surroundings. It is perfect for a stop on a trip around Shimokita's mountain sights, such as Osorezan and the Yagen Gorge, to soothe tired legs after a hike.",
+  "quiz_en": "After a soak in Mutsu Yatate Onsen, a mountain hot spring of Shimokita, which famous Shimokita spot would you like to visit next?"
+ },
+ {
+  "id": "02-10227",
+  "name_en": "Ishigami Onsen",
+  "area_en": "Mutsu City",
+  "desc_en": "This hot spring is in the Sekine area of Mutsu City. Sekine faces the Tsugaru Strait, and travelers are greeted by sea breezes and the simple scenery of Shimokita. After soaking in waters loved by local people and easing the fatigue of your journey, gaze along the coastline on a clear day and see whether you can spot the land of Hokkaido across the strait.",
+  "quiz_en": "On a clear day, from the seaside at Sekine in Mutsu City facing the Tsugaru Strait, what land can be seen across the water?"
+ },
+ {
+  "id": "02-10232",
+  "name_en": "Tonami Onsen",
+  "area_en": "Mutsu City",
+  "desc_en": "Located on the grounds of a hotel in Tanabu, Mutsu City, this hot spring is an easy in-town stop. The name \"Tonami\" comes from the Tonami Domain, established in this area in the early Meiji era by people who moved here after their defeat in the Boshin War. You can take a relaxing soak while reflecting on the history of those who carved out a new life in a harsh environment.",
+  "quiz_en": "In the early Meiji era, people moved to the area around Mutsu City and founded the Tonami Domain. Which domain had they come from?"
+ },
+ {
+  "id": "02-10233",
+  "name_en": "Yunokawa Onsen Village",
+  "area_en": "Mutsu City",
+  "desc_en": "This hot spring village bubbles up along the upper Kawauchi River in the mountains of Kawauchi, Mutsu City. Surrounded by deep forest, it is a quiet spa village where you can soak while listening to the murmur of the stream. The Kawauchi River valley is beautiful with autumn leaves, and it is best visited along with a drive or a walk. Its rustic simplicity, fitting for a secluded retreat of Shimokita, is its charm.",
+  "quiz_en": "While soaking at Yunokawa Onsen Village along the Kawauchi River stream, what sounds did you hear around you?"
+ },
+ {
+  "id": "02-10244",
+  "name_en": "Bense Wetland",
+  "area_en": "Tsugaru City",
+  "desc_en": "This wetland spreads across the plains of Tsugaru City, where wetland flowers bloom one after another from early summer through summer. Ponds large and small dot the surroundings, and the open view of Mount Iwaki across the marsh is another draw. Walking the boardwalk built through the wetland, you can feel the rich waterside nature of the Tsugaru Plain up close.",
+  "quiz_en": "What is the name of the flower in the lily family that covers Bense Wetland in a carpet of yellow in early summer?"
+ },
+ {
+  "id": "02-10253",
+  "name_en": "Hirataki-numa Park",
+  "area_en": "Tsugaru City",
+  "desc_en": "This park spreads along the shore of a pond in the Kizukuri area of Tsugaru City. Amid the greenery around the water, it is a local place to relax with walks and seasonal flowers. Tsugaru City is known for the Jomon-period Kamegaoka Site, and at JR Kizukuri Station a giant station building shaped like a shakoki dogu clay figure welcomes travelers.",
+  "quiz_en": "What type of clay figure, associated with the Kamegaoka Site, is the JR Kizukuri Station building in Tsugaru City shaped like?"
+ },
+ {
+  "id": "02-10260",
+  "name_en": "Saruka Shrine Harvest Moon Festival",
+  "area_en": "Hirakawa City",
+  "desc_en": "This grand festival is held at Saruka Shrine in Hirakawa City around the time of the autumn harvest moon. The shrine has long been beloved by the people of Tsugaru, and a lotus pond spreads across its grounds. On festival days the precincts bustle with worshippers and food stalls, and together with the moon floating in the clear autumn night sky, it has become a seasonal tradition of autumn in Tsugaru.",
+  "quiz_en": "On the night of the harvest moon festival, what autumn offering would you like to eat while gazing up at the moon?"
+ },
+ {
+  "id": "02-10262",
+  "name_en": "Kotobe Onsen",
+  "area_en": "Hirakawa City",
+  "desc_en": "This single-inn hot spring lies deep in the mountains of Ikarigaseki in Hirakawa City. It boasts an abundant flow, and its bath, where water overflows from the tub and runs across the floor, lets you feel the power of the spring. In the mountain stillness you can savor the atmosphere of a rustic therapeutic spa. It is in the hills near the Akita border, and some people visit during a drive.",
+  "quiz_en": "At Kotobe Onsen, a single inn deep in the mountains, what did you feel as you watched the water overflowing from the bath?"
+ },
+ {
+  "id": "02-10267",
+  "name_en": "Ikarigaseki Onsen",
+  "area_en": "Hirakawa City",
+  "desc_en": "This hot spring is in Ikarigaseki, Hirakawa City, near the Akita border. Ikarigaseki was a key transportation point where the Tsugaru Domain placed a checkpoint in the Edo period, and today a reconstructed checkpoint gate at the roadside station conveys the atmosphere of those days. Inns are scattered along the Hirakawa River, and like travelers of old, you can rest in a hot spring on the highway.",
+  "quiz_en": "What facility, still remembered in the place name Ikarigaseki, did the Tsugaru Domain set up here during the Edo period?"
+ },
+ {
+  "id": "02-10271",
+  "name_en": "Yogoshiyama Onsen",
+  "area_en": "Hiranai Town",
+  "desc_en": "This hot spring is in Hiranai Town, facing Mutsu Bay. Hiranai is known as a town where scallop farming thrives, and along the coast there are places to enjoy scallop dishes. In winter, swans fly in to the Asadokoro coast on the Natsudomari Peninsula. After warming up in waters loved by local people, go and take in the calm scenery of Mutsu Bay.",
+  "quiz_en": "Which shellfish, representative of Aomori, is widely farmed along the shores of Mutsu Bay, including in Hiranai Town?"
+ },
+ {
+  "id": "02-10282",
+  "name_en": "Yomogi Onsen",
+  "area_en": "Yomogita Village",
+  "desc_en": "This hot spring is in Yomogita Village, facing Mutsu Bay on the east side of the Tsugaru Peninsula. The village is a land of peaceful scenery lying between the sea and farmland. It is also loved by locals as a day-trip bath, a place to catch your breath during your travels. After your bath, try walking the quiet seaside, where you can see the Natsudomari Peninsula and the Shimokita mountains across Mutsu Bay.",
+  "quiz_en": "In Yomogita Village on Mutsu Bay, which view would you rather enjoy after your bath: the sea or the rice paddies?"
+ },
+ {
+  "id": "02-10288",
+  "name_en": "Kanranzan Park",
+  "area_en": "Sotogahama Town",
+  "desc_en": "This park sits on a small hill near the center of Kanita in Sotogahama Town, looking down over Mutsu Bay. Cherry trees bloom in spring, and from the hilltop you can see the sea and the town, and on clear days all the way to the Shimokita Peninsula across the bay. Kanita appears in Osamu Dazai's travel writing about his journey around Tsugaru, and many people come to visit this literary setting.",
+  "quiz_en": "What is the title of the travelogue-style novel Osamu Dazai wrote after traveling through Kanita and other towns of his home region, Tsugaru?"
+ },
+ {
+  "id": "02-10298",
+  "name_en": "Ajigasawa Kogen Onsen",
+  "area_en": "Ajigasawa Town",
+  "desc_en": "This hot spring rises in the highlands of Ajigasawa Town at the northwestern foot of Mount Iwaki. The surroundings form a highland resort with a ski area and golf course, and from the heights you can look out over the Sea of Japan and the Tsugaru countryside. Its charm is soaking in the embrace of Mount Iwaki, after snow play in winter or in the cool highland breeze in summer.",
+  "quiz_en": "At Ajigasawa Kogen Onsen at the foot of Mount Iwaki, which would you choose to visit: the snowy season or the green season?"
+ },
+ {
+  "id": "02-10302",
+  "name_en": "Shirahachimangu Shrine Grand Festival",
+  "area_en": "Ajigasawa Town",
+  "desc_en": "This grand festival is held at Shirahachimangu Shrine in Ajigasawa, a port town facing the Sea of Japan. The shrine has long drawn the faith of the townspeople, and during the festival processions with mikoshi (portable shrines) parade through town while spectators crowd the streets. It is a festival where you can feel the history of a port that prospered with the Kitamae trading ships and the spirit of people who live alongside the sea.",
+  "quiz_en": "After watching the mikoshi procession at the Shirahachimangu Grand Festival in the port town of Ajigasawa, what local seafood flavor would you want to try?"
+ },
+ {
+  "id": "02-10303",
+  "name_en": "Ajigasawa Onsen",
+  "area_en": "Ajigasawa Town",
+  "desc_en": "This hot spring lies near the center of Ajigasawa Town, facing the Sea of Japan. As befits a seaside town, in the evening the sun sinking into the Sea of Japan turns the sky red. Ajigasawa is a port town known for seafood such as grilled dried squid, and if you stroll the beach after your bath, you can feel the atmosphere of a Tsugaru fishing town along with the sea breeze.",
+  "quiz_en": "In Ajigasawa Town, an Akita dog became a nationwide star after its \"ugly-cute\" face drew attention. What is the dog's name?"
+ },
+ {
+  "id": "02-10309",
+  "name_en": "Enkaku-ji Temple",
+  "area_en": "Fukaura Town",
+  "desc_en": "This historic temple stands in the port town of Fukaura, facing the Sea of Japan. Fukaura prospered as a port where Kitamae ships waited for favorable winds, and the temple drew the faith of sailors praying for safe voyages. Many ship ema votive paintings offered by sailors have been handed down here, along with topknots cut off and dedicated in gratitude by people saved from shipwrecks. It is a temple alive with the prayers of seafaring people.",
+  "quiz_en": "What are the votive pictures called, many of which remain at Enkaku-ji, that Kitamae ship sailors offered to pray for safe voyages?"
+ },
+ {
+  "id": "02-10311",
+  "name_en": "Yukiaizaki Coast",
+  "area_en": "Fukaura Town",
+  "desc_en": "This is the coast of a cape jutting into the Sea of Japan in Fukaura Town. The top of the cape is open grassland, while rugged reefs stretch below the cliffs. Because the view opens wide toward the sea, it becomes a perfect spot in the evening to watch the sun sink into the Sea of Japan. You can enjoy the grand ocean scenery typical of the Gono Line area.",
+  "quiz_en": "Standing atop Yukiaizaki cape jutting into the Sea of Japan and watching the sunset, what came to your mind?"
+ },
+ {
+  "id": "02-10314",
+  "name_en": "Juniko (Twelve Lakes) Park",
+  "area_en": "Fukaura Town",
+  "desc_en": "At the western foot of the Shirakami Mountains, many lakes and ponds large and small are scattered through the beech forest. Among them, Aoike (Blue Pond) is known for its translucent blue, as if ink had been poured in, and its mysterious color amazes visitors. Following the forest trails around the ponds, you can fully appreciate the beauty of Shirakami's beech woods and clear water.",
+  "quiz_en": "Among the Juniko lakes, what is the name of the pond famous for its mysterious blue color, as if ink had been poured into it?"
+ },
+ {
+  "id": "02-10316",
+  "name_en": "Senjojiki Coast",
+  "area_en": "Fukaura Town",
+  "desc_en": "This coast of broad rock shelves was formed when the seabed was uplifted by a great earthquake in the Edo period. Its name is known to come from a feudal lord who held a banquet here after laying tatami mats on the rocks. The Gono Line runs right alongside, so the scenic spot can be seen from the train window too. The hour when the sun setting into the Sea of Japan lights the rocks red is especially memorable.",
+  "quiz_en": "As the origin of the name Senjojiki Coast, what is the lord of Tsugaru said to have spread on these rocks to hold a banquet?"
+ },
+ {
+  "id": "02-10317",
+  "name_en": "Omagoshi Coast",
+  "area_en": "Fukaura Town",
+  "desc_en": "This coast lies at the southern tip of Fukaura Town, near the border with Akita Prefecture. The Shirakami Mountains press right up to the Sea of Japan, and a simple seaside landscape of rocks and small beaches unfolds. From the Gono Line and the national highway running along the coast, you can enjoy broad views of the Sea of Japan, making it a memorable place as the gateway into or out of Aomori.",
+  "quiz_en": "At Omagoshi Coast, caught between the Shirakami mountains and the Sea of Japan, what color was the sea you saw there?"
+ },
+ {
+  "id": "02-10321",
+  "name_en": "Kasose Coast",
+  "area_en": "Fukaura Town",
+  "desc_en": "This rocky coast stretches along the Sea of Japan in Fukaura Town. The Gono Line runs right nearby, and the combination of trains running along the very edge of the shoreline and the rough Sea of Japan is one of the line's most representative views. At dusk, the sun sinking below the horizon lights up the rocks, and time flows with a strong sense of travel.",
+  "quiz_en": "On the Gono Line running along Kasose Coast, would you rather watch the rough Sea of Japan from the train window or from the shore?"
+ },
+ {
+  "id": "02-10323",
+  "name_en": "Beech Forests of the Shirakami Mountains",
+  "area_en": "Nishimeya Village and other areas",
+  "desc_en": "In the Shirakami Mountains straddling the Aomori-Akita border, one of the world's largest virgin beech forests remains, almost untouched by human hands. It was registered as a World Natural Heritage site as a forest nurturing diverse plants and animals. The forest changes its look with the seasons, from bright green in spring to gold in autumn, and the more you walk, the more you feel its depth.",
+  "quiz_en": "In what year were the Shirakami Mountains, together with Yakushima, registered as Japan's first World Natural Heritage sites?"
+ },
+ {
+  "id": "02-10329",
+  "name_en": "Anmon Falls",
+  "area_en": "Nishimeya Village",
+  "desc_en": "These waterfalls in the Anmon Gorge of Nishimeya Village, on the eastern side of the Shirakami Mountains, consist of three falls in a series of steps. The falls that appear after you follow the streamside path through the beech forest are truly powerful. Parts of the trail run right beside the stream, and you head for the falls feeling both the harshness and beauty of nature with your whole body.",
+  "quiz_en": "Walking through the beech forest to Anmon Falls, which moved you more: the forest along the way or the waterfalls themselves?"
+ },
+ {
+  "id": "02-10342",
+  "name_en": "Apple Orchards of Itayanagi",
+  "area_en": "Itayanagi Town",
+  "desc_en": "Located in the middle of the Tsugaru Plain, Itayanagi is an \"apple town\" with orchards spreading throughout. In spring, white blossoms adorn the orchards, and in autumn the trees are heavy with red fruit. Mount Iwaki rises beyond the orchards, and the scenery created by apple trees and the mountain is unique to Tsugaru. You can enjoy a different look in every season.",
+  "quiz_en": "Apples grow in the orchards of Itayanagi and across Aomori. What color are the apple blossoms that bloom there in spring?"
+ },
+ {
+  "id": "02-10397",
+  "name_en": "Tohoku Town Cherry Blossom Festival",
+  "area_en": "Tohoku Town",
+  "desc_en": "This cherry blossom festival is held in spring in Tohoku Town, on the shore of Lake Ogawara. As the late spring of northern Tohoku arrives, people gather beneath the cherries in full bloom. Tohoku Town faces Lake Ogawara, the largest lake in Aomori Prefecture, and is also known for the lake's bounty, such as shijimi clams and wakasagi smelt. You can enjoy the lakeside scenery along with the blossoms.",
+  "quiz_en": "What is the name of the largest lake in Aomori Prefecture, known for shijimi clams and smelt, that Tohoku Town faces?"
+ },
+ {
+  "id": "02-10413",
+  "name_en": "Shimoda Park",
+  "area_en": "Oirase Town",
+  "desc_en": "This park lies in the lush green hills of Oirase Town. With walking paths and open spaces, it is a place for local people to relax, strolling while enjoying seasonal flowers and the greenery of the trees. Oirase is a town on the plains near the Pacific Ocean, and its name comes from a river that flows through the town.",
+  "quiz_en": "What is the name of the river, flowing from Lake Towada to the Pacific Ocean, that gave Oirase Town its name?"
+ },
+ {
+  "id": "02-10431",
+  "name_en": "Hotokegaura Coast",
+  "area_en": "Sai Village",
+  "desc_en": "On the western coast of the Shimokita Peninsula, this scenic spot features sharp, whitish-green rocks towering upward. Strange rock formations carved by wind and waves over many years continue for about 2 km, lined with rocks likened to figures of the Buddha. The standard ways to get there are to descend a walking path from the road or to approach from the sea on a sightseeing boat from Sai or Wakinosawa.",
+  "quiz_en": "What type of whitish-green rock makes up the strange, Buddha-like rock formations that line the Hotokegaura coast?"
+ },
+ {
+  "id": "02-10434",
+  "name_en": "Gankake Park",
+  "area_en": "Sai Village",
+  "desc_en": "This park is in the Yagoshi area of Sai Village on the west coast of the Shimokita Peninsula, facing the Tsugaru Strait. Rocks carved by rough waves line the shore, and there are open views of Hokkaido across the strait. Sai Village is where sightseeing boats depart for Hotokegaura, and it is a place to enjoy the western Shimokita coastline woven from cliffs and sea.",
+  "quiz_en": "Looking at the Tsugaru Strait from the seaside of Sai Village, what land can be seen on the far shore on a clear day?"
+ },
+ {
+  "id": "02-10443",
+  "name_en": "Makiba Onsen",
+  "area_en": "Gonohe Town",
+  "desc_en": "This hot spring rises in the hills of Gonohe Town, in a highland area with ranches. Peaceful pastures spread around it, and you can relax in the bath amid open scenery. Gonohe has deep ties with horses, and horse meat dishes are cherished as a local taste. After your bath, be sure to seek out some of the local flavors.",
+  "quiz_en": "What is the hot pot dish of simmered horse meat called, cherished as a local taste in Gonohe and the Nanbu region?"
+ },
+ {
+  "id": "02-10447",
+  "name_en": "Kuraishi Onsen",
+  "area_en": "Gonohe Town",
+  "desc_en": "This hot spring is beside a river in the Kuraishi area of Gonohe Town. Kuraishi is a quiet district surrounded by fields and mountains, and the bath is loved by local people for day visits. The area is also known for beef cattle, including a brand of beef named after the place. Wrapped in the peaceful countryside scenery of the Nanbu region, you can take a leisurely soak.",
+  "quiz_en": "After a rest at the hot spring in Kuraishi, Gonohe Town, what local Nanbu region specialty would you like to taste?"
+ },
+ {
+  "id": "02-10449",
+  "name_en": "Miroku Falls",
+  "area_en": "Takko Town",
+  "desc_en": "This waterfall in the mountains of Takko Town shows water cascading down the rock face in steps. It is surrounded by deep forest, and in the seasons of fresh greenery and autumn leaves the contrast between the falls and the colors of the trees is superb. Takko is a mountain town near the borders of Iwate and Akita, known throughout Japan as a producer of its specialty, garlic.",
+  "quiz_en": "Takko Town, home of Miroku Falls, is known nationwide as one of Japan's leading producers of which specialty vegetable?"
+ },
+ {
+  "id": "02-10470",
+  "name_en": "Hashikami Coast",
+  "area_en": "Hashikami Town",
+  "desc_en": "This coast faces the Pacific Ocean in Hashikami Town, just south of Hachinohe City. Reefs and small coves continue along the shore, creating a seaside landscape with pleasant sea breezes and the sound of waves. In the morning, the sun rising from the Pacific lights up the sea, a view only early-rising travelers get to see. It is a simple yet powerful coast, fitting as the northern gateway to the Sanriku seas.",
+  "quiz_en": "At Hashikami Coast facing the Pacific, which would you like to see: the sea glowing at sunrise, or the blue sea at midday?"
+ },
+ {
+  "id": "02-10471",
+  "name_en": "Mount Hashikami",
+  "area_en": "Hashikami Town",
+  "desc_en": "This mountain rises in Hashikami Town near the Aomori-Iwate border. With its gentle shape and well-maintained trails, it is a hiking mountain beloved by locals. From near the summit you can see the Pacific Ocean, the streets of Hachinohe and, on clear days, distant mountains. Its appeal is that you can climb it casually while enjoying seasonal flowers and autumn leaves.",
+  "quiz_en": "When you looked down on the Pacific Ocean from the summit of Mount Hashikami, what was the first thing that caught your eye?"
+ },
+ {
+  "id": "02-10473",
+  "name_en": "Terashita Kannon Annual Festival",
+  "area_en": "Hashikami Town",
+  "desc_en": "This is a festival of the Kannon (Goddess of Mercy) in the Terashita area of Hashikami Town. Terashita Kannon is a sacred site long revered by local people, and its grounds, surrounded by cedar groves, have a solemn atmosphere. On the festival day many worshippers visit, and local traditions are carried on. It is an important once-a-year day when the quiet mountain village comes alive.",
+  "quiz_en": "At the annual festival of Terashita Kannon, surrounded by cedar groves, what would you like to ask of the Kannon?"
+ },
+ {
+  "id": "02-10479",
+  "name_en": "Nozawa Onsen (Shingo Village)",
+  "area_en": "Shingo Village",
+  "desc_en": "This hot spring lies in the hills of Shingo Village, east of Lake Towada. Shingo is a village of highland ranches, famous for milk and ice cream from Jersey cows. It is also known for a mysterious legendary site within the village called \"the Tomb of Christ.\" At this quiet mountain village hot spring, you can spend relaxing, unhurried time.",
+  "quiz_en": "Among sweets made with milk from Jersey cows, a famous specialty of Shingo Village, which one would you like to eat?"
+ },
+ {
+  "id": "03-10001",
+  "name_en": "Wanko Soba of Morioka",
+  "area_en": "Morioka City",
+  "desc_en": "A signature local dish of Iwate, wanko soba is served bite-sized, with a server tossing helping after helping of soba noodles into your bowl to cries of \"hai, janjan!\" The more you eat, the higher the empty bowls pile up, and the rule is that you close the lid yourself when you are full. At restaurants in Morioka you can enjoy it with condiments and side dishes amid lively calls.",
+  "quiz_en": "When eating wanko soba, what do you do to your bowl to say \"I'm full, thank you for the meal\"?"
+ },
+ {
+  "id": "03-10002",
+  "name_en": "Lake Gando",
+  "area_en": "Tamayama Ward, Morioka City",
+  "desc_en": "This dam lake lies in the hills of Tamayama Ward, northeast of Morioka City, surrounded by quiet forest. The area is known as one of the coldest places in Honshu, and in winter the lake surface freezes thickly. Ice fishing for wakasagi, cutting holes in the frozen lake, is a winter highlight, and colorful tents line up across the ice.",
+  "quiz_en": "What is the name of the small fish that people catch through holes cut in the frozen surface of Lake Gando in winter?"
+ },
+ {
+  "id": "03-10030",
+  "name_en": "Morioka Lake Gosho Festival",
+  "area_en": "Morioka City",
+  "desc_en": "This summer festival is held on the shores of Lake Gosho, created by damming the Shizukuishi River west of Morioka City. The surroundings have been developed into a large park, busy with families spending time on the lakeside lawns and by the water. Beyond the lake rises the stately Mount Iwate, and at summer dusk the lake and mountain take on beautiful colors.",
+  "quiz_en": "Spending a summer evening on the shores of Lake Gosho, what scenery would you most like to gaze at across the lake?"
+ },
+ {
+  "id": "03-10038",
+  "name_en": "Kitakami River",
+  "area_en": "Morioka, Hanamaki, Kitakami, Ichinoseki, Oshu and Takizawa Cities, and nearby towns",
+  "desc_en": "Rising in northern Iwate, this great river, representative of the Tohoku region, flows south through the center of the prefecture past Morioka, Hanamaki, Kitakami and Ichinoseki toward Miyagi Prefecture. Castle towns and the historic sites of Hiraizumi dot its basin, and history has grown up alongside the river. In central Morioka, the view of Mount Iwate across the river is beloved by residents.",
+  "quiz_en": "Which Iwate-born poet wrote of the Kitakami River in the tanka beginning \"Softly the willows turn green on the banks of the Kitakami...\"?"
+ },
+ {
+  "id": "03-10039",
+  "name_en": "Jodogahama Beach",
+  "area_en": "Miyako City",
+  "desc_en": "In Miyako City, this scenic spot woven from white rocks, green pines and clear blue sea represents the Sanriku Coast. Its name is said to come from its beauty being likened to the Pure Land paradise. In the calm cove you can tour among the rocks by sightseeing boat or small sappa boat, and in summer you can also enjoy swimming.",
+  "quiz_en": "On the Jodogahama sightseeing boat, which seabirds fly right up close to the boat looking for food?"
+ },
+ {
+  "id": "03-10041",
+  "name_en": "Mount Hayachine",
+  "area_en": "Miyako City",
+  "desc_en": "The highest peak of the Kitakami Mountains has long been revered as a sacred mountain. It is made of a special rock called serpentinite, and precious alpine plants found nowhere else grow here. In the summer flower season many climbers visit to meet the delicate flowers blooming among the rocks. At its foot, Hayachine Kagura sacred dance has been passed down.",
+  "quiz_en": "What is the name of the white flower, known as a relative of the edelweiss, that blooms only on Mount Hayachine?"
+ },
+ {
+  "id": "03-10042",
+  "name_en": "Kuzakai Highlands",
+  "area_en": "Miyako City",
+  "desc_en": "This highland lies in the Kitakami Mountains along the national highway linking Morioka and Miyako. Its high elevation keeps it cool even in summer, so many people stop to rest here while driving over the pass. Pastures and forests spread around it, and you can enjoy the grand scenery typical of the Kitakami Highlands, which changes with each season, from fresh green in early summer to autumn leaves.",
+  "quiz_en": "At the Kuzakai Highlands on the road between Morioka and Miyako, what did you eat when you stopped to rest on your drive?"
+ },
+ {
+  "id": "03-10072",
+  "name_en": "Goishi Onsen",
+  "area_en": "Ofunato City",
+  "desc_en": "This hot spring rises in Massaki, Ofunato City, near the Goishi Coast. The Goishi Coast, named for the round stones like go game pieces that cover its beach, is one of Sanriku's signature scenic spots. After exploring the coast with its sea cliffs and rocks carved by the waves, you can relax with seafood and hot springs at this seaside inn.",
+  "quiz_en": "What color and shape are the stones covering the beach that gave the Goishi Coast, named after go game pieces, its name?"
+ },
+ {
+  "id": "03-10074",
+  "name_en": "Hanamaki Onsen Village",
+  "area_en": "Hanamaki City",
+  "desc_en": "This is the collective name for hot springs scattered in the hills west of Hanamaki City, offering a wide range of baths, from modern resorts to therapeutic spas along mountain streams. As befits Hanamaki, the hometown of Kenji Miyazawa, some people combine a visit with a tour of places associated with him. Each inn has distinctive baths waiting for you, including a deep rock bath you enter standing up.",
+  "quiz_en": "What is the name of the famous rock bath at Namari Onsen in Hanamaki Onsen Village, so deep that you bathe standing up?"
+ },
+ {
+  "id": "03-10113",
+  "name_en": "Cherry Blossoms of Kitakami Tenshochi Park",
+  "area_en": "Kitakami City",
+  "desc_en": "This park spreads along the banks of the Kitakami River and is one of Tohoku's leading cherry blossom spots, with a long row of cherry trees lining the river. In full bloom, horse-drawn carriages slowly make their way beneath a tunnel of blossoms, and colorful koinobori (carp streamers) swim above the Kitakami River. From the observation deck you can take in the river, the cherries and distant mountains.",
+  "quiz_en": "At the Tenshochi cherry blossom festival, what springtime tradition can be seen swimming in great numbers above the Kitakami River?"
+ },
+ {
+  "id": "03-10115",
+  "name_en": "Geto Kogen Festival (Fresh Greenery and Autumn Leaves)",
+  "area_en": "Kitakami City",
+  "desc_en": "This festival is held in the seasons of fresh greenery and autumn leaves at the Geto Kogen ski area in the Ou Mountains, west of Kitakami City. The highland, known in winter as a ski area with heavy snow, is wrapped in budding green from spring to early summer and in fiery autumn colors in fall. In the clear highland air, you can enjoy the seasonal colors of the mountains.",
+  "quiz_en": "At the Geto Kogen festival in Kitakami, which would you rather see: the fresh green of spring or the fiery autumn leaves?"
+ },
+ {
+  "id": "03-10120",
+  "name_en": "Geto Kogen Onsen Village",
+  "area_en": "Kitakami City",
+  "desc_en": "This hot spring village rises along the Geto River, which flows deep in the Ou Mountains west of Kitakami City. In rustic open-air baths scattered along the riverbank, you can soak while hearing the murmur of the stream up close. The area receives heavy snow, and the valley wrapped in autumn leaves is exceptional. A simple atmosphere befitting a secret hot spring deep in the mountains still remains.",
+  "quiz_en": "At Geto Kogen Onsen Village along the mountain stream, what scenery would you like to gaze at from an open-air bath right beside the river?"
+ },
+ {
+  "id": "03-10128",
+  "name_en": "Kuji Coast",
+  "area_en": "Kuji City",
+  "desc_en": "This coast along the Pacific in Kuji City is lined with cliffs and strange rock formations. Kosode Coast is known for the \"northernmost ama,\" women divers who catch sea urchins by free diving, and in summer you may be able to see a demonstration. Kuji became known nationwide as the setting of a TV drama and is also famous for producing amber. Rugged rocks and blue sea create a classic Sanriku landscape.",
+  "quiz_en": "What was the 2013 NHK morning TV drama series modeled on the \"northernmost ama\" divers of Kosode Coast in Kuji City?"
+ },
+ {
+  "id": "03-10136",
+  "name_en": "Hiraniwa Highlands Azalea Festival",
+  "area_en": "Kuji City",
+  "desc_en": "This festival is held in early summer at the Hiraniwa Highlands in Yamagata, Kuji City, when the azaleas reach their peak. The highlands are known for beautiful birch forests, and the scene of vermilion azaleas spreading through the white-trunked woods and across the pastures is vivid. You can enjoy the flowers at a relaxed pace while feeling the cool breeze of these high-elevation highlands.",
+  "quiz_en": "What is the name of the tree, famous at the Hiraniwa Highlands, that forms forests with beautiful rows of white trunks?"
+ },
+ {
+  "id": "03-10148",
+  "name_en": "Fukusen-ji Temple",
+  "area_en": "Tono City",
+  "desc_en": "This temple is in Matsuzaki, Tono City, known as the home of folktales. Trees grow thickly across its spacious grounds, and it is known as a spot where autumn leaves vividly color the precincts. Highlights, including a large Kannon statue, are scattered around, so you can stroll while feeling the changing seasons. Try visiting it along with Tono's rural scenery and places of legend.",
+  "quiz_en": "What is the title of Kunio Yanagita's work that collected Tono's tales of kappa, zashiki-warashi and other legendary beings?"
+ },
+ {
+  "id": "03-10164",
+  "name_en": "Yugendo Cave",
+  "area_en": "Ichinoseki City",
+  "desc_en": "This limestone cave in Higashiyama, Ichinoseki City, extends through extremely ancient rock layers. Inside, you can observe fossils of creatures that lived in the sea long ago and feel the long history of the Earth. In the cool air of the cave, you can enjoy an underground adventure while gazing at rock surfaces lit by lights.",
+  "quiz_en": "What is the name of the gorge, also in Higashiyama, Ichinoseki City, where you can enjoy a boat ride while listening to boatmen's songs?"
+ },
+ {
+  "id": "03-10166",
+  "name_en": "Sukawa Kogen Onsen",
+  "area_en": "Ichinoseki City",
+  "desc_en": "This single-inn hot spring rises at a high elevation on the slopes of Mount Kurikoma, which straddles Iwate, Miyagi and Akita. Its abundant, strongly acidic water is milky white, and from the large open-air bath you can take in the mountain scenery. Marshes and ponds dot the surroundings, and in autumn the leaves coloring the mountainside are superb. It is also a busy base for climbers.",
+  "quiz_en": "In the large open-air bath of Sukawa Kogen Onsen, which season would you choose: the autumn leaves or the fresh green?"
+ },
+ {
+  "id": "03-10173",
+  "name_en": "Mount Sukawa (Mount Kurikoma)",
+  "area_en": "Ichinoseki City",
+  "desc_en": "This volcano straddles three prefectures, Iwate, Miyagi and Akita, and on the Iwate side it is called Mount Sukawa. Marshes spread across its gentle summit area, with fields of alpine flowers in summer, and in autumn the whole mountain turns red and yellow, a sight praised as \"the carpet of the gods.\" With well-maintained trails, it is a mountain beloved by many climbers.",
+  "quiz_en": "This mountain is called \"Sukawa-dake\" on the Iwate side. By what name is it known on the Miyagi side?"
+ },
+ {
+  "id": "03-10178",
+  "name_en": "Mount Murone",
+  "area_en": "Ichinoseki City",
+  "desc_en": "This mountain rises in eastern Ichinoseki City, near the border with Kesennuma City in Miyagi Prefecture. From near the summit, a grand panorama unfolds over the ridges of the Kitakami Mountains and, on clear days, all the way to the Pacific Ocean. It has long been a mountain of faith, with a shrine of distinguished history at its foot. On clear nights you can also enjoy a sky full of stars.",
+  "quiz_en": "When you looked out over the Pacific Ocean from the summit of Mount Murone, what moved you the most?"
+ },
+ {
+  "id": "03-10192",
+  "name_en": "Hirota Peninsula Big Catch Festival",
+  "area_en": "Rikuzentakata City",
+  "desc_en": "This port festival is held at Hirota Fishing Port on the Hirota Peninsula in Rikuzentakata City. Hirota Bay is a rich sea where oyster and scallop farming thrive, and the festival's events for tasting seafood are popular. Brimming with the energy of a fishing town, it lets you experience the strength of people who live with the sea and the cheerful bustle of a port town.",
+  "quiz_en": "If you visited the Big Catch Festival on the Hirota Peninsula, which seafood from Hirota Bay would you most like to try?"
+ },
+ {
+  "id": "03-10198",
+  "name_en": "Hikami and Amaterumioya Shrines Joint Grand Festival",
+  "area_en": "Rikuzentakata City",
+  "desc_en": "This grand festival is held jointly by Hikami Shrine and Amaterumioya Shrine in Takata, Rikuzentakata City, at fixed intervals of years. As a special ceremony not usually seen, the whole town joins in the preparations, and processions parade through the streets. For a town on the road to recovery from the earthquake disaster, it is an important event for reaffirming local bonds and traditions.",
+  "quiz_en": "At Takata-Matsubara in Rikuzentakata, what is the pine tree called that survived the tsunami of the Great East Japan Earthquake?"
+ },
+ {
+  "id": "03-10217",
+  "name_en": "Basenkyo Gorge",
+  "area_en": "Ninohe City",
+  "desc_en": "This gorge was carved through the hills by the Mabechi River, which flows through Ninohe City. Two great rocks called Ogami-iwa (Male God Rock) and Megami-iwa (Female God Rock) tower on opposite sides of the river, forming Ninohe's signature landscape. From the observatory you can take in the gorge and the town, and in the seasons of fresh green and autumn leaves the contrast between rock and trees is superb.",
+  "quiz_en": "Of the two great rocks towering over Basenkyo Gorge, what is the name of the one that faces and pairs with Megami-iwa?"
+ },
+ {
+  "id": "03-10220",
+  "name_en": "Kindaichi Onsen Village",
+  "area_en": "Ninohe City",
+  "desc_en": "This peaceful hot spring village spreads along the Mabechi River in Ninohe City. Long loved as a therapeutic spa, it has inns scattered through simple farmland. The village is known nationwide for an inn where a zashiki-warashi, a spirit in the form of a child, is said to appear, and some people come to stay hoping to meet it.",
+  "quiz_en": "What is the child-like spirit said to appear at an inn in Kindaichi Onsen, bringing good fortune to those who meet it?"
+ },
+ {
+  "id": "03-10226",
+  "name_en": "Joboji Festival at Tendai-ji Temple",
+  "area_en": "Ninohe City",
+  "desc_en": "This annual grand festival is held at Tendai-ji Temple in Joboji, Ninohe City. Affectionately known as \"Katsura Shimizu,\" Tendai-ji is one of Tohoku's foremost historic temples; climb the long stone steps surrounded by cedar groves and the main hall stands quietly in the mountains. It is also known for having had the writer Jakucho Setouchi as its head priest, and many worshippers fill the grounds for the festival.",
+  "quiz_en": "Who was the writer and Buddhist nun who served as head priest of Tendai-ji, drawing crowds from across Japan to her sermons?"
+ },
+ {
+  "id": "03-10228",
+  "name_en": "Mount Orizume",
+  "area_en": "Ninohe City",
+  "desc_en": "This mountain straddles Ninohe City, Karumai Town and Kunohe Village, and from near its summit you can look far out over the surrounding mountains. Its forest is known as one of Japan's leading habitats of the himebotaru, a tiny firefly, and on summer nights countless blinking lights fill the woods with a magical glow. It is a mountain with two faces: daytime views and nighttime lights.",
+  "quiz_en": "On summer nights, what creature decorates the forests of Mount Orizume with countless tiny golden lights?"
+ },
+ {
+  "id": "03-10229",
+  "name_en": "Mount Iwate",
+  "area_en": "Hachimantai City",
+  "desc_en": "Rising northwest of Morioka, this is the highest peak in Iwate Prefecture. Seen from Morioka, one side has a gentle slope, which earned it the name \"Nanbu Kata-Fuji\" (the one-sided Fuji of Nanbu), and residents cherish it as the home of their hearts. Takuboku Ishikawa and Kenji Miyazawa also loved this mountain. The shapes of lingering snow that appear on its slopes in early spring are a seasonal sign as well.",
+  "quiz_en": "Seen from Morioka, one side of Mount Iwate slopes gently. What nickname was the mountain given because of that shape?"
+ },
+ {
+  "id": "03-10230",
+  "name_en": "Hachimantai Plateau",
+  "area_en": "Hachimantai City",
+  "desc_en": "This plateau with a gently rounded summit area spreads across the Iwate-Akita border. Marshes and ponds dot the Maries' fir forests, and the scenery changes with the seasons: alpine plants in summer, autumn leaves in fall and rime-covered trees in winter. Drive the Aspite Line mountain road and you will be greeted by magnificent views and mountain hot springs bubbling up here and there.",
+  "quiz_en": "During the snowmelt season, what is the phenomenon called that appears on Kagami-numa pond at Hachimantai and looks like a giant eye?"
+ },
+ {
+  "id": "03-10235",
+  "name_en": "Matsukawa Onsen Village",
+  "area_en": "Hachimantai City",
+  "desc_en": "This hot spring village rises along the Matsukawa Gorge in the mountains of Hachimantai. Single inns proud of their milky-white sulfur springs are scattered here, retaining the charm of secret hot springs deep in the forest. Nearby is a power plant that uses geothermal heat, making this a place where you can feel the energy of the earth close at hand. In autumn the gorge is wrapped in fall colors.",
+  "quiz_en": "What type of power plant, the first in Japan to begin full-scale commercial operation, is located near Matsukawa Onsen?"
+ },
+ {
+  "id": "03-10236",
+  "name_en": "Hachimantai Onsen Village",
+  "area_en": "Hachimantai City",
+  "desc_en": "This hot spring village is scattered across a highland resort area at the eastern foot of Hachimantai. Ski areas and hotels gather nearby, so you can enjoy hot springs after skiing in winter or in the cool highland breeze in summer. Its open scenery with Mount Iwate close at hand is a highlight, and it makes an ideal base for a trip around the Hachimantai mountains.",
+  "quiz_en": "If you stayed overnight at Hachimantai Onsen Village, which famous spot around Hachimantai would you like to visit the next day?"
+ },
+ {
+  "id": "03-10237",
+  "name_en": "Shin-Appi Onsen",
+  "area_en": "Hachimantai City",
+  "desc_en": "This hot spring lies in the hills of the Ashiro area of Hachimantai City, where the Appi River flows. The surroundings are a highland area known for skiing, including the Appi Kogen highlands, and bathing amid the snowy scenery is a winter treat. Wrapped in the quiet of a mountain village, you can warm up at leisure on a day trip or an overnight stay. It is also a good stop on the way back from skiing or a highland walk.",
+  "quiz_en": "At Shin-Appi Onsen near the Appi Kogen highlands, what was the best part of soaking in the bath after a few ski runs?"
+ },
+ {
+  "id": "03-10259",
+  "name_en": "Isawa Castle Ruins",
+  "area_en": "Mizusawa Ward, Oshu City",
+  "desc_en": "These are the remains of an ancient fortified government outpost built by Sakanoue no Tamuramaro at the beginning of the Heian period. Later, the Chinjufu, the military headquarters of Mutsu Province, was placed here, making it an important base for governing the Tohoku region. Today it is a spacious historic site that conveys how it once looked based on excavation findings. Amid the farmland of Mizusawa, you can reflect on the history of ancient Tohoku.",
+  "quiz_en": "Who built Isawa Castle and is known as the shogun charged with subduing the north at the beginning of the Heian period?"
+ },
+ {
+  "id": "03-10262",
+  "name_en": "Shobo-ji Temple",
+  "area_en": "Mizusawa Ward, Oshu City",
+  "desc_en": "This historic Soto Zen temple in a mountain village of Mizusawa Ward, Oshu City, flourished as the center of the Soto school in the Tohoku region. Its main hall with an enormous thatched roof is a national Important Cultural Property, and its imposing form is breathtaking. The grounds, surrounded by cedar groves, are wrapped in stillness, and the thatched roof covered in snow in winter is also a magnificent sight.",
+  "quiz_en": "The main hall of Shobo-ji has one of the largest roofs of its kind in Japan. What material is that huge roof made of?"
+ },
+ {
+  "id": "03-10298",
+  "name_en": "Mount Kurakake",
+  "area_en": "Takizawa City",
+  "desc_en": "This mountain in Takizawa City rises as if nestled against the southeastern side of Mount Iwate. With well-maintained trails that let you reach the summit in a short time, it is popular with families and beginners. From the top you can take in the grand form of Mount Iwate looming right in front of you and the plains toward Morioka. There is also a campground at its foot for enjoying nature to the full.",
+  "quiz_en": "Seeing Mount Iwate looming right in front of you from the summit of Mount Kurakake, what words slipped out of your mouth?"
+ },
+ {
+  "id": "03-10310",
+  "name_en": "Kotobuki Park",
+  "area_en": "Shizukuishi Town",
+  "desc_en": "This park is near Oshuku Onsen in Shizukuishi Town. A green spot typical of a mountain hot spring area, it is perfect for a walk between baths. Oshuku Onsen is a quiet hot spring town loved as a retreat for Morioka, with inns lining the river. You can spend peaceful time in the spa town while enjoying seasonal flowers and the greenery of the trees.",
+  "quiz_en": "At Kotobuki Park near Oshuku Onsen, in which season would you most like to take a walk between hot spring baths?"
+ },
+ {
+  "id": "03-10319",
+  "name_en": "Lake Gosho Regional Park Rides Plaza",
+  "area_en": "Shizukuishi Town",
+  "desc_en": "This plaza within the regional park on the shore of Lake Gosho offers rides for children. Amid the open lakeside scenery, it is a popular place for families to play and get moving. Lawns and walking paths surround it, and on clear days you can spend the whole day with views of Mount Iwate beyond the lake.",
+  "quiz_en": "At the rides plaza in Lake Gosho Regional Park, if you could be a child again, which ride would you want to try?"
+ },
+ {
+  "id": "03-10338",
+  "name_en": "Kuzumaki Kogen Farm Festival",
+  "area_en": "Kuzumaki Town",
+  "desc_en": "This festival celebrates the bounty of the farm at Kuzumaki Kogen Farm in Kuzumaki Town. Kuzumaki is a highland town where dairy farming thrives, known as \"the town of milk, wine and clean energy.\" Its appeal is tasting dairy products and other flavors amid scenery of cows leisurely grazing on wide pastures.",
+  "quiz_en": "What facilities line the highlands of Kuzumaki Town in a row, producing the town's clean energy?"
+ },
+ {
+  "id": "03-10341",
+  "name_en": "Kuroishi Onsen (Iwate Town)",
+  "area_en": "Iwate Town",
+  "desc_en": "This hot spring is in the Ikatai area of Iwate Town. Iwate Town is a highland town north of Morioka, also known as the home of the source of the Kitakami River, the great river of the Tohoku region. In peaceful surroundings of fields and forests, take your time to enjoy the bath alongside local people, and then go and visit the beginning of the Kitakami River.",
+  "quiz_en": "The Yuhazu Spring in Iwate Town is known as the source of which great river flowing through the Tohoku region?"
+ },
+ {
+  "id": "03-10360",
+  "name_en": "Yahaba Onsen Village",
+  "area_en": "Yahaba Town",
+  "desc_en": "This hot spring village rises at the foot of the mountains in Yahaba Town, just south of Morioka. Close to central Morioka, it lets you casually enjoy a hot spring getaway in quiet surroundings backed by the Ou Mountains. Farmland spreads all around, and the scenery that changes with each season is another attraction. It is loved both as a base for sightseeing in Morioka and as a day-trip bath.",
+  "quiz_en": "After soaking at Yahaba Onsen Village near Morioka, which local Morioka noodle dish would you like to eat?"
+ },
+ {
+  "id": "03-10374",
+  "name_en": "Yumoto Onsen (Nishiwaga)",
+  "area_en": "Nishiwaga Town",
+  "desc_en": "This is one of the hot springs of the Yuda Onsen gorge in Nishiwaga Town, near the Akita border. Nishiwaga is among Japan's snowiest areas, and in winter you can enjoy snow-viewing baths in a spa town wrapped in deep snow. On the Kitakami Line running through the town, there is even a station with a hot spring in its building, fitting for a hot spring village. It is a place to visit along with Lake Kinshu and its autumn leaves.",
+  "quiz_en": "What is the name of the unique station in Nishiwaga Town on the Kitakami Line that has a hot spring facility inside the station building?"
+ },
+ {
+  "id": "03-10375",
+  "name_en": "Yukawa Onsen",
+  "area_en": "Nishiwaga Town",
+  "desc_en": "This hot spring lies deep in the mountains of Nishiwaga Town, a quiet spa village that could be called the secluded inner retreat of the Yuda Onsen gorge. Inns line the mountain stream, surrounded by the deep forests of the Ou Mountains. Nishiwaga is known as a treasure trove of wild mountain vegetables, and tasting the mountain's bounty from spring to early summer is a pleasure. In snowy winter, its charm as a secret hot spring grows even stronger.",
+  "quiz_en": "Which sticky wild mountain vegetable, picked in spring, is the most representative specialty of Nishiwaga, a treasure trove of wild greens?"
+ },
+ {
+  "id": "03-10376",
+  "name_en": "Sugo Onsen",
+  "area_en": "Nishiwaga Town",
+  "desc_en": "This hot spring lies in southern Nishiwaga Town, near the border with Akita Prefecture. Located along the national highway linking Iwate and Akita, it makes an easy stop on a trip across the prefectural border. The surroundings are a heavy-snow area enclosed by the Ou Mountains, turning into a silver world in winter. Soak in the stillness of the snowbound landscape and you will be warmed to the core.",
+  "quiz_en": "At Sugo Onsen near the prefectural border, what scenery would you like to see out the window while soaking in the snowy season?"
+ },
+ {
+  "id": "03-10377",
+  "name_en": "Shigarai Onsen",
+  "area_en": "Nishiwaga Town",
+  "desc_en": "This hot spring is in the Sawauchi area of Nishiwaga Town. Sawauchi is a snowy basin surrounded by the Ou Mountains, and it was once known for pioneering medical and welfare efforts to protect residents' lives. In calm surroundings of farmland and mountains, you can unwind slowly in a bath that is also loved by local people.",
+  "quiz_en": "At Shigarai Onsen in the snowy Sawauchi basin, which would you choose: a snow-viewing bath in winter, or the season of fresh green?"
+ },
+ {
+  "id": "03-10378",
+  "name_en": "Sawauchi Kogen Onsen",
+  "area_en": "Nishiwaga Town",
+  "desc_en": "This quiet hot spring rises in the hills of Sawauchi, Nishiwaga Town, surrounded by the nature of the Ou Mountains. The area is a remote mountain region of spreading beech forests and also serves as a base for climbing into the Waga Mountains on the Akita border. It is cool in summer and wrapped in deep snow in winter, so you can spend calm, mountain-spa time throughout the four seasons.",
+  "quiz_en": "What is the name of the mountain, known as the highest peak of the Waga Mountains, that rises to the west of the Sawauchi area?"
+ },
+ {
+  "id": "03-10390",
+  "name_en": "Mahiru Onsen",
+  "area_en": "Nishiwaga Town",
+  "desc_en": "This hot spring lies in western Sawauchi, Nishiwaga Town, at the foot of a mountain rising on the Akita border. Surrounded by farmland and forest, you can soak at leisure while gazing at the mountain ridgeline. As befits snowy Nishiwaga, you can enjoy baths amid snowy scenery in winter, and from spring to autumn many people stop by on the way back from climbing or hiking.",
+  "quiz_en": "What is the name of the mountain on the border of Nishiwaga Town and Akita Prefecture that also gives Mahiru Onsen its name?"
+ },
+ {
+  "id": "03-10409",
+  "name_en": "Chuson-ji Temple Chrysanthemum Festival",
+  "area_en": "Hiraizumi Town",
+  "desc_en": "This chrysanthemum festival is held in autumn at Chuson-ji Temple in Hiraizumi, a World Heritage site. Carefully grown chrysanthemums line the grounds, adorning autumn in Hiraizumi along with the approach through cedar groves colored by autumn leaves. Chuson-ji is a temple associated with the Oshu Fujiwara clan, and its gleaming Konjikido (Golden Hall) conveys the Heian-period prayer for the Pure Land to the present day.",
+  "quiz_en": "What is the Heian-period hall at Chuson-ji, covered inside and out with gold leaf, called?"
+ },
+ {
+  "id": "03-10412",
+  "name_en": "Motsu-ji Temple Iris Festival",
+  "area_en": "Hiraizumi Town",
+  "desc_en": "This festival is held in early summer at Motsu-ji Temple in Hiraizumi, a World Heritage site, when the flowers of its iris garden reach their peak. Motsu-ji preserves a Heian-period Pure Land garden centered on the Oizumi-ga-ike pond, and the sight of purple and white flowers adorning the pond's edge is elegance itself. Here you can sense the world of paradise that people of the Heian era envisioned.",
+  "quiz_en": "At Motsu-ji's garden, what is the elegant event called in which people compose waka poems before a sake cup floating down a stream reaches them?"
+ },
+ {
+  "id": "03-10414",
+  "name_en": "Rokando Cave",
+  "area_en": "Sumita Town",
+  "desc_en": "This limestone cave in the mountains of Sumita Town is a rare place where a waterfall pours down deep inside. As you follow the cool passages through the cave, a waterfall appears with a roar, plunging forcefully from a crack in the rock, and its power will astonish you. It is a true cave-exploration experience where you can feel the force of water flowing underground.",
+  "quiz_en": "What is the name of the waterfall that roars as it plunges down deep inside Rokando Cave?"
+ },
+ {
+  "id": "03-10424",
+  "name_en": "Namiita Fudo Falls",
+  "area_en": "Otsuchi Town",
+  "desc_en": "This waterfall is in the Namiita area of Otsuchi Town, near the Sanriku sea. It is a quiet spot surrounded by trees, where you can feel the clear flow of water heading from the mountains to the sea. The nearby Namiita Coast is known for distinctive waves that seem to come in without going back out, and surfing is enjoyed there. It is a place typical of Sanriku, where mountains and sea are close together.",
+  "quiz_en": "What are the distinctive waves of Namiita Coast in Otsuchi Town called, said to \"come in but never go back out\"?"
+ },
+ {
+  "id": "03-10425",
+  "name_en": "Horai Island",
+  "area_en": "Otsuchi Town",
+  "desc_en": "This small island floating in Otsuchi Bay is striking, with a red lighthouse and a small shrine standing on it. Known as one of the models for the puppet show \"Hyokkori Hyotanjima,\" it is beloved by local people. It was damaged by the tsunami of the Great East Japan Earthquake, but the lighthouse was rebuilt and has become a symbol of Otsuchi watching over the town's recovery.",
+  "quiz_en": "What is the name of the NHK puppet show for which Horai Island is known as one of the models?"
+ },
+ {
+  "id": "03-10426",
+  "name_en": "Shinyama Highlands",
+  "area_en": "Otsuchi Town",
+  "desc_en": "This highland spreads across the border of Otsuchi Town and Tono City, an open place looking out over the ridges of the Kitakami Mountains. Large wind turbines line the ridge, letting you feel the strength of the wind sweeping across the pastures. On clear days you may even see the Pacific Ocean in the distance. It is a magnificent landscape well worth a drive.",
+  "quiz_en": "When you looked up close at the large wind turbines lining the ridge of the Shinyama Highlands, what were your impressions?"
+ },
+ {
+  "id": "03-10431",
+  "name_en": "Yamada Hachimangu Shrine Festival",
+  "area_en": "Yamada Town",
+  "desc_en": "This festival of Yamada Hachimangu Shrine is held in autumn in Yamada, a port town on the Sanriku coast. Processions of mikoshi (portable shrines) and folk performing arts parade through town, and spirited shouts and drumbeats echo through the port. Yamada Bay is a calm bay where oyster and scallop farming thrive, and the festival season is also when autumn seafood becomes delicious.",
+  "quiz_en": "Which shellfish, farmed widely in Yamada Bay and elsewhere in the Sanriku seas, is the classic in-shell favorite that comes into season in winter?"
+ },
+ {
+  "id": "03-10440",
+  "name_en": "Ryusendo Cave",
+  "area_en": "Iwaizumi Town",
+  "desc_en": "One of Japan's foremost limestone caves, Ryusendo in Iwaizumi Town is designated a national Natural Monument. Inside are several highly transparent underground lakes, and the water lit by lights is a blue that seems to draw you in. This mysterious color is called \"Dragon Blue.\" The water that springs from the cave is also known as famously pure water.",
+  "quiz_en": "What is the name given to the clear blue color of the water that glows when lit in Ryusendo's underground lakes?"
+ },
+ {
+  "id": "03-10441",
+  "name_en": "Hayasaka Highlands",
+  "area_en": "Iwaizumi Town",
+  "desc_en": "This highland lies in the Kitakami Mountains along the road linking Iwaizumi Town and the Morioka area. Its high elevation brings cool breezes even in summer, and wide pastures and forests stretch on. Stop the car during a drive over the pass and a grand landscape typical of Iwate's deep mountains spreads before you, with the gentle ridges of the Kitakami Highlands layered one after another.",
+  "quiz_en": "At the Hayasaka Highlands in the Kitakami Mountains, would you rather stop your car to see the view in the morning or at dusk?"
+ },
+ {
+  "id": "03-10476",
+  "name_en": "Goshono Jomon Park",
+  "area_en": "Ichinohe Town",
+  "desc_en": "This park was developed at the Goshono Site in Ichinohe Town, the remains of a large Jomon-period settlement. Based on excavation findings, pit dwellings with earth-covered roofs and other structures have been reconstructed, letting you experience the scenery of a Jomon village. Surrounded by rich forest, it is registered as a World Heritage site as one of the Jomon Prehistoric Sites in Northern Japan, covering Hokkaido and northern Tohoku.",
+  "quiz_en": "The pit dwellings reconstructed at Goshono Jomon Park have a distinctive roof covering. What material are their roofs covered with?"
+ },
+ {
+  "id": "03-10480",
+  "name_en": "Okunakayama Kogen Onsen",
+  "area_en": "Ichinohe Town",
+  "desc_en": "This hot spring is in the Okunakayama Highlands of Ichinohe Town. Okunakayama is a highland area near the watershed between the Kitakami and Mabechi rivers, with pastoral scenery where dairy farming thrives. In winter the ski area is lively, and in summer the cool highland air is pleasant. It was once known as a difficult mountain pass for the railway and is a familiar place to train fans.",
+  "quiz_en": "At Okunakayama, once a difficult stretch for the railway, what was the sight of three steam locomotives coupled together climbing the slope called?"
+ },
+ {
+  "id": "04-10001",
+  "name_en": "Sendai Tanabata Festival",
+  "area_en": "Sendai City",
+  "desc_en": "Held every year from August 6 to 8, this is one of Tohoku's representative summer festivals. Centered on Sendai's shopping streets, countless brilliantly colored streamers made of washi paper are hung up, turning the arcades into tunnels of light and color. It is a traditional event said to date back to the time of Date Masamune, and a fireworks display is held on the eve of the festival.",
+  "quiz_en": "In the bamboo decorations of Sendai Tanabata, what are the gorgeous washi paper decorations that hang long beneath the kusudama balls called?"
+ },
+ {
+  "id": "04-10002",
+  "name_en": "Naruko Gorge",
+  "area_en": "Osaki City",
+  "desc_en": "This gorge near Naruko Onsen in Osaki City was carved deep by the Otani River. Sheer cliffs continue along both banks, and it is known as one of Tohoku's finest autumn foliage spots, turning red and yellow all over in fall. The view of the gorge from the observatory is spectacular, and a train running through the valley of autumn leaves is another highlight.",
+  "quiz_en": "Amid the autumn leaves of Naruko Gorge, what is the name of the railway line whose trains pass over bridges and through tunnels?"
+ },
+ {
+  "id": "04-10003",
+  "name_en": "Naruko Onsen: Katanuma Lake, Onsen Shrine and Takinoyu",
+  "area_en": "Osaki City",
+  "desc_en": "This is one of Tohoku's foremost hot spring areas in Osaki City, a spa town where many types of spring water bubble up. Takinoyu, the town's public bathhouse, is a historic bath that draws water from the spring at Onsen Shrine, and its wooden tubs create a charming atmosphere. Nearby Katanuma is a crater lake holding emerald-colored water. The town is also known for producing kokeshi dolls.",
+  "quiz_en": "What is the traditional wooden doll, a Naruko Onsen specialty, that makes a squeaking \"kyu-kyu\" sound when you turn its head?"
+ },
+ {
+  "id": "04-10004",
+  "name_en": "Snow Monsters (Rime-Covered Trees) of Zao",
+  "area_en": "Zao Town",
+  "desc_en": "In winter on the Zao mountain range, snow and ice carried by strong seasonal winds cover the trees, and giant rime-covered trees emerge. On the Miyagi side, tours that ride up to the fields of frosted trees in snow vehicles are popular. The scene of pure white, monster-like trees standing in rows is a winter work of art created by nature. On clear days, the contrast with the blue sky is superb.",
+  "quiz_en": "At Miyagi Zao, what is the vehicle that moves over the snow on caterpillar tracks to take you to the fields of snow monsters?"
+ },
+ {
+  "id": "04-10005",
+  "name_en": "Zuigan-ji Temple",
+  "area_en": "Matsushima Town",
+  "desc_en": "This historic Rinzai Zen temple by the sea at Matsushima is known as a temple that Date Masamune devoted great effort to rebuilding. Its main hall, a National Treasure, is a lavish building in the Momoyama style, and the sliding-door paintings and carvings inside are well worth seeing. Caves said to have been places of ascetic practice line the cedar-flanked approach, letting you feel the depth of history along with the Matsushima scenery.",
+  "quiz_en": "Who was the first lord of the Sendai Domain, known for rebuilding Zuigan-ji into the form it has today?"
+ },
+ {
+  "id": "04-10006",
+  "name_en": "Matsushima",
+  "area_en": "Matsushima Town",
+  "desc_en": "This scenic spot, where islands large and small float in Matsushima Bay, is counted among the Three Views of Japan. The scenery woven from pine-covered islands and rocks carved by the waves is classically viewed from a sightseeing boat. It is also a place Matsuo Basho visited in \"The Narrow Road to the Deep North.\" Tasting grilled oysters at a seaside teahouse is another of Matsushima's pleasures.",
+  "quiz_en": "Along with Amanohashidate in Kyoto and Miyajima in Hiroshima, Matsushima is one of a famous trio of scenic spots. What is this trio called?"
+ },
+ {
+  "id": "05-10023",
+  "name_en": "East Gate of the Outer Wall, Akita Castle Ruins",
+  "area_en": "Akita City",
+  "desc_en": "These are the remains of Akita Castle, an ancient fortified outpost built in the Nara period and placed as the northern base on the Sea of Japan side. Based on excavations, the east gate of the outer enclosure and its earthen walls have been reconstructed, letting you see how it once looked. Rare remains that tell of daily life at the time have also been found, making this a place to feel the history of exchange between ancient Tohoku and the Asian continent.",
+  "quiz_en": "A rare toilet structure believed to date from the Nara period was found at the Akita Castle Ruins. What type of toilet was it?"
+ },
+ {
+  "id": "05-10048",
+  "name_en": "Hoshitsuji Shrine Daruma Festival",
+  "area_en": "Akita City",
+  "desc_en": "This festival at Hoshitsuji Shrine in Omachi, Akita City, is devoted to daruma, the lucky dolls. Daruma of all sizes line the in-town shrine, which bustles with people praying for good health and business prosperity in the year ahead. In the snowy season in Akita, the red of the daruma stands out vividly. You can enjoy the atmosphere of an old-fashioned shrine fair.",
+  "quiz_en": "At the Daruma Festival of Hoshitsuji Shrine, what wish for this year would you like to place in your daruma doll?"
+ },
+ {
+  "id": "05-10056",
+  "name_en": "Taishoji Okesa Festival",
+  "area_en": "Akita City",
+  "desc_en": "At this festival, people dance to \"Taishoji Okesa,\" a folk song handed down in the Taishoji area of Yuwa, Akita City. Local residents carefully carry on this song and dance rooted in their community, dancing in a circle on summer nights. Singing and festival music echo through the peaceful countryside, and you can feel the warm ties among the local people.",
+  "quiz_en": "What is the name of the major river representative of Akita Prefecture that flows through the Yuwa area and into the Sea of Japan at Akita City?"
+ },
+ {
+  "id": "05-10058",
+  "name_en": "Iwami Onsen",
+  "area_en": "Akita City",
+  "desc_en": "This hot spring rises along the upper Iwami River in the hills of Kawabe, Akita City. Although it is within driving distance of central Akita, it is a quiet mountain village surrounded by deep greenery. There is also a scenic gorge along the nearby Iwami River, so in the seasons of fresh green and autumn leaves you can combine a riverside walk with a relaxing time at this mountain spa.",
+  "quiz_en": "At Iwami Onsen, a secluded retreat of Akita City, which season would be best for a walk along the river after your bath?"
+ },
+ {
+  "id": "05-10062",
+  "name_en": "Kainosawa Onsen",
+  "area_en": "Akita City",
+  "desc_en": "This hot spring rises at the foot of Mount Taiheizan in the Taihei area of Akita City. Mount Taiheizan is a sacred mountain rising east of Akita City and has long been beloved by residents. Farmland and forest spread around it, and you can soak at leisure in the clear mountain air. It is perfect for stopping by to wash off the sweat on the way back from climbing or hiking.",
+  "quiz_en": "After a soak at Kainosawa Onsen, would you rather climb sacred Mount Taiheizan or stroll through the farmland around its foot?"
+ },
+ {
+  "id": "05-10071",
+  "name_en": "Kiritanpo Hot Pot of Northern Akita",
+  "area_en": "Noshiro City",
+  "desc_en": "This signature Akita hot pot dish features \"kiritanpo,\" cooked rice mashed, wrapped around cedar sticks and grilled, simmered in a soup rich with chicken stock. The northern part of the prefecture, such as Kazuno and Odate, is known as its birthplace. Enjoyed with burdock, maitake mushrooms, Japanese parsley and other ingredients, it is a taste of the season from the new rice harvest through winter.",
+  "quiz_en": "What is the name of Akita's signature brand of local chicken, essential for the broth of kiritanpo hot pot?"
+ },
+ {
+  "id": "05-10072",
+  "name_en": "Beech Forests of the Shirakami Mountains (Akita Side)",
+  "area_en": "Noshiro City",
+  "desc_en": "The Shirakami Mountains, spreading across the Akita-Aomori border, are a World Natural Heritage site where vast virgin beech forests untouched by human hands remain. You can also enter the forest from the Akita side, around Fujisato and Happo towns, and walking among the towering giant trees lets you feel the richness of a beech forest that nurtures many living things. In autumn the whole forest glows gold.",
+  "quiz_en": "What is the name of the large woodpecker with a black body and striking red head that lives in the beech forests of Shirakami?"
+ },
+ {
+  "id": "05-10111",
+  "name_en": "Ichozan Shrine and Nanakura Tenmangu Shrine",
+  "area_en": "Noshiro City",
+  "desc_en": "These shrines sit in the hills along the Yoneshiro River in Futatsui, Noshiro City. Futatsui is a scenic area where the Yoneshiro River winds among the mountains, with the greenery of Mount Nanakura pressing close along the river. The grounds, surrounded by quiet forest, feel refreshing, and in autumn the trees take on color and adorn the precincts. These shrines are embraced by the flow of the Yoneshiro River and mountain nature.",
+  "quiz_en": "What is the scenic spot along the Yoneshiro River in Futatsui, known by a name connected to an imperial tour by Emperor Meiji?"
+ },
+ {
+  "id": "05-10113",
+  "name_en": "Sakura-zutsumi Riverside Park",
+  "area_en": "Noshiro City",
+  "desc_en": "This park with a long row of cherry trees lies on the banks of the Yoneshiro River, which flows through Noshiro City. In spring the riverside embankment turns cherry-pink, and you can enjoy viewing the blossoms while feeling the breeze blowing across the water. Noshiro prospered as a lumber town facing the Sea of Japan and is also known nationwide for a powerhouse high school basketball team.",
+  "quiz_en": "Because it is home to a powerhouse high school basketball team, Noshiro City is known as the city of what?"
+ },
+ {
+  "id": "05-10122",
+  "name_en": "Okihake Shrine Teashi Kannon Festival",
+  "area_en": "Yokote City",
+  "desc_en": "This festival at Okihake Shrine in Hiraka, Yokote City, is devoted to the Teashi (Hands and Feet) Kannon. It draws the faith of people who pray for healthy hands and feet and has been carefully carried on by the local community. Located in the farmland of the Yokote Basin, the shrine welcomes worshippers from nearby on festival day, wrapped in the simple, peaceful atmosphere of a village festival.",
+  "quiz_en": "If you visited the Teashi Kannon festival to pray, whose hands and feet would you wish good health for?"
+ },
+ {
+  "id": "05-10127",
+  "name_en": "Kido Gorobe Shrine Hatsuuma Festival",
+  "area_en": "Yokote City",
+  "desc_en": "This Hatsuuma festival is held at Kido Gorobe Shrine in Numadate, Omonogawa, Yokote City. Hatsuuma is an observance tied to Inari worship and is carried on in many places as a festival praying for bountiful harvests and business prosperity. Held in winter in the snowy Yokote Basin, it is an important occasion for local people to gather and pray for the coming of spring and the year's harvest.",
+  "quiz_en": "The Hatsuuma festival is generally held on the first \"Day of the Horse\" of which month in the traditional calendar?"
+ },
+ {
+  "id": "05-10138",
+  "name_en": "Yokote Park Cherry Blossom Festival",
+  "area_en": "Yokote City",
+  "desc_en": "This cherry blossom festival is held in spring at Yokote Park, the site of Yokote Castle. On the hilltop stands an observatory modeled on a castle keep, so you can enjoy cherries in full bloom together with the castle. From the observatory you can take in central Yokote, the Yokote Basin and the Ou Mountains. Yokote, known for its winter kamakura, is wrapped in cherry-pink in spring.",
+  "quiz_en": "In Yokote's Little New Year event, children gather inside snow huts where the water god is enshrined. What are these snow huts called?"
+ },
+ {
+  "id": "05-10144",
+  "name_en": "Kanazawa Park",
+  "area_en": "Yokote City",
+  "desc_en": "This park in the hills of the Kanazawa area of Yokote City is a historic place said to be the site of a fortified stockade that was the stage of a battle in the late Heian period. Hachiman Shrine stands within the park, and you can stroll while sensing traces of the old battlefield. Spring cherry blossoms and autumn leaves are also beautiful, and from the heights you can look out over the wide farmland of the Yokote Basin.",
+  "quiz_en": "What is the late Heian-period war fought by Minamoto no Yoshiie, said to have taken place around Kanazawa Park, called?"
+ },
+ {
+  "id": "05-10163",
+  "name_en": "Sansho Shrine Bonten Festival",
+  "area_en": "Yokote City",
+  "desc_en": "At this festival at Sansho Shrine in Masuda, Yokote City, bonten are offered to the shrine. Bonten are large pillar-like offerings adorned with colorful decorations, and young men carry them spiritedly to the shrine. Masuda is a historic town where streets of kura storehouses remain, and the shouts echoing through the snowy winter bring the town to life.",
+  "quiz_en": "What are the storehouses called, found in many Masuda homes, that were built inside the main house and carefully protected?"
+ },
+ {
+  "id": "05-10165",
+  "name_en": "Manto Park Cherry Blossom Festival",
+  "area_en": "Yokote City",
+  "desc_en": "This cherry blossom festival is held at Manto Park in Masuda, Yokote City. The park, spreading at the foot of Mount Manto, is planted with many cherry trees and bustles with people enjoying the blossoms beside the pond and the cherries lit up at night. Masuda is an area where fruit growing thrives, with apple orchards around it, creating a peaceful scene befitting a village of flowers in spring.",
+  "quiz_en": "At the Manto Park Cherry Blossom Festival, which would you rather enjoy: cherries under a blue daytime sky, or blossoms at night?"
+ },
+ {
+  "id": "05-10183",
+  "name_en": "Yoshida Castle Ruins",
+  "area_en": "Yokote City",
+  "desc_en": "These castle ruins are in Kamiyoshida, Hiraka, Yokote City. Located on the plains of the Yokote Basin, the site is surrounded by wide farmland. It conveys the history of the people who once ruled this area, and as you stand at the quiet historic site, you can imagine the basin in the age of the warring states. The rice paddy scenery through the four seasons is another attraction.",
+  "quiz_en": "At the Yoshida Castle Ruins amid the farmland of the Yokote Basin, in which season of rice paddies would you like to view the site?"
+ },
+ {
+  "id": "05-10188",
+  "name_en": "Biwa-numa Pond",
+  "area_en": "Yokote City",
+  "desc_en": "This pond is in Asamai, Hiraka, Yokote City. The Yokote Basin is a land blessed with water, where water from the Ou Mountains travels underground and springs to the surface. The pondside is a quiet waterside space, a place for local people to stroll and relax. You can spend a leisurely time gazing at the sky reflected on the water and the surrounding greenery.",
+  "quiz_en": "If you walked along the shore of Biwa-numa, a waterside spot in the Yokote Basin, what creatures would you like to encounter?"
+ },
+ {
+  "id": "05-10195",
+  "name_en": "Kubizuka Shrine",
+  "area_en": "Yokote City",
+  "desc_en": "This shrine is in Imajuku, Omonogawa, Yokote City. It stands in the farmland along the Omono River and has been cared for by local people. The wide rice paddies of the Yokote Basin spread around it, and the shrine standing amid scenery that turns green or gold with the seasons lets you feel the bond between village life and faith.",
+  "quiz_en": "Have you ever asked local people about the origin of the name of Kubizuka Shrine, standing in the farmland of the Omono River basin?"
+ },
+ {
+  "id": "05-10212",
+  "name_en": "Kagura Hall of Hojiwake Shrine",
+  "area_en": "Yokote City",
+  "desc_en": "This is the kagura hall of Hojiwake Shrine in Omori, Yokote City, which has been the center of faith in Mount Horowa. As a building that preserves an architectural style from early times, it is designated a national Important Cultural Property. Kagura sacred dance has been handed down at this shrine since long ago, and in its quiet mountain-village grounds you can encounter a faith nurtured over a long history.",
+  "quiz_en": "What is the name of the mountain in Omori, Yokote City, at the center of the faith of Hojiwake Shrine?"
+ },
+ {
+  "id": "05-10237",
+  "name_en": "Nashinoki Park",
+  "area_en": "Yokote City",
+  "desc_en": "This park in Jumonji, Yokote City, is loved as a place for local people to relax. Jumonji is a town in the southern part of the Yokote Basin, famous for its light chuka soba (ramen) made with dried sardine broth. After enjoying the seasonal flowers and greenery of the park, it is a good idea to taste an old-fashioned bowl at a local diner.",
+  "quiz_en": "What slightly unusual topping is found in \"Jumonji chuka soba,\" the local ramen of Jumonji in Yokote City?"
+ },
+ {
+  "id": "05-10247",
+  "name_en": "Mitsumata Onsen",
+  "area_en": "Yokote City",
+  "desc_en": "This hot spring is in the hills of the Sannai area of Yokote City. Sannai is an area rich in nature, embraced by the Ou Mountains, and known for its specialty taro, \"Sannai imonoko.\" In autumn you may see people gathered around pots of imonoko-jiru taro soup, in a land blessed with mountain bounty. Soak in the quiet hot spring and relax with the flavors of the mountain village.",
+  "quiz_en": "What is the name of the sticky taro, a Sannai specialty, that is essential for the autumn taro soup imonoko-jiru?"
+ },
+ {
+  "id": "05-10253",
+  "name_en": "Sakura-tsuzumi Park",
+  "area_en": "Yokote City",
+  "desc_en": "This park in the Taiyu area of Yokote City has cherry trees planted along a riverside embankment. In spring a row of cherry trees continues on and on, creating a ribbon of flowers through the peaceful farmland. The surrounding Yokote Basin is a rich rice-growing region. After viewing the blossoms, why not try the famous Yokote yakisoba, with thick noodles, sweetish sauce and a fried egg on top?",
+  "quiz_en": "As a topping on the local specialty Yokote yakisoba, what egg dish is placed on top of the noodles?"
+ },
+ {
+  "id": "05-10270",
+  "name_en": "Otaki Onsen",
+  "area_en": "Odate City",
+  "desc_en": "This hot spring rises along the Yoneshiro River in Juniso, Odate City. It is a historic spa town long used for therapeutic bathing, retaining a calm riverside atmosphere. Odate is known as the home of the Akita dog, and the faithful dog Hachiko, who kept waiting for his master in Shibuya, was born here. You can enjoy the town of Akita dogs along with the hot springs.",
+  "quiz_en": "What is the name of the Akita dog born in Odate City, famous for waiting for his master's return at Shibuya Station?"
+ },
+ {
+  "id": "05-10292",
+  "name_en": "Oyasukyo Onsen",
+  "area_en": "Yuzawa City",
+  "desc_en": "This hot spring spreads along a deep V-shaped gorge carved by the Minase River in Minase, Yuzawa City. Boiling water and steam spurt forcefully from cracks in the gorge's rocks, and a walking path down to the valley floor lets you see their power up close. In autumn the gorge is wrapped in fall colors, and the combination of rising steam and colorful trees creates a superb view.",
+  "quiz_en": "At Oyasukyo, what is the spot called where boiling water and steam spurt forcefully from cracks in the rocks of the gorge?"
+ },
+ {
+  "id": "05-10294",
+  "name_en": "Doroyu Onsen",
+  "area_en": "Yuzawa City",
+  "desc_en": "This hot spring sits quietly deep in the mountains of Takamatsu, Yuzawa City, in a valley where volcanic fumes rise. As its name, meaning \"mud hot water,\" suggests, it is known for gray, muddy spring water, and the rugged terrain and rising steam around it create the feel of a hidden hot spring. Nearby there is also a sulfurous fumarole area where no plants grow, a place to feel the power of the earth.",
+  "quiz_en": "What is the name of the desolate sacred site near Doroyu Onsen, where no plants grow and sulfurous fumes hang in the air?"
+ },
+ {
+  "id": "05-10295",
+  "name_en": "Kijiyama Kogen Onsen",
+  "area_en": "Yuzawa City",
+  "desc_en": "This hot spring is in the Kijiyama Highlands of Takamatsu, Yuzawa City. Kijiyama is an area where kijishi, woodturners, have lived since long ago, and it is known for producing traditional kokeshi dolls with simple, rustic expressions. In quiet surroundings of clear highland air and forest, you can relax while soaking in the bath. Autumn is a beautiful season, with the surrounding mountains in fall colors.",
+  "quiz_en": "In the Kijiyama area of Yuzawa City, what traditional wooden doll have woodturners continued to make for generations?"
+ },
+ {
+  "id": "05-10298",
+  "name_en": "Goshogake Onsen: Mud Volcanoes and Traditional Healing Baths",
+  "area_en": "Kazuno City",
+  "desc_en": "This therapeutic spa inn lies in the mountains of Hachimantai, surrounded by mud volcanoes where mud bubbles up and by steaming vents. Traditional healing culture is still alive here, such as the box steam bath, where you sit in a box with only your head outside and warm up in the steam, and ondol rooms with floors heated by geothermal warmth. Walking the nature trail, you can feel the pulse of the earth up close.",
+  "quiz_en": "There is a saying, \"Come to Goshogake on a horse, go home in wooden clogs.\" What quality of this hot spring does it describe?"
+ },
+ {
+  "id": "05-10300",
+  "name_en": "Yuze Onsen Village",
+  "area_en": "Kazuno City",
+  "desc_en": "This hot spring village rises along the Yoneshiro River gorge in Hachimantai, Kazuno City. Its name is said to come from hot water that once bubbled up from the river's shallows, and it is a calm spa town with inns lining the river. Hanawa Line trains run along the gorge, and in autumn the valley is wrapped in fall colors. It is also a convenient base for trips to Hachimantai and Lake Towada.",
+  "quiz_en": "What is the name of the summer festival in Kazuno City, a UNESCO Intangible Cultural Heritage, in which lavish floats parade through town?"
+ },
+ {
+  "id": "05-10301",
+  "name_en": "Oyu Onsen Village",
+  "area_en": "Kazuno City",
+  "desc_en": "This hot spring village spreads along the Oyu River in Towada-Oyu, Kazuno City. It is a historic hot spring that has long flourished as a therapeutic spa, and the town has public bathhouses, so hopping between baths is part of the fun. Nearby are large Jomon-period stone circles, and the chance to enjoy World Heritage Jomon sites together with hot springs is a charm unique to this place.",
+  "quiz_en": "What is the site near Oyu Onsen called, where stones were arranged in circles during the Jomon period?"
+ },
+ {
+  "id": "05-10304",
+  "name_en": "Osarizawa Mine Historic Site",
+  "area_en": "Kazuno City",
+  "desc_en": "This is the site of a mine with a long history in Kazuno City. Until it closed in the Showa era, large amounts of ore were dug out here, supporting the region's development. Today part of the mine tunnels is open to visitors, and as you walk through the cool shafts, you can learn about past mining methods and the lives of the people who worked in the mine.",
+  "quiz_en": "What reddish metal, also used in electric wires and cables, was mainly mined at the Osarizawa Mine?"
+ },
+ {
+  "id": "05-10317",
+  "name_en": "Mount Chokai",
+  "area_en": "Yurihonjo City",
+  "desc_en": "Rising on the border of Akita and Yamagata, this is one of Tohoku's highest peaks, a beautiful solitary mountain that rises straight up from the Sea of Japan. In various places it is called by nicknames bearing the name \"Fuji,\" and snow lingering near the summit and alpine plants in summer captivate climbers. Its snowmelt becomes abundant underground water that nourishes the fields and sea at its foot.",
+  "quiz_en": "In Akita, Mount Chokai is called \"Akita Fuji.\" By what name is it known on the Yamagata Prefecture side?"
+ },
+ {
+  "id": "05-10318",
+  "name_en": "Ishizawa Gorge",
+  "area_en": "Yurihonjo City",
+  "desc_en": "This gorge runs through the hills of Oyana, Yurihonjo City. In the valley carved through the mountains by the river, a clear stream flows on, and a quiet landscape of rocks and trees unfolds. It is wrapped in fresh, vivid green in early summer and autumn colors in fall, and walking along the stream you will be soothed by the sound of water and the mountain air. It is a place to feel the nature of Yurihonjo.",
+  "quiz_en": "Walking along the stream at Ishizawa Gorge in the hills of Yurihonjo, what sound stayed with you the most?"
+ },
+ {
+  "id": "05-10325",
+  "name_en": "Tsurumai Onsen",
+  "area_en": "Yurihonjo City",
+  "desc_en": "This hot spring is in central Yurihonjo City, where you can casually enjoy a bath right in town. Honjo is a castle town that developed near the mouth of the Koyoshi River, with calm streets spreading along the river. Its appeal is the convenience of stopping by between walks and sightseeing, and after easing your travel fatigue, head into town to taste seafood from the Sea of Japan.",
+  "quiz_en": "What is the name of the river that flows through the center of Yurihonjo City and empties into the Sea of Japan?"
+ },
+ {
+  "id": "05-10350",
+  "name_en": "Tensagi Wine Castle",
+  "area_en": "Yurihonjo City",
+  "desc_en": "This castle-shaped facility stands on a hill overlooking the Sea of Japan in Iwaki, Yurihonjo City. Iwaki once prospered as the castle town of the Kameda Domain, and from the hill there are broad views over the Sea of Japan. At dusk on a clear day, the sun sinking into the sea colors the sky and water in a spectacular view. It is a place to enjoy history and sea views together.",
+  "quiz_en": "At Tensagi Wine Castle overlooking the Sea of Japan, what color of sky would you most like to see at dusk?"
+ },
+ {
+  "id": "05-10361",
+  "name_en": "Chokai Kogen Yurihara Festival",
+  "area_en": "Yurihonjo City",
+  "desc_en": "This festival is held on the Yurihara Highlands at the northern foot of Mount Chokai. Yurihara is a gently rolling plateau of pastures and fields, and the sight of Mount Chokai rising majestically before you is breathtaking. As the cool highland breeze blows through, you can enjoy the festival events while fully taking in the scenery of the grand mountain and wide sky.",
+  "quiz_en": "At the festival on the Yurihara Highlands, what photo would you like to take with Mount Chokai towering behind you?"
+ },
+ {
+  "id": "05-10368",
+  "name_en": "Kashiwa Onsen",
+  "area_en": "Yurihonjo City",
+  "desc_en": "This hot spring is in Nishime, Yurihonjo City. Nishime is a farming town near the Sea of Japan with peaceful village scenery. After warming up in a bath loved by local people, head a little farther to the Sea of Japan coast. On clear days you can see Mount Chokai to the south, and at dusk you can also enjoy the sun setting into the sea.",
+  "quiz_en": "After a soak at Kashiwa Onsen in Nishime near the Sea of Japan, which would you rather see: Mount Chokai or a sunset over the sea?"
+ },
+ {
+  "id": "05-10370",
+  "name_en": "Taki Onsen",
+  "area_en": "Yurihonjo City",
+  "desc_en": "This hot spring lies in the hills of Yunosawa in the Taki area of Yurihonjo City. Surrounded by the nature of the countryside, you can soak quietly while feeling the changing seasons. Its charm is a simple, calm atmosphere quite different from a busy spa town. It is recommended for those who want to spend unhurried time while experiencing mountain-village life in the Yuri region.",
+  "quiz_en": "At Taki Onsen in the hills of Yurihonjo, what did you hear when you listened carefully while soaking in the quiet bath?"
+ },
+ {
+  "id": "05-10397",
+  "name_en": "Kowakubi Onsen",
+  "area_en": "Daisen City",
+  "desc_en": "This hot spring is in the farmland along the Omono River in western Daisen City. The inn stands amid gentle scenery where the river makes great bends, and you can enjoy the bath wrapped in the peaceful air of the countryside. Its charm is spending calm time watching the river flow. The somewhat tricky-to-read place name also sticks in the memory.",
+  "quiz_en": "At Kowakubi Onsen beside the great bends of the Omono River, how would you like to spend a calm afternoon watching the water flow?"
+ },
+ {
+  "id": "05-10426",
+  "name_en": "Nakazato Onsen",
+  "area_en": "Daisen City",
+  "desc_en": "This hot spring is in the farmland spreading at the foot of the Ou Mountains in Ota, Daisen City. The wide rice paddies of the Senboku Plain continue all around, creating a peaceful scene together with the mountains behind. Daisen City is known nationwide for its summer fireworks competition, and in this bath close to local people's daily lives, you can rest your body at leisure.",
+  "quiz_en": "What is the popular name of the fireworks competition held every summer in Daisen City, where pyrotechnicians from all over Japan compete?"
+ },
+ {
+  "id": "05-10435",
+  "name_en": "Hachimangu Tsuzureko Shrine Annual Festival",
+  "area_en": "Kitaakita City",
+  "desc_en": "This annual grand festival is held in summer at Hachimangu Tsuzureko Shrine in Tsuzureko, Kitaakita City. The star of the festival is a giant drum whose diameter far exceeds a person's height. Its deep bass booms right through to your gut, overwhelming the many spectators. It is a festival that heats up summer in Kitaakita, carried on with pride by local people.",
+  "quiz_en": "What is the giant musical instrument, recognized by Guinness World Records, that is played at the Tsuzureko Shrine annual festival?"
+ },
+ {
+  "id": "05-10437",
+  "name_en": "Yunotai Onsen",
+  "area_en": "Kitaakita City",
+  "desc_en": "This hot spring lies in the hills of Komori, Kitaakita City. Kitaakita embraces a rich mountain region, including Mount Moriyoshi, and in winter you can see magical scenery where snow and ice cover the trees. In the quiet of the deep mountains, you can take a leisurely soak in a bath loved by local people and feel the blessings of Kitaakita's nature.",
+  "quiz_en": "What natural formations, created when snow and ice completely cover the trees, can be seen on Mount Moriyoshi in Kitaakita in winter?"
+ },
+ {
+  "id": "05-10452",
+  "name_en": "Utto Onsen",
+  "area_en": "Kitaakita City",
+  "desc_en": "This hot spring is in Utto, Ani, Kitaakita City, a village of the Matagi deep in the mountains. The Ani region is known as a land where the culture of the Matagi, traditional hunters who hunt while revering the mountain gods, has been handed down. Nearby there are also facilities introducing the Matagi way of life, and you can experience this unique culture along with dishes that make use of the mountain's bounty.",
+  "quiz_en": "What are the traditional hunters of the Ani region called, who hunt in groups while revering the mountain gods?"
+ },
+ {
+  "id": "05-10473",
+  "name_en": "Mototaki Falls",
+  "area_en": "Nikaho City",
+  "desc_en": "This waterfall in the hills of Kisakata, Nikaho City, flows down in many streams that seem to spring out from between moss-covered rocks. The water is underground water from snow and rain that fell on Mount Chokai and passed through the earth over many years, and the air around it stays cool even in summer. The scenery created by green moss and streams of white water is mystical.",
+  "quiz_en": "The underground water springing from the mossy rocks of Mototaki Falls originally fell as snow and rain on which mountain?"
+ },
+ {
+  "id": "05-10474",
+  "name_en": "Naso no Shirataki Falls",
+  "area_en": "Nikaho City",
+  "desc_en": "This waterfall is within the grounds of Kinpo Shrine in Kisakata, Nikaho City, and is designated a national Place of Scenic Beauty. The Naso River, gathering snowmelt from Mount Chokai, pours down the rock wall like a sheet of white cloth in a splendid sight. As you descend the stone steps to the plunge pool, spray and a thundering roar close in. Kisakata was once a scenic inlet dotted with islands.",
+  "quiz_en": "What is the title of Matsuo Basho's travel journal recording his visit to Kisakata, once an inlet dotted with islands?"
+ },
+ {
+  "id": "05-10492",
+  "name_en": "Tamagawa Onsen",
+  "area_en": "Semboku City",
+  "desc_en": "This hot spring in the mountains on the western side of Hachimantai is known for its strongly acidic water. A huge amount of boiling water gushes from its source, and in the surrounding geothermal area you can see people warming themselves on straw mats spread over the bedrock. A rare mineral designated a Special Natural Monument is also found here, and many people visit from all over Japan for therapeutic bathing.",
+  "quiz_en": "What is the mineral found at Tamagawa Onsen, designated a Special Natural Monument and known for containing radium?"
+ },
+ {
+  "id": "05-10493",
+  "name_en": "Nyuto Onsen Village",
+  "area_en": "Semboku City",
+  "desc_en": "This hot spring village at the foot of Mount Nyuto has distinctive single inns scattered through the beech forest. Each inn has its own spring source, so as you hop between baths you can enjoy the differences, from milky white water to clear water. The scenery of old thatched-roof spa inns looks just like a world from a folktale. Open-air baths in deep winter snow have a special charm too.",
+  "quiz_en": "Which inn is said to have the oldest history in Nyuto Onsen Village, known for its thatched row house and milky open-air bath?"
+ },
+ {
+  "id": "05-10507",
+  "name_en": "Kogen and Mizusawa Onsen Area",
+  "area_en": "Semboku City",
+  "desc_en": "This hot spring area spreads across the plateau between Lake Tazawa and Mount Akita-Komagatake in Tazawako, Semboku City. It is a highland resort with ski areas, hotels and guesthouses, busy in winter with skiing and in summer as a base for climbing and hiking. The view looking down on Lake Tazawa from the highlands is also lovely, and you can enjoy mountain hot springs and cool highland breezes.",
+  "quiz_en": "What is the name of the mountain that rises above the Tazawako Highlands and is known in summer as a treasure trove of alpine plants?"
+ },
+ {
+  "id": "05-10512",
+  "name_en": "Dakigaeri Gorge Autumn Leaves Festival",
+  "area_en": "Semboku City",
+  "desc_en": "This festival is held during the autumn foliage season at Dakigaeri Gorge in Tazawako, Semboku City. In the gorge carved by the Tama River, a crystal-clear cobalt-blue stream and sheer rock walls continue on, and the color contrast with red and yellow autumn leaves is superb. Cross the suspension bridge and walk the trail along the gorge, and a stunning view typical of autumn in Tohoku unfolds.",
+  "quiz_en": "What is the waterfall at the end of the Dakigaeri Gorge trail, said to be named for being so beautiful that people turn back to look?"
+ },
+ {
+  "id": "05-10516",
+  "name_en": "Lake Tazawa",
+  "area_en": "Semboku City",
+  "desc_en": "This nearly circular lake is known as the deepest lake in Japan. Its water holds a deep lapis-lazuli blue, and it is known for not freezing over even in winter. On the shore stands a golden statue modeled on a legendary princess who is said to have become a dragon in her wish for eternal beauty, creating a striking contrast with the lake's blue. A drive around the lake is also recommended.",
+  "quiz_en": "The golden statue on the shore of Lake Tazawa depicts a princess from the lake's legend. What is her name?"
+ },
+ {
+  "id": "05-10522",
+  "name_en": "Lake Towada (Akita Side)",
+  "area_en": "Kosaka Town",
+  "desc_en": "This is the lakeshore on the Kosaka Town side, Akita Prefecture, of Lake Towada, which straddles the border with Aomori. From the Hakka Pass observatory overlooking the lake, a grand view unfolds of the lake and peninsulas surrounded by the outer caldera rim. Himemasu (kokanee salmon) have been released into the lake and can be enjoyed as a local specialty. The lake wrapped in autumn leaves is exceptional.",
+  "quiz_en": "Who is the person known for succeeding, after great hardship, in farming himemasu kokanee salmon in Lake Towada?"
+ }
+]
