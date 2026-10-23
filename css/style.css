@@ -140,3 +140,7 @@ button.wide { width: 100%; margin-top: 16px; }
 .lang-sel { display: flex; gap: 8px; justify-content: center; margin: 10px 0; }
 .lang-sel button { background: #0f3324; border: 1px solid var(--line); border-radius: 999px; padding: 6px 16px; font-size: 13px; color: var(--muted); }
 .lang-sel button.on { background: var(--phosphor-dim); color: #001a0e; border-color: var(--phosphor-dim); font-weight: 700; }
+.gate-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin: 12px 0; }
+.gate-list button { background: #0f3324; border: 1px solid var(--line); border-radius: 10px; padding: 12px 8px; font-size: 14px; text-align: left; }
+.gate-list button::before { content: "▶ "; color: var(--phosphor); }
+#gate-back { background: none; border: 1px solid var(--line); border-radius: 10px; padding: 10px; color: var(--muted); }

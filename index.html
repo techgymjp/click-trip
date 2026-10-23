@@ -131,17 +131,25 @@
   <div class="modal" id="intro" hidden>
     <div class="sheet intro">
       <h1 class="logo big">CLICK<span>TRIP</span></h1>
-      <p class="lead" data-i18n="intro.lead">歩いた距離だけ、日本を旅する。</p>
-      <ol class="howto">
-        <li data-i18n-html="intro.1">「移動距離を測る」ボタンで、前回からの<b>実際の移動距離</b>を測ります。</li>
-        <li data-i18n-html="intro.2">レーダーを見て<b>スワイプ</b>した方角へ、その距離だけゲームの中を進みます。</li>
-        <li data-i18n-html="intro.3">全国2000の観光地（2km四方のマス）にぴたりと着地できたら到着！</li>
-      </ol>
-      <p class="small" data-i18n="intro.note">旅の出発地は、いまあなたがいる場所です。位置情報の利用を許可してください。</p>
-      <p class="lang-sel"><button data-lang="ja">日本語</button><button data-lang="en">English</button></p>
-      <div class="buttons col">
-        <button id="start-gps" class="primary" data-i18n="intro.gps">現在地から旅をはじめる</button>
-        <button id="start-demo" data-i18n="intro.demo">GPSなしで遊ぶ（デモ・東京駅から出発）</button>
+      <div id="intro-main">
+        <p class="lead" data-i18n="intro.lead">歩いた距離だけ、日本を旅する。</p>
+        <ol class="howto">
+          <li data-i18n-html="intro.1">「移動距離を測る」ボタンで、前回からの<b>実際の移動距離</b>を測ります。</li>
+          <li data-i18n-html="intro.2">レーダーを見て<b>スワイプ</b>した方角へ、その距離だけゲームの中を進みます。</li>
+          <li data-i18n-html="intro.3">全国2000の観光地（2km四方のマス）にぴたりと着地できたら到着！</li>
+        </ol>
+        <p class="small" data-i18n="intro.note">旅の出発地は、いまあなたがいる場所です（日本の外にいるときは、日本の玄関口から選べます）。位置情報の利用を許可してください。</p>
+        <p class="lang-sel"><button data-lang="ja">日本語</button><button data-lang="en">English</button></p>
+        <div class="buttons col">
+          <button id="start-gps" class="primary" data-i18n="intro.gps">現在地から旅をはじめる</button>
+          <button id="start-demo" data-i18n="intro.demo">GPSなしで遊ぶ（デモ）</button>
+        </div>
+      </div>
+      <div id="gateways" hidden>
+        <p class="lead" data-i18n="gate.title">出発地を選ぼう</p>
+        <p class="small" id="gate-lead"></p>
+        <div class="gate-list" id="gate-list"></div>
+        <button id="gate-back" class="wide" data-i18n="gate.back">もどる</button>
       </div>
     </div>
   </div>

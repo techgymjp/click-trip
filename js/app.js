@@ -4,6 +4,19 @@
 
   const SAVE_KEY = 'clicktrip.save.v1';
   const TOKYO_STATION = { lat: 35.6812, lon: 139.7671 };
+  // 日本の外にいるとき（とデモモード）に選ぶ出発地。日本の玄関口になる駅・空港
+  const GATEWAYS = [
+    { key: 'sapporo', lat: 43.0687, lon: 141.3508 },
+    { key: 'sendai', lat: 38.2601, lon: 140.8822 },
+    { key: 'tokyo', ...TOKYO_STATION },
+    { key: 'nagoya', lat: 35.1709, lon: 136.8815 },
+    { key: 'kyoto', lat: 34.9858, lon: 135.7588 },
+    { key: 'osaka', lat: 34.7025, lon: 135.4959 },
+    { key: 'hiroshima', lat: 34.3972, lon: 132.4753 },
+    { key: 'fukuoka', lat: 33.5902, lon: 130.4207 },
+    { key: 'naha', lat: 26.2069, lon: 127.6469 },
+  ];
+  const ABROAD_KM = 100; // いちばん近い観光地がこれより遠ければ「日本の外」とみなす
   const RANGES = [2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000];
   const t = I18N.t;
   const KIND_KEYS = ['temple', 'shrine', 'castle', 'onsen', 'mountain', 'highland', 'waterfall', 'gorge', 'lake', 'coast',
@@ -554,13 +567,13 @@
     $('start-gps').textContent = t('intro.gpsWait');
     try {
       const p = await getPosition();
-      S = newSave('gps', { lat: p.lat, lon: p.lon });
-      S.gps = p;
-      save();
-      $('intro').hidden = true;
-      refresh();
-      Sound.jingle('start', 'field');
-      toast(t('m.start'));
+      const n = nearest(p, 1)[0];
+      if (!n || n.d > ABROAD_KM) {
+        // 日本の外にいる: 出発地は日本の玄関口から選んでもらい、測定の起点はいまいる場所にする
+        showGateways('gps', p);
+      } else {
+        begin('gps', { lat: p.lat, lon: p.lon }, p, null);
+      }
     } catch (e) {
       Sound.se('buzz');
       toast(t('gps.tryDemo2', { msg: e.message }));
@@ -569,14 +582,38 @@
       $('start-gps').textContent = t('intro.gps');
     }
   }
+
   function startDemo() {
-    S = newSave('demo', { ...TOKYO_STATION });
+    Sound.se('ok');
+    showGateways('demo', null);
+  }
+
+  /** 出発地を選ぶ画面（はじめの画面の中で切り替える） */
+  let pendingStart = null;
+  function showGateways(mode, gps) {
+    pendingStart = { mode, gps };
+    $('gate-lead').textContent = t(mode === 'demo' ? 'gate.demo' : 'gate.abroad');
+    $('gate-list').innerHTML = GATEWAYS.map((g) => `<button data-gate="${g.key}">${esc(t('gate.' + g.key))}</button>`).join('');
+    $('intro-main').hidden = true;
+    $('gateways').hidden = false;
+  }
+
+  function hideGateways() {
+    $('gateways').hidden = true;
+    $('intro-main').hidden = false;
+    pendingStart = null;
+  }
+
+  function begin(mode, pos, gps, gateKey) {
+    S = newSave(mode, { lat: pos.lat, lon: pos.lon });
+    S.gps = gps;
     save();
+    hideGateways();
     $('intro').hidden = true;
     refresh();
-    Sound.se('ok');
     Sound.jingle('start', 'field');
-    toast(t('m.startDemo'));
+    if (gateKey) toast(t(mode === 'demo' ? 'm.startDemoFrom' : 'm.startFrom', { place: t('gate.' + gateKey) }));
+    else toast(t('m.start'));
   }
 
   /** Android アプリだけの設定: 戻るボタン、共有ボタン、バージョン表示、広告の設定 */
@@ -600,6 +637,7 @@
       // 戻るボタン: 到着画面を閉じる → レーダーに戻る → アプリを終了
       App.addListener('backButton', () => {
         if (!$('arrival').hidden) return closeArrival();
+        if (!$('intro').hidden && !$('gateways').hidden) { Sound.se('back'); return hideGateways(); }
         if (!$('view-radar').classList.contains('active')) { Sound.se('back'); return showView('radar'); }
         App.exitApp();
       });
@@ -667,6 +705,7 @@
     document.querySelectorAll('[data-lang]').forEach((el) => el.addEventListener('click', () => { Sound.se('cursor'); I18N.setLang(el.dataset.lang); }));
     I18N.onChange(() => {
       refresh();
+      if (pendingStart) showGateways(pendingStart.mode, pendingStart.gps);
       if (!$('arrival').hidden && current) openArrival(current, [current, ...arrivalGroup.filter((x) => x.id !== current.id)], null);
     });
     $('retry-btn').addEventListener('click', retryWithAd);
@@ -680,6 +719,14 @@
     $('opt-bgm').addEventListener('change', (e) => { Sound.setPref('bgm', e.target.checked); syncSettings(); Sound.se('click'); });
     $('opt-se').addEventListener('change', (e) => { Sound.setPref('se', e.target.checked); syncSettings(); Sound.se('click'); });
     $('start-demo').addEventListener('click', startDemo);
+    $('gate-list').addEventListener('click', (e) => {
+      const b = e.target.closest('button[data-gate]');
+      if (!b || !pendingStart) return;
+      const g = GATEWAYS.find((x) => x.key === b.dataset.gate);
+      Sound.se('ok');
+      begin(pendingStart.mode, g, pendingStart.gps, g.key);
+    });
+    $('gate-back').addEventListener('click', () => { Sound.se('back'); hideGateways(); });
 
     $('demo').addEventListener('change', (e) => {
       Sound.se('click');
