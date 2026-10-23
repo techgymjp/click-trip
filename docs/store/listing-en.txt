@@ -1,0 +1,55 @@
+Click Trip - Google Play store listing (English / en-US)
+
+[App name] (max 30 characters)
+Click Trip: Walk Across Japan
+
+[Short description] (max 80 characters)
+Travel Japan as far as you really walk. Swipe the radar to reach 2,000 sights!
+
+[Full description] (max 4000 characters)
+The distance you walk becomes the distance you travel.
+
+Tap "Measure distance" and the distance you have actually moved since your last tap is saved up. Look at the radar, swipe toward where you want to go, and you travel exactly that far across Japan in the game. Can you land right on one of 2,000 sightseeing spots?
+
+■ HOW TO PLAY
+• Tap the button, then really move — a walk, your commute, a trip
+• Tap again and the distance you moved is added up with a satisfying count
+• Check the direction and distance of nearby spots on the radar
+• Swipe on the radar scope to set off in that direction
+• Each spot is a 2 km square. Land right on it to arrive!
+• You always use up all of your distance, so when a spot is too close, take a detour and travel in a triangle
+
+■ 2,000 SPOTS ACROSS JAPAN
+• From Hokkaido to Okinawa, based on tourism resource data from Japan's Ministry of Land, Infrastructure, Transport and Tourism
+• Temples, shrines, castles, hot springs, waterfalls, gorges, festivals and local food
+• Every arrival brings a postcard-style illustration of the place and a short travel guide
+
+■ CLICK TRIP QUIZ
+• Each spot comes with a quiz question — but no answer
+• Share it and ask your friends and followers to answer
+
+■ RETRO CHIPTUNE SOUND
+• 8-bit style music and sound effects
+• Radar sonar pings, a counting distance meter and an arrival fanfare
+
+■ MORE
+• Travel log, progress by prefecture and your route on a map of Japan
+• Missed a spot? Watch an ad to undo the move and aim again
+• A demo mode lets you play without GPS
+• Available in English and Japanese
+
+■ YOUR PRIVACY
+Your location is only used on your device to calculate how far you moved. It is never sent anywhere.
+
+A revival of "Click Trip", born as the world's first location-based game.
+Spot data: processed from "National Land Numerical Information (Tourism Resources)", Ministry of Land, Infrastructure, Transport and Tourism of Japan.
+
+[Release notes]
+<en-US>
+First release. Travel across Japan as far as you actually walk!
+</en-US>
+
+[Graphics]
+App icon: icon-512.png (512 x 512)
+Feature graphic: feature-graphic-en.png (1024 x 500)
+Phone screenshots: en-1-start.png to en-6-log.png (1080 x 1920)

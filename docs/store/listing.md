@@ -7,7 +7,8 @@ Play Console の「ストアの掲載情報」に貼り付けて使います。�
 | 用途 | ファイル | サイズ |
 | --- | --- | --- |
 | アプリのアイコン | `icon-512.png` | 512 × 512 |
-| フィーチャー グラフィック | `feature-graphic.png` | 1024 × 500 |
+| フィーチャー グラフィック（日本語） | `feature-graphic.png` | 1024 × 500 |
+| フィーチャー グラフィック（英語） | `feature-graphic-en.png` | 1024 × 500 |
 | スマートフォンのスクリーンショット（日本語） | `ja-1-start.png` 〜 `ja-6-log.png` | 1080 × 1920 |
 | スマートフォンのスクリーンショット（英語） | `en-1-start.png` 〜 `en-6-log.png` | 1080 × 1920 |
 
@@ -82,55 +83,8 @@ First release. Travel across Japan as far as you actually walk!
 
 ## English (en-US)
 
-**App name** (30 characters max)
-
-```
-Click Trip: Walk Across Japan
-```
-
-**Short description** (80 characters max)
-
-```
-A location game: travel Japan as far as you walk. Swipe the radar to 2,000 sights!
-```
-
-**Full description**
-
-```
-The distance you walk becomes the distance you travel.
-
-Tap "Measure distance" and the distance you have actually moved since the last tap is saved up.
-Look at the radar, swipe toward where you want to go, and you travel that far across Japan in the game.
-Can you land exactly on one of 2,000 sightseeing spots?
-
-■ How to play
-- Tap the button, then actually move: a walk, your commute, a trip
-- Tap again and the distance you moved is added up
-- Check the direction and distance of nearby spots on the radar, then swipe to set off
-- Each spot is a 2 km square. Land right on it to arrive!
-- You always use up all your distance, so take a detour in a triangle when a spot is too close
-
-■ 2,000 spots across Japan
-- From Hokkaido to Okinawa, based on tourism resource data from Japan's Ministry of Land, Infrastructure, Transport and Tourism
-- Temples, shrines, castles, hot springs, waterfalls, festivals and local food
-- Each arrival brings an illustration of the place and a guide
-
-■ Click Trip Quiz
-- Each spot comes with a quiz question only
-- Ask your friends and followers for the answer
-
-■ Retro chiptune sound
-- 8-bit style music and sound effects
-- Radar sonar pings, a counting distance meter and an arrival fanfare
-
-■ More
-- Travel log, progress by prefecture and your route on a map of Japan
-- Your location is only used to calculate distance and never leaves your device
-- A demo mode lets you play without GPS
-
-A revival of "Click Trip", born as the world's first location-based game.
-Spot data: processed from "National Land Numerical Information (Tourism Resources)", MLIT Japan.
-```
+英語の掲載情報は `listing-en.txt` にあります（アプリ名・簡単な説明・詳しい説明・リリースノート・使う画像）。
+Play Console の「翻訳を管理」で英語（en-US）を追加し、そのまま貼り付けてください。英語の画像は `feature-graphic-en.png` と `en-1-start.png` 〜 `en-6-log.png` です。
 
 ---
 

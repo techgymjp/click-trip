@@ -70,6 +70,11 @@ function splash(w, h) {
     <div><div class="logo" style="font-size:78px">CLICK<b>TRIP</b></div>
     <div class="sub" style="font-size:40px;margin-top:10px;font-weight:700">クリックトリップ</div>
     <div class="sub" style="font-size:24px;margin-top:22px;color:#8fb8a3">歩いた距離だけ、日本を旅する。</div></div></div>`, path.join(root, 'docs/store/feature-graphic.png'));
+  await shot(page, 1024, 500, `<div class="box splash" style="width:1024px;height:500px;flex-direction:row;gap:56px">
+    <div style="width:330px;height:330px;position:relative">${layer(FG)}</div>
+    <div><div class="logo" style="font-size:78px">CLICK<b>TRIP</b></div>
+    <div class="sub" style="font-size:38px;margin-top:10px;font-weight:700;letter-spacing:.06em">Walk Across Japan</div>
+    <div class="sub" style="font-size:24px;margin-top:22px;color:#8fb8a3;letter-spacing:.04em">Travel Japan as far as you walk.</div></div></div>`, path.join(root, 'docs/store/feature-graphic-en.png'));
   // Web 版のファビコン
   fs.writeFileSync(path.join(root, 'icon.svg'), FG.replace('<defs>', '<defs><radialGradient id="bgx" cx="0.5" cy="0.4" r="0.75"><stop offset="0" stop-color="#0d3d29"/><stop offset="1" stop-color="#04150f"/></radialGradient>').replace('<circle cx="512" cy="512" r="430"', '<rect width="1024" height="1024" rx="180" fill="url(#bgx)"/><circle cx="512" cy="512" r="430"'));
   await browser.close();
