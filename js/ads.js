@@ -10,7 +10,7 @@ const Ads = (() => {
     // AdMob でクリックトリップ用の広告ユニットを作ったら、ここに ID を入れる。
     // 空の種類は本番ビルドでも出さない（JET STRIKE の ID を誤って使わないため）
     production: {
-      banner: '',
+      banner: 'ca-app-pub-6411535997477460/1677090815',
       interstitial: 'ca-app-pub-6411535997477460/4418804225',
       rewarded: '',
     },
