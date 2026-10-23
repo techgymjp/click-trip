@@ -42,6 +42,19 @@ GOOD = [
 ]
 
 
+# 元データ（P12）の所在地・座標の誤りを直す。キーは (都道府県コード, P12_001)
+CORRECTIONS = {
+    # 仁和寺の御室桜。元データは金閣寺と同じ住所・座標になっている
+    ("26", 10007): {"addr": "京都市右京区御室大内33", "lat": 35.0310, "lon": 135.7138},
+    # 渋温泉は山ノ内町。元データは長野市の西に置かれている
+    ("20", 10002): {"addr": "山ノ内町", "lat": 36.7322, "lon": 138.4265},
+    # 野沢温泉は野沢温泉村（大湯のあたり）。元データは山ノ内町（渋温泉の近く）になっている
+    ("20", 10443): {"addr": "野沢温泉村", "lat": 36.9227, "lon": 138.4404},
+    # 有田焼の窯元が集まるのは有田町（内山地区）。元データは佐賀市になっている
+    ("41", 10001): {"addr": "有田町", "lat": 33.1905, "lon": 129.8815},
+}
+
+
 def cell_of(lat, lon):
     dlat = CELL_KM / 111.32
     row = math.floor(lat / dlat)
@@ -101,6 +114,8 @@ def main(src):
             continue
         seen.add((pref, name))
         lon, lat = representative(r["pts"])
+        fix = CORRECTIONS.get((pref, rid), {})
+        lat, lon = fix.get("lat", lat), fix.get("lon", lon)
         cat = p["P12_005"] if p["P12_005"] not in ("‐", "-", "") else ""
         if cat and re.search(r"[町市村]$|銀座|橋梁群", cat):  # 種別欄に地名が入っている誤データ
             cat = ""
@@ -108,7 +123,7 @@ def main(src):
             "id": f"{pref}-{rid}",
             "name": name,
             "pref": PREFS[int(pref) - 1],
-            "addr": re.sub(r"[　 ]+", " ", p["P12_006"]).replace(" および ", "・").strip(),
+            "addr": fix.get("addr") or re.sub(r"[　 ]+", " ", p["P12_006"]).replace(" および ", "・").strip(),
             "cat": cat,
             "lat": round(lat, 5),
             "lon": round(lon, 5),
