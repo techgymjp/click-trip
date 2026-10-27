@@ -44,6 +44,16 @@ Capacitor でゲームのファイルをアプリに同梱し、Android アプ�
 - 広告: 画面下にバナー（到着画面・はじめの画面を開いている間は隠す）。新しい観光地の到着画面を閉じたとき毎回インタースティシャル。はずれたときに「広告を見てやり直す」（リワード）で移動前の場所と距離に戻れます。本番の広告ユニット ID は `js/ads.js` の `production` に入れ、空の種類は出しません
 - 歩きながら遊ぶゲームなので、画面の点けっぱなし（`FLAG_KEEP_SCREEN_ON`）はしていません
 
+## iOS アプリ
+
+Android 版と同じ Capacitor のプロジェクトに `ios/` を足して iOS 版にしています（Bundle ID `jp.techgym.clicktrip`、iPhone 専用・縦画面）。構成は JET STRIKE と同じです。
+
+- Mac での作業手順（ビルド、TestFlight、審査用の画面録画、App Store Connect の入力）: `docs/IOS_BUILD.md`
+- `npm run ios:sync`（テスト広告）/ `npm run ios:release`（本番広告。App Store 用）/ `npm run ios:open`
+- GitHub Actions（`.github/workflows/ios.yml`）が push のたびに、署名なしでビルドできるかを確認します
+- App Store 用の画像と掲載文: `docs/store/ios/`（スクリーンショットは縦向き 1206 × 2622、ヘッダ 3840 × 1646、検索結果 3840 × 2560）
+- 位置情報とトラッキングの確認画面の説明は日英（`ios/App/App/*.lproj/InfoPlist.strings`）
+
 ## ライセンス
 
 All rights reserved. 著作権はテックジム株式会社に帰属します。無断での複製・改変・再配布、Web サイトやアプリとしての公開を禁止します。ただし、テックジムの受講生が学習目的で複製・改変することは許可します（商用利用は不可。詳しくは `LICENSE`）。
@@ -67,9 +77,11 @@ All rights reserved. 著作権はテックジム株式会社に帰属します�
 | `tools/build_spots.py` | 国土数値情報 P12 の GeoJSON から 2000 件を選ぶスクリプト |
 | `tools/merge_content.py` | `spots_base.json` と `content/` を合わせて `spots.json` を作るスクリプト |
 | `tools/art-preview.html` | イラストの一覧確認ページ（開発用） |
+| `tools/store-screenshots.js`, `tools/store-compose.html` | ストア用のスクリーンショットと App Store のヘッダ画像を撮る（開発用） |
 | `tools/render-assets.js` | `assets/*.svg` からアイコン・起動画面・ストア画像を書き出す（開発用） |
 | `scripts/build-web.js` | アプリに同梱するファイルを `www/` にコピー |
 | `android/` | Android プロジェクト（Capacitor） |
+| `ios/` | iOS プロジェクト（Capacitor） |
 
 ## 観光地データについて
 

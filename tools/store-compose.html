@@ -1,0 +1,43 @@
+<!doctype html><meta charset="utf-8">
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#04150f}
+#stage{position:absolute;inset:0;background:radial-gradient(ellipse at 62% 45%,#0d3d29 0%,#04150f 70%)}
+.card{position:absolute;width:300px;border:7px solid #fffaf0;border-bottom-width:22px;border-radius:6px;box-shadow:0 12px 30px rgba(0,0,0,.55);background:#fffaf0;line-height:0}
+.card svg{width:100%;height:auto;display:block}
+#radar{position:absolute;filter:drop-shadow(0 0 40px rgba(67,245,154,.55))}
+#radar svg{width:100%;height:100%;display:block}
+#shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,21,15,0) 55%,rgba(4,21,15,.75) 100%)}
+</style>
+<div id="stage"></div>
+<script src="../js/art.js"></script>
+<script>
+window.compose = async (mode) => {
+  const ids = ['26-10005','28-10035','19-10207','09-10005','12-10313','10-10429','20-10055','43-10235','46-10008','01-10031','13-10014','26-10001','26-10019'];
+  const spots = await fetch('../data/spots.json').then(r => r.json());
+  const by = Object.fromEntries(spots.map(s => [s.id, s]));
+  const fg = await fetch('../assets/icon-foreground.svg').then(r => r.text()).catch(() => '');
+  const st = document.getElementById('stage');
+  const W = innerWidth, H = innerHeight;
+  const rows = mode === 'search' ? 4 : 3;
+  const cw = 300, ch = 300 * 260 / 400 + 29, gapX = 26, gapY = mode === 'search' ? 8 : 4;
+  let k = 0;
+  const top0 = (H - rows * (ch + gapY)) / 2 + 6;
+  for (let r = 0; r < rows; r++) {
+    const off = (r % 2 ? -cw / 2 : 0) - 60;
+    for (let x = off; x < W + cw; x += cw + gapX) {
+      const s = by[ids[k++ % ids.length]];
+      const d = document.createElement('div');
+      d.className = 'card';
+      const rot = ((k * 37) % 9) - 4;
+      d.style.cssText = `left:${x}px;top:${top0 + r * (ch + gapY)}px;transform:rotate(${rot}deg)`;
+      d.innerHTML = Art.render(s);
+      st.appendChild(d);
+    }
+  }
+  const shade = document.createElement('div'); shade.id = 'shade'; st.appendChild(shade);
+  const rd = document.createElement('div'); rd.id = 'radar';
+  const size = mode === 'search' ? 470 : 400;
+  rd.style.cssText = `width:${size}px;height:${size}px;left:${W * 0.62 - size / 2}px;top:${H * 0.46 - size / 2}px`;
+  rd.innerHTML = fg; st.appendChild(rd);
+};
+</script>
