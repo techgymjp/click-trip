@@ -1,0 +1,168 @@
+name: iOS release (TestFlight)
+
+# 既定ブランチに push したら、本番広告の設定で iOS 版をビルドし、App Store Connect（TestFlight）にアップロードする。
+# 審査への提出は App Store Connect で行う（docs/IOS_BUILD.md）。
+# 必要な Secrets: IOS_DIST_CERT_P12_BASE64, IOS_DIST_CERT_PASSWORD, ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_P8_BASE64
+on:
+  push:
+    paths:
+      - 'index.html'
+      - 'css/**'
+      - 'js/**'
+      - 'data/spots.json'
+      - 'ios/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'capacitor.config.json'
+      - '.github/workflows/ios-release.yml'
+  workflow_dispatch:
+
+# アップロードは順番に。途中で取り消すとビルド番号が飛ぶだけなので、新しい push が来たら古いほうは取り消す
+concurrency:
+  group: ios-release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  upload:
+    # 既定ブランチだけ。Secrets がないときは何もしない
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: macos-latest
+    timeout-minutes: 45
+    # pipefail を有効にして、xcodebuild が失敗したら（tail に渡していても）ステップを失敗させる
+    defaults:
+      run:
+        shell: bash
+    env:
+      HAS_SECRETS: ${{ secrets.IOS_DIST_CERT_P12_BASE64 != '' && secrets.ASC_KEY_P8_BASE64 != '' }}
+      BUNDLE_ID: jp.techgym.clicktrip
+      TEAM_ID: GNM3VTX9YG
+      PROFILE_NAME: Click Trip App Store CI
+      # 手元の Mac で Archive したビルド（1, 2, 3…）と番号がぶつからないよう、100 から始める
+      BUILD_NUMBER: ${{ github.run_number }}00
+    steps:
+      - name: Skip when secrets are missing
+        if: env.HAS_SECRETS != 'true'
+        run: echo "iOS の Secrets が登録されていないので、アップロードはしません（docs/IOS_BUILD.md の 7 章）"
+
+      - uses: actions/checkout@v4
+        if: env.HAS_SECRETS == 'true'
+
+      - uses: actions/setup-node@v4
+        if: env.HAS_SECRETS == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        if: env.HAS_SECRETS == 'true'
+        timeout-minutes: 5
+        run: |
+          npm ci
+          pip3 install --break-system-packages pyjwt cryptography || pip3 install pyjwt cryptography
+
+      - name: Copy web assets into the iOS project (production ads)
+        if: env.HAS_SECRETS == 'true'
+        run: |
+          echo "VERSION_NAME=$(node -p "require('./package.json').version")" >> "$GITHUB_ENV"
+          ADMOB_MODE=production VERSION_CODE="$BUILD_NUMBER" VERSION_NAME="$(node -p "require('./package.json').version")" npm run build
+          npx cap sync ios
+
+      # 配布用の証明書を、この実行だけで使う一時的なキーチェーンに入れる
+      - name: Import the distribution certificate
+        if: env.HAS_SECRETS == 'true'
+        env:
+          P12_BASE64: ${{ secrets.IOS_DIST_CERT_P12_BASE64 }}
+          P12_PASSWORD: ${{ secrets.IOS_DIST_CERT_PASSWORD }}
+        run: |
+          KEYCHAIN="$RUNNER_TEMP/build.keychain-db"
+          KEYCHAIN_PASSWORD="$(uuidgen)"
+          echo "$P12_BASE64" | base64 --decode > "$RUNNER_TEMP/dist.p12"
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN"
+          security import "$RUNNER_TEMP/dist.p12" -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN"
+          security set-key-partition-list -S apple-tool:,apple: -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN" > /dev/null
+          security list-keychains -d user -s "$KEYCHAIN" $(security list-keychains -d user | tr -d '"')
+          rm "$RUNNER_TEMP/dist.p12"
+          # 証明書のシリアル番号（App Store Connect の証明書と照らし合わせる）
+          SERIAL=$(security find-certificate -a -c "Apple Distribution" -p "$KEYCHAIN" | openssl x509 -noout -serial | cut -d= -f2)
+          if [ -z "$SERIAL" ]; then echo "Apple Distribution の証明書が .p12 に入っていません"; exit 1; fi
+          echo "CERT_SERIAL=$SERIAL" >> "$GITHUB_ENV"
+
+      - name: Prepare the App Store Connect API key and provisioning profile
+        if: env.HAS_SECRETS == 'true'
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+        run: |
+          mkdir -p "$HOME/.appstoreconnect/private_keys"
+          KEY_PATH="$HOME/.appstoreconnect/private_keys/AuthKey_${ASC_KEY_ID}.p8"
+          echo "$ASC_KEY_P8_BASE64" | base64 --decode > "$KEY_PATH"
+          echo "ASC_KEY_PATH=$KEY_PATH" >> "$GITHUB_ENV"
+          ASC_KEY_PATH="$KEY_PATH" python3 scripts/ios-profile.py "$BUNDLE_ID" "$CERT_SERIAL" "$PROFILE_NAME" \
+            "$HOME/Library/MobileDevice/Provisioning Profiles/clicktrip-appstore.mobileprovision"
+
+      # App ターゲットの Release だけを手動署名にする（コマンドラインで指定すると Swift Package の部品にまでかかってエラーになるため）
+      - name: Use manual signing for the release build (CI only)
+        if: env.HAS_SECRETS == 'true'
+        run: |
+          python3 - <<'PY'
+          import os, re
+          p = 'ios/App/App.xcodeproj/project.pbxproj'
+          s = open(p).read()
+          blocks = list(re.finditer(r'\t\t\w+ /\* Release \*/ = \{\n\t\t\tisa = XCBuildConfiguration;.*?\n\t\t\};', s, re.S))
+          target = [b for b in blocks if 'PRODUCT_BUNDLE_IDENTIFIER = ' + os.environ['BUNDLE_ID'] + ';' in b.group(0)]
+          assert len(target) == 1, 'App ターゲットの Release 設定が見つかりません'
+          b = target[0].group(0)
+          new = b.replace('CODE_SIGN_STYLE = Automatic;',
+                          'CODE_SIGN_STYLE = Manual;\n\t\t\t\tCODE_SIGN_IDENTITY = "Apple Distribution";\n'
+                          '\t\t\t\tPROVISIONING_PROFILE_SPECIFIER = "' + os.environ['PROFILE_NAME'] + '";')
+          new = re.sub(r'CURRENT_PROJECT_VERSION = \w+;', 'CURRENT_PROJECT_VERSION = ' + os.environ['BUILD_NUMBER'] + ';', new)
+          assert new != b
+          open(p, 'w').write(s.replace(b, new))
+          PY
+
+      - name: Archive
+        if: env.HAS_SECRETS == 'true'
+        working-directory: ios/App
+        run: |
+          xcodebuild -project App.xcodeproj -scheme App -configuration Release \
+            -destination 'generic/platform=iOS' -archivePath "$RUNNER_TEMP/App.xcarchive" \
+            archive | tail -60
+
+      - name: Upload to App Store Connect (TestFlight)
+        if: env.HAS_SECRETS == 'true'
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+        run: |
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>destination</key><string>upload</string>
+            <key>teamID</key><string>${TEAM_ID}</string>
+            <key>signingStyle</key><string>manual</string>
+            <key>signingCertificate</key><string>Apple Distribution</string>
+            <key>provisioningProfiles</key>
+            <dict><key>${BUNDLE_ID}</key><string>${PROFILE_NAME}</string></dict>
+            <key>uploadSymbols</key><true/>
+            <key>manageAppVersionAndBuildNumber</key><false/>
+          </dict>
+          </plist>
+          PLIST
+          xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/App.xcarchive" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" -exportPath "$RUNNER_TEMP/export" \
+            -authenticationKeyPath "$ASC_KEY_PATH" -authenticationKeyID "$ASC_KEY_ID" -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
+            | tail -40
+          echo "uploaded: v${VERSION_NAME} (build ${BUILD_NUMBER})"
+
+      - name: Clean up
+        if: always() && env.HAS_SECRETS == 'true'
+        run: |
+          security delete-keychain "$RUNNER_TEMP/build.keychain-db" || true
+          rm -f "$HOME/.appstoreconnect/private_keys/"*.p8 || true

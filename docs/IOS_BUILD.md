@@ -198,11 +198,18 @@ JET STRIKE の `docs/IOS_BUILD.md` の 7 章と同じです。証明書（.p12�
 | `ASC_ISSUER_ID` | Issuer ID |
 | `ASC_KEY_P8_BASE64` | API キー（.p8）を `base64 -i AuthKey_XXXXXXXXXX.p8 \| tr -d '\n' \| pbcopy` で変換した文字列 |
 
-登録が終わったら、Claude Code に「iOS の自動アップロードのワークフローを作って」と頼みます。
+登録すると、既定ブランチに push するたびに GitHub Actions（`.github/workflows/ios-release.yml`）が次のことを自動で行います（10〜20 分）。
+
+1. 本番広告の設定でゲームのファイルを iOS のプロジェクトにコピーする（`ios:release` と同じ）
+2. 証明書を一時的なキーチェーンに入れ、App Store Connect API で App Store 用のプロビジョニングプロファイル（名前 `Click Trip App Store CI`）を用意する（なければ作る）
+3. ビルド番号を **Actions の実行回数 × 100**（100、200、300…）にして Archive し、App Store Connect（TestFlight）にアップロードする。手元の Mac で Archive するビルド（1、2、3…）とは番号がぶつからない
+
+アップロードが終わると、10〜30 分で App Store Connect の「TestFlight」タブにビルドが出ます。審査への提出は、これまでどおり App Store Connect で行います。
+手動で動かすときは、GitHub の「Actions」→「iOS release (TestFlight)」→「Run workflow」。
 
 **注意**：証明書（.p12）、そのパスワード、API キー（.p8）は、チャット・AI へのアップロード・リポジトリへのコミットで**絶対に共有しない**でください。
 
-いまは push するたびに、GitHub Actions（`.github/workflows/ios.yml`）が署名なしで「ビルドできるか」だけを確認しています。
+このほか `.github/workflows/ios.yml` が、push のたびに署名なしで「ビルドできるか」を確認しています（Secrets がなくても動きます）。
 
 ---
 
@@ -219,5 +226,6 @@ JET STRIKE の `docs/IOS_BUILD.md` の 7 章と同じです。証明書（.p12�
 | 音が鳴らない | 消音スイッチ（アクションボタン）を確認する。最初に画面に触れたときから鳴る |
 | ビルドを選ぼうとしても、アップロードしたビルドが出てこない | バージョンのページの「バージョン」を 1.0.0 に直して保存する |
 | 「審査用に追加できません」 | 「アプリ情報」の「コンテンツの配信権」と、「アプリのプライバシー」のプライバシーポリシー URL を入力して保存する |
+| Actions の「iOS release」が証明書やプロファイルで失敗する | Secrets の .p12 が「Apple Distribution」の証明書か、取り消されていないかを確認する。API キーのアクセスが「管理」（Admin）になっているかも確認する |
 | 本番広告とテスト広告の取り違え | App Store 用は必ず `npm run ios:release`。Xcode から実機で試すときは `npm run ios:sync` に戻す |
 | App Store の審査で「Xcode が古い」と言われる | Xcode を最新版に更新してから Archive し直す |

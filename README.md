@@ -51,6 +51,7 @@ Android 版と同じ Capacitor のプロジェクトに `ios/` を足して iOS 
 - Mac での作業手順（ビルド、TestFlight、審査用の画面録画、App Store Connect の入力）: `docs/IOS_BUILD.md`
 - `npm run ios:sync`（テスト広告）/ `npm run ios:release`（本番広告。App Store 用）/ `npm run ios:open`
 - GitHub Actions（`.github/workflows/ios.yml`）が push のたびに、署名なしでビルドできるかを確認します
+- Secrets（証明書と App Store Connect の API キー）があれば、`.github/workflows/ios-release.yml` が本番広告でビルドして TestFlight にアップロードします（`scripts/ios-profile.py` でプロビジョニングプロファイルを用意）
 - App Store 用の画像と掲載文: `docs/store/ios/`（スクリーンショットは縦向き 1206 × 2622、ヘッダ 3840 × 1646、検索結果 3840 × 2560）
 - 位置情報とトラッキングの確認画面の説明は日英（`ios/App/App/*.lproj/InfoPlist.strings`）
 
