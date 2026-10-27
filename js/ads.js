@@ -24,7 +24,7 @@ const Ads = (() => {
       // AdMob で iOS 用の広告ユニットを作ったら、ここに ID を入れる
       production: {
         banner: 'ca-app-pub-6411535997477460/1112968701',
-        interstitial: '',
+        interstitial: 'ca-app-pub-6411535997477460/4125932826',
         rewarded: '',
       },
     },
