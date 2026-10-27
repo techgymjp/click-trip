@@ -1,0 +1,6 @@
+/* Home screen name */
+"CFBundleDisplayName" = "Click Trip";
+/* Location permission prompt */
+"NSLocationWhenInUseUsageDescription" = "Your location is used only to measure how far you have moved since you last tapped \"Measure distance\". It never leaves your device.";
+/* App Tracking Transparency prompt */
+"NSUserTrackingUsageDescription" = "This identifier is used to show you more relevant ads. The game is free thanks to ads.";

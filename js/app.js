@@ -25,7 +25,7 @@
   const PREFS = ['北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県', '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県', '静岡県', '愛知県', '三重県', '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県', '徳島県', '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県'];
 
   const $ = (id) => document.getElementById(id);
-  // Android アプリ（Capacitor）で動いているか。Web 版では Capacitor がないので何もしない
+  // Android / iOS アプリ（Capacitor）で動いているか。Web 版では Capacitor がないので何もしない
   const NATIVE = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
   const plugin = (name) => (NATIVE && window.Capacitor.Plugins ? window.Capacitor.Plugins[name] : null);
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -616,7 +616,7 @@
     else toast(t('m.start'));
   }
 
-  /** Android アプリだけの設定: 戻るボタン、共有ボタン、バージョン表示、広告の設定 */
+  /** アプリだけの設定: 戻るボタン（Android）、共有ボタン、バージョン表示、広告の設定 */
   function setupNative() {
     if (window.APP_VERSION && window.APP_VERSION !== 'dev') $('build-info').textContent = window.APP_VERSION;
     Ads.initDone.then(() => { if (Ads.privacyOptionsRequired) $('ad-privacy').hidden = false; });
@@ -627,14 +627,14 @@
     modals.forEach((m) => new MutationObserver(syncBanner).observe(m, { attributes: true, attributeFilter: ['hidden'] }));
     syncBanner();
     if (!NATIVE) return;
-    // X・LINE への直接リンクの代わりに、Android の共有メニューを 1 つのボタンで出す
+    // X・LINE への直接リンクの代わりに、端末の共有メニューを 1 つのボタンで出す
     $('share-x').hidden = true;
     $('share-line').hidden = true;
     $('share-more').dataset.i18n = 'arr.shareNative';
     $('share-more').textContent = t('arr.shareNative');
     const App = plugin('App');
     if (App) {
-      // 戻るボタン: 到着画面を閉じる → レーダーに戻る → アプリを終了
+      // 戻るボタン（Android だけ。iOS では呼ばれない）: 到着画面を閉じる → レーダーに戻る → アプリを終了
       App.addListener('backButton', () => {
         if (!$('arrival').hidden) return closeArrival();
         if (!$('intro').hidden && !$('gateways').hidden) { Sound.se('back'); return hideGateways(); }
