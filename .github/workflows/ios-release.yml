@@ -34,16 +34,30 @@ jobs:
       run:
         shell: bash
     env:
-      HAS_SECRETS: ${{ secrets.IOS_DIST_CERT_P12_BASE64 != '' && secrets.ASC_KEY_P8_BASE64 != '' }}
+      HAS_SECRETS: ${{ secrets.IOS_DIST_CERT_P12_BASE64 != '' && secrets.IOS_DIST_CERT_PASSWORD != '' && secrets.ASC_KEY_ID != '' && secrets.ASC_ISSUER_ID != '' && secrets.ASC_KEY_P8_BASE64 != '' }}
       BUNDLE_ID: jp.techgym.clicktrip
       TEAM_ID: GNM3VTX9YG
       PROFILE_NAME: Click Trip App Store CI
       # 手元の Mac で Archive したビルド（1, 2, 3…）と番号がぶつからないよう、100 から始める
       BUILD_NUMBER: ${{ github.run_number }}00
     steps:
-      - name: Skip when secrets are missing
-        if: env.HAS_SECRETS != 'true'
-        run: echo "iOS の Secrets が登録されていないので、アップロードはしません（docs/IOS_BUILD.md の 7 章）"
+      # どの Secret が登録されているかを表示する（値は表示しない）
+      - name: Check secrets
+        env:
+          S1: ${{ secrets.IOS_DIST_CERT_P12_BASE64 != '' }}
+          S2: ${{ secrets.IOS_DIST_CERT_PASSWORD != '' }}
+          S3: ${{ secrets.ASC_KEY_ID != '' }}
+          S4: ${{ secrets.ASC_ISSUER_ID != '' }}
+          S5: ${{ secrets.ASC_KEY_P8_BASE64 != '' }}
+        run: |
+          echo "IOS_DIST_CERT_P12_BASE64: $S1"
+          echo "IOS_DIST_CERT_PASSWORD:   $S2"
+          echo "ASC_KEY_ID:               $S3"
+          echo "ASC_ISSUER_ID:            $S4"
+          echo "ASC_KEY_P8_BASE64:        $S5"
+          if [ "$HAS_SECRETS" != "true" ]; then
+            echo "::warning::iOS の Secrets がそろっていないので、アップロードはしません（docs/IOS_BUILD.md の 7 章）"
+          fi
 
       - uses: actions/checkout@v4
         if: env.HAS_SECRETS == 'true'
