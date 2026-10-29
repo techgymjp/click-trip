@@ -30,6 +30,8 @@ python3 -m http.server 8000
 
 Capacitor でゲームのファイルをアプリに同梱し、Android アプリにしています（パッケージ名 `jp.techgym.clicktrip`）。構成は JET STRIKE と同じです。
 
+Google Play: https://play.google.com/store/apps/details?id=jp.techgym.clicktrip（2026年10月公開）
+
 - `npm run build` で `www/` にゲームのファイルをコピー（広告の本番／テスト切り替えとバージョン表示を生成）
 - `npm run android:sync` で Android プロジェクト（`android/`）に反映
 - ビルドは GitHub Actions（`.github/workflows/android.yml`）が行い、動作確認用の APK（テスト広告）を Release `android-latest` に載せます。Secrets にアップロード鍵があれば、Google Play 用の署名付き AAB（本番広告）も作ります
