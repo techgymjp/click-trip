@@ -621,9 +621,11 @@
     if (window.APP_VERSION && window.APP_VERSION !== 'dev') $('build-info').textContent = window.APP_VERSION;
     Ads.initDone.then(() => { if (Ads.privacyOptionsRequired) $('ad-privacy').hidden = false; });
     $('ad-privacy').addEventListener('click', (e) => { e.preventDefault(); Ads.showPrivacyOptions(); });
-    // ストアへのリンクは Web 版だけ。iPhone・iPad のブラウザでは Android 向けのリンクを出さない
+    // web-only:start（ストアへのリンクは Web 版だけ。アプリ用のビルドではこの範囲を取り除く）
+    // iPhone・iPad のブラウザでは Android 向けのリンクを出さない
     const apple = /iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
     if (!NATIVE && !apple) document.querySelectorAll('[data-web-only]').forEach((el) => { el.hidden = false; });
+    // web-only:end
     // 到着画面・はじめの画面を開いている間はバナーを隠す（画面下のボタンに重ならないように）
     const modals = [$('intro'), $('arrival')];
     const syncBanner = () => Ads.setBannerVisible(modals.every((m) => m.hidden));

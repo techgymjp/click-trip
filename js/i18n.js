@@ -52,9 +52,11 @@ const I18N = (() => {
       'credit.location': '位置情報は移動距離の計算にだけ使い、端末の外には送りません。',
       'legal.privacy': 'プライバシーポリシー',
       'legal.adSettings': '広告の設定',
+      // web-only:start
       'store.title': 'スマホアプリ版',
       'store.note': 'アプリ版なら、ホーム画面からすぐに旅を続けられます。',
       'store.android': '▶ Android アプリ（Google Play）',
+      // web-only:end
       'url.privacy': 'https://techgym.jp/privacy-policy/',
       'tab.radar': 'レーダー', 'tab.log': '旅の記録', 'tab.map': '日本地図', 'tab.settings': '設定',
       'intro.lead': '歩いた距離だけ、日本を旅する。',
@@ -169,9 +171,11 @@ const I18N = (() => {
       'credit.location': 'Your location is only used to calculate distance and never leaves your device.',
       'legal.privacy': 'Privacy Policy',
       'legal.adSettings': 'Ad settings',
+      // web-only:start
       'store.title': 'Get the app',
       'store.note': 'With the app, you can pick up your trip right from your home screen.',
       'store.android': '▶ Android app (Google Play)',
+      // web-only:end
       'url.privacy': 'https://techgym.jp/privacy-policy-en/',
       'tab.radar': 'Radar', 'tab.log': 'Log', 'tab.map': 'Map', 'tab.settings': 'Settings',
       'intro.lead': 'Travel across Japan as far as you walk.',

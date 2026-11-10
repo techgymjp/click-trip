@@ -79,7 +79,7 @@ jobs:
         if: env.HAS_SECRETS == 'true'
         run: |
           echo "VERSION_NAME=$(node -p "require('./package.json').version")" >> "$GITHUB_ENV"
-          ADMOB_MODE=production VERSION_CODE="$BUILD_NUMBER" VERSION_NAME="$(node -p "require('./package.json').version")" npm run build
+          ADMOB_MODE=production VERSION_CODE="$BUILD_NUMBER" VERSION_NAME="$(node -p "require('./package.json').version")" npm run build:app
           npx cap sync ios
 
       # 配布用の証明書を、この実行だけで使う一時的なキーチェーンに入れる

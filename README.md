@@ -32,7 +32,8 @@ Capacitor でゲームのファイルをアプリに同梱し、Android アプ�
 
 Google Play: https://play.google.com/store/apps/details?id=jp.techgym.clicktrip（2026年10月公開）
 
-- `npm run build` で `www/` にゲームのファイルをコピー（広告の本番／テスト切り替えとバージョン表示を生成）
+- `npm run build` で `www/` にゲームのファイルをコピー（広告の本番／テスト切り替えとバージョン表示を生成）。Web 版の公開（Vercel）はこちら
+- アプリ用は `npm run build:app`（`android:sync`・`ios:sync`・`ios:release` と GitHub Actions が使う）。Web 版だけの部分（Google Play へのリンクと、それを端末によって隠す処理）を取り除く。目印は HTML が `<!-- web-only -->`〜`<!-- /web-only -->`、JS が `// web-only:start`〜`// web-only:end`。iOS の審査で「審査中に隠した機能」（Guideline 5.6）と見なされないよう、アプリには最初から入れない
 - `npm run android:sync` で Android プロジェクト（`android/`）に反映
 - ビルドは GitHub Actions（`.github/workflows/android.yml`）が行い、動作確認用の APK（テスト広告）を Release `android-latest` に載せます。Secrets にアップロード鍵があれば、Google Play 用の署名付き AAB（本番広告）も作ります
 - 動作確認用 APK の QR コード: `docs/apk-qr.png`（直接ダウンロード）、`docs/release-qr.png`（リリースページ）
