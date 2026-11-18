@@ -27,7 +27,7 @@ jobs:
   upload:
     # 既定ブランチだけ。Secrets がないときは何もしない
     if: github.ref_name == github.event.repository.default_branch
-    runs-on: macos-latest
+    runs-on: xcode-27   # Xcode 27 が入った GitHub の Mac
     timeout-minutes: 45
     # pipefail を有効にして、xcodebuild が失敗したら（tail に渡していても）ステップを失敗させる
     defaults:
@@ -68,14 +68,21 @@ jobs:
           node-version: 22
           cache: npm
 
-      # その Mac に入っている、いちばん新しい正式版（beta・RC 以外）の Xcode を使う。
-      # App Store は新しい SDK でのビルドを求める（2027 年 4 月からは iOS 27 SDK 以降）ため
-      - name: Select the newest Xcode
+      # Xcode 27 の正式版（beta・RC 以外）を使う。App Store は 2027 年 4 月から iOS 27 SDK 以降でのビルドを求める。
+      # beta の Xcode でビルドしたものは App Store に出せないので、正式版がなければここで止める
+      - name: Select Xcode 27 (release)
         if: env.HAS_SECRETS == 'true'
         run: |
-          XCODE=$(ls -d /Applications/Xcode_*.app 2>/dev/null | grep -viE 'beta|rc|release_candidate' | sort -V | tail -1)
-          if [ -n "$XCODE" ]; then sudo xcode-select -s "$XCODE/Contents/Developer"; fi
+          ls -d /Applications/Xcode*.app
+          XCODE=$(ls -d /Applications/Xcode_27*.app 2>/dev/null | grep -viE 'beta|rc|release_candidate' | sort -V | tail -1)
+          if [ -z "$XCODE" ]; then echo "::error::正式版の Xcode 27 がこの Mac にありません"; exit 1; fi
+          # Xcode_27.0.app などは beta 版への別名のことがあるので、実体の名前とビルド番号（beta は末尾が小文字。例 27A5218g）でも確かめる
+          REAL=$(cd "$XCODE" && pwd -P)
+          echo "selected: $XCODE -> $REAL"
+          if echo "$REAL" | grep -qiE 'beta|rc|release_candidate'; then echo "::error::正式版の Xcode 27 がこの Mac にありません（$REAL は beta）"; exit 1; fi
+          sudo xcode-select -s "$XCODE/Contents/Developer"
           xcodebuild -version
+          if xcodebuild -version | grep -qE 'Build version [0-9A-Z]+[a-z]$'; then echo "::error::選んだ Xcode は beta です（ビルド番号の末尾が小文字）"; exit 1; fi
           xcodebuild -showsdks | grep -i iphoneos
 
       - name: Install dependencies
