@@ -42,4 +42,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <!-- 縦画面固定（sensorPortrait）だが、縦画面に対応していない端末（タブレットや Chromebook など）でも入れられるようにする -->
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
 </manifest>
