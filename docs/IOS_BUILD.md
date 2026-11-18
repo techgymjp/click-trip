@@ -229,4 +229,5 @@ JET STRIKE の `docs/IOS_BUILD.md` の 7 章と同じです。証明書（.p12�
 | Actions の「iOS release」が証明書やプロファイルで失敗する | Secrets の .p12 が「Apple Distribution」の証明書か、取り消されていないかを確認する。API キーのアクセスが「管理」（Admin）になっているかも確認する |
 | 「Guideline 5.6 - Developer Code of Conduct」（審査中に隠した機能がある）で却下 | Web 版だけの部分（他社ストアへのリンクと、それを iPhone やアプリ内で隠す処理）がアプリに入っていると、こう判断される。アプリ用のビルドは必ず `npm run ios:sync` / `ios:release`（中で `build:app` を使い、Web 版だけの部分を取り除く）。Web 版に機能を足すときは、`web-only` の目印で囲む |
 | 本番広告とテスト広告の取り違え | App Store 用は必ず `npm run ios:release`。Xcode から実機で試すときは `npm run ios:sync` に戻す |
+| App Store Connect から「ITMS-90725: SDK version issue」のメールが届く | 受け付けは済んでいる予告（2027 年 4 月からは iOS 27 SDK 以降が必須）。GitHub Actions は、その Mac に入っている最も新しい正式版の Xcode を自動で選ぶ。手元の Mac でビルドするときは Xcode を最新版に更新する |
 | App Store の審査で「Xcode が古い」と言われる | Xcode を最新版に更新してから Archive し直す |

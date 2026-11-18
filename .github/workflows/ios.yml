@@ -33,6 +33,15 @@ jobs:
           node-version: 22
           cache: npm
 
+      # その Mac に入っている、いちばん新しい正式版（beta・RC 以外）の Xcode を使う。
+      # App Store は新しい SDK でのビルドを求める（2027 年 4 月からは iOS 27 SDK 以降）ため
+      - name: Select the newest Xcode
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_*.app 2>/dev/null | grep -viE 'beta|rc|release_candidate' | sort -V | tail -1)
+          if [ -n "$XCODE" ]; then sudo xcode-select -s "$XCODE/Contents/Developer"; fi
+          xcodebuild -version
+          xcodebuild -showsdks | grep -i iphoneos
+
       - name: Install dependencies
         timeout-minutes: 5
         run: npm ci
