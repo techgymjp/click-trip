@@ -632,9 +632,7 @@
     modals.forEach((m) => new MutationObserver(syncBanner).observe(m, { attributes: true, attributeFilter: ['hidden'] }));
     syncBanner();
     if (!NATIVE) return;
-    // X・LINE への直接リンクの代わりに、端末の共有メニューを 1 つのボタンで出す
-    $('share-x').hidden = true;
-    $('share-line').hidden = true;
+    // アプリでは X・LINE への直接リンクを入れず（build:app で取り除く）、端末の共有メニューを 1 つのボタンで出す
     $('share-more').dataset.i18n = 'arr.shareNative';
     $('share-more').textContent = t('arr.shareNative');
     const App = plugin('App');
@@ -684,6 +682,7 @@
     });
     $('arr-close').addEventListener('click', closeArrival);
 
+    // web-only:start（X・LINE への直接リンク。アプリ用のビルドでは取り除く）
     $('share-x').addEventListener('click', () => {
       Sound.se('share');
       window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText(current)) + '&url=' + encodeURIComponent(pageUrl()), '_blank', 'noopener');
@@ -692,6 +691,7 @@
       Sound.se('share');
       window.open('https://line.me/R/share?text=' + encodeURIComponent(shareText(current) + '\n' + pageUrl()), '_blank', 'noopener');
     });
+    // web-only:end
     $('share-more').addEventListener('click', async () => {
       Sound.se('share');
       const text = shareText(current);

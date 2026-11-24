@@ -30,7 +30,7 @@ if (process.env.APP_BUILD === '1') {
   strip('js/i18n.js', /[ \t]*\/\/ web-only:start[\s\S]*?\/\/ web-only:end\n?/g);
   for (const rel of ['index.html', 'js/app.js', 'js/i18n.js']) {
     const text = fs.readFileSync(path.join(out, rel), 'utf8');
-    if (/play\.google\.com|apps\.apple\.com|web-only/.test(text)) {
+    if (/play\.google\.com|apps\.apple\.com|twitter\.com|line\.me|share-x|share-line|web-only/.test(text)) {
       console.error(`${rel} に Web 版だけの部分が残っています`);
       process.exit(1);
     }
